@@ -1,0 +1,11 @@
+RUN diabetes/mdn
+DONE diabetes/mdn 11.9s
+RUN energy/mdn
+DONE energy/mdn 7.8s
+RUN concrete/mdn
+DONE concrete/mdn 8.5s
+RUN wine_red/mdn
+DONE wine_red/mdn 12.2s
+RUN california/mdn
+DONE california/mdn 19.4s
+PRESENT: ['california__gbm.json', 'california__mdn.json', 'california__rf.json', 'concrete__gbm.json', 'concrete__mdn.json', 'concrete__rf.json', 'diabetes__gbm.json', 'diabetes__mdn.json', 'diabetes__rf.json', 'energy__gbm.json', 'energy__mdn.json', 'energy__rf.json', 'wine_red__gbm.json', 'wine_red__mdn.json', 'wine_red__rf.json']

@@ -1,0 +1,57 @@
+{
+  "claim": "Model fusion is non-trivial due to differences in internal representations from permutation invariance and differently distributed training data.",
+  "partA_permutation_invariance": {
+    "hidden_layers": 4,
+    "hidden_width": 256,
+    "weight_L2_gap_between_functionally_identical_models": 26.0323,
+    "max_abs_logit_diff": 4.470348358154297e-08,
+    "tolerance": 0.0001,
+    "function_exactly_preserved": true
+  },
+  "partB_naive_average_collapse": {
+    "random_chance_acc": 0.1,
+    "iid_control": {
+      "parent0": 0.7335,
+      "parent1": 0.726,
+      "naive_average": 0.334
+    },
+    "iid_avg_below_both_parents": true,
+    "noniid_shards": {
+      "parent0": 0.5535,
+      "parent1": 0.482,
+      "naive_average": 0.308,
+      "shard0_class_dist": [
+        0.171,
+        0.0,
+        0.0,
+        0.137,
+        0.003,
+        0.171,
+        0.069,
+        0.107,
+        0.171,
+        0.171
+      ],
+      "shard1_class_dist": [
+        0.001,
+        0.24,
+        0.24,
+        0.049,
+        0.236,
+        0.0,
+        0.143,
+        0.09,
+        0.0,
+        0.0
+      ]
+    },
+    "noniid_avg_below_both_parents": true,
+    "paper_reference": "Table 1: Vanilla Averaging 11.2% (2-way) vs base 81.5/75.1%."
+  },
+  "verdict": "VERIFIED (mechanism): permutation invariance is exact (identical function, distinct weights), and naive averaging of independently trained models collapses below both parents - worse still under non-IID shards.",
+  "runtime_s": 6.29,
+  "versions": {
+    "torch": "2.13.0+cpu",
+    "numpy": "2.2.6"
+  }
+}

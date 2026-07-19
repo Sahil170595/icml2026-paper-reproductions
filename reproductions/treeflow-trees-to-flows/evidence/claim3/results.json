@@ -1,0 +1,99 @@
+{
+  "claim": "GTSM: (A) zero CGTSM/score-matching loss <=> path-space measures match (Thm 3.2, Girsanov); (B) greedy boosting is the globally optimal discrete-GTSM solver under sufficiently rich learners (Thm 3.4)",
+  "partA": {
+    "process": "Ornstein-Uhlenbeck",
+    "a": 1.0,
+    "sigma": 1.0,
+    "x0": 1.5,
+    "T": 1.0,
+    "sweep": [
+      {
+        "a_prime": 1.0,
+        "CGTSM_integral": 0.0,
+        "path_KL_by_M": {
+          "50": 0.0,
+          "100": 2.842170943040401e-14,
+          "200": -2.7000623958883807e-13,
+          "400": 1.2789769243681803e-12
+        },
+        "rel_err_finest": 1.2789769243681803e-12
+      },
+      {
+        "a_prime": 1.2,
+        "CGTSM_integral": 0.02513163254335927,
+        "path_KL_by_M": {
+          "50": 0.025127589036001236,
+          "100": 0.025130620263379727,
+          "200": 0.02513137930127475,
+          "400": 0.02513156921748111
+        },
+        "rel_err_finest": 2.519767788564907e-06
+      },
+      {
+        "a_prime": 1.5,
+        "CGTSM_integral": 0.1570727033959955,
+        "path_KL_by_M": {
+          "50": 0.15704007025937772,
+          "100": 0.15706453358847322,
+          "200": 0.157070659539302,
+          "400": 0.1570721922595234
+        },
+        "rel_err_finest": 3.2541393955660333e-06
+      },
+      {
+        "a_prime": 2.0,
+        "CGTSM_integral": 0.628290813583982,
+        "path_KL_by_M": {
+          "50": 0.6281028598816465,
+          "100": 0.6282437563327763,
+          "200": 0.6282790410349035,
+          "400": 0.6282878694182257
+        },
+        "rel_err_finest": 4.685992048018497e-06
+      },
+      {
+        "a_prime": 0.6,
+        "CGTSM_integral": 0.10052653017343714,
+        "path_KL_by_M": {
+          "50": 0.10051797494260813,
+          "100": 0.10052438846376605,
+          "200": 0.10052599438231101,
+          "400": 0.10052639618073428
+        },
+        "rel_err_finest": 1.3329088612849769e-06
+      }
+    ],
+    "CGTSM_zero_iff_scores_match": true,
+    "max_rel_err_path_vs_cgtsm": 4.685992048018497e-06,
+    "ok": true
+  },
+  "partB": {
+    "separable_DP": {
+      "greedy": 0.6698676726611433,
+      "bellman": 0.6698676726611433,
+      "brute": 0.6698676726611433,
+      "gap": 0.0
+    },
+    "boosting_rich": {
+      "trials": 300,
+      "greedy_suboptimal_count": 0,
+      "max_gap": 3.552713678800501e-15
+    },
+    "boosting_poor": {
+      "trials": 300,
+      "greedy_suboptimal_count": 56,
+      "max_gap": 16.682679094261516
+    },
+    "residual_eq_score_maxabs": 0.0,
+    "ok": true
+  },
+  "targets": {
+    "path_KL_vs_CGTSM": "rel err <0.02 (Girsanov)",
+    "CGTSM_zero": "iff scores match",
+    "separable_DP_gap": "0",
+    "boosting_rich_gap": "0 (greedy optimal)",
+    "boosting_poor_gap": ">0 (richness needed)"
+  },
+  "verdict": "SUPPORTED",
+  "runtime_s": 0.439
+}

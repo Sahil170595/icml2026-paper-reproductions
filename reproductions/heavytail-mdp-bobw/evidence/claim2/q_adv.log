@@ -1,0 +1,21 @@
+== HT-FTRL-UOB (unknown transition), 2-layer MDP; noise check E[|noise|^a]<=1 ==
+   alpha= 1.3: E[|noise|^a]= 0.622
+   alpha= 1.5: E[|noise|^a]= 0.598
+   alpha= 2.0: E[|noise|^a]= 0.416
+
+#### MODE=adv : instance-independent minimax rate  (K=3, seeds=12, C0=1.5) ####
+   worst-case gap per horizon: Delta(T)=C0*T^(1/alpha-1); target slope ~ 1/alpha
+   Reg_T (HT-FTRL-UOB, unknown transition) at horizons [1000, 2000, 4000, 8000]:
+     alpha=1.3:   176.67    297.66    498.34    837.08
+     alpha=1.5:    91.19    147.42    227.56    355.57
+     alpha=2.0:    30.82     42.78     60.10     85.08
+    alpha    1/alpha    UOB slope ORACLE slope     match?
+      1.3      0.769        0.748        0.741        yes
+      1.5      0.667        0.652        0.633        yes
+      2.0      0.500        0.489        0.462        yes
+   monotone (slope up as alpha down)? True   all sublinear (<0.95)? True
+   ADV RULE: UOB slope within +/-0.15 of 1/alpha for >=2 alphas AND monotone AND sublinear -> PASS
+[runtime 3.1s]  numpy=2.2.6
+EVIDENCE_BEGIN
+{"orid": "j6gXeiPJ3z", "claim": "Theorem 5.1: HT-FTRL-UOB unknown-transition BoBW; adv O~(T^{1/a}+sqrt T), stoch O(log^2 T)", "reduction": "2-layer episodic MDP (s0 -> {good,bad}); transitions UNKNOWN, learned by doubling-epoch counts + UOB", "K": 3, "M": 2, "P0": 0.1, "C": 1.0, "cconf": 0.25, "dexp": 1.0, "n_seed": 12, "n_bisect": 6, "alphas": [1.3, 1.5, 2.0], "noise_moment_empirical": {"1.3": 0.6221200129045309, "1.5": 0.5979089172368979, "2.0": 0.4161691671753156}, "numpy": "2.2.6", "adversarial": {"horizons": [1000, 2000, 4000, 8000], "C0": 1.5, "per_alpha": {"1.3": {"target": 0.7692307692307692, "uob_slope": 0.7476323569745413, "oracle_slope": 0.7413997066926595, "reg_uob": [176.67431296770636, 297.6572513494251, 498.34133431556444, 837.0842048504243], "reg_oracle": [123.60878210356152, 214.2398399502957, 345.61419204669636, 584.4724590250923], "uob_minus_oracle": [53.06553086414483, 83.4174113991294, 152.72714226886808, 252.61174582533192], "match": true}, "1.5": {"target": 0.6666666666666666, "uob_slope": 0.6515700103903083, "oracle_slope": 0.6328869947323864, "reg_uob": [91.19424318359991, 147.42193246913766, 227.5588458261259, 355.5744994318429], "reg_oracle": [65.41682200103871, 101.0652585896667, 155.2552853917125, 244.68152132725302], "uob_minus_oracle": [25.7774211825612, 46.35667387947096, 72.30356043441338, 110.8929781045899], "match": true}, "2.0": {"target": 0.5, "uob_slope": 0.48852438171192236, "oracle_slope": 0.46244220561084654, "reg_uob": [30.820317583165803, 42.77667246374893, 60.10481795623329, 85.07552843111522], "reg_oracle": [21.415577332382682, 28.739230124704775, 39.98196930586791, 55.84230720728636], "uob_minus_oracle": [9.40474025078312, 14.037442339044155, 20.122848650365377, 29.233221223828856], "match": true}}, "n_match": 3, "monotone": true, "sublinear": true, "verdict_pass": true}}
+EVIDENCE_END

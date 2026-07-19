@@ -1,0 +1,52 @@
+========================================================================
+CLAIM 1  FC2FB reduction (Def 3.1 / Alg 3 / Thm 3.2)
+2-arm Gaussian mu=[0.5,0.0], Delta=0.5, sigma=1
+FC characteristic time  A* = 8 sigma^2/Delta^2 = 32.0
+========================================================================
+
+[a] strong-FC: tau vs ln(1/delta)   (4000 trials/delta)
+    delta=1e-01  tau=   63.27  emp_err=0.0125  (<=delta? True)  stopped=1.000
+    delta=1e-02  tau=  136.28  emp_err=0.0010  (<=delta? True)  stopped=1.000
+    delta=1e-03  tau=  209.39  emp_err=0.0000  (<=delta? True)  stopped=1.000
+    delta=1e-04  tau=  286.53  emp_err=0.0000  (<=delta? True)  stopped=1.000
+    delta=1e-05  tau=  357.09  emp_err=0.0000  (<=delta? True)  stopped=1.000
+    delta=1e-06  tau=  433.76  emp_err=0.0000  (<=delta? True)  stopped=1.000
+    delta=1e-07  tau=  508.66  emp_err=0.0000  (<=delta? True)  stopped=1.000
+    delta=1e-08  tau=  579.99  emp_err=0.0000  (<=delta? True)  stopped=1.000
+    fit  A_meas=32.172  C_meas=-11.483  R2=0.999943   |  A*=32.0  rel_err=0.005
+
+[b] FC2FB (Alg 3, delta0=1/e, Q=1): P_err vs Thm-3.2 bound  (4000 trials/B)
+    B=  300  R= 8  P_err=0.1000  Thm3.2_bound=2.2623  (P_err<=bound? True)
+    B=  450  R= 8  P_err=0.0495  Thm3.2_bound=2.0203  (P_err<=bound? True)
+    B=  650  R= 9  P_err=0.0375  Thm3.2_bound=1.7504  (P_err<=bound? True)
+    B=  950  R= 9  P_err=0.0198  Thm3.2_bound=1.4257  (P_err<=bound? True)
+    B= 1400  R=10  P_err=0.0067  Thm3.2_bound=1.0626  (P_err<=bound? True)
+    B= 2000  R=10  P_err=0.0027  Thm3.2_bound=0.7300  (P_err<=bound? True)
+    B= 3000  R=11  P_err=0.0010  Thm3.2_bound=0.4008  (P_err<=bound? True)
+    B= 4500  R=12  P_err=0.0003  Thm3.2_bound=0.1694  (P_err<=bound? True)
+    B= 6500  R=12  P_err=0.0000  Thm3.2_bound=0.0562  (P_err<=bound? True)
+    B= 9000  R=13  P_err=0.0000  Thm3.2_bound=0.0148  (P_err<=bound? True)
+    B=13000  R=13  P_err=0.0000  Thm3.2_bound=0.0019  (P_err<=bound? True)
+    B=18000  R=14  P_err=0.0000  Thm3.2_bound=0.0002  (P_err<=bound? True)
+    fitted ln(P_err) decay slope = -0.001397  (negative => exponential decay)
+    all P_err <= Thm-3.2 bound? True
+
+[c] FB-vs-FC penalty ratio  rho(B) = B / (A_meas * ln(1/P_err))
+    B=  300  achieved_delta~0.1000  rho=4.050
+    B=  450  achieved_delta~0.0495  rho=4.653
+    B=  650  achieved_delta~0.0375  rho=6.153
+    B=  950  achieved_delta~0.0198  rho=7.524
+    B= 1400  achieved_delta~0.0067  rho=8.706
+    B= 2000  achieved_delta~0.0027  rho=10.543
+    B= 3000  achieved_delta~0.0010  rho=13.499
+    B= 4500  achieved_delta~0.0003  rho=16.864
+    rho range [4.050, 16.864]   log-log growth exponent d ln(rho)/d ln(B)=0.530
+    (exponent < 1  => sub-polynomial => penalty is only a LOG factor)
+
+========================================================================
+(a) strong-FC linear R2>0.99 & A_meas~=8/Delta^2 (<10%) & delta-correct : True
+(b) FC2FB P_err <= Thm-3.2 bound at all B & exponential decay           : True
+(c) FB/FC penalty sub-polynomial (log-log exp 0.530 < 1)                 : True
+VERDICT verified (all three gates) : True
+========================================================================
+wrote /sessions/keen-fervent-hamilton/mnt/icml-repro-pilot/submissions/bai-budget-confidence-pilot/.trackio/logbook/evidence-package/claim1/results.json   (3.4s)

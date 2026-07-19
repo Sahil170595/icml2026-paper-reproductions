@@ -1,0 +1,38 @@
+{
+  "T": 2,
+  "K": 3,
+  "rho": 0.6,
+  "se": 0.7,
+  "mopt": 1.5,
+  "sw": 1.2,
+  "n_causal": 15,
+  "n_selection": 6,
+  "oracle": {
+    "single_oriented": 3,
+    "cdnod_oriented": 15,
+    "single_shd": 12,
+    "cdnod_shd": 0,
+    "single_wrong": 0,
+    "cdnod_wrong": 0,
+    "single_sel_oriented": 0,
+    "cdnod_sel_oriented": 0
+  },
+  "finite_sample": {
+    "E": 4,
+    "alpha": 0.01,
+    "per_env": 15000,
+    "env_means": [
+      -1.7999999999999998,
+      -0.6,
+      0.6,
+      1.7999999999999998
+    ],
+    "single_oriented": 3,
+    "cdnod_oriented": 15,
+    "single_wrong_total": 0,
+    "cdnod_wrong_total": 0,
+    "single_shd": 12,
+    "cdnod_shd": 0
+  },
+  "verified": true
+}

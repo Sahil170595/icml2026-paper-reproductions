@@ -1,0 +1,59 @@
+=== UCI benchmark (paper protocol, 10 predefined splits/cell, 20 dataset x model cells) ===
+
+-- Normalised CRPS (this run vs paper Table 1; base model None(T) = 1.000) --
+cell              PIT ours   PIT paper  CKME ours   CKME paper  agree2sd
+yacht/gdn         1.019±0.08   0.997±0.08   1.717±0.57    1.276±0.54  YES
+yacht/mdn         0.973±0.04   1.058±0.13   1.353±0.46    1.326±0.59  YES
+yacht/bnn         1.007±0.09   1.097±0.14   1.465±0.39    0.889±0.34  YES
+yacht/drf         1.073±0.06   0.933±0.09   1.538±0.55    0.714±0.25  YES
+housing/gdn       1.004±0.02   1.000±0.03   1.217±0.17    1.150±0.17  YES
+housing/mdn       1.006±0.02   1.007±0.03   1.248±0.23    1.175±0.15  YES
+housing/bnn       1.010±0.02   1.004±0.03   1.215±0.17    0.934±0.07  YES
+housing/drf       1.019±0.03   1.002±0.02   1.162±0.14    0.927±0.06  YES
+energy/gdn        0.992±0.01   0.981±0.05   0.909±0.23    0.767±0.22  YES
+energy/mdn        1.004±0.04   1.019±0.05   0.740±0.15    0.594±0.18  YES
+energy/bnn        0.913±0.07   1.008±0.04   0.934±0.16    0.693±0.21  YES
+energy/drf        1.053±0.03   0.998±0.04   0.987±0.11    0.719±0.20  YES
+concrete/gdn      0.998±0.01   0.999±0.01   1.032±0.03    1.045±0.05  YES
+concrete/mdn      1.006±0.01   1.003±0.02   1.048±0.04    1.032±0.04  YES
+concrete/bnn      1.001±0.01   1.001±0.01   1.038±0.03    0.928±0.04  YES
+concrete/drf      0.977±0.02   1.000±0.01   0.976±0.03    0.915±0.03  YES
+wine/gdn          1.000±0.01   0.999±0.01   0.898±0.03    0.901±0.03  YES
+wine/mdn          1.023±0.03   1.002±0.01   1.024±0.02    1.060±0.04  YES
+wine/bnn          1.002±0.01   1.000±0.01   0.904±0.03    0.899±0.02  YES
+wine/drf          1.570±0.15   1.000±0.01   1.026±0.02    0.902±0.02   no
+
+-- SKCE auto-calibration (statistic mean; acceptance fraction at alpha=5%) --
+cell                          none               pit              beta              ckme   (skce | acc)
+yacht/gdn          1.80e-05|0.20   2.23e-05|0.10   2.35e-05|0.10   4.53e-05|0.40
+yacht/mdn          9.87e-05|0.00   9.87e-05|0.00   1.01e-04|0.00   1.16e-04|0.10
+yacht/bnn          2.57e-05|0.30   2.71e-05|0.00   2.78e-05|0.10   4.71e-05|0.40
+yacht/drf          5.75e-06|0.80   8.92e-06|0.80   9.29e-06|0.90   4.92e-05|0.40
+housing/gdn        8.99e-06|0.90   7.54e-06|0.80   1.04e-05|0.80   6.36e-05|0.50
+housing/mdn        1.64e-05|0.70   1.72e-05|0.70   1.71e-05|0.70   7.12e-05|0.50
+housing/bnn        8.59e-06|0.90   9.69e-06|0.80   1.26e-05|0.80   6.22e-05|0.50
+housing/drf        2.08e-05|0.80   2.55e-05|0.80   4.41e-05|0.70   7.79e-05|0.50
+energy/gdn         1.11e-06|0.60   1.19e-06|0.50   1.18e-06|0.50   1.17e-06|0.50
+energy/mdn         1.50e-06|0.80   1.76e-06|0.80   1.68e-06|0.80   1.56e-06|0.70
+energy/bnn         1.55e-06|0.30   9.37e-07|0.40   9.61e-07|0.40   1.14e-06|0.60
+energy/drf         3.09e-07|0.80   5.23e-07|0.90   5.12e-07|0.80   9.02e-07|0.70
+concrete/gdn       9.74e-07|0.80   8.89e-07|0.90   9.03e-07|0.90   2.97e-06|0.70
+concrete/mdn       8.76e-07|0.80   1.51e-06|0.80   1.72e-06|0.70   3.58e-06|0.70
+concrete/bnn       5.59e-07|1.00   8.55e-07|0.80   9.54e-07|0.80   2.95e-06|0.60
+concrete/drf       2.07e-06|0.80   1.21e-06|0.90   1.37e-06|0.80   2.86e-06|0.60
+wine/gdn           7.15e-02|0.00   6.70e-02|0.00   7.30e-02|0.00   1.67e-02|0.00
+wine/mdn           1.33e-02|0.00   1.79e-02|0.00   1.54e-02|0.00   1.28e-02|0.10
+wine/bnn           6.86e-02|0.00   6.58e-02|0.00   7.13e-02|0.00   1.79e-02|0.00
+wine/drf           7.28e-03|0.50   1.03e-01|0.00   9.44e-02|0.00   6.98e-03|0.20
+
+-- Suite means --
+  acceptance fraction: {'none': 0.55, 'pit': 0.5, 'beta': 0.49, 'ckme': 0.435}
+  CKME mean-SKCE < raw on 5/20 cells; CKME CRPS_norm < 1 on 7/20 cells
+  Registered Energy-MDN example: ours 0.740±0.151 vs paper 0.594±0.178 -> agree (2sd rule)
+
+=== Predeclared rules ===
+  U1 CKME highest mean acceptance (Fig.1)     : False
+  U2 CKME lowers mean SKCE vs raw >=70% cells : False  (5/20)
+  U3 Table-1 CRPS agreement (2sd) >=70% cells : True  (19/20)
+VERDICT: not-verified
+wrote results_uci.json, results_uci.csv

@@ -1,0 +1,21 @@
+{
+  "bostonHousing__gdn": {
+    "accept_raw": 0.9,
+    "accept_quantized_identity": 0.9,
+    "skce_raw_mean": 8.987181363163193e-06,
+    "skce_quantized_mean": 1.304233131350484e-05
+  },
+  "concrete__bnn": {
+    "accept_raw": 1.0,
+    "accept_quantized_identity": 0.9,
+    "skce_raw_mean": 5.590945342053201e-07,
+    "skce_quantized_mean": 7.288357626502332e-07
+  },
+  "energy__mdn": {
+    "accept_raw": 0.8,
+    "accept_quantized_identity": 0.6,
+    "skce_raw_mean": 1.5046512544644048e-06,
+    "skce_quantized_mean": 1.7151043908769547e-06
+  },
+  "elapsed_s": 310.96265506744385
+}

@@ -1,0 +1,2 @@
+matched sc0.55 SG 0.83/0.67 A 0.62/0.34 K 0.82/0.32 KA 0.63/0.34 | Diff 0.72 Why 0.70 SHAP 0.83
+mismatched sc0.55 SG 0.74/0.33 A 0.75/0.33 K 0.67/0.17 KA 0.74/0.38 | Diff 0.72 Why 0.70 SHAP 0.83

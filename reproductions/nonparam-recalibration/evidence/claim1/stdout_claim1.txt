@@ -1,0 +1,46 @@
+=== Claim 1: nonparametric CKME recalibration corrects calibration error ===
+
+Conditional calibration error (auto-cal proxy), mean over 5 seeds:
+scenario          none    margin     param      ckme
+calibrated      0.0229    0.0228    0.0229    0.0247
+overconf        0.1021    0.0228    0.0231    0.0247
+cancel          0.0987    0.0847    0.0986    0.0266
+biashetero      0.2768    0.2142    0.2185    0.0338
+shape           0.0773    0.0229    0.0765    0.0267
+
+Marginal PIT error (same runs):
+scenario          none    margin     param      ckme
+calibrated      0.0074    0.0060    0.0074    0.0055
+overconf        0.0999    0.0060    0.0079    0.0055
+cancel          0.0231    0.0061    0.0222    0.0057
+biashetero      0.0827    0.0079    0.0273    0.0068
+shape           0.0759    0.0121    0.0753    0.0120
+
+=== Consistency / rate ===
+(a) marginal empirical-CDF recal, marginal PIT error vs n:
+    n=   250  err=0.01949
+    n=   500  err=0.01319
+    n=  1000  err=0.01125
+    n=  2000  err=0.00661
+    n=  4000  err=0.00462
+    log-log slope = -0.515  (DKW target -0.5, band [-0.65,-0.35])
+(b) CKME conditional map error vs true map vs n (cancel):
+    n=   500  map_err=0.02596
+    n=  1000  map_err=0.02316
+    n=  2000  map_err=0.01618
+    n=  4000  map_err=0.01168
+    n=  8000  map_err=0.00726
+    n= 16000  map_err=0.00673
+    log-log slope = -0.435  (nonparametric ~ n^-2/5, target <= -0.20)
+
+=== Predeclared rules ===
+  C1 correction>=2x         : True
+  C2 beats parametric       : True
+  C3 marginal insufficient  : True
+  C4a marginal DKW rate     : True
+  C4b CKME map rate         : True
+  C5 control (no harm)      : True
+
+VERDICT: verified
+elapsed 1.7s | numpy 2.2.6
+wrote results.json

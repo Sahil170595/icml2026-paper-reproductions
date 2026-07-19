@@ -1,0 +1,131 @@
+{
+  "part_A": {
+    "rows": [
+      {
+        "gap": 0.1,
+        "seed": 0,
+        "t_reach": 41,
+        "tan0": 84.19026613588284
+      },
+      {
+        "gap": 0.1,
+        "seed": 1,
+        "t_reach": 41,
+        "tan0": 73.57693949146304
+      },
+      {
+        "gap": 0.03162277660168379,
+        "seed": 0,
+        "t_reach": 75,
+        "tan0": 84.19026613588284
+      },
+      {
+        "gap": 0.03162277660168379,
+        "seed": 1,
+        "t_reach": 74,
+        "tan0": 73.57693949146304
+      },
+      {
+        "gap": 0.01,
+        "seed": 0,
+        "t_reach": 134,
+        "tan0": 84.19026613588284
+      },
+      {
+        "gap": 0.01,
+        "seed": 1,
+        "t_reach": 133,
+        "tan0": 73.57693949146304
+      },
+      {
+        "gap": 0.0031622776601683794,
+        "seed": 0,
+        "t_reach": 238,
+        "tan0": 84.19026613588284
+      },
+      {
+        "gap": 0.0031622776601683794,
+        "seed": 1,
+        "t_reach": 237,
+        "tan0": 73.57693949146304
+      },
+      {
+        "gap": 0.001,
+        "seed": 0,
+        "t_reach": 424,
+        "tan0": 84.19026613588284
+      },
+      {
+        "gap": 0.001,
+        "seed": 1,
+        "t_reach": 421,
+        "tan0": 73.57693949146304
+      }
+    ],
+    "agg": {
+      "0.1": 41.0,
+      "0.03162277660168379": 74.5,
+      "0.01": 133.5,
+      "0.0031622776601683794": 237.5,
+      "0.001": 422.5
+    },
+    "slope": -0.5059186108689088,
+    "r2": 0.9999424289700467
+  },
+  "part_B": {
+    "gap": 0.01,
+    "eps": 0.01,
+    "tan0": 0.019999999999999993,
+    "scan": [
+      {
+        "c": 0.03125,
+        "min_ratio": 0.03125000152549749,
+        "final_ratio": 0.031250001525623516,
+        "reaches": true
+      },
+      {
+        "c": 0.125,
+        "min_ratio": 0.12500009765594153,
+        "final_ratio": 0.12500009765616402,
+        "reaches": true
+      },
+      {
+        "c": 0.5,
+        "min_ratio": 0.5000062501168338,
+        "final_ratio": 0.5000062501169704,
+        "reaches": true
+      },
+      {
+        "c": 0.75,
+        "min_ratio": 0.7500210946395091,
+        "final_ratio": 0.7500210946398786,
+        "reaches": true
+      },
+      {
+        "c": 1.0,
+        "min_ratio": 1.0000500037498783,
+        "final_ratio": 1.0000500037502724,
+        "reaches": false
+      },
+      {
+        "c": 2.0,
+        "min_ratio": 1.9999999999999993,
+        "final_ratio": 2.0004001200400623,
+        "reaches": false
+      },
+      {
+        "c": 8.0,
+        "min_ratio": 1.9999999999999993,
+        "final_ratio": 8.025723539051379,
+        "reaches": false
+      }
+    ]
+  },
+  "part_C": {
+    "reproduced": false,
+    "reason": "noise confined to the A-invariant target eigenspace U_k cannot increase tan(theta_k(U_k, X_t)) regardless of magnitude -- verified by a 1e6-magnitude one-step probe (tan_theta went DOWN, not up); this construction cannot test condition (4)'s necessity, unlike condition (3) which is directly testable this way (part B).",
+    "tan_base": 40.42677966721661,
+    "tan_perturbed": 1.2372743685506288e-06
+  },
+  "total_runtime_s": 10.302600145339966
+}

@@ -1,0 +1,145 @@
+{
+  "datasets": [
+    {
+      "dataset": "california_housing",
+      "dim": 8,
+      "n_train": 1750,
+      "n_test": 750,
+      "n_steps_diffusion": 80,
+      "n_steps_flow": 8,
+      "nfe_ratio": 10.0,
+      "time_diffusion_s": 0.6412892799999099,
+      "time_treeflow_s": 0.265790757999639,
+      "speedup_x": 2.412759889870892,
+      "w1_diffusion": 0.12168946195443034,
+      "w1_treeflow": 0.1450276998601036,
+      "corr_diffusion": 0.7237518203009696,
+      "corr_treeflow": 0.8245675018364256,
+      "auc_diffusion": 0.6179020324478517,
+      "auc_treeflow": 0.5217730433232305,
+      "w1_diff_grid": {
+        "10": 0.1956097870992795,
+        "20": 0.14396759411973406,
+        "40": 0.12497329497154477,
+        "80": 0.12168946195443034,
+        "160": 0.11708355097329384
+      },
+      "w1_flow_grid": {
+        "4": 0.15370538072690051,
+        "8": 0.1450276998601036,
+        "16": 0.14542424001073936,
+        "32": 0.1473012374791152,
+        "64": 0.14865169815735563
+      },
+      "runtime_s": 16.3
+    },
+    {
+      "dataset": "wine",
+      "dim": 13,
+      "n_train": 124,
+      "n_test": 54,
+      "n_steps_diffusion": 160,
+      "n_steps_flow": 4,
+      "nfe_ratio": 40.0,
+      "time_diffusion_s": 1.2062440299996524,
+      "time_treeflow_s": 0.11744259300030535,
+      "speedup_x": 10.270924706137203,
+      "w1_diffusion": 0.2797524464662888,
+      "w1_treeflow": 0.22094115500250783,
+      "corr_diffusion": 2.6393353905948778,
+      "corr_treeflow": 2.65507713203802,
+      "auc_diffusion": 0.5403726708074533,
+      "auc_treeflow": 0.5341614906832298,
+      "w1_diff_grid": {
+        "10": 0.3768275344142594,
+        "20": 0.3305946779709972,
+        "40": 0.3201525792090865,
+        "80": 0.2940519467312519,
+        "160": 0.2797524464662888
+      },
+      "w1_flow_grid": {
+        "4": 0.22094115500250783,
+        "8": 0.21620698872121707,
+        "16": 0.21507497751699575,
+        "32": 0.21490020773040808,
+        "64": 0.21487399857313735
+      },
+      "runtime_s": 17.93
+    },
+    {
+      "dataset": "breast_cancer",
+      "dim": 30,
+      "n_train": 398,
+      "n_test": 171,
+      "n_steps_diffusion": 160,
+      "n_steps_flow": 4,
+      "nfe_ratio": 40.0,
+      "time_diffusion_s": 1.3512673420045758,
+      "time_treeflow_s": 0.15188974700140534,
+      "speedup_x": 8.896369693683626,
+      "w1_diffusion": 0.18304850061361566,
+      "w1_treeflow": 0.2625681394262593,
+      "corr_diffusion": 3.429574685182085,
+      "corr_treeflow": 10.802229607267623,
+      "auc_diffusion": 0.8562899786780385,
+      "auc_treeflow": 0.4362473347547975,
+      "w1_diff_grid": {
+        "10": 0.2540961888484426,
+        "20": 0.21924145390211466,
+        "40": 0.2159153342210486,
+        "80": 0.20456618731064327,
+        "160": 0.18304850061361566
+      },
+      "w1_flow_grid": {
+        "4": 0.2625681394262593,
+        "8": 0.262305390761028,
+        "16": 0.2626326027868176,
+        "32": 0.262904387794886,
+        "64": 0.26313551617250014
+      },
+      "runtime_s": 20.56
+    },
+    {
+      "dataset": "diabetes",
+      "dim": 10,
+      "n_train": 309,
+      "n_test": 133,
+      "n_steps_diffusion": 160,
+      "n_steps_flow": 4,
+      "nfe_ratio": 40.0,
+      "time_diffusion_s": 1.2012867009980255,
+      "time_treeflow_s": 0.12877904599736212,
+      "speedup_x": 9.3282776844195,
+      "w1_diffusion": 0.11411102151480752,
+      "w1_treeflow": 0.183971133507222,
+      "corr_diffusion": 1.2712542079846219,
+      "corr_treeflow": 1.4578613513298073,
+      "auc_diffusion": 0.45073375262054505,
+      "auc_treeflow": 0.5566037735849056,
+      "w1_diff_grid": {
+        "10": 0.1422425483577866,
+        "20": 0.13042579071478838,
+        "40": 0.1210519945018361,
+        "80": 0.12384269871476519,
+        "160": 0.11411102151480752
+      },
+      "w1_flow_grid": {
+        "4": 0.183971133507222,
+        "8": 0.17876849824860314,
+        "16": 0.1784720213626631,
+        "32": 0.17921301770748582,
+        "64": 0.17978982548575217
+      },
+      "runtime_s": 18.45
+    }
+  ],
+  "median_speedup_x": 9.112323689051564,
+  "mean_speedup_x": 7.727082993527806,
+  "frac_ge_2x": 1.0,
+  "median_w1_ratio_tree_over_diff": 1.3131018060486839,
+  "median_detection_auc_gap": -0.05117008462442235,
+  "speedup_ok": true,
+  "quality_ok": true,
+  "outcome": "VERIFIED (>=2x speedup, competitive quality)",
+  "setup": "Real z-scored UCI/sklearn tables; baseline=neural VP-diffusion (cosine schedule, 3x256 MLP noise-net, DDPM ancestral eta=1); TreeFlow=ExtraTrees rectified-flow velocity via compiled vectorized leaf-lookup, Euler ODE. Each method at its converged operating point (smallest #steps within 5% of best W1). Speedup=wall-clock ratio."
+}

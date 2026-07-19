@@ -1,0 +1,551 @@
+{
+  "experiment": "claim2a_conformal_risk_control_REAL_DATA",
+  "paper": "arXiv 2509.20345 GESPI Sec 4.1",
+  "data_sources": {
+    "alphafold_db": "https://alphafold.ebi.ac.uk (AlphaFold DB REST API + files, real pLDDT)",
+    "rcsb_pdb": "https://files.rcsb.org (real experimental structures)"
+  },
+  "panel": [
+    {
+      "uniprot": "P00698",
+      "pdb_id": "6LYZ",
+      "chain": "A",
+      "label": "Lysozyme C (chicken)",
+      "pool": "easy",
+      "n_match": 129,
+      "mean_plddt": 98.21953488372094,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P00698-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/6LYZ.pdb"
+    },
+    {
+      "uniprot": "P0CG53",
+      "pdb_id": "1UBQ",
+      "chain": "A",
+      "label": "Ubiquitin (bovine)",
+      "pool": "easy",
+      "n_match": 76,
+      "mean_plddt": 91.14894736842103,
+      "error_rate": 0.013157894736842105,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P0CG53-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1UBQ.pdb"
+    },
+    {
+      "uniprot": "P02185",
+      "pdb_id": "1A6N",
+      "chain": "A",
+      "label": "Myoglobin (sperm whale)",
+      "pool": "easy",
+      "n_match": 151,
+      "mean_plddt": 97.81993377483444,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P02185-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1A6N.pdb"
+    },
+    {
+      "uniprot": "P61626",
+      "pdb_id": "1REX",
+      "chain": "A",
+      "label": "Lysozyme C (human)",
+      "pool": "easy",
+      "n_match": 130,
+      "mean_plddt": 98.40523076923078,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P61626-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1REX.pdb"
+    },
+    {
+      "uniprot": "P00918",
+      "pdb_id": "1CA2",
+      "chain": "A",
+      "label": "Carbonic anhydrase 2 (human)",
+      "pool": "easy",
+      "n_match": 256,
+      "mean_plddt": 97.908515625,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P00918-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1CA2.pdb"
+    },
+    {
+      "uniprot": "P69905",
+      "pdb_id": "1SI4",
+      "chain": "A",
+      "label": "Hemoglobin alpha (human)",
+      "pool": "easy",
+      "n_match": 141,
+      "mean_plddt": 98.29553191489362,
+      "error_rate": 0.014184397163120567,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P69905-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1SI4.pdb"
+    },
+    {
+      "uniprot": "P68871",
+      "pdb_id": "1SI4",
+      "chain": "B",
+      "label": "Hemoglobin beta (human)",
+      "pool": "easy",
+      "n_match": 136,
+      "mean_plddt": 97.40580882352941,
+      "error_rate": 0.007352941176470588,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P68871-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1SI4.pdb"
+    },
+    {
+      "uniprot": "P01112",
+      "pdb_id": "5P21",
+      "chain": "A",
+      "label": "HRAS (human)",
+      "pool": "easy",
+      "n_match": 166,
+      "mean_plddt": 96.00909638554216,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P01112-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/5P21.pdb"
+    },
+    {
+      "uniprot": "P62942",
+      "pdb_id": "1FKB",
+      "chain": "A",
+      "label": "FKBP1A (human)",
+      "pool": "easy",
+      "n_match": 107,
+      "mean_plddt": 96.45738317757008,
+      "error_rate": 0.009345794392523364,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P62942-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1FKB.pdb"
+    },
+    {
+      "uniprot": "P00760",
+      "pdb_id": "1TRN",
+      "chain": "A",
+      "label": "Trypsin (bovine)",
+      "pool": "easy",
+      "n_match": 167,
+      "mean_plddt": 97.6245508982036,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P00760-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1TRN.pdb"
+    },
+    {
+      "uniprot": "P02766",
+      "pdb_id": "1F41",
+      "chain": "A",
+      "label": "Transthyretin (human)",
+      "pool": "easy",
+      "n_match": 116,
+      "mean_plddt": 97.78870689655173,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P02766-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1F41.pdb"
+    },
+    {
+      "uniprot": "P01009",
+      "pdb_id": "1QLP",
+      "chain": "A",
+      "label": "Alpha-1-antitrypsin (human)",
+      "pool": "easy",
+      "n_match": 372,
+      "mean_plddt": 94.29940860215055,
+      "error_rate": 0.005376344086021506,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P01009-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1QLP.pdb"
+    },
+    {
+      "uniprot": "P00441",
+      "pdb_id": "2C9V",
+      "chain": "A",
+      "label": "SOD1 (human)",
+      "pool": "easy",
+      "n_match": 153,
+      "mean_plddt": 98.10143790849673,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P00441-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/2C9V.pdb"
+    },
+    {
+      "uniprot": "P04406",
+      "pdb_id": "1U8F",
+      "chain": "O",
+      "label": "GAPDH (human)",
+      "pool": "easy",
+      "n_match": 333,
+      "mean_plddt": 98.29363363363363,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P04406-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1U8F.pdb"
+    },
+    {
+      "uniprot": "P02753",
+      "pdb_id": "1RBP",
+      "chain": "A",
+      "label": "Retinol binding protein (human)",
+      "pool": "easy",
+      "n_match": 174,
+      "mean_plddt": 95.74080459770114,
+      "error_rate": 0.011494252873563218,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P02753-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1RBP.pdb"
+    },
+    {
+      "uniprot": "P61769",
+      "pdb_id": "1A1M",
+      "chain": "B",
+      "label": "Beta-2-microglobulin (human)",
+      "pool": "easy",
+      "n_match": 99,
+      "mean_plddt": 96.99848484848485,
+      "error_rate": 0.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P61769-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1A1M.pdb"
+    },
+    {
+      "uniprot": "P0DTC2",
+      "pdb_id": "6VXX",
+      "chain": "A",
+      "label": "SARS-CoV-2 Spike glycoprotein (monomer pred. vs real trimer)",
+      "pool": "hard",
+      "n_match": 970,
+      "mean_plddt": 71.38467010309279,
+      "error_rate": 0.9979381443298969,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-0000000365840314-model_v1.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/6VXX.pdb"
+    },
+    {
+      "uniprot": "P02751",
+      "pdb_id": "1FNF",
+      "chain": "A",
+      "label": "Fibronectin FN-III module (human)",
+      "pool": "hard",
+      "n_match": 368,
+      "mean_plddt": 80.97858695652174,
+      "error_rate": 1.0,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P02751-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1FNF.pdb"
+    },
+    {
+      "uniprot": "P00742",
+      "pdb_id": "1XKA",
+      "chain": "L",
+      "label": "Coagulation Factor X light chain (human)",
+      "pool": "hard",
+      "n_match": 90,
+      "mean_plddt": 91.53333333333335,
+      "error_rate": 0.5555555555555556,
+      "af_url": "https://alphafold.ebi.ac.uk/files/AF-P00742-F1-model_v6.pdb",
+      "rcsb_url": "https://files.rcsb.org/download/1XKA.pdb"
+    }
+  ],
+  "n_proteins": 19,
+  "n_residues_total": 4134,
+  "n_residues_easy": 2706,
+  "n_residues_hard": 1428,
+  "n": 10,
+  "alphas": [
+    0.05,
+    0.1,
+    0.15
+  ],
+  "eps": 0.05,
+  "M": 50,
+  "Rr": 500,
+  "Rs": 5000,
+  "Rtest": 20000,
+  "T": 3000,
+  "seed": 20260717,
+  "results": {
+    "informative_real": {
+      "0.05": {
+        "OnlyReal": {
+          "risk": 0.0,
+          "risk_se": 0.0,
+          "abstain_pct": 100.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.050368883333333336,
+          "risk_se": 5.755782383266286e-05,
+          "abstain_pct": 31.227793333333334,
+          "abstain_se": 0.007026038016365085,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 68.77220666666666,
+          "abstain_reduction_pp": 68.77220666666666,
+          "abstain_reduction_pp_se": 0.007026038016365086
+        },
+        "NaivePooled": {
+          "risk": 0.05030163333333333,
+          "risk_se": 5.45138280078924e-05,
+          "abstain_pct": 31.235003333333335,
+          "abstain_se": 0.006640254345586023,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 68.76499666666666,
+          "abstain_reduction_pp": 68.76499666666666,
+          "abstain_reduction_pp_se": 0.006640254345586032
+        },
+        "GESPI": {
+          "risk": 0.011273433333333334,
+          "risk_se": 8.967223194418577e-05,
+          "abstain_pct": 38.460748333333335,
+          "abstain_se": 0.03609925252379682,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 61.53925166666666,
+          "abstain_reduction_pp": 61.539251666666665,
+          "abstain_reduction_pp_se": 0.03609925252379682
+        }
+      },
+      "0.10": {
+        "OnlyReal": {
+          "risk": 0.011273433333333334,
+          "risk_se": 8.967223194418577e-05,
+          "abstain_pct": 38.460748333333335,
+          "abstain_se": 0.03609925252379682,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.09929298333333335,
+          "risk_se": 7.942585627081302e-05,
+          "abstain_pct": 25.30945,
+          "abstain_se": 0.008717200382003378,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 34.194078127011664,
+          "abstain_reduction_pp": 13.151298333333333,
+          "abstain_reduction_pp_se": 0.03692332019498376
+        },
+        "NaivePooled": {
+          "risk": 0.09939576666666668,
+          "risk_se": 7.611891007325798e-05,
+          "abstain_pct": 25.29827,
+          "abstain_se": 0.008353817299760488,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 34.223146724177546,
+          "abstain_reduction_pp": 13.162478333333333,
+          "abstain_reduction_pp_se": 0.03614703453119043
+        },
+        "GESPI": {
+          "risk": 0.06587778333333334,
+          "risk_se": 0.0001939366668554931,
+          "abstain_pct": 29.371573333333334,
+          "abstain_se": 0.024049902919338978,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 23.632340487048065,
+          "abstain_reduction_pp": 9.089175,
+          "abstain_reduction_pp_se": 0.03501820563510897
+        }
+      },
+      "0.15": {
+        "OnlyReal": {
+          "risk": 0.06588445000000001,
+          "risk_se": 0.00019434017772180934,
+          "abstain_pct": 29.370833333333334,
+          "abstain_se": 0.02409393899503143,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.15049228333333334,
+          "risk_se": 9.533186412572232e-05,
+          "abstain_pct": 19.607991666666667,
+          "abstain_se": 0.010261130405519361,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 33.23992055610725,
+          "abstain_reduction_pp": 9.762841666666667,
+          "abstain_reduction_pp_se": 0.02630894186772007
+        },
+        "NaivePooled": {
+          "risk": 0.15062811666666667,
+          "risk_se": 9.019973876481426e-05,
+          "abstain_pct": 19.592473333333334,
+          "abstain_se": 0.009697988037999688,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 33.292756419350255,
+          "abstain_reduction_pp": 9.778360000000001,
+          "abstain_reduction_pp_se": 0.024318397542235838
+        },
+        "GESPI": {
+          "risk": 0.12127736666666665,
+          "risk_se": 0.0002640265050239941,
+          "abstain_pct": 22.846895,
+          "abstain_se": 0.029535853263308078,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 22.21230245424882,
+          "abstain_reduction_pp": 6.5239383333333345,
+          "abstain_reduction_pp_se": 0.021090737549907403
+        }
+      }
+    },
+    "adversarial_real_easypool": {
+      "0.05": {
+        "OnlyReal": {
+          "risk": 0.0,
+          "risk_se": 0.0,
+          "abstain_pct": 100.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.33884999999999993,
+          "risk_se": 1.0134903240813529e-18,
+          "abstain_pct": 0.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 100.0,
+          "abstain_reduction_pp": 100.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "NaivePooled": {
+          "risk": 0.33884999999999993,
+          "risk_se": 1.0134903240813529e-18,
+          "abstain_pct": 0.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 100.0,
+          "abstain_reduction_pp": 100.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "GESPI": {
+          "risk": 0.011298116666666665,
+          "risk_se": 8.733198272439528e-05,
+          "abstain_pct": 38.422419999999995,
+          "abstain_se": 0.03545771672914717,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 61.57758,
+          "abstain_reduction_pp": 61.57758,
+          "abstain_reduction_pp_se": 0.03545771672914717
+        }
+      },
+      "0.10": {
+        "OnlyReal": {
+          "risk": 0.011298116666666665,
+          "risk_se": 8.733198272439528e-05,
+          "abstain_pct": 38.422419999999995,
+          "abstain_se": 0.03545771672914717,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.33884999999999993,
+          "risk_se": 1.0134903240813529e-18,
+          "abstain_pct": 0.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 100.0,
+          "abstain_reduction_pp": 38.422419999999995,
+          "abstain_reduction_pp_se": 0.03545771672914717
+        },
+        "NaivePooled": {
+          "risk": 0.33884999999999993,
+          "risk_se": 1.0134903240813529e-18,
+          "abstain_pct": 0.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 100.0,
+          "abstain_reduction_pp": 38.422419999999995,
+          "abstain_reduction_pp_se": 0.03545771672914717
+        },
+        "GESPI": {
+          "risk": 0.06520485000000001,
+          "risk_se": 0.00019091774463030463,
+          "abstain_pct": 29.45552,
+          "abstain_se": 0.023652930846819898,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 23.337676283794707,
+          "abstain_reduction_pp": 8.966899999999999,
+          "abstain_reduction_pp_se": 0.035185289097702306
+        }
+      },
+      "0.15": {
+        "OnlyReal": {
+          "risk": 0.06520485000000001,
+          "risk_se": 0.00019091774463030463,
+          "abstain_pct": 29.45552,
+          "abstain_se": 0.023652930846819898,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.33884999999999993,
+          "risk_se": 1.0134903240813529e-18,
+          "abstain_pct": 0.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 100.0,
+          "abstain_reduction_pp": 29.45552,
+          "abstain_reduction_pp_se": 0.023652930846819898
+        },
+        "NaivePooled": {
+          "risk": 0.33884999999999993,
+          "risk_se": 1.0134903240813529e-18,
+          "abstain_pct": 0.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 100.0,
+          "abstain_reduction_pp": 29.45552,
+          "abstain_reduction_pp_se": 0.023652930846819898
+        },
+        "GESPI": {
+          "risk": 0.12070573333333334,
+          "risk_se": 0.0002708945790004884,
+          "abstain_pct": 22.911335,
+          "abstain_se": 0.03029376306973103,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 22.21717695019474,
+          "abstain_reduction_pp": 6.544185,
+          "abstain_reduction_pp_se": 0.021449606529219442
+        }
+      }
+    }
+  },
+  "checks": {
+    "onlyreal_valid": true,
+    "gespi_valid_informative": true,
+    "gespi_guardrail_adversarial": true,
+    "efficiency_separated": true,
+    "abstain_reductions_pct": [
+      61.5,
+      23.6,
+      22.2
+    ],
+    "naive_pooled_breaks_adv": true,
+    "only_synth_breaks_adv": true,
+    "PASS": true
+  }
+}

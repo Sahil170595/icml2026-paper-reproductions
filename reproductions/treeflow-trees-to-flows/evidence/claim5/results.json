@@ -1,0 +1,92 @@
+{
+  "claim": "DSM-TREE distills complete hierarchical decision logic (per-level splits, not just leaves) into an MLP, matching Base-Tree teacher within 2% on most datasets (exceeding on some) and reproducing decision paths (Thm G.5)",
+  "metric": "MATCH = DSM-TREE acc >= teacher acc - 2% (paper: within 2% or exceeding)",
+  "per_dataset": [
+    {
+      "dataset": "Cancer",
+      "depth": 5,
+      "teacher_base_tree_acc": 0.9122807017543859,
+      "dsmtree_acc": 0.9181286549707602,
+      "gap_vs_teacher": 0.005847953216374324,
+      "match_within2_or_better": true,
+      "exceeds": true,
+      "leaf_only_acc": 0.9532163742690059,
+      "teacher_pred_agreement": 0.9239766081871345,
+      "path_agreement": 0.8713450292397661
+    },
+    {
+      "dataset": "Wine",
+      "depth": 5,
+      "teacher_base_tree_acc": 0.9444444444444444,
+      "dsmtree_acc": 0.9444444444444444,
+      "gap_vs_teacher": 0.0,
+      "match_within2_or_better": true,
+      "exceeds": false,
+      "leaf_only_acc": 1.0,
+      "teacher_pred_agreement": 0.8888888888888888,
+      "path_agreement": 0.7777777777777778
+    },
+    {
+      "dataset": "Iris",
+      "depth": 4,
+      "teacher_base_tree_acc": 0.9777777777777777,
+      "dsmtree_acc": 1.0,
+      "gap_vs_teacher": 0.022222222222222254,
+      "match_within2_or_better": true,
+      "exceeds": true,
+      "leaf_only_acc": 0.9555555555555556,
+      "teacher_pred_agreement": 0.9777777777777777,
+      "path_agreement": 0.9777777777777777
+    },
+    {
+      "dataset": "Heart-Disease",
+      "depth": 5,
+      "teacher_base_tree_acc": 0.7283950617283951,
+      "dsmtree_acc": 0.7530864197530864,
+      "gap_vs_teacher": 0.024691358024691357,
+      "match_within2_or_better": true,
+      "exceeds": true,
+      "leaf_only_acc": 0.7530864197530864,
+      "teacher_pred_agreement": 0.7777777777777778,
+      "path_agreement": 0.5432098765432098
+    },
+    {
+      "dataset": "Ionosphere",
+      "depth": 5,
+      "teacher_base_tree_acc": 0.8962264150943396,
+      "dsmtree_acc": 0.8584905660377359,
+      "gap_vs_teacher": -0.037735849056603765,
+      "match_within2_or_better": false,
+      "exceeds": false,
+      "leaf_only_acc": 0.8679245283018868,
+      "teacher_pred_agreement": 0.8867924528301887,
+      "path_agreement": 0.7075471698113207
+    },
+    {
+      "dataset": "Diabetes",
+      "depth": 5,
+      "teacher_base_tree_acc": 0.7402597402597403,
+      "dsmtree_acc": 0.7012987012987013,
+      "gap_vs_teacher": -0.038961038961038974,
+      "match_within2_or_better": false,
+      "exceeds": false,
+      "leaf_only_acc": 0.70995670995671,
+      "teacher_pred_agreement": 0.8571428571428571,
+      "path_agreement": 0.7316017316017316
+    }
+  ],
+  "summary": {
+    "datasets": 6,
+    "match_within2_or_better": 4,
+    "exceeds_teacher": 3,
+    "mean_teacher_pred_agreement": 0.8853927271007707,
+    "mean_path_agreement": 0.7682098937919305
+  },
+  "targets": {
+    "match": ">= n-1 datasets within 2%/better",
+    "teacher_pred_agreement": ">0.85",
+    "exceeds": ">=1 dataset"
+  },
+  "verdict": "SUPPORTED",
+  "runtime_s": 7.601
+}

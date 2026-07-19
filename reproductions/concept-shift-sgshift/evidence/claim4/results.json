@@ -1,0 +1,57 @@
+{
+  "claim": "Knockoffs control FDR at target and improve detection",
+  "per_dataset": {
+    "diabetes": {
+      "q0.1": {
+        "fdr_single": 0.0,
+        "fdr_derand": 0.0,
+        "power_derand": 0.0,
+        "target": 0.1,
+        "controlled": true
+      },
+      "q0.2": {
+        "fdr_single": 0.13955026455026454,
+        "fdr_derand": 0.10912698412698411,
+        "power_derand": 0.4305555555555555,
+        "target": 0.2,
+        "controlled": true
+      }
+    },
+    "support2": {
+      "q0.1": {
+        "fdr_single": 0.03333333333333333,
+        "fdr_derand": 0.0,
+        "power_derand": 0.0,
+        "target": 0.1,
+        "controlled": true
+      },
+      "q0.2": {
+        "fdr_single": 0.21884920634920635,
+        "fdr_derand": 0.2337301587301587,
+        "power_derand": 0.9861111111111112,
+        "target": 0.2,
+        "controlled": false
+      }
+    },
+    "adult": {
+      "q0.1": {
+        "fdr_single": 0.03787878787878788,
+        "fdr_derand": 0.03787878787878788,
+        "power_derand": 0.08333333333333333,
+        "target": 0.1,
+        "controlled": true
+      },
+      "q0.2": {
+        "fdr_single": 0.18272005772005773,
+        "fdr_derand": 0.2073051948051948,
+        "power_derand": 0.9861111111111112,
+        "target": 0.2,
+        "controlled": true
+      }
+    }
+  },
+  "controlled_cells": 5,
+  "total_cells": 6,
+  "mean_recall_gain_from_knockoffs": 0.032407407407407385,
+  "verdict": "SUPPORTED"
+}

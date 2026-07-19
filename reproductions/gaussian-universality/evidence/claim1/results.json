@@ -1,0 +1,101 @@
+{
+  "claim": "Min-max characterization approximates mean mu_thetahat and covariance C_thetahat of high-dim ERM under non-Gaussian data (Thm 4.3 / Sec 5).",
+  "setup": {
+    "p": 200,
+    "n": 400,
+    "gamma": 0.5,
+    "lam": 0.5,
+    "sigma2": 0.25,
+    "M": 2000,
+    "C_x": "identity",
+    "design_laws": [
+      "gaussian",
+      "rademacher",
+      "exponential"
+    ]
+  },
+  "deterministic_equivalent": {
+    "g": 0.8284271247461902,
+    "h": 0.8284271247882558,
+    "g_direct": 0.8288032869898393,
+    "h_direct": 0.8291852655765068,
+    "m_pred": 0.5857864376269049,
+    "alpha2_pred": 0.08731060123726186,
+    "alpha2_pred_cf": 0.0873106012372618,
+    "q_pred": 0.43045635174488156,
+    "risk_pred": 0.2588834764910719
+  },
+  "per_law": [
+    {
+      "law": "gaussian",
+      "M": 2000,
+      "m_emp": 0.5851725953528627,
+      "m_se": 0.0005279522731902119,
+      "q_emp": 0.4298986809431503,
+      "alpha2_emp": 0.08747219306153159,
+      "risk_emp": 0.25955349023742463,
+      "risk_se": 0.0005125919620694931,
+      "m_gap_rel": 0.0010478943085963314,
+      "alpha2_gap_rel": 0.0018507698032064561,
+      "risk_gap_rel": 0.0025880900373950032,
+      "m_within3se": true
+    },
+    {
+      "law": "rademacher",
+      "M": 2000,
+      "m_emp": 0.5856004854874253,
+      "m_se": 0.0005604127393307228,
+      "q_emp": 0.43049781823814637,
+      "alpha2_emp": 0.08757042450993094,
+      "risk_emp": 0.25929684726329627,
+      "risk_se": 0.0005428504862221532,
+      "m_gap_rel": 0.00031744015828174426,
+      "alpha2_gap_rel": 0.0029758502288057594,
+      "risk_gap_rel": 0.0015967445192996699,
+      "m_within3se": true
+    },
+    {
+      "law": "exponential",
+      "M": 2000,
+      "m_emp": 0.5828650495425522,
+      "m_se": 0.000575188357841112,
+      "q_emp": 0.4275886357138859,
+      "alpha2_emp": 0.08785260041609375,
+      "risk_emp": 0.26185853662878156,
+      "risk_se": 0.0005521203451712291,
+      "m_gap_rel": 0.004987121409275911,
+      "alpha2_gap_rel": 0.006207713280533112,
+      "risk_gap_rel": 0.011491888852984604,
+      "m_within3se": false
+    }
+  ],
+  "cross_law": {
+    "risk_spread_rel": 0.009843705318483515,
+    "alpha2_spread_rel": 0.004340976882053777
+  },
+  "max_rel_gap": {
+    "m": 0.004987121409275911,
+    "alpha2": 0.006207713280533112,
+    "risk": 0.011491888852984604
+  },
+  "tol": 0.04,
+  "verdict_universality_holds": true,
+  "runtime_s": 8.28,
+  "partB": {
+    "spike": 1.7142857142857144,
+    "M_partB": 1500,
+    "risk_true_mixture": 0.19288554930957344,
+    "risk_matched_gaussian": 0.19235376477406377,
+    "perf_gap_rel": 0.00276461724642769,
+    "perf_gap_se_rel": 0.004445679676549059,
+    "score_skew_mix": 0.43368021937691853,
+    "score_exkurt_mix": -0.49290741647982195,
+    "score_ks_mix_D": 0.0730799651259264,
+    "score_ks_mix_p": 3.204400041274688e-186,
+    "score_exkurt_gauss": 0.041510831618496,
+    "score_ks_gauss_p": 0.6561807160753652,
+    "perf_univ_holds": true,
+    "score_univ_fails": true,
+    "runtime_s": 6.48
+  }
+}

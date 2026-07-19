@@ -1,0 +1,3 @@
+{
+  "note": "split into results_stochastic.json (claim 1 stochastic half) and results_adversarial.json (claim 1 adversarial half); see those files"
+}

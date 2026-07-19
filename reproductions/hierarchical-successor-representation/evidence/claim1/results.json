@@ -1,0 +1,61 @@
+{
+  "claim": "Theorem 3.1 - HSR Bellman operator is a max-norm contraction (modulus ||G||_inf <= gamma)",
+  "paper": "arXiv 2602.12753 / OpenReview txswvMHt4u",
+  "gamma": 0.95,
+  "N": 68,
+  "n_augmented_actions": 12,
+  "n_eigenoptions": 8,
+  "policies": {
+    "uniform_aug": {
+      "Ginf": 0.9253440549846055,
+      "rho_G": 0.897406033220721,
+      "c_worstcase": 0.9253440549846057,
+      "c_randpairs_max": 0.6402039559362781,
+      "eq8_ok": true,
+      "contraction_ok": true,
+      "le_gamma": true,
+      "emp_rate": 0.8974060195211726,
+      "final_res": 9.015010959956271e-13,
+      "iters": 264,
+      "row_min": 0.8351334886459931,
+      "row_max": 0.9253440549846055,
+      "bound_ok": true,
+      "k_check": 30
+    },
+    "primitive_only": {
+      "Ginf": 0.95,
+      "rho_G": 0.9500000000000004,
+      "c_worstcase": 0.95,
+      "c_randpairs_max": 0.723865491519739,
+      "eq8_ok": true,
+      "contraction_ok": true,
+      "le_gamma": true,
+      "emp_rate": 0.9490645846347865,
+      "final_res": 9.64783808399261e-13,
+      "iters": 526,
+      "row_min": 0.95,
+      "row_max": 0.95,
+      "bound_ok": true,
+      "k_check": 30
+    },
+    "option_heavy": {
+      "Ginf": 0.9278096494861449,
+      "rho_G": 0.9020096552068457,
+      "c_worstcase": 0.927809649486145,
+      "c_randpairs_max": 0.60575217917828,
+      "eq8_ok": true,
+      "contraction_ok": true,
+      "le_gamma": true,
+      "emp_rate": 0.9020096415997457,
+      "final_res": 9.370282327836321e-13,
+      "iters": 278,
+      "row_min": 0.8466201397813936,
+      "row_max": 0.9278096494861449,
+      "bound_ok": true,
+      "k_check": 30
+    }
+  },
+  "hsr_reduces_to_sr_residual": 0.0,
+  "overall_reproduced": true,
+  "runtime_s": 0.14365816116333008
+}

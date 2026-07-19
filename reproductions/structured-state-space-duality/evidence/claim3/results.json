@@ -1,0 +1,1525 @@
+{
+  "paper": "arxiv:2510.04944 (OpenReview DKathyl3XN) -- On Structured State-Space Duality",
+  "claim": "Establishes a necessary and sufficient condition for SSM equivalence to 1-semiseparable masked attention",
+  "theorem": "Theorem 4.1 (General State-Space Duality), building on Definitions 4.1/4.2 and Propositions 4.2/5.1",
+  "part_a_necessary": {
+    "description": "Theorem 4.1 NECESSARY direction: genuine general-1-SS-dual constructions (random block boundaries, random fine decay masks, random rank-<=N outer products per block) must have <= N new columns in every detected block. Detected block boundaries are also checked against the construction's true cut points.",
+    "n_cases": 60,
+    "n_pass": 60,
+    "all_pass": true,
+    "cases": [
+      {
+        "T": 64,
+        "N": 1,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 1,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 1,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 2,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 2,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 2,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 4,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          4,
+          2
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 4,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 4,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 8,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          8
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 8,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          4
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 8,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          8
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 16,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          16,
+          6
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 16,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          16,
+          8
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 16,
+        "n_blocks_constructed": 2,
+        "n_blocks_detected": 2,
+        "boundary_match": true,
+        "new_column_counts": [
+          16,
+          11
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 1,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 1,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 1,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 2,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 2,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 2,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 4,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 4,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          4,
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 4,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 8,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          8,
+          8,
+          1
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 8,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          5,
+          8,
+          8,
+          8
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 8,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          8,
+          5,
+          8
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 16,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          12,
+          16,
+          8,
+          16
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 16,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          16,
+          16,
+          8,
+          11
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 16,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          13,
+          1,
+          5,
+          16
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 1,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 1,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 1,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 2,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 2,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 2,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 4,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 4,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          1,
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 4,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 8,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 8,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 8,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          8,
+          8,
+          7
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 16,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          16,
+          2,
+          15,
+          15
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 16,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 16,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          10,
+          16,
+          16,
+          10
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 1,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 1,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 1,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_new_columns": 1,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 2,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 2,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 2,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "max_new_columns": 2,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 4,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 4,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 4,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "max_new_columns": 4,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 8,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          8,
+          3,
+          8
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 8,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 8,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "max_new_columns": 8,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 16,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          16,
+          5,
+          16,
+          16
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 16,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          16,
+          16,
+          4,
+          16
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      },
+      {
+        "T": 512,
+        "N": 16,
+        "n_blocks_constructed": 4,
+        "n_blocks_detected": 4,
+        "boundary_match": true,
+        "new_column_counts": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "max_new_columns": 16,
+        "within_N": true,
+        "pass": true
+      }
+    ]
+  },
+  "part_b_sufficient": {
+    "description": "Theorem 4.1 SUFFICIENT direction: single-block matrices with a known-by-construction <= N semiseparable order are completed and factored via an independent implementation of Proposition 4.2's constructive proof (scan + least-squares completion + SVD factorization), then checked to reconstruct the original lower-triangular data to near machine precision.",
+    "n_cases": 32,
+    "n_pass": 32,
+    "all_pass": true,
+    "max_reconstruction_error_overall": 3.0354341262750495e-10,
+    "cases": [
+      {
+        "T": 64,
+        "N": 1,
+        "measured_new_columns": 1,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.7763568394002505e-15,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 1,
+        "measured_new_columns": 1,
+        "within_N": true,
+        "reconstruction_max_abs_error": 9.992007221626409e-15,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 2,
+        "measured_new_columns": 2,
+        "within_N": true,
+        "reconstruction_max_abs_error": 7.438494264988549e-15,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 2,
+        "measured_new_columns": 2,
+        "within_N": true,
+        "reconstruction_max_abs_error": 7.993605777301127e-15,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 4,
+        "measured_new_columns": 4,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.554312234475219e-14,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 4,
+        "measured_new_columns": 4,
+        "within_N": true,
+        "reconstruction_max_abs_error": 5.67323965583455e-14,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 8,
+        "measured_new_columns": 8,
+        "within_N": true,
+        "reconstruction_max_abs_error": 2.042810365310288e-14,
+        "pass": true
+      },
+      {
+        "T": 64,
+        "N": 8,
+        "measured_new_columns": 8,
+        "within_N": true,
+        "reconstruction_max_abs_error": 6.572520305780927e-14,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 1,
+        "measured_new_columns": 1,
+        "within_N": true,
+        "reconstruction_max_abs_error": 6.938893903907228e-15,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 1,
+        "measured_new_columns": 1,
+        "within_N": true,
+        "reconstruction_max_abs_error": 5.417888360170764e-14,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 2,
+        "measured_new_columns": 2,
+        "within_N": true,
+        "reconstruction_max_abs_error": 2.0550228185811648e-13,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 2,
+        "measured_new_columns": 2,
+        "within_N": true,
+        "reconstruction_max_abs_error": 6.838973831690964e-14,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 4,
+        "measured_new_columns": 4,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.6541212843890207e-12,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 4,
+        "measured_new_columns": 4,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.0791367799356522e-13,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 8,
+        "measured_new_columns": 8,
+        "within_N": true,
+        "reconstruction_max_abs_error": 3.7969627442180354e-13,
+        "pass": true
+      },
+      {
+        "T": 128,
+        "N": 8,
+        "measured_new_columns": 8,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.2384537839693621e-12,
+        "pass": true
+      },
+      {
+        "T": 192,
+        "N": 1,
+        "measured_new_columns": 1,
+        "within_N": true,
+        "reconstruction_max_abs_error": 9.021672298104022e-13,
+        "pass": true
+      },
+      {
+        "T": 192,
+        "N": 1,
+        "measured_new_columns": 1,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.894706613825292e-12,
+        "pass": true
+      },
+      {
+        "T": 192,
+        "N": 2,
+        "measured_new_columns": 2,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.645128477889557e-12,
+        "pass": true
+      },
+      {
+        "T": 192,
+        "N": 2,
+        "measured_new_columns": 2,
+        "within_N": true,
+        "reconstruction_max_abs_error": 3.2724933873851114e-12,
+        "pass": true
+      },
+      {
+        "T": 192,
+        "N": 4,
+        "measured_new_columns": 4,
+        "within_N": true,
+        "reconstruction_max_abs_error": 8.519324135036754e-12,
+        "pass": true
+      },
+      {
+        "T": 192,
+        "N": 4,
+        "measured_new_columns": 4,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.420275008712224e-11,
+        "pass": true
+      },
+      {
+        "T": 192,
+        "N": 8,
+        "measured_new_columns": 8,
+        "within_N": true,
+        "reconstruction_max_abs_error": 2.844913193911225e-11,
+        "pass": true
+      },
+      {
+        "T": 192,
+        "N": 8,
+        "measured_new_columns": 8,
+        "within_N": true,
+        "reconstruction_max_abs_error": 4.8302153943247106e-11,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 1,
+        "measured_new_columns": 1,
+        "within_N": true,
+        "reconstruction_max_abs_error": 9.160672220787092e-12,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 1,
+        "measured_new_columns": 1,
+        "within_N": true,
+        "reconstruction_max_abs_error": 3.297362383136715e-13,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 2,
+        "measured_new_columns": 2,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.3967127454606043e-10,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 2,
+        "measured_new_columns": 2,
+        "within_N": true,
+        "reconstruction_max_abs_error": 2.2316370973385347e-11,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 4,
+        "measured_new_columns": 4,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.510329639131669e-10,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 4,
+        "measured_new_columns": 4,
+        "within_N": true,
+        "reconstruction_max_abs_error": 7.797540391152324e-11,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 8,
+        "measured_new_columns": 8,
+        "within_N": true,
+        "reconstruction_max_abs_error": 1.8127810363921526e-10,
+        "pass": true
+      },
+      {
+        "T": 256,
+        "N": 8,
+        "measured_new_columns": 8,
+        "within_N": true,
+        "reconstruction_max_abs_error": 3.0354341262750495e-10,
+        "pass": true
+      }
+    ]
+  },
+  "part_c_impossibility": {
+    "description": "Proposition 5.1 impossibility example: M = I_T + E_(T,1) is a 2-SS matrix (i.e. realizable by a 2-dimensional-state SSM) that forms a SINGLE unsplittable block (the corner entry keeps every candidate crossing block nonzero) whose new-column count is exactly T-1 -- unbounded in T. Theorem 4.1's necessary condition (<=N new columns per block) therefore certifies impossibility of a width-N 1-SS masked-attention dual whenever T-1 > N, despite the SSM's own state dimension being only 2.",
+    "per_T": [
+      {
+        "T": 8,
+        "n_blocks_detected": 1,
+        "single_unsplittable_block": true,
+        "measured_new_columns": 7,
+        "predicted_new_columns_T_minus_1": 7,
+        "matches_prediction": true
+      },
+      {
+        "T": 16,
+        "n_blocks_detected": 1,
+        "single_unsplittable_block": true,
+        "measured_new_columns": 15,
+        "predicted_new_columns_T_minus_1": 15,
+        "matches_prediction": true
+      },
+      {
+        "T": 32,
+        "n_blocks_detected": 1,
+        "single_unsplittable_block": true,
+        "measured_new_columns": 31,
+        "predicted_new_columns_T_minus_1": 31,
+        "matches_prediction": true
+      },
+      {
+        "T": 64,
+        "n_blocks_detected": 1,
+        "single_unsplittable_block": true,
+        "measured_new_columns": 63,
+        "predicted_new_columns_T_minus_1": 63,
+        "matches_prediction": true
+      },
+      {
+        "T": 128,
+        "n_blocks_detected": 1,
+        "single_unsplittable_block": true,
+        "measured_new_columns": 127,
+        "predicted_new_columns_T_minus_1": 127,
+        "matches_prediction": true
+      },
+      {
+        "T": 256,
+        "n_blocks_detected": 1,
+        "single_unsplittable_block": true,
+        "measured_new_columns": 255,
+        "predicted_new_columns_T_minus_1": 255,
+        "matches_prediction": true
+      },
+      {
+        "T": 512,
+        "n_blocks_detected": 1,
+        "single_unsplittable_block": true,
+        "measured_new_columns": 511,
+        "predicted_new_columns_T_minus_1": 511,
+        "matches_prediction": true
+      }
+    ],
+    "impossibility_sweep": [
+      {
+        "T": 8,
+        "N": 1,
+        "new_columns": 7,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 8,
+        "N": 2,
+        "new_columns": 7,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 8,
+        "N": 4,
+        "new_columns": 7,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 8,
+        "N": 8,
+        "new_columns": 7,
+        "impossibility_certified": false,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 8,
+        "N": 16,
+        "new_columns": 7,
+        "impossibility_certified": false,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 16,
+        "N": 1,
+        "new_columns": 15,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 16,
+        "N": 2,
+        "new_columns": 15,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 16,
+        "N": 4,
+        "new_columns": 15,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 16,
+        "N": 8,
+        "new_columns": 15,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 16,
+        "N": 16,
+        "new_columns": 15,
+        "impossibility_certified": false,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 32,
+        "N": 1,
+        "new_columns": 31,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 32,
+        "N": 2,
+        "new_columns": 31,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 32,
+        "N": 4,
+        "new_columns": 31,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 32,
+        "N": 8,
+        "new_columns": 31,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 32,
+        "N": 16,
+        "new_columns": 31,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 64,
+        "N": 1,
+        "new_columns": 63,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 64,
+        "N": 2,
+        "new_columns": 63,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 64,
+        "N": 4,
+        "new_columns": 63,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 64,
+        "N": 8,
+        "new_columns": 63,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 64,
+        "N": 16,
+        "new_columns": 63,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 128,
+        "N": 1,
+        "new_columns": 127,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 128,
+        "N": 2,
+        "new_columns": 127,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 128,
+        "N": 4,
+        "new_columns": 127,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 128,
+        "N": 8,
+        "new_columns": 127,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 128,
+        "N": 16,
+        "new_columns": 127,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 256,
+        "N": 1,
+        "new_columns": 255,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 256,
+        "N": 2,
+        "new_columns": 255,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 256,
+        "N": 4,
+        "new_columns": 255,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 256,
+        "N": 8,
+        "new_columns": 255,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 256,
+        "N": 16,
+        "new_columns": 255,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 512,
+        "N": 1,
+        "new_columns": 511,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 512,
+        "N": 2,
+        "new_columns": 511,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 512,
+        "N": 4,
+        "new_columns": 511,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 512,
+        "N": 8,
+        "new_columns": 511,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      },
+      {
+        "T": 512,
+        "N": 16,
+        "new_columns": 511,
+        "impossibility_certified": true,
+        "consistent_with_prediction": true
+      }
+    ],
+    "n_sweep_cases": 35,
+    "n_consistent_with_prediction": 35,
+    "all_consistent": true
+  },
+  "environment": {
+    "python": "3.13.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.2.6"
+  },
+  "elapsed_seconds": 10.750353574752808
+}

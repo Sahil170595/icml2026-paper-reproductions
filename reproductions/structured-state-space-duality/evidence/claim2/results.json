@@ -1,0 +1,125 @@
+{
+  "paper": "arxiv:2510.04944 (OpenReview DKathyl3XN) -- On Structured State-Space Duality",
+  "claim": "Diagonal SSMs match the scalar case's training complexity lower bounds while supporting richer dynamics",
+  "part_a_exact_flop_count": {
+    "description": "Algorithm 1 (diagonal SSD) has four named O(NTd) stages, each annotated '// Time O(NTd)' in the paper; Remark 4.2 states this totals '4*N*T*d flops'. We count BOTH (a) one touch per (mode, time, feature) entry per named stage -- the convention implied by the algorithm's own annotations, which reproduces 4*N*T*d EXACTLY -- and (b), for full transparency, the literal scalar multiply/add count (a fused multiply-add in the H-scan counts as 2 raw ops, and the (N-1)-term cross-mode reduction is 1 add short of a full N*T*d touch), which is a stricter accounting and differs from 4NTd by these lower-order/convention terms.",
+    "configs": [
+      {
+        "N": 4,
+        "T": 6,
+        "d": 3,
+        "measured_stage_touches": 288,
+        "predicted_4NTd": 288,
+        "stage_touches_match_4NTd_exactly": true,
+        "measured_raw_mults": 204,
+        "measured_raw_adds": 114,
+        "measured_raw_total": 318,
+        "ratio_raw_total_to_4NTd": 1.1041666666666667
+      },
+      {
+        "N": 6,
+        "T": 10,
+        "d": 4,
+        "measured_stage_touches": 960,
+        "predicted_4NTd": 960,
+        "stage_touches_match_4NTd_exactly": true,
+        "measured_raw_mults": 696,
+        "measured_raw_adds": 416,
+        "measured_raw_total": 1112,
+        "ratio_raw_total_to_4NTd": 1.1583333333333334
+      },
+      {
+        "N": 8,
+        "T": 12,
+        "d": 5,
+        "measured_stage_touches": 1920,
+        "predicted_4NTd": 1920,
+        "stage_touches_match_4NTd_exactly": true,
+        "measured_raw_mults": 1400,
+        "measured_raw_adds": 860,
+        "measured_raw_total": 2260,
+        "ratio_raw_total_to_4NTd": 1.1770833333333333
+      },
+      {
+        "N": 5,
+        "T": 16,
+        "d": 6,
+        "measured_stage_touches": 1920,
+        "predicted_4NTd": 1920,
+        "stage_touches_match_4NTd_exactly": true,
+        "measured_raw_mults": 1410,
+        "measured_raw_adds": 834,
+        "measured_raw_total": 2244,
+        "ratio_raw_total_to_4NTd": 1.16875
+      }
+    ]
+  },
+  "part_b_timing_sweep": {
+    "description": "Wall-clock CPU timing: recurrent diagonal-SSM update (O(T), fixed N,d) vs explicit quadratic attention-kernel construction + matmul (O(T^2)). N=4, d=16, best-of-9 repeats/T, single BLAS thread. Log-log slopes and speedup are computed from the min (low-noise) timings.",
+    "N": 4,
+    "d": 16,
+    "repeats": 9,
+    "rows": [
+      {
+        "T": 150,
+        "recurrence_min_s": 0.0002243999915663153,
+        "recurrence_mean_s": 0.00023882222012616694,
+        "recurrence_std_s": 2.3571208967343248e-05,
+        "attention_min_s": 0.0007466999813914299,
+        "attention_mean_s": 0.0007705222200860993,
+        "attention_std_s": 4.158036632226913e-05,
+        "speedup_attention_over_recurrence_min": 3.3275401490858036
+      },
+      {
+        "T": 300,
+        "recurrence_min_s": 0.0004628000024240464,
+        "recurrence_mean_s": 0.0004870222182944417,
+        "recurrence_std_s": 3.529754646498011e-05,
+        "attention_min_s": 0.004246099997544661,
+        "attention_mean_s": 0.0045794888865202665,
+        "attention_std_s": 0.00019896257829562868,
+        "speedup_attention_over_recurrence_min": 9.174805478186057
+      },
+      {
+        "T": 600,
+        "recurrence_min_s": 0.0009309999877586961,
+        "recurrence_mean_s": 0.0009759888861380103,
+        "recurrence_std_s": 7.299869801865902e-05,
+        "attention_min_s": 0.016794800001662225,
+        "attention_mean_s": 0.018039944445869576,
+        "attention_std_s": 0.0007281700924792092,
+        "speedup_attention_over_recurrence_min": 18.039527628882453
+      },
+      {
+        "T": 1200,
+        "recurrence_min_s": 0.0018498999997973442,
+        "recurrence_mean_s": 0.0020481999995859545,
+        "recurrence_std_s": 0.00016527908831931803,
+        "attention_min_s": 0.07019779999973252,
+        "attention_mean_s": 0.07451309999709742,
+        "attention_std_s": 0.004973188639195175,
+        "speedup_attention_over_recurrence_min": 37.94680793957655
+      },
+      {
+        "T": 2400,
+        "recurrence_min_s": 0.0036783999821636826,
+        "recurrence_mean_s": 0.004121899999315954,
+        "recurrence_std_s": 0.00031666455421695404,
+        "attention_min_s": 0.3048782999976538,
+        "attention_mean_s": 0.3233669444452971,
+        "attention_std_s": 0.011853437369003496,
+        "speedup_attention_over_recurrence_min": 82.88340079273283
+      }
+    ],
+    "recurrence_loglog_slope": 1.0068854182515596,
+    "attention_loglog_slope": 2.1394193681061733,
+    "speedup_at_largest_T": 82.88340079273283,
+    "largest_T": 2400
+  },
+  "environment": {
+    "python": "3.13.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.2.6"
+  },
+  "elapsed_seconds": 3.91682505607605
+}

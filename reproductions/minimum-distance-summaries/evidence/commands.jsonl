@@ -1,0 +1,4 @@
+{"cmd": "python run_gaussian.py", "exit": 0, "desc": "train frozen Gaussian NPE + RFF decoder; paired eps sweep (300 queries)"}
+{"cmd": "python run_oup.py", "exit": 0, "desc": "train frozen OUP NPE + RFF decoder; paired eps sweep (250 queries)"}
+{"cmd": "python claim4_audit.py", "exit": 0, "desc": "fail-closed TeX assumption/DAG audit + numerical theory checks"}
+{"cmd": "python verify_all.py", "exit": 0, "desc": "recompute artifact SHA-256 + re-assert 20 scored thresholds"}

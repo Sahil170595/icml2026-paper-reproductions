@@ -1,0 +1,88 @@
+{
+ "matched": {
+  "n": 8,
+  "SGShift": {
+   "auc": 0.861,
+   "recall": 0.708
+  },
+  "SGShift-A": {
+   "auc": 0.865,
+   "recall": 0.667
+  },
+  "SGShift-K": {
+   "auc": 0.834,
+   "recall": 0.583,
+   "fdp_q0.1": 0.624,
+   "pow_q0.1": 0.812,
+   "fdp_q0.2": 0.739,
+   "pow_q0.2": 0.958,
+   "fdp_q0.3": 0.739,
+   "pow_q0.3": 0.958
+  },
+  "SGShift-KA": {
+   "auc": 0.819,
+   "recall": 0.561,
+   "fdp_q0.1": 0.599,
+   "pow_q0.1": 0.771,
+   "fdp_q0.2": 0.686,
+   "pow_q0.2": 0.875,
+   "fdp_q0.3": 0.688,
+   "pow_q0.3": 0.875
+  },
+  "Diff": {
+   "auc": 0.754,
+   "recall": 0.542
+  },
+  "WhyShift": {
+   "auc": 0.757,
+   "recall": 0.562
+  },
+  "SHAP": {
+   "auc": 0.743,
+   "recall": 0.5
+  }
+ },
+ "mismatched": {
+  "n": 4,
+  "SGShift": {
+   "auc": 0.722,
+   "recall": 0.5
+  },
+  "SGShift-A": {
+   "auc": 0.772,
+   "recall": 0.583
+  },
+  "SGShift-K": {
+   "auc": 0.715,
+   "recall": 0.492,
+   "fdp_q0.1": 0.782,
+   "pow_q0.1": 0.875,
+   "fdp_q0.2": 0.782,
+   "pow_q0.2": 0.875,
+   "fdp_q0.3": 0.782,
+   "pow_q0.3": 0.875
+  },
+  "SGShift-KA": {
+   "auc": 0.773,
+   "recall": 0.606,
+   "fdp_q0.1": 0.481,
+   "pow_q0.1": 0.542,
+   "fdp_q0.2": 0.641,
+   "pow_q0.2": 0.75,
+   "fdp_q0.3": 0.641,
+   "pow_q0.3": 0.75
+  },
+  "Diff": {
+   "auc": 0.718,
+   "recall": 0.5
+  },
+  "WhyShift": {
+   "auc": 0.714,
+   "recall": 0.542
+  },
+  "SHAP": {
+   "auc": 0.678,
+   "recall": 0.375
+  }
+ }
+}

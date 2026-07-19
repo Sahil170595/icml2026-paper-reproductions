@@ -1,0 +1,47 @@
+{
+  "config": {
+    "N": 400,
+    "R": 20000,
+    "alpha": 0.05,
+    "pi": 0.5,
+    "eta": 0.1,
+    "seed_design": 0,
+    "seed_assign": 12345
+  },
+  "A1_increment_max_abs_z": 3.3383903719921095,
+  "A1_frac_z_within2": 0.96,
+  "A1_terminal_error_mean": 0.015988107482001385,
+  "A1_terminal_error_z": 0.1693755152423658,
+  "A2_worst_predict_z": -2.0621877377766893,
+  "A2_worst_slope": -0.000983143183924675,
+  "A3_single_arm_max_ratio_dev": 0.020629175940338307,
+  "A3_single_arm_max_abs_z": -2.8925516493860046,
+  "A3_example_s_t_ratio_z": [
+    9.256343029372076,
+    10.653129604441231,
+    0.9903538408404655,
+    -2.8925516493860046
+  ],
+  "B_diff_max_ratio_dev": 0.5177200854387307,
+  "B_diff_max_abs_z": 37.04137712126928,
+  "B_example_s_t_ratio_z": [
+    3.985485936779128,
+    6.88492409477223,
+    1.3453138612872177,
+    37.04137712126928
+  ],
+  "C_cs_uniform_coverage": 0.9956,
+  "C_cs_uniform_miscoverage": 0.0043999999999999595,
+  "C_pw_uniform_coverage": 0.29585,
+  "C_pw_uniform_miscoverage": 0.70415,
+  "C_pw_single_look_mid": 0.9473,
+  "C_pw_single_look_late": 0.9517,
+  "C_n_looks": 400,
+  "pass_A1": true,
+  "pass_A2": true,
+  "pass_A3": true,
+  "pass_B": true,
+  "pass_C": true,
+  "overall_verified": true,
+  "runtime_s": 1.08
+}

@@ -1,0 +1,174 @@
+{
+  "poset_size": 7,
+  "n_automorphisms": 6,
+  "automorphisms_verified": 6,
+  "PH_structural_equivariance_worst": 2.220446049250313e-16,
+  "target_equivariance_worst": {
+    "U1_gentle": 1.1102230246251565e-16,
+    "U2_oscillatory": 4.440892098500626e-16,
+    "U3_compound": 3.885780586188048e-16
+  },
+  "network_equivariance_worst": {
+    "U1_gentle": 1.5543122344752192e-15,
+    "U2_oscillatory": 6.772360450213455e-15,
+    "U3_compound": 5.551115123125783e-15
+  },
+  "widths": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "sweep": {
+    "U1_gentle": [
+      {
+        "width": 4,
+        "train_mse": 0.060407227876749924,
+        "test_mse": 0.06394022706008912
+      },
+      {
+        "width": 8,
+        "train_mse": 0.05452142638935259,
+        "test_mse": 0.05633581399891856
+      },
+      {
+        "width": 16,
+        "train_mse": 0.044026202557403006,
+        "test_mse": 0.045645571140959934
+      },
+      {
+        "width": 32,
+        "train_mse": 0.028441263630593506,
+        "test_mse": 0.029796195975518545
+      },
+      {
+        "width": 64,
+        "train_mse": 0.013832647020678547,
+        "test_mse": 0.014518873965514933
+      },
+      {
+        "width": 128,
+        "train_mse": 0.0037140643352733425,
+        "test_mse": 0.004508411475900895
+      },
+      {
+        "width": 256,
+        "train_mse": 0.0011895688806625492,
+        "test_mse": 0.001833112700547964
+      },
+      {
+        "width": 512,
+        "train_mse": 0.00033398887629745356,
+        "test_mse": 0.0007576578438407904
+      }
+    ],
+    "U2_oscillatory": [
+      {
+        "width": 4,
+        "train_mse": 0.41758718804887834,
+        "test_mse": 0.44610248742553527
+      },
+      {
+        "width": 8,
+        "train_mse": 0.3760164568742263,
+        "test_mse": 0.40311168383745993
+      },
+      {
+        "width": 16,
+        "train_mse": 0.3233349811099975,
+        "test_mse": 0.3476983923203214
+      },
+      {
+        "width": 32,
+        "train_mse": 0.29387526646041773,
+        "test_mse": 0.3178427825182098
+      },
+      {
+        "width": 64,
+        "train_mse": 0.20073021164594154,
+        "test_mse": 0.2120848925148557
+      },
+      {
+        "width": 128,
+        "train_mse": 0.12658347979038162,
+        "test_mse": 0.15484440677324632
+      },
+      {
+        "width": 256,
+        "train_mse": 0.01989281912422939,
+        "test_mse": 0.030675800900191275
+      },
+      {
+        "width": 512,
+        "train_mse": 0.008136986684342613,
+        "test_mse": 0.022586938585464063
+      }
+    ],
+    "U3_compound": [
+      {
+        "width": 4,
+        "train_mse": 0.2033278768992215,
+        "test_mse": 0.20428916910278044
+      },
+      {
+        "width": 8,
+        "train_mse": 0.16095909113156126,
+        "test_mse": 0.1660615627252846
+      },
+      {
+        "width": 16,
+        "train_mse": 0.1316266214095957,
+        "test_mse": 0.13904769278061468
+      },
+      {
+        "width": 32,
+        "train_mse": 0.074491266957283,
+        "test_mse": 0.08798340586220028
+      },
+      {
+        "width": 64,
+        "train_mse": 0.05327760018032021,
+        "test_mse": 0.062447200028337896
+      },
+      {
+        "width": 128,
+        "train_mse": 0.030098790995268285,
+        "test_mse": 0.039356714938171077
+      },
+      {
+        "width": 256,
+        "train_mse": 0.014140224837486918,
+        "test_mse": 0.022806093075277287
+      },
+      {
+        "width": 512,
+        "train_mse": 0.0033167687242761077,
+        "test_mse": 0.00908734663786858
+      }
+    ]
+  },
+  "checks": {
+    "automorphisms_verified": true,
+    "U1_gentle_train_monotone_nonincreasing": true,
+    "U1_gentle_test_error_reduced_ge_70pct": true,
+    "U1_gentle_final_test_mse_small": true,
+    "U2_oscillatory_train_monotone_nonincreasing": true,
+    "U2_oscillatory_test_error_reduced_ge_70pct": true,
+    "U2_oscillatory_final_test_mse_small": true,
+    "U3_compound_train_monotone_nonincreasing": true,
+    "U3_compound_test_error_reduced_ge_70pct": true,
+    "U3_compound_final_test_mse_small": true,
+    "PH_structural_equivariance": true,
+    "U1_gentle_target_equivariance": true,
+    "U1_gentle_network_equivariance": true,
+    "U2_oscillatory_target_equivariance": true,
+    "U2_oscillatory_network_equivariance": true,
+    "U3_compound_target_equivariance": true,
+    "U3_compound_network_equivariance": true
+  },
+  "overall_pass": true
+}

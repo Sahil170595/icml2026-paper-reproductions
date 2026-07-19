@@ -1,0 +1,18 @@
+{
+ "size": "G30",
+ "n": 30,
+ "stalk_dim": 2,
+ "n_edges": 38,
+ "n_train": 1024,
+ "n_test": 320,
+ "k_powers": 5,
+ "gauge_group": "torus SO(2)^1 (diagonal stalk rotation)",
+ "quadrature_M": 48,
+ "eq_residual_TA": 9.380368304079574e-15,
+ "eq_residual_TB": 1.7979101253009106e-15,
+ "eq_residual_TC": 1.566419172379796,
+ "eq_residual_P": 4.577566798522237e-16,
+ "floor_TC_rel": 0.06570858737571453,
+ "primitive_linfit_resid_TA": 0.9993131981991212,
+ "primitive_linfit_resid_TB": 0.0740148419092817
+}

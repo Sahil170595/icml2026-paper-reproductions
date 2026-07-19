@@ -1,0 +1,115 @@
+{
+  "REGIME_I_assortative": {
+    "summary": {
+      "P-RWDKC": {
+        "ari": 0.9865365963575088,
+        "nmi": 0.9869033356366921,
+        "nmi_sd": 0.022684088086926065
+      },
+      "PIC": {
+        "ari": 0.8478896401419698,
+        "nmi": 0.8556261213470403,
+        "nmi_sd": 0.03227545074772086
+      },
+      "SC-SYM1": {
+        "ari": 1.0,
+        "nmi": 1.0,
+        "nmi_sd": 0.0
+      },
+      "SC-SYM2": {
+        "ari": 1.0,
+        "nmi": 1.0,
+        "nmi_sd": 0.0
+      },
+      "raw-P": {
+        "ari": 0.8237548756348565,
+        "nmi": 0.8830675820753207,
+        "nmi_sd": 0.09488510536152366
+      }
+    },
+    "td_PRWDKC": [
+      8,
+      64,
+      64,
+      64
+    ],
+    "td_PIC": [
+      64,
+      64,
+      64,
+      64
+    ],
+    "k": 4,
+    "N": 240,
+    "mean_transient_vertices_raw_walk": 0.0
+  },
+  "REGIME_II_reducible": {
+    "summary": {
+      "P-RWDKC": {
+        "ari": 0.8135726446343785,
+        "nmi": 0.8387237330062752,
+        "nmi_sd": 0.11544783843527112
+      },
+      "PIC": {
+        "ari": 0.4130501296668272,
+        "nmi": 0.49878404503217727,
+        "nmi_sd": 0.043344253335772354
+      },
+      "SC-SYM1": {
+        "ari": 0.9127580863333211,
+        "nmi": 0.9421083963697824,
+        "nmi_sd": 0.06610214614187558
+      },
+      "SC-SYM2": {
+        "ari": 0.9888424749376432,
+        "nmi": 0.9846877359443316,
+        "nmi_sd": 0.01531226405566849
+      },
+      "raw-P": {
+        "ari": 0.1770419138923225,
+        "nmi": 0.30679197303383854,
+        "nmi_sd": 0.19993353443755427
+      }
+    },
+    "td_PRWDKC": [
+      64,
+      64,
+      64,
+      64
+    ],
+    "td_PIC": [
+      64,
+      32,
+      64,
+      32
+    ],
+    "k": 4,
+    "N": 240,
+    "mean_transient_vertices_raw_walk": 180.5
+  },
+  "verdict": "PASS",
+  "numpy": "2.2.6",
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "diffusion_time_grid": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "recovery": true,
+  "beats_pic_both": true,
+  "big_gap_reducible_regime": true,
+  "ge_raw_control": true,
+  "pic_reducible": true,
+  "P_RWDKC_minus_best_SC_regimeI_pp": -1.309666436330792,
+  "P_RWDKC_minus_best_SC_regimeII_pp": -14.596400293805633,
+  "claim": "P-RWDKC recovers directed-SBM communities and outperforms PIC (raw directed walk) in ARI/NMI; decisive in the reducible regime; competitive with symmetrized SC"
+}

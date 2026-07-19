@@ -1,0 +1,17 @@
+{
+  "n_graphs": 120,
+  "worst": {
+    "D1_sym": 2.220446049250313e-16,
+    "D2_kipf_renorm": 3.191891195797325e-16,
+    "D3_layer_output": 3.552713678800501e-15
+  },
+  "gen_dim": 18,
+  "gen_frac_nonscalar": 1.0,
+  "checks": {
+    "D1_sym": true,
+    "D2_kipf_renorm": true,
+    "D3_layer_output": true,
+    "G_strict_generalization": true
+  },
+  "overall_pass": true
+}

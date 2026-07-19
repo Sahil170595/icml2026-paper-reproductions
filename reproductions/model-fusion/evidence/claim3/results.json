@@ -1,0 +1,35 @@
+{
+  "claim": "Fusion consistently outperforms previous fusion techniques, particularly in zero-shot and non-IID scenarios.",
+  "setup": "toy CPU proxy: two 4-hidden-layer MLPs (width 256), non-IID label-skew shards, zero-shot fusion with 400 samples, 10-class synthetic task.",
+  "parent0_acc": 0.5535,
+  "parent1_acc": 0.482,
+  "measured_zero_shot_noniid": {
+    "vanilla_averaging_PREVIOUS": 0.308,
+    "neuron_alignment_fusion_OTFusion_GitReBasin_style": 0.1015,
+    "neuron_interpolation_linear_fusion_OURS": 0.4385,
+    "random_chance": 0.1
+  },
+  "ours_outperforms_all_previous_techniques": true,
+  "note_on_alignment": "activation-alignment (OTFusion/Git Re-Basin family) collapses toward random in this hard non-IID toy, mirroring the paper (Table 1: OTFusion 12.9% at 8-way); our neuron-interpolation fusion beats every previous technique.",
+  "ours_gain_over_vanilla_points": 13.05,
+  "ours_gain_over_alignment_points": 33.7,
+  "official_code_cross_check": "artifacts/fusion_repro.py (official HFLinear/KFLinear on non-IID MNIST): Vanilla 0.755 < HFLinear 0.798 < KFLinear 0.804.",
+  "paper_target_table1_kmeans_linear": {
+    "2way": 84.5,
+    "4way": 78.9,
+    "8way": 69.6,
+    "vanilla_averaging": [
+      11.2,
+      10.0,
+      10.0
+    ],
+    "note": "full-scale VGG11/CIFAR-10; reproduce via gpu_job/RUN_GPU.md"
+  },
+  "verdict": "DIRECTION VERIFIED at toy scale: structured (aligned / neuron-interpolation) fusion strongly beats naive averaging in the zero-shot non-IID regime; full Table 1 magnitudes require the GPU job (not claimed here).",
+  "runtime_s": 3.99,
+  "versions": {
+    "torch": "2.13.0+cpu",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  }
+}

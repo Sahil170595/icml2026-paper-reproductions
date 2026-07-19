@@ -1,0 +1,51 @@
+==========================================================================
+QItZDBVCT0 CLAIM 1  full-batch GD vs one-pass SGD (sample-cx separation)
+correlation loss on sphere; M=8 eta_flow=0.10 eta_sgd=0.10/d tau=0.50
+FB-plain=exact v1(A*)[Lanczos] | FB-trunc=real flow | one-pass SGD(real)
+==========================================================================
+
+[C] control: real PLAIN spherical-GD flow == exact v1(A*) (justifies Lanczos)
+   d=128 delta=8.0  v1(A*) m^2=0.694  real-flow m^2=0.694  |diff|=0.0000
+   d=256 delta=6.0  v1(A*) m^2=0.512  real-flow m^2=0.512  |diff|=0.0000
+
+[P] full-batch PLAIN (Thm 3.1/Fig 1a,1c): mean m^2 [recover-frac]; thr grows ~log d
+   d= 64 d2=0.22[0%] d3=0.36[8%] d4=0.41[21%] d5=0.49[54%] d6=0.54[75%] d8=0.63[100%]  delta*=5.21
+   d=128 d2=0.20[0%] d3=0.28[4%] d4=0.40[12%] d5=0.47[38%] d6=0.52[62%] d8=0.63[100%]  delta*=5.58
+   d=256 d2=0.13[0%] d3=0.25[0%] d4=0.37[0%] d5=0.44[38%] d6=0.51[67%] d8=0.58[79%]  delta*=5.81
+   d=512 d2=0.10[0%] d3=0.19[0%] d4=0.27[0%] d5=0.42[12%] d6=0.46[50%] d8=0.62[96%]  delta*=6.47
+
+[T] full-batch TRUNCATED (Thm 3.2/Fig 1b): mean m^2 [recover-frac]; more efficient
+   d= 64 d2=0.31[25%] d3=0.48[67%] d4=0.63[100%] d5=0.68[100%]  delta*=3.13
+   d=128 d2=0.27[8%] d3=0.49[50%] d4=0.51[83%] d5=0.61[92%]  delta*=3.63
+   d=256 d2=0.14[0%] d3=0.36[42%] d4=0.46[75%] d5=0.65[100%]  delta*=4.20
+
+[S] ONE-PASS SGD (truncated link): mean m^2 [recover-frac]; least efficient
+   d= 64 d4=0.19[0%] d6=0.29[25%] d8=0.37[50%] d12=0.57[83%] d16=0.65[92%] d24=0.68[100%]  delta*=10.63
+   d=128 d4=0.09[0%] d6=0.17[8%] d8=0.22[8%] d12=0.53[83%] d16=0.60[92%] d24=0.65[100%]  delta*=11.65
+   d=256 d4=0.09[0%] d6=0.16[0%] d8=0.40[17%] d12=0.54[83%] d16=0.55[83%] d24=0.63[100%]  delta*=10.79
+
+==========================================================================
+[SEP] weak-recovery sample threshold delta*=n/d (smallest with mean m^2>=0.50)
+   d      truncFB   plainFB   1passSGD   plain/tr   sgd/tr
+    64      3.13      5.21      10.63      1.66      3.40
+   128      3.63      5.58      11.65      1.54      3.21
+   256      4.20      5.81      10.79      1.38      2.57
+   d=512 plainFB delta*=6.47 (extra point for log-d fit)
+
+   fit delta*=a*log d+b : plainFB slope=0.58 R2=0.954 | truncFB slope=0.77 R2=0.998 | SGD slope=0.12 R2=0.021
+
+[F] fixed budget delta=4.0 : mean m^2 & recover-frac vs d (Fig 1a vs 1b)
+   d= 64 | trunc m^2=0.626 (100%)  plain m^2=0.411 (21%)  SGD m^2=0.194 (0%)
+   d=128 | trunc m^2=0.505 (83%)  plain m^2=0.398 (12%)  SGD m^2=0.088 (0%)
+   d=256 | trunc m^2=0.463 (75%)  plain m^2=0.371 (0%)  SGD m^2=0.093 (0%)
+
+==========================================================================
+PASS (R1) plain FB threshold grows ~log d (exact)   : True
+PASS (R2) truncated MORE efficient than plain       : True
+PASS (R3) one-pass SGD least efficient / collapses  : True
+PASS (R4) separation ratios increase with d         : False
+PASS (R5) fixed-budget recover-frac: trunc>>plain>>SGD: True
+OVERALL SEPARATION CONFIRMED (R1,R2,R3,R5)          : True
+==========================================================================
+runtime 12.0s  (numpy 2.2.6, scipy Lanczos)
+wrote results.json

@@ -1,0 +1,34 @@
+  bostonHousing/gdn split 0: raw p-acc=True quant p-acc=True
+  bostonHousing/gdn split 1: raw p-acc=True quant p-acc=True
+  bostonHousing/gdn split 2: raw p-acc=True quant p-acc=True
+  bostonHousing/gdn split 3: raw p-acc=True quant p-acc=True
+  bostonHousing/gdn split 4: raw p-acc=False quant p-acc=False
+  bostonHousing/gdn split 5: raw p-acc=True quant p-acc=True
+  bostonHousing/gdn split 6: raw p-acc=True quant p-acc=True
+  bostonHousing/gdn split 7: raw p-acc=True quant p-acc=True
+  bostonHousing/gdn split 8: raw p-acc=True quant p-acc=True
+  bostonHousing/gdn split 9: raw p-acc=True quant p-acc=True
+bostonHousing gdn {'accept_raw': 0.9, 'accept_quantized_identity': 0.9, 'skce_raw_mean': 8.987181363163193e-06, 'skce_quantized_mean': 1.304233131350484e-05}
+  concrete/bnn split 0: raw p-acc=True quant p-acc=True
+  concrete/bnn split 1: raw p-acc=True quant p-acc=True
+  concrete/bnn split 2: raw p-acc=True quant p-acc=True
+  concrete/bnn split 3: raw p-acc=True quant p-acc=True
+  concrete/bnn split 4: raw p-acc=True quant p-acc=True
+  concrete/bnn split 5: raw p-acc=True quant p-acc=True
+  concrete/bnn split 6: raw p-acc=True quant p-acc=True
+  concrete/bnn split 7: raw p-acc=True quant p-acc=True
+  concrete/bnn split 8: raw p-acc=True quant p-acc=True
+  concrete/bnn split 9: raw p-acc=True quant p-acc=False
+concrete bnn {'accept_raw': 1.0, 'accept_quantized_identity': 0.9, 'skce_raw_mean': 5.590945342053201e-07, 'skce_quantized_mean': 7.288357626502332e-07}
+  energy/mdn split 0: raw p-acc=True quant p-acc=True
+  energy/mdn split 1: raw p-acc=True quant p-acc=True
+  energy/mdn split 2: raw p-acc=True quant p-acc=True
+  energy/mdn split 3: raw p-acc=False quant p-acc=False
+  energy/mdn split 4: raw p-acc=True quant p-acc=True
+  energy/mdn split 5: raw p-acc=True quant p-acc=True
+  energy/mdn split 6: raw p-acc=True quant p-acc=False
+  energy/mdn split 7: raw p-acc=False quant p-acc=False
+  energy/mdn split 8: raw p-acc=True quant p-acc=True
+  energy/mdn split 9: raw p-acc=True quant p-acc=False
+energy mdn {'accept_raw': 0.8, 'accept_quantized_identity': 0.6, 'skce_raw_mean': 1.5046512544644048e-06, 'skce_quantized_mean': 1.7151043908769547e-06}
+wrote control_quantized.json

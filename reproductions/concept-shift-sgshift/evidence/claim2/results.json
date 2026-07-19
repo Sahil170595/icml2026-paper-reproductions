@@ -1,0 +1,60 @@
+{
+  "claim": "Diabetes readmission ER vs non-ER: SGShift detects concept shift",
+  "dataset": {
+    "name": "Diabetes130US-readmission",
+    "source_nonER": 32717,
+    "target_ER": 37273,
+    "total": 69990,
+    "features": 37,
+    "n_fit": 6000,
+    "n_shift": 6,
+    "paper_ref": "73615 x 33, source 49213 / target 24402"
+  },
+  "target_auc": 0.85,
+  "best_knockoff_auc": 0.889336917562724,
+  "methods": {
+    "SGShift": {
+      "auc_matched": 0.8427419354838709,
+      "auc_mismatch": 0.8691756272401433,
+      "rec_matched": 0.75,
+      "rec_mismatch": 0.8055555555555555
+    },
+    "SGShift-A": {
+      "auc_matched": 0.8055555555555555,
+      "auc_mismatch": 0.8741039426523297,
+      "rec_matched": 0.611111111111111,
+      "rec_mismatch": 0.75
+    },
+    "SGShift-K": {
+      "auc_matched": 0.857078853046595,
+      "auc_mismatch": 0.8866487455197132,
+      "rec_matched": 0.75,
+      "rec_mismatch": 0.8055555555555555
+    },
+    "SGShift-KA": {
+      "auc_matched": 0.849910394265233,
+      "auc_mismatch": 0.889336917562724,
+      "rec_matched": 0.7222222222222222,
+      "rec_mismatch": 0.8055555555555555
+    },
+    "Diff": {
+      "auc_matched": 0.7432795698924731,
+      "auc_mismatch": 0.8351254480286738,
+      "rec_matched": 0.611111111111111,
+      "rec_mismatch": 0.75
+    },
+    "WhyShift": {
+      "auc_matched": 0.7620967741935484,
+      "auc_mismatch": 0.8700716845878135,
+      "rec_matched": 0.638888888888889,
+      "rec_mismatch": 0.7777777777777778
+    },
+    "SHAP": {
+      "auc_matched": 0.674731182795699,
+      "auc_mismatch": 0.8046594982078853,
+      "rec_matched": 0.5833333333333334,
+      "rec_mismatch": 0.7222222222222223
+    }
+  },
+  "verdict": "SUPPORTED"
+}

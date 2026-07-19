@@ -1,0 +1,72 @@
+=== Claim 2, PART A: EDK exact & O(n log n) ===
+max rel err SORT vs BRUTE (150 cases): 8.421e-15  (target < 1e-10)
+SORT timings:
+  n=  1000     0.072 ms
+  n=  2000     0.155 ms
+  n=  4000     0.322 ms
+  n=  8000     0.685 ms
+  n= 16000     1.666 ms
+  n= 32000     3.225 ms
+  n= 64000     8.325 ms
+  SORT log-log slope  = 1.133  (target 0.9-1.3)
+BRUTE timings:
+  n=  2000    39.495 ms
+  n=  3000    87.411 ms
+  n=  4000   153.770 ms
+  n=  5000   243.553 ms
+  n=  6000   350.213 ms
+  BRUTE log-log slope = 1.988  (target 1.8-2.1)
+
+=== Claim 2, PART B: EDK/CKME re-calibrator vs NAMED priors ===
+
+ACE_EDK  (energy/SKCE-family auto-calibration, lower=better)  [mean over 9 settings, 10 seeds, 95% CI]
+  raw         0.03227  CI[0.03170, 0.03284]
+  Kuleshov18  0.02621  CI[0.02580, 0.02662]
+  Song19      0.02703  CI[0.02663, 0.02743]
+  CKME(EDK)   0.00190  CI[0.00171, 0.00209]
+    -> CKME vs best prior (Kuleshov18): 95% CIs NON-OVERLAP
+
+KS_auto  (Kolmogorov-Smirnov PIT test, INDEPENDENT, lower=better)  [mean over 9 settings, 10 seeds, 95% CI]
+  raw         0.21175  CI[0.20978, 0.21372]
+  Kuleshov18  0.18878  CI[0.18741, 0.19015]
+  Song19      0.19916  CI[0.19772, 0.20060]
+  CKME(EDK)   0.06202  CI[0.05952, 0.06453]
+    -> CKME vs best prior (Kuleshov18): 95% CIs NON-OVERLAP
+
+CRPS ratio vs raw  (overall score, <1 = improvement)  [mean over 9 settings, 10 seeds, 95% CI]
+  raw         1.00000  CI[1.00000, 1.00000]
+  Kuleshov18  0.99036  CI[0.98902, 0.99170]
+  Song19      1.00416  CI[1.00259, 1.00574]
+  CKME(EDK)   0.91087  CI[0.90968, 0.91206]
+    -> CKME vs best prior (Kuleshov18): 95% CIs NON-OVERLAP
+
+Per-setting ACE_EDK (mean over seeds), winner:
+  gauss/bnn    raw=0.0066  Kuleshov18=0.0059  Song19=0.0062  CKME(EDK)=0.0018  -> CKME(EDK)
+  gauss/mdn    raw=0.0230  Kuleshov18=0.0219  Song19=0.0223  CKME(EDK)=0.0019  -> CKME(EDK)
+  gauss/drf    raw=0.0207  Kuleshov18=0.0165  Song19=0.0209  CKME(EDK)=0.0021  -> CKME(EDK)
+  skew/bnn     raw=0.0223  Kuleshov18=0.0140  Song19=0.0165  CKME(EDK)=0.0013  -> CKME(EDK)
+  skew/mdn     raw=0.0420  Kuleshov18=0.0440  Song19=0.0452  CKME(EDK)=0.0017  -> CKME(EDK)
+  skew/drf     raw=0.0375  Kuleshov18=0.0281  Song19=0.0339  CKME(EDK)=0.0019  -> CKME(EDK)
+  bimod/bnn    raw=0.0410  Kuleshov18=0.0285  Song19=0.0247  CKME(EDK)=0.0017  -> CKME(EDK)
+  bimod/mdn    raw=0.0378  Kuleshov18=0.0367  Song19=0.0286  CKME(EDK)=0.0022  -> CKME(EDK)
+  bimod/drf    raw=0.0595  Kuleshov18=0.0403  Song19=0.0449  CKME(EDK)=0.0025  -> CKME(EDK)
+CKME wins lowest ACE_EDK in 9/9 conditional settings
+Paired separation ACE (Kuleshov18-CKME): mean/SE z=157.9, CKME better every seed=True
+Controls (not part of the outperformance suite):
+  gauss/homog  raw=0.0275  Kuleshov18=0.0012  Song19=0.0012  CKME(EDK)=0.0017  CRPSr(CKME)=0.926  [marginal map optimal; CKME expected to TIE]
+  gauss/cal    raw=0.0011  Kuleshov18=0.0012  Song19=0.0012  CKME(EDK)=0.0017  CRPSr(CKME)=1.002  [already calibrated; CKME must not harm]
+
+=== Predeclared rules ===
+  A1 EDK correctness<1e-10        : True
+  A2 O(n log n) slopes            : True
+  P1 ACE_EDK CI-dominates prior   : True
+  P2 KS(indep) CI-dominates prior : True
+  P3 CRPS CI-dominates & <1       : True
+  P4 wins>=8/9 settings           : True
+  P5 paired z>=5 (support)        : True
+  Ctrl homog: marginal optimal    : True
+  Ctrl calibrated: no harm        : True
+
+VERDICT: verified
+elapsed 21.0s | numpy 2.2.6
+wrote results.json

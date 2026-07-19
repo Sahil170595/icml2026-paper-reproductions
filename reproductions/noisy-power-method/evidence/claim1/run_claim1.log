@@ -1,0 +1,49 @@
+==============================================================================
+[A/B] Iteration-complexity scaling vs eigengap; ANPM (beta*) vs NPM (beta=0)
+      d=600 k=8 xi=1.0e-04 (constant adversarial noise) eps_target=1.0e-02
+==============================================================================
+gap=1.0000e-01 seed=0  T_reach ANPM=    18  NPM=     50  speedup=2.78x
+gap=1.0000e-01 seed=1  T_reach ANPM=    21  NPM=     66  speedup=3.14x
+gap=3.1623e-02 seed=0  T_reach ANPM=    26  NPM=    162  speedup=6.23x
+gap=3.1623e-02 seed=1  T_reach ANPM=    38  NPM=    216  speedup=5.68x
+gap=1.0000e-02 seed=0  T_reach ANPM=    53  NPM=    518  speedup=9.77x
+gap=1.0000e-02 seed=1  T_reach ANPM=    65  NPM=    690  speedup=10.62x
+gap=3.1623e-03 seed=0  T_reach ANPM=    98  NPM=   1645  speedup=16.79x
+gap=3.1623e-03 seed=1  T_reach ANPM=   125  NPM=   2182  speedup=17.46x
+gap=1.0000e-03 seed=0  T_reach ANPM=   179  NPM=   5287  speedup=29.54x
+gap=1.0000e-03 seed=1  T_reach ANPM=   233  NPM=   6880  speedup=29.53x
+
+Mean T_reach (over seeds) per gap:
+       gap     T_ANPM      T_NPM    speedup
+1.0000e-01      19.50      58.00       2.97
+3.1623e-02      32.00     189.00       5.91
+1.0000e-02      59.00     604.00      10.24
+3.1623e-03     111.50    1913.50      17.16
+1.0000e-03     206.00    6083.50      29.53
+
+log-log slope T_ANPM vs gap: -0.5180  (theory: -0.5)   R2=0.9981
+log-log slope T_NPM  vs gap: -1.0094  (theory: -1.0)   R2=1.0000
+
+==============================================================================
+[B] Milder-noise comparison vs Xu (2023)'s admissible (time-decaying) noise bound
+    gap=1e-2, xi=1.0e-04 constant adversarial noise, paper Fig.1 setup, d=600 k=8
+==============================================================================
+seed=0  t_conv=68  sin_theta(t_conv)=5.729e-04  Xu-admissible-noise-at-t_conv=4.655e-07  actual/admissible=214.8x (log10=2.33)
+seed=1  t_conv=77  sin_theta(t_conv)=7.147e-04  Xu-admissible-noise-at-t_conv=1.146e-07  actual/admissible=872.9x (log10=2.94)
+
+Actual noise xi=1.0e-04 exceeds Xu(2023)'s admissible (time-uniform-evaluated, constant=1, generous) bound by 215x-873x at the respective convergence steps -- ANPM (beta*) still attains the accelerated rate under the paper's milder, time-uniform conditions (3)-(4), where Xu's time-decaying condition is already badly violated.
+
+==============================================================================
+[C] Momentum sweep at fixed gap=1e-2, seed=0: beta in [0, beta_c]
+==============================================================================
+                          beta label    T_reach (sin<=1e-2)   final sin (at T_MAX)
+                             0 (NPM)                    518             9.9346e-03
+                           0.5 beta*                    368             9.9443e-03
+                           0.8 beta*                    236             9.9748e-03
+                           0.9 beta*                    171             9.8859e-03
+                     beta* (optimal)                     53             7.9595e-03
+                    (beta*+beta_c)/2                     77             9.2218e-03
+beta_c (critical, outside condition)                   None             9.4063e-01
+
+Total runtime: 50.9s
+[written] claim1/results.json

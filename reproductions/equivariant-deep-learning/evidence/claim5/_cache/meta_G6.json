@@ -1,0 +1,18 @@
+{
+ "size": "G6",
+ "n": 6,
+ "stalk_dim": 2,
+ "n_edges": 8,
+ "n_train": 1024,
+ "n_test": 320,
+ "k_powers": 5,
+ "gauge_group": "torus SO(2)^1 (diagonal stalk rotation)",
+ "quadrature_M": 48,
+ "eq_residual_TA": 2.286089127109703e-15,
+ "eq_residual_TB": 4.47545209131181e-16,
+ "eq_residual_TC": 1.1785057046992873,
+ "eq_residual_P": 3.1401849173675503e-16,
+ "floor_TC_rel": 0.059319970027898274,
+ "primitive_linfit_resid_TA": 0.8974821293131946,
+ "primitive_linfit_resid_TB": 0.08015765255617682
+}

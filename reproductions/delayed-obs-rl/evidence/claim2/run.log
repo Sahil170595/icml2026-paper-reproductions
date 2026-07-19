@@ -1,0 +1,9 @@
+[MDP] genuine DOE-MDP baseline S=12 A=4 H=4 D_max=4 K=25000 (S*A=48 kernels, 16 seeds)
+[K    ] floor slope=0.501 (R2=1.000)  UCB slope=0.504  target=0.5  UCB/floor=3.25-3.47 (const => matches)
+[S    ] floor slope=0.499 (R2=1.000)  UCB slope=0.474  target=0.5  UCB/floor=3.22-3.42 (const => matches)
+[A    ] floor slope=0.499 (R2=1.000)  UCB slope=0.533  target=0.5  UCB/floor=3.21-3.42 (const => matches)
+[D_max] floor slope=0.498 (R2=1.000)  UCB slope=0.494  target=0.5  UCB/floor=3.14-3.30 (const => matches)
+[H    ] floor slope=1.000 (R2=1.000)  UCB slope=1.006  target=1.0  UCB/floor=3.20-3.55 (const => matches)
+[corr] hard(minimax-tuned) slope=0.503 (irreducible ~sqrt K)   easy slope=0.297 (learns, < sqrt K)
+runtime 57.4s
+WROTE results.json

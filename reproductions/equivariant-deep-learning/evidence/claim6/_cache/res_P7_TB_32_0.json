@@ -1,0 +1,1 @@
+{"size": "P7", "target": "TB", "width": 32, "seed": 0, "stages": 3, "lbfgs_iters_per_stage": 200, "train_rel_mse": 4.114268423969911e-05, "test_rel_mse": 0.0001272279438586268, "transformed_test_rel_mse": 0.00012722794385862688, "net_eq_residual": 5.551115123125783e-16}

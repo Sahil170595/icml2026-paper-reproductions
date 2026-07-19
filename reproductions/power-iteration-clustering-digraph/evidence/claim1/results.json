@@ -1,0 +1,18 @@
+{
+  "claim": "P_(nu) (Eq.4) is a row-stochastic transition matrix; L_RW,(nu)=I-P_(nu) (Prop 3.1); mechanism per Prop A.2",
+  "numpy": "2.2.6",
+  "cases": 64,
+  "min_entry": 0.0,
+  "max_rowsum_dev": 4.440892098500626e-16,
+  "eq4_vs_propA2_maxdiff": 2.220446049250313e-16,
+  "L_rw_vs_I_minus_P_maxdiff": 0.0,
+  "L_rw_max_rowsum": 4.440892098500626e-16,
+  "P_nu_right_eigvec_dev": 4.440892098500626e-16,
+  "control_numerator_min_rowsum": 1.0213374277823237,
+  "tolerances": {
+    "rowsum": "<1e-10",
+    "identity": "<1e-10",
+    "laplacian": "<1e-12"
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,910 @@
+{
+  "n_splits": 10,
+  "datasets": [
+    "yacht",
+    "bostonHousing",
+    "energy",
+    "concrete",
+    "wine-quality-red"
+  ],
+  "models": [
+    "gdn",
+    "mdn",
+    "bnn",
+    "drf"
+  ],
+  "methods": [
+    "none",
+    "pit",
+    "beta",
+    "ckme"
+  ],
+  "cells": {
+    "yacht__gdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 1.8018062857435734e-05,
+        "skce_sd": 1.660650362356466e-05,
+        "accept_frac": 0.2,
+        "crps_raw_units_mean": 0.373286397920528
+      },
+      "pit": {
+        "crps_norm_mean": 1.0190124705902088,
+        "crps_norm_sd": 0.07947376110869848,
+        "skce_mean": 2.2311794329700218e-05,
+        "skce_sd": 2.810093291954075e-05,
+        "accept_frac": 0.1,
+        "crps_raw_units_mean": 0.3757588378922554,
+        "paper_crps": [
+          0.997,
+          0.077
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 0.9988068648872644,
+        "crps_norm_sd": 0.07705407503094265,
+        "skce_mean": 2.353986981470418e-05,
+        "skce_sd": 3.1418233780079845e-05,
+        "accept_frac": 0.1,
+        "crps_raw_units_mean": 0.36748660564057556
+      },
+      "ckme": {
+        "crps_norm_mean": 1.7171171652430928,
+        "crps_norm_sd": 0.5695699892937158,
+        "skce_mean": 4.530085845365144e-05,
+        "skce_sd": 3.6895013307220416e-05,
+        "accept_frac": 0.4,
+        "crps_raw_units_mean": 0.5678476423701551,
+        "paper_crps": [
+          1.276,
+          0.537
+        ],
+        "agree_2sd": true
+      }
+    },
+    "yacht__mdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 9.871751285147937e-05,
+        "skce_sd": 0.0001757918553500585,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.4928273455878555
+      },
+      "pit": {
+        "crps_norm_mean": 0.9731549430203309,
+        "crps_norm_sd": 0.0377908476643752,
+        "skce_mean": 9.873414745353324e-05,
+        "skce_sd": 0.0001769900606512559,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.47955891888687746,
+        "paper_crps": [
+          1.058,
+          0.13
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 0.9822077435987031,
+        "crps_norm_sd": 0.05325014532168336,
+        "skce_mean": 0.00010109083461519466,
+        "skce_sd": 0.00017921195578706655,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.4836263161492319
+      },
+      "ckme": {
+        "crps_norm_mean": 1.353217913737957,
+        "crps_norm_sd": 0.4595653622834595,
+        "skce_mean": 0.00011563677582896374,
+        "skce_sd": 0.00016495136158244502,
+        "accept_frac": 0.1,
+        "crps_raw_units_mean": 0.6363179200719957,
+        "paper_crps": [
+          1.326,
+          0.591
+        ],
+        "agree_2sd": true
+      }
+    },
+    "yacht__bnn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 2.572945133620075e-05,
+        "skce_sd": 2.8169631094662095e-05,
+        "accept_frac": 0.3,
+        "crps_raw_units_mean": 0.41130900142217836
+      },
+      "pit": {
+        "crps_norm_mean": 1.007065817975341,
+        "crps_norm_sd": 0.09092041877364362,
+        "skce_mean": 2.7121591686994254e-05,
+        "skce_sd": 3.04490392109019e-05,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.4193873996544755,
+        "paper_crps": [
+          1.097,
+          0.142
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 0.9885599527114189,
+        "crps_norm_sd": 0.08579149435502001,
+        "skce_mean": 2.7847818527207066e-05,
+        "skce_sd": 3.0200583183346296e-05,
+        "accept_frac": 0.1,
+        "crps_raw_units_mean": 0.4122260012726325
+      },
+      "ckme": {
+        "crps_norm_mean": 1.4647686659261294,
+        "crps_norm_sd": 0.39304024517991476,
+        "skce_mean": 4.712915684133087e-05,
+        "skce_sd": 4.310200499300009e-05,
+        "accept_frac": 0.4,
+        "crps_raw_units_mean": 0.5660344763412654,
+        "paper_crps": [
+          0.889,
+          0.341
+        ],
+        "agree_2sd": true
+      }
+    },
+    "yacht__drf": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 5.745795395468456e-06,
+        "skce_sd": 1.4632358192241021e-05,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 0.42713764779251406
+      },
+      "pit": {
+        "crps_norm_mean": 1.0729336872527147,
+        "crps_norm_sd": 0.05828246891472206,
+        "skce_mean": 8.917856026133746e-06,
+        "skce_sd": 1.1353770743876761e-05,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 0.45628119277705015,
+        "paper_crps": [
+          0.933,
+          0.089
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0720088382162012,
+        "crps_norm_sd": 0.07169660750391275,
+        "skce_mean": 9.285266525352637e-06,
+        "skce_sd": 1.055572293100497e-05,
+        "accept_frac": 0.9,
+        "crps_raw_units_mean": 0.4544272431703284
+      },
+      "ckme": {
+        "crps_norm_mean": 1.5377656088169616,
+        "crps_norm_sd": 0.5459222738725852,
+        "skce_mean": 4.922133148770578e-05,
+        "skce_sd": 5.075518274380128e-05,
+        "accept_frac": 0.4,
+        "crps_raw_units_mean": 0.6281726573937897,
+        "paper_crps": [
+          0.714,
+          0.252
+        ],
+        "agree_2sd": true
+      }
+    },
+    "bostonHousing__gdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 8.987181363163193e-06,
+        "skce_sd": 1.3921913798435779e-05,
+        "accept_frac": 0.9,
+        "crps_raw_units_mean": 1.612885387728672
+      },
+      "pit": {
+        "crps_norm_mean": 1.0035268648594295,
+        "crps_norm_sd": 0.0157529521867737,
+        "skce_mean": 7.538761320790363e-06,
+        "skce_sd": 1.224158731016018e-05,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 1.618458473096015,
+        "paper_crps": [
+          1.0,
+          0.033
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0085984774022,
+        "crps_norm_sd": 0.017684744159941042,
+        "skce_mean": 1.038638736352445e-05,
+        "skce_sd": 1.548364285355877e-05,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 1.624865207850441
+      },
+      "ckme": {
+        "crps_norm_mean": 1.2168167564388732,
+        "crps_norm_sd": 0.1674903976030169,
+        "skce_mean": 6.355544633324364e-05,
+        "skce_sd": 4.2088016953741986e-05,
+        "accept_frac": 0.5,
+        "crps_raw_units_mean": 1.9358876084417287,
+        "paper_crps": [
+          1.15,
+          0.17
+        ],
+        "agree_2sd": true
+      }
+    },
+    "bostonHousing__mdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 1.6363956695194157e-05,
+        "skce_sd": 2.65457376829156e-05,
+        "accept_frac": 0.7,
+        "crps_raw_units_mean": 1.5619098596716738
+      },
+      "pit": {
+        "crps_norm_mean": 1.005625626289825,
+        "crps_norm_sd": 0.019268426653058862,
+        "skce_mean": 1.7201832114606935e-05,
+        "skce_sd": 2.36367130862662e-05,
+        "accept_frac": 0.7,
+        "crps_raw_units_mean": 1.56930484519464,
+        "paper_crps": [
+          1.007,
+          0.03
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0008141182500458,
+        "crps_norm_sd": 0.0178066626936475,
+        "skce_mean": 1.713787146921248e-05,
+        "skce_sd": 2.2270341461693385e-05,
+        "accept_frac": 0.7,
+        "crps_raw_units_mean": 1.5604856689680164
+      },
+      "ckme": {
+        "crps_norm_mean": 1.2482040533101417,
+        "crps_norm_sd": 0.226628551201922,
+        "skce_mean": 7.117600141528293e-05,
+        "skce_sd": 4.519233753669302e-05,
+        "accept_frac": 0.5,
+        "crps_raw_units_mean": 1.9186925047788592,
+        "paper_crps": [
+          1.175,
+          0.149
+        ],
+        "agree_2sd": true
+      }
+    },
+    "bostonHousing__bnn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 8.593418851758311e-06,
+        "skce_sd": 1.4721532135582928e-05,
+        "accept_frac": 0.9,
+        "crps_raw_units_mean": 1.5439696967873475
+      },
+      "pit": {
+        "crps_norm_mean": 1.0102582744414663,
+        "crps_norm_sd": 0.020337737936679798,
+        "skce_mean": 9.686526759304251e-06,
+        "skce_sd": 1.701370329559215e-05,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 1.5578933273946873,
+        "paper_crps": [
+          1.004,
+          0.028
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0091109828307514,
+        "crps_norm_sd": 0.017024991513994163,
+        "skce_mean": 1.2566157761232556e-05,
+        "skce_sd": 2.04872600517715e-05,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 1.5556960730529117
+      },
+      "ckme": {
+        "crps_norm_mean": 1.21494583472188,
+        "crps_norm_sd": 0.1734223079620669,
+        "skce_mean": 6.220902075356608e-05,
+        "skce_sd": 3.495705798848298e-05,
+        "accept_frac": 0.5,
+        "crps_raw_units_mean": 1.8425719188794365,
+        "paper_crps": [
+          0.934,
+          0.068
+        ],
+        "agree_2sd": true
+      }
+    },
+    "bostonHousing__drf": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 2.0847365533559583e-05,
+        "skce_sd": 3.443517059824258e-05,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 1.6747838831135766
+      },
+      "pit": {
+        "crps_norm_mean": 1.0193597978877926,
+        "crps_norm_sd": 0.02691014565452252,
+        "skce_mean": 2.5515719980477488e-05,
+        "skce_sd": 3.0766795612510556e-05,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 1.7108794500697204,
+        "paper_crps": [
+          1.002,
+          0.023
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0288578256398235,
+        "crps_norm_sd": 0.041085382945962264,
+        "skce_mean": 4.407027089456098e-05,
+        "skce_sd": 2.544077569528234e-05,
+        "accept_frac": 0.7,
+        "crps_raw_units_mean": 1.7271443924076162
+      },
+      "ckme": {
+        "crps_norm_mean": 1.1616620051050195,
+        "crps_norm_sd": 0.13740590522666482,
+        "skce_mean": 7.789874264995739e-05,
+        "skce_sd": 8.611480971143195e-05,
+        "accept_frac": 0.5,
+        "crps_raw_units_mean": 1.9391906842622866,
+        "paper_crps": [
+          0.927,
+          0.061
+        ],
+        "agree_2sd": true
+      }
+    },
+    "energy__gdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 1.1113762653722551e-06,
+        "skce_sd": 9.954190618462239e-07,
+        "accept_frac": 0.6,
+        "crps_raw_units_mean": 0.4262262174539801
+      },
+      "pit": {
+        "crps_norm_mean": 0.9923981933839153,
+        "crps_norm_sd": 0.01386072468220259,
+        "skce_mean": 1.1913565816431139e-06,
+        "skce_sd": 1.0559876589621306e-06,
+        "accept_frac": 0.5,
+        "crps_raw_units_mean": 0.4235801602261896,
+        "paper_crps": [
+          0.981,
+          0.048
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 0.9941921007620648,
+        "crps_norm_sd": 0.01772524905913145,
+        "skce_mean": 1.1828848666012849e-06,
+        "skce_sd": 1.088346389096867e-06,
+        "accept_frac": 0.5,
+        "crps_raw_units_mean": 0.42460686083432836
+      },
+      "ckme": {
+        "crps_norm_mean": 0.9094361279044577,
+        "crps_norm_sd": 0.2339504859127297,
+        "skce_mean": 1.1659102002166586e-06,
+        "skce_sd": 7.203514586890438e-07,
+        "accept_frac": 0.5,
+        "crps_raw_units_mean": 0.35704035322366573,
+        "paper_crps": [
+          0.767,
+          0.224
+        ],
+        "agree_2sd": true
+      }
+    },
+    "energy__mdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 1.5046512544644048e-06,
+        "skce_sd": 2.0781642551797636e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 0.5678520532128972
+      },
+      "pit": {
+        "crps_norm_mean": 1.003772265411777,
+        "crps_norm_sd": 0.03650090742191273,
+        "skce_mean": 1.7571122121994546e-06,
+        "skce_sd": 2.7277546161287067e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 0.5698994169675264,
+        "paper_crps": [
+          1.019,
+          0.046
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0044998950462958,
+        "crps_norm_sd": 0.03516202310475877,
+        "skce_mean": 1.6763917205404805e-06,
+        "skce_sd": 2.7601956657844822e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 0.5711242570852925
+      },
+      "ckme": {
+        "crps_norm_mean": 0.7400510227729239,
+        "crps_norm_sd": 0.15059406232270975,
+        "skce_mean": 1.5611932392572675e-06,
+        "skce_sd": 1.7814187084570201e-06,
+        "accept_frac": 0.7,
+        "crps_raw_units_mean": 0.4027368920622735,
+        "paper_crps": [
+          0.594,
+          0.178
+        ],
+        "agree_2sd": true
+      }
+    },
+    "energy__bnn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 1.5460045495898434e-06,
+        "skce_sd": 1.1255961607348654e-06,
+        "accept_frac": 0.3,
+        "crps_raw_units_mean": 0.3331284647841606
+      },
+      "pit": {
+        "crps_norm_mean": 0.9125438654528095,
+        "crps_norm_sd": 0.06502423818838124,
+        "skce_mean": 9.374461687643978e-07,
+        "skce_sd": 8.401920318904215e-07,
+        "accept_frac": 0.4,
+        "crps_raw_units_mean": 0.3042198353644002,
+        "paper_crps": [
+          1.008,
+          0.043
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 0.9178521438778009,
+        "crps_norm_sd": 0.05508452228304837,
+        "skce_mean": 9.610489407753257e-07,
+        "skce_sd": 8.349523527912396e-07,
+        "accept_frac": 0.4,
+        "crps_raw_units_mean": 0.30570374786984955
+      },
+      "ckme": {
+        "crps_norm_mean": 0.9343768569909141,
+        "crps_norm_sd": 0.1564802769909568,
+        "skce_mean": 1.1365798243978701e-06,
+        "skce_sd": 1.1993544233642357e-06,
+        "accept_frac": 0.6,
+        "crps_raw_units_mean": 0.3045715791477702,
+        "paper_crps": [
+          0.693,
+          0.211
+        ],
+        "agree_2sd": true
+      }
+    },
+    "energy__drf": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 3.085363342115463e-07,
+        "skce_sd": 4.56898672248355e-07,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 0.3652331877977494
+      },
+      "pit": {
+        "crps_norm_mean": 1.0529845689681239,
+        "crps_norm_sd": 0.032826542703380875,
+        "skce_mean": 5.229624829364425e-07,
+        "skce_sd": 5.226929102777512e-07,
+        "accept_frac": 0.9,
+        "crps_raw_units_mean": 0.3845682417405619,
+        "paper_crps": [
+          0.998,
+          0.039
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0446240330410397,
+        "crps_norm_sd": 0.029194600601557076,
+        "skce_mean": 5.124363585264868e-07,
+        "skce_sd": 5.943830971576922e-07,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 0.3822963241962217
+      },
+      "ckme": {
+        "crps_norm_mean": 0.9869841337856189,
+        "crps_norm_sd": 0.10763060207332696,
+        "skce_mean": 9.016418950324126e-07,
+        "skce_sd": 8.652621525186153e-07,
+        "accept_frac": 0.7,
+        "crps_raw_units_mean": 0.35759380428148557,
+        "paper_crps": [
+          0.719,
+          0.198
+        ],
+        "agree_2sd": true
+      }
+    },
+    "concrete__gdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 9.744083616139592e-07,
+        "skce_sd": 2.0018368663112217e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 3.2844107599180434
+      },
+      "pit": {
+        "crps_norm_mean": 0.9982972133225658,
+        "crps_norm_sd": 0.010223624495834492,
+        "skce_mean": 8.889417740547662e-07,
+        "skce_sd": 2.1307029647682978e-06,
+        "accept_frac": 0.9,
+        "crps_raw_units_mean": 3.2783035833398815,
+        "paper_crps": [
+          0.999,
+          0.014
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 0.9988633065663788,
+        "crps_norm_sd": 0.009378942279213855,
+        "skce_mean": 9.029696064366204e-07,
+        "skce_sd": 2.2184561697735187e-06,
+        "accept_frac": 0.9,
+        "crps_raw_units_mean": 3.2810003531842207
+      },
+      "ckme": {
+        "crps_norm_mean": 1.0320849352988826,
+        "crps_norm_sd": 0.026008276355614295,
+        "skce_mean": 2.9653338667951e-06,
+        "skce_sd": 3.739059936716079e-06,
+        "accept_frac": 0.7,
+        "crps_raw_units_mean": 3.388049612283317,
+        "paper_crps": [
+          1.045,
+          0.047
+        ],
+        "agree_2sd": true
+      }
+    },
+    "concrete__mdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 8.763208517035986e-07,
+        "skce_sd": 2.2777213583663917e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 3.2439174581764725
+      },
+      "pit": {
+        "crps_norm_mean": 1.006334974842814,
+        "crps_norm_sd": 0.006806642727613575,
+        "skce_mean": 1.509397873613982e-06,
+        "skce_sd": 3.3512495379740424e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 3.2650181579771997,
+        "paper_crps": [
+          1.003,
+          0.018
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0066157670267035,
+        "crps_norm_sd": 0.009447847196945025,
+        "skce_mean": 1.719845663236317e-06,
+        "skce_sd": 3.678718917330861e-06,
+        "accept_frac": 0.7,
+        "crps_raw_units_mean": 3.266106908251598
+      },
+      "ckme": {
+        "crps_norm_mean": 1.0476116538295164,
+        "crps_norm_sd": 0.035037582096878885,
+        "skce_mean": 3.579345102641398e-06,
+        "skce_sd": 4.796120154997255e-06,
+        "accept_frac": 0.7,
+        "crps_raw_units_mean": 3.401866887861909,
+        "paper_crps": [
+          1.032,
+          0.038
+        ],
+        "agree_2sd": true
+      }
+    },
+    "concrete__bnn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 5.590945342053201e-07,
+        "skce_sd": 9.603386877211886e-07,
+        "accept_frac": 1.0,
+        "crps_raw_units_mean": 3.0867006327847255
+      },
+      "pit": {
+        "crps_norm_mean": 1.0012984226114705,
+        "crps_norm_sd": 0.010424667995240808,
+        "skce_mean": 8.548280593320636e-07,
+        "skce_sd": 1.928094005523759e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 3.090362062564343,
+        "paper_crps": [
+          1.001,
+          0.015
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.000452116849644,
+        "crps_norm_sd": 0.012442908502534886,
+        "skce_mean": 9.54123611843413e-07,
+        "skce_sd": 2.035758854301337e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 3.088228433921445
+      },
+      "ckme": {
+        "crps_norm_mean": 1.0378620975251418,
+        "crps_norm_sd": 0.03199787094867197,
+        "skce_mean": 2.9480014589867857e-06,
+        "skce_sd": 3.3900720075619616e-06,
+        "accept_frac": 0.6,
+        "crps_raw_units_mean": 3.204606974247106,
+        "paper_crps": [
+          0.928,
+          0.042
+        ],
+        "agree_2sd": true
+      }
+    },
+    "concrete__drf": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 2.0677177719378123e-06,
+        "skce_sd": 2.348492593622098e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 3.1881565011705697
+      },
+      "pit": {
+        "crps_norm_mean": 0.9774910580931756,
+        "crps_norm_sd": 0.01621494531509541,
+        "skce_mean": 1.2052777757206392e-06,
+        "skce_sd": 1.915888373949806e-06,
+        "accept_frac": 0.9,
+        "crps_raw_units_mean": 3.1181235650407957,
+        "paper_crps": [
+          1.0,
+          0.009
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 0.9811078572470558,
+        "crps_norm_sd": 0.010002433898180726,
+        "skce_mean": 1.3653253662446464e-06,
+        "skce_sd": 1.936412969996971e-06,
+        "accept_frac": 0.8,
+        "crps_raw_units_mean": 3.128938387041064
+      },
+      "ckme": {
+        "crps_norm_mean": 0.9760254991380058,
+        "crps_norm_sd": 0.034563820745289055,
+        "skce_mean": 2.856618203008866e-06,
+        "skce_sd": 3.4589701752518193e-06,
+        "accept_frac": 0.6,
+        "crps_raw_units_mean": 3.113446435822838,
+        "paper_crps": [
+          0.915,
+          0.034
+        ],
+        "agree_2sd": true
+      }
+    },
+    "wine-quality-red__gdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 0.07148809570070186,
+        "skce_sd": 0.01649130345359409,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.35133391740127584
+      },
+      "pit": {
+        "crps_norm_mean": 0.9999844258219495,
+        "crps_norm_sd": 0.010184349179714097,
+        "skce_mean": 0.0670493267292652,
+        "skce_sd": 0.014998292766913774,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.3513456408944208,
+        "paper_crps": [
+          0.999,
+          0.009
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0028123039128407,
+        "crps_norm_sd": 0.010984287283888406,
+        "skce_mean": 0.07303958694897053,
+        "skce_sd": 0.016181056102551307,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.3523463653310652
+      },
+      "ckme": {
+        "crps_norm_mean": 0.898426717585553,
+        "crps_norm_sd": 0.028066744344788022,
+        "skce_mean": 0.016668394623183404,
+        "skce_sd": 0.008878401298580573,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.31604061145563134,
+        "paper_crps": [
+          0.901,
+          0.026
+        ],
+        "agree_2sd": true
+      }
+    },
+    "wine-quality-red__mdn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 0.013347326105830556,
+        "skce_sd": 0.008409192482255542,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.31465205898839477
+      },
+      "pit": {
+        "crps_norm_mean": 1.0234603607090271,
+        "crps_norm_sd": 0.031647456888085415,
+        "skce_mean": 0.017875126629178638,
+        "skce_sd": 0.00931163969067913,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.322202948791981,
+        "paper_crps": [
+          1.002,
+          0.007
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0122995541470445,
+        "crps_norm_sd": 0.023597682334793216,
+        "skce_mean": 0.015418374792265616,
+        "skce_sd": 0.006808420966320408,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.3186738972441644
+      },
+      "ckme": {
+        "crps_norm_mean": 1.0240339538652643,
+        "crps_norm_sd": 0.023819567317902794,
+        "skce_mean": 0.012773926104432842,
+        "skce_sd": 0.007383095887588155,
+        "accept_frac": 0.1,
+        "crps_raw_units_mean": 0.32234150819314183,
+        "paper_crps": [
+          1.06,
+          0.042
+        ],
+        "agree_2sd": true
+      }
+    },
+    "wine-quality-red__bnn": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 0.06857196626275439,
+        "skce_sd": 0.01738332669460669,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.35163028043598576
+      },
+      "pit": {
+        "crps_norm_mean": 1.002430380624311,
+        "crps_norm_sd": 0.005620991760933766,
+        "skce_mean": 0.06575842413383147,
+        "skce_sd": 0.015610835856323049,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.3525291610545468,
+        "paper_crps": [
+          1.0,
+          0.006
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.0044995018947853,
+        "crps_norm_sd": 0.008919760546044288,
+        "skce_mean": 0.07127546135687937,
+        "skce_sd": 0.01778700260145236,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.35324010049586774
+      },
+      "ckme": {
+        "crps_norm_mean": 0.903651113204667,
+        "crps_norm_sd": 0.029825758905178062,
+        "skce_mean": 0.017891230806916007,
+        "skce_sd": 0.007396567615318119,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.3180901400537749,
+        "paper_crps": [
+          0.899,
+          0.022
+        ],
+        "agree_2sd": true
+      }
+    },
+    "wine-quality-red__drf": {
+      "none": {
+        "crps_norm_mean": 1.0,
+        "crps_norm_sd": 0.0,
+        "skce_mean": 0.0072801858049722935,
+        "skce_sd": 0.006052812034731845,
+        "accept_frac": 0.5,
+        "crps_raw_units_mean": 0.2862793213200391
+      },
+      "pit": {
+        "crps_norm_mean": 1.5695743565705111,
+        "crps_norm_sd": 0.14649475906453624,
+        "skce_mean": 0.10326243906822281,
+        "skce_sd": 0.022893296678713825,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.44817453265305074,
+        "paper_crps": [
+          1.0,
+          0.005
+        ]
+      },
+      "beta": {
+        "crps_norm_mean": 1.4998511359242206,
+        "crps_norm_sd": 0.1355088703231494,
+        "skce_mean": 0.09437342541942587,
+        "skce_sd": 0.023398278752153466,
+        "accept_frac": 0.0,
+        "crps_raw_units_mean": 0.42891292701513767
+      },
+      "ckme": {
+        "crps_norm_mean": 1.0260521938357183,
+        "crps_norm_sd": 0.016008892709606957,
+        "skce_mean": 0.006981252845032171,
+        "skce_sd": 0.004177338583443715,
+        "accept_frac": 0.2,
+        "crps_raw_units_mean": 0.2937365614858255,
+        "paper_crps": [
+          0.902,
+          0.019
+        ],
+        "agree_2sd": false
+      }
+    }
+  },
+  "suite": {
+    "accept_mean": {
+      "none": 0.55,
+      "pit": 0.5,
+      "beta": 0.49000000000000005,
+      "ckme": 0.4349999999999999
+    },
+    "ckme_skce_better_cells": 5,
+    "ckme_crps_lt1_cells": 7,
+    "n_cells": 20,
+    "table1_agree_cells": 19
+  },
+  "energy_mdn_registered_example": {
+    "ours_mean": 0.7400510227729239,
+    "ours_sd": 0.15059406232270975,
+    "paper_mean": 0.594,
+    "paper_sd": 0.178,
+    "agree_2sd": true
+  },
+  "rules": {
+    "U1_ckme_highest_acceptance": false,
+    "U2_ckme_skce_better_70pct": false,
+    "U3_table1_crps_agree_70pct": true
+  },
+  "verdict": "not-verified",
+  "paper_targets_source": "arxiv.org/html/2602.13362v1 Table 1 / Figure 1"
+}

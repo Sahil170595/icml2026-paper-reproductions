@@ -1,0 +1,84 @@
+=== UCI benchmark (paper protocol, 10 predefined splits/cell, 20 dataset x model cells) ===
+
+-- Normalised CRPS (this run vs paper Table 1; base model None(T) = 1.000) --
+cell              PIT ours   PIT paper  CKME ours   CKME paper  agree2sd
+yacht/gdn         0.994±0.03   0.997±0.08   1.560±0.32    1.276±0.54  YES
+yacht/mdn         0.988±0.05   1.058±0.13   1.655±0.52    1.326±0.59  YES
+yacht/bnn         0.988±0.10   1.097±0.14   1.427±0.38    0.889±0.34  YES
+yacht/drf         1.073±0.06   0.933±0.09   1.538±0.55    0.714±0.25  YES
+housing/gdn       1.001±0.02   1.000±0.03   1.227±0.19    1.150±0.17  YES
+housing/mdn       1.011±0.04   1.007±0.03   1.221±0.22    1.175±0.15  YES
+housing/bnn       1.010±0.02   1.004±0.03   1.215±0.17    0.934±0.07  YES
+housing/drf       1.019±0.03   1.002±0.02   1.162±0.14    0.927±0.06  YES
+energy/gdn        0.998±0.02   0.981±0.05   0.946±0.24    0.767±0.22  YES
+energy/mdn        0.995±0.03   1.019±0.05   0.760±0.14    0.594±0.18  YES
+energy/bnn        0.903±0.04   1.008±0.04   0.920±0.16    0.693±0.21  YES
+energy/drf        1.053±0.03   0.998±0.04   0.987±0.11    0.719±0.20  YES
+concrete/gdn      0.998±0.01   0.999±0.01   1.032±0.03    1.045±0.05  YES
+concrete/mdn      1.005±0.00   1.003±0.02   1.059±0.03    1.032±0.04  YES
+concrete/bnn      0.996±0.02   1.001±0.01   1.030±0.03    0.928±0.04  YES
+concrete/drf      0.977±0.02   1.000±0.01   0.976±0.03    0.915±0.03  YES
+wine/gdn          1.000±0.01   0.999±0.01   0.898±0.03    0.901±0.03  YES
+wine/mdn          1.005±0.03   1.002±0.01   1.015±0.03    1.060±0.04  YES
+wine/bnn          1.003±0.01   1.000±0.01   0.904±0.03    0.899±0.02  YES
+wine/drf          1.570±0.15   1.000±0.01   1.026±0.02    0.902±0.02   no
+
+-- SKCE auto-calibration test (CalibrationTests.jl AsymptoticSKCETest, official) --
+   `stat` = official test statistic (run_SKCE_test.jl output); acc at alpha=5%
+cell                           none                pit               beta               ckme   (stat | acc)
+yacht/gdn          -4.93e-05|1.00   -4.94e-05|0.90   -4.96e-05|0.90   -7.43e-05|0.70
+yacht/mdn          -5.27e-05|0.50   -5.38e-05|0.40   -5.30e-05|0.30   -7.74e-05|0.30
+yacht/bnn          -5.09e-05|1.00   -4.87e-05|0.80   -4.87e-05|0.90   -6.95e-05|0.80
+yacht/drf          -5.29e-05|0.90   -5.96e-05|0.90   -5.97e-05|1.00   -7.64e-05|0.60
+housing/gdn        -5.59e-05|1.00   -5.76e-05|1.00   -6.07e-05|0.90   -9.65e-05|0.50
+housing/mdn        -5.56e-05|0.90   -5.71e-05|1.00   -5.75e-05|1.00   -7.99e-05|0.40
+housing/bnn        -5.52e-05|0.90   -5.65e-05|0.80   -5.81e-05|0.80   -8.73e-05|0.50
+housing/drf        -7.59e-05|0.80   -6.97e-05|0.90   -7.77e-05|0.60   -9.04e-05|0.40
+energy/gdn         -2.21e-06|0.80   -2.20e-06|0.80   -2.20e-06|0.90   -2.03e-06|0.60
+energy/mdn         -3.17e-06|0.70   -3.20e-06|0.80   -3.23e-06|0.80   -2.36e-06|0.60
+energy/bnn         -1.96e-06|0.40   -1.71e-06|0.80   -1.72e-06|0.70   -1.77e-06|0.60
+energy/drf         -1.98e-06|0.90   -2.11e-06|0.90   -2.12e-06|0.90   -2.03e-06|0.70
+concrete/gdn       -4.82e-06|0.90   -4.91e-06|0.90   -5.06e-06|0.90   -5.38e-06|0.70
+concrete/mdn       -4.64e-06|0.80   -4.72e-06|0.90   -4.81e-06|0.80   -5.12e-06|0.70
+concrete/bnn       -4.47e-06|0.80   -4.52e-06|0.80   -4.59e-06|0.80   -4.81e-06|0.60
+concrete/drf       -6.23e-06|0.70   -5.09e-06|0.90   -5.36e-06|0.80   -4.69e-06|0.60
+wine/gdn           -4.94e-03|0.00   -4.87e-03|0.00   -5.01e-03|0.00   -4.81e-03|0.10
+wine/mdn           -5.75e-03|0.20   -5.01e-03|0.10   -5.15e-03|0.10   -4.93e-03|0.00
+wine/bnn           -4.68e-03|0.00   -4.70e-03|0.00   -4.84e-03|0.00   -4.80e-03|0.00
+wine/drf           -4.01e-03|0.50   -4.02e-03|0.00   -4.21e-03|0.00   -3.51e-03|0.20
+
+-- SKCE_uq unbiased estimate (auxiliary; discretisation-sensitive) --
+cell                    none         pit        beta        ckme
+yacht/gdn           1.96e-05    2.09e-05    2.21e-05    4.22e-05
+yacht/mdn           3.60e-05    3.68e-05    3.64e-05    6.86e-05
+yacht/bnn           2.51e-05    2.52e-05    2.63e-05    4.55e-05
+yacht/drf           5.75e-06    8.92e-06    9.29e-06    4.92e-05
+housing/gdn         9.62e-06    7.68e-06    1.05e-05    6.50e-05
+housing/mdn         1.47e-05    1.55e-05    1.59e-05    6.14e-05
+housing/bnn         8.59e-06    9.69e-06    1.26e-05    6.22e-05
+housing/drf         2.08e-05    2.55e-05    4.41e-05    7.79e-05
+energy/gdn          1.01e-06    9.97e-07    9.96e-07    1.17e-06
+energy/mdn          1.27e-06    1.26e-06    1.29e-06    1.47e-06
+energy/bnn          1.54e-06    8.18e-07    8.45e-07    1.13e-06
+energy/drf          3.09e-07    5.23e-07    5.12e-07    9.02e-07
+concrete/gdn        9.69e-07    8.87e-07    9.02e-07    2.97e-06
+concrete/mdn        6.65e-07    1.09e-06    1.24e-06    3.25e-06
+concrete/bnn        1.20e-06    1.18e-06    1.30e-06    3.16e-06
+concrete/drf        2.07e-06    1.21e-06    1.37e-06    2.86e-06
+wine/gdn            7.15e-02    6.70e-02    7.30e-02    1.67e-02
+wine/mdn            1.65e-02    1.70e-02    1.59e-02    1.54e-02
+wine/bnn            6.74e-02    6.49e-02    7.02e-02    1.74e-02
+wine/drf            7.28e-03    1.03e-01    9.44e-02    6.98e-03
+
+-- Suite means --
+  acceptance fraction: {'none': 0.685, 'pit': 0.68, 'beta': 0.655, 'ckme': 0.48}
+  CKME official SKCE-test statistic < raw on 13/20 cells (U2 metric; run_SKCE_test.jl `stat` column)
+  CKME unbiased SKCE_uq < raw on 5/20 cells (auxiliary); CKME CRPS_norm < 1 on 7/20 cells
+  Registered Energy-MDN example: ours 0.760±0.140 vs paper 0.594±0.178 -> agree (2sd rule)
+
+=== Predeclared rules ===
+  U1 CKME highest mean acceptance (Fig.1)     : False
+  U2 CKME lowers mean SKCE-test stat vs raw >=70% cells : False  (13/20; auxiliary SKCE_uq 5/20)
+  U3 Table-1 CRPS agreement (2sd) >=70% cells : True  (19/20)
+VERDICT: not-verified
+wrote results_uci.json, results_uci.csv

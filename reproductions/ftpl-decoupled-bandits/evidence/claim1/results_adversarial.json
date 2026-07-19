@@ -1,0 +1,149 @@
+{
+  "orid": "q1KhliMwKP",
+  "claim": "1_adversarial",
+  "regime": "adversarial",
+  "theorem": "Reg(T) <= O(sqrt(KT)) (Thm 1, minimax optimal)",
+  "alpha": 3.0,
+  "c": 2.0,
+  "parts": {
+    "alt": {
+      "mode": "alt",
+      "K": 8,
+      "Delta": 0.125,
+      "seeds": 500,
+      "T": 40000,
+      "checkpoints_T": [
+        1000,
+        2000,
+        5000,
+        10000,
+        20000,
+        40000
+      ],
+      "regret_mean": [
+        68.437,
+        101.934,
+        136.607,
+        148.9,
+        158.369,
+        163.584
+      ],
+      "sqrtKT": [
+        89.443,
+        126.491,
+        200.0,
+        282.843,
+        400.0,
+        565.685
+      ],
+      "ratio_Reg_over_sqrtKT": [
+        0.7651,
+        0.8059,
+        0.683,
+        0.5264,
+        0.3959,
+        0.2892
+      ],
+      "loglog_slope_Reg_vs_T": 0.224,
+      "max_ratio": 0.8059,
+      "pass": true,
+      "wall_seconds": 10.5
+    },
+    "scanT": {
+      "mode": "scanT",
+      "K": 8,
+      "seeds": 400,
+      "T_grid": [
+        1250,
+        2500,
+        5000,
+        10000,
+        20000,
+        40000
+      ],
+      "eps_T": [
+        0.08,
+        0.05657,
+        0.04,
+        0.02828,
+        0.02,
+        0.01414
+      ],
+      "regret_mean": [
+        64.496,
+        91.525,
+        135.624,
+        189.85,
+        272.32,
+        387.919
+      ],
+      "sqrtKT": [
+        100.0,
+        141.421,
+        200.0,
+        282.843,
+        400.0,
+        565.685
+      ],
+      "ratio_Reg_over_sqrtKT": [
+        0.645,
+        0.6472,
+        0.6781,
+        0.6712,
+        0.6808,
+        0.6858
+      ],
+      "loglog_slope_Reg_vs_T": 0.5185,
+      "pass": true,
+      "wall_seconds": 18.0
+    },
+    "scanK": {
+      "mode": "scanK",
+      "T": 8000,
+      "seeds": 300,
+      "K_grid": [
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "eps_K": [
+        0.02236,
+        0.03162,
+        0.04472,
+        0.06325,
+        0.08944
+      ],
+      "regret_mean": [
+        95.351,
+        168.439,
+        277.032,
+        417.053,
+        632.909
+      ],
+      "sqrtKT": [
+        178.885,
+        252.982,
+        357.771,
+        505.964,
+        715.542
+      ],
+      "ratio_Reg_over_sqrtKT": [
+        0.533,
+        0.6658,
+        0.7743,
+        0.8243,
+        0.8845
+      ],
+      "loglog_slope_Reg_vs_K": 0.6769,
+      "pass": true,
+      "wall_seconds": 16.3
+    }
+  },
+  "adv_slope_T_paperbenchmark": 0.224,
+  "minimax_slope_T": 0.5185,
+  "minimax_slope_K": 0.6769,
+  "passed": true,
+  "verdict": "verified"
+}

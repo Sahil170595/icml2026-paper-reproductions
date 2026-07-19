@@ -1,0 +1,45 @@
+{
+ "backbone_params_baseline": 15512,
+ "backbone_params_with_dropoutts": 15512,
+ "backbone_identical": true,
+ "dropoutts_extra_params": 4,
+ "dropoutts_extra_params_target": 4,
+ "extra_param_inventory": [
+  [
+   "dts.sensitivity",
+   [],
+   1
+  ],
+  [
+   "dts.noise_scorer.rrf_filter.sfm_scale",
+   [
+    1,
+    1,
+    1
+   ],
+   1
+  ],
+  [
+   "dts.noise_scorer.rrf_filter.sfm_bias",
+   [
+    1,
+    1,
+    1
+   ],
+   1
+  ],
+  [
+   "dts.noise_scorer.rrf_filter.alpha",
+   [],
+   1
+  ]
+ ],
+ "overhead_pct_of_backbone": 0.0258,
+ "eval_bit_identical_passthrough": true,
+ "train_mode_applies_dropout": true,
+ "per_step_ms_baseline": 0.278,
+ "per_step_ms_dropoutts": 0.7675,
+ "per_step_ratio_dropoutts_over_baseline": 2.761,
+ "infer_ms_baseline": 0.0337,
+ "infer_ms_dropoutts": 0.1958
+}

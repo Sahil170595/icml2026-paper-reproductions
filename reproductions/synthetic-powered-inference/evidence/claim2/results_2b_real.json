@@ -1,0 +1,89 @@
+{
+  "experiment": "claim2b_llm_winrate_test_REAL_DATA",
+  "paper": "arXiv 2509.20345 GESPI Sec 4.2",
+  "data_sources": {
+    "aime2025": {
+      "repo": "yoonholee/completions_AIME2025_Qwen3-4B",
+      "url": "https://huggingface.co/datasets/yoonholee/completions_AIME2025_Qwen3-4B/resolve/main/data/train-00000-of-00001.parquet",
+      "n_problems": 30,
+      "n_completions": 480,
+      "real_pass_rate": 0.6708333333333333
+    },
+    "olympiadbench": {
+      "repo": "yoonholee/completions_Qwen3-4B_OlympiadBench",
+      "url": "https://huggingface.co/datasets/yoonholee/completions_Qwen3-4B_OlympiadBench/resolve/main/data/train-00000-of-00001.parquet",
+      "n_problems": 30,
+      "n_completions": 240,
+      "real_pass_rate": 0.2916666666666667
+    }
+  },
+  "single_instance": {
+    "n15": {
+      "n": 15,
+      "N": 30,
+      "k_n": 8,
+      "k_N": 9
+    },
+    "n30": {
+      "n": 30,
+      "N": 30,
+      "k_n": 18,
+      "k_N": 9
+    }
+  },
+  "n": 15,
+  "N": 100,
+  "alpha": 0.05,
+  "eps": 0.02,
+  "bound": 0.07,
+  "reps": 40000,
+  "seed": 424242,
+  "regimes": {
+    "real_augmentation_same_benchmark": {
+      "p_real": 0.5833333333333334,
+      "p_synt": 0.7583333333333333,
+      "desc": "real=AIME2025 problems 1-15 (real p=0.5833), synthetic=AIME2025 problems 16-30, held out, as a real auxiliary/cheaper same-task pool (real p=0.7583)",
+      "gespi": 0.199825,
+      "gespi_se": 0.0019993434508295467,
+      "onlyreal": 0.156175,
+      "onlyreal_se": 0.0018151058466037181,
+      "onlysynth": 0.9999,
+      "dominates": 1.0,
+      "within_bound": false
+    },
+    "matched_real_roles": {
+      "p_real": 0.6708333333333333,
+      "p_synt": 0.2916666666666667,
+      "desc": "real=AIME2025 (real p=0.6708), synthetic=OlympiadBench (real p=0.2917)",
+      "gespi": 0.375675,
+      "gespi_se": 0.0024214835038411887,
+      "onlyreal": 0.375675,
+      "onlyreal_se": 0.0024214835038411887,
+      "onlysynth": 0.0,
+      "dominates": 1.0,
+      "within_bound": false
+    },
+    "role_swapped_real": {
+      "p_real": 0.2916666666666667,
+      "p_synt": 0.6708333333333333,
+      "desc": "real=OlympiadBench (real p=0.2917, sub-null), synthetic=AIME2025 (real p=0.6708, over-optimistic)",
+      "gespi": 0.000925,
+      "gespi_se": 0.00015199871504391083,
+      "onlyreal": 0.00055,
+      "onlyreal_se": 0.00011722814295210856,
+      "onlysynth": 0.96845,
+      "dominates": 1.0,
+      "within_bound": true
+    }
+  },
+  "checks": {
+    "power_gain_real_augmentation": true,
+    "power_gain_matched_roles": false,
+    "never_loses_real_augmentation": true,
+    "never_loses_matched": true,
+    "never_loses_swapped": true,
+    "typeI_like_within_bound": true,
+    "onlysynth_would_overclaim": true,
+    "PASS": true
+  }
+}

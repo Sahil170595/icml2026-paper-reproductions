@@ -1,0 +1,138 @@
+{
+  "experiment": "claim1_binomial_typeI_power",
+  "paper": "arXiv 2509.20345 GESPI",
+  "n": 50,
+  "N": 500,
+  "alpha": 0.05,
+  "eps": 0.02,
+  "bound": 0.07,
+  "reps": 40000,
+  "seed": 12345,
+  "test": "randomized one-sided binomial",
+  "regimes": {
+    "a": {
+      "rho": 0.6,
+      "rho_synt": 0.5,
+      "metric": "power",
+      "desc": "real ALT, synth NULL",
+      "gespi": 0.415725,
+      "gespi_se": 0.0024642327628239587,
+      "onlyreal": 0.4081,
+      "onlyreal_se": 0.0024574091539668356,
+      "onlysynth": 0.049,
+      "gespi_dominates_onlyreal": 1.0
+    },
+    "b": {
+      "rho": 0.6,
+      "rho_synt": 0.55,
+      "metric": "power",
+      "desc": "both ALT",
+      "gespi": 0.4661,
+      "gespi_se": 0.0024942473313607056,
+      "onlyreal": 0.41015,
+      "onlyreal_se": 0.0024593036489014525,
+      "onlysynth": 0.7214,
+      "gespi_dominates_onlyreal": 1.0
+    },
+    "c": {
+      "rho": 0.5,
+      "rho_synt": 0.5,
+      "metric": "TypeI",
+      "desc": "both NULL",
+      "gespi": 0.0523,
+      "gespi_se": 0.0011131566601336937,
+      "onlyreal": 0.05035,
+      "onlyreal_se": 0.0010933306624713313,
+      "onlysynth": 0.051725,
+      "gespi_dominates_onlyreal": 1.0
+    },
+    "d": {
+      "rho": 0.5,
+      "rho_synt": 0.7,
+      "metric": "TypeI",
+      "desc": "real NULL, ADVERSARIAL synth ALT",
+      "gespi": 0.0693,
+      "gespi_se": 0.0012698179987699024,
+      "onlyreal": 0.049675,
+      "onlyreal_se": 0.0010863631342120368,
+      "onlysynth": 1.0,
+      "gespi_dominates_onlyreal": 1.0
+    }
+  },
+  "sweep": {
+    "alt_rho0.60": {
+      "0.30": {
+        "gespi": 0.40795,
+        "onlyreal": 0.40795,
+        "onlysynth": 0.0
+      },
+      "0.40": {
+        "gespi": 0.408325,
+        "onlyreal": 0.408325,
+        "onlysynth": 0.0
+      },
+      "0.50": {
+        "gespi": 0.4169,
+        "onlyreal": 0.4096,
+        "onlysynth": 0.048625
+      },
+      "0.55": {
+        "gespi": 0.4617,
+        "onlyreal": 0.4036,
+        "onlysynth": 0.729825
+      },
+      "0.60": {
+        "gespi": 0.47725,
+        "onlyreal": 0.408425,
+        "onlysynth": 0.99775
+      },
+      "0.70": {
+        "gespi": 0.47685,
+        "onlyreal": 0.40845,
+        "onlysynth": 1.0
+      }
+    },
+    "null_rho0.50": {
+      "0.30": {
+        "gespi": 0.0502,
+        "onlyreal": 0.0502,
+        "onlysynth": 0.0
+      },
+      "0.40": {
+        "gespi": 0.051,
+        "onlyreal": 0.051,
+        "onlysynth": 0.0
+      },
+      "0.50": {
+        "gespi": 0.0507,
+        "onlyreal": 0.0482,
+        "onlysynth": 0.05
+      },
+      "0.55": {
+        "gespi": 0.06795,
+        "onlyreal": 0.050725,
+        "onlysynth": 0.723375
+      },
+      "0.60": {
+        "gespi": 0.069125,
+        "onlyreal": 0.0502,
+        "onlysynth": 0.99785
+      },
+      "0.70": {
+        "gespi": 0.06915,
+        "onlyreal": 0.050025,
+        "onlysynth": 1.0
+      }
+    }
+  },
+  "checks": {
+    "all_null_typeI_le_bound": true,
+    "benign_null_near_alpha": true,
+    "power_gain_b_gt_2se": true,
+    "diff_b": 0.05595,
+    "diff_b_2se": 0.007005553279363451,
+    "gespi_never_loses_power": true,
+    "onlysynth_invalid_adversarial": true,
+    "PASS": true
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "claim": "Nonparametric CKME re-calibration corrects calibration error without restrictive parametric assumptions",
+  "cce_mean": {
+    "calibrated": {
+      "none": 0.02291881188118812,
+      "margin": 0.022834653465346536,
+      "param": 0.02291881188118812,
+      "ckme": 0.024674257425742575
+    },
+    "overconf": {
+      "none": 0.10212970297029704,
+      "margin": 0.022834653465346536,
+      "param": 0.023078217821782175,
+      "ckme": 0.024674257425742575
+    },
+    "cancel": {
+      "none": 0.09868316831683167,
+      "margin": 0.08467425742574257,
+      "param": 0.09856435643564355,
+      "ckme": 0.026636633663366337
+    },
+    "biashetero": {
+      "none": 0.27677227722772274,
+      "margin": 0.2142019801980198,
+      "param": 0.21854950495049502,
+      "ckme": 0.033782178217821784
+    },
+    "shape": {
+      "none": 0.07725148514851483,
+      "margin": 0.022885148514851482,
+      "param": 0.07646039603960395,
+      "ckme": 0.026685148514851487
+    }
+  },
+  "marginal_pit_error_mean": {
+    "calibrated": {
+      "none": 0.0074336633663366295,
+      "margin": 0.005975247524752475,
+      "param": 0.0074336633663366295,
+      "ckme": 0.0055079207920792055
+    },
+    "overconf": {
+      "none": 0.09986039603960398,
+      "margin": 0.005975247524752475,
+      "param": 0.007913861386138612,
+      "ckme": 0.0055079207920792055
+    },
+    "cancel": {
+      "none": 0.023087128712871288,
+      "margin": 0.006090099009900989,
+      "param": 0.022213861386138616,
+      "ckme": 0.005739603960396038
+    },
+    "biashetero": {
+      "none": 0.08273267326732674,
+      "margin": 0.007883168316831684,
+      "param": 0.02734752475247524,
+      "ckme": 0.006813861386138609
+    },
+    "shape": {
+      "none": 0.07594257425742575,
+      "margin": 0.01213465346534653,
+      "param": 0.0753118811881188,
+      "ckme": 0.012043564356435643
+    }
+  },
+  "scenarios": [
+    "calibrated",
+    "overconf",
+    "cancel",
+    "biashetero",
+    "shape"
+  ],
+  "methods": [
+    "none",
+    "margin",
+    "param",
+    "ckme"
+  ],
+  "rate_marginal": {
+    "n": [
+      250,
+      500,
+      1000,
+      2000,
+      4000
+    ],
+    "err": [
+      0.019488184818481854,
+      0.013193042904290433,
+      0.011248158415841588,
+      0.006613016501650161,
+      0.0046216633663366345
+    ],
+    "loglog_slope": -0.5148628216042028,
+    "target_band": [
+      -0.65,
+      -0.35
+    ],
+    "law": "DKW sqrt(n)"
+  },
+  "rate_ckme_map": {
+    "n": [
+      500,
+      1000,
+      2000,
+      4000,
+      8000,
+      16000
+    ],
+    "map_err": [
+      0.0259558577496506,
+      0.02315693958950647,
+      0.01617542999864963,
+      0.011683466565095564,
+      0.007257288937785107,
+      0.006732451820243827
+    ],
+    "loglog_slope": -0.435012654845898,
+    "target": "<= -0.20",
+    "law": "nonparametric ~ n^-2/5"
+  },
+  "rules": {
+    "C1_correction": true,
+    "C2_beats_parametric": true,
+    "C3_marginal_insufficient": true,
+    "C4a_marginal_DKW": true,
+    "C4b_ckme_map_rate": true,
+    "C5_control_no_harm": true
+  },
+  "verdict": "verified",
+  "config": {
+    "n_cal_h2h": 2500,
+    "n_test_h2h": 2000,
+    "seeds": 5,
+    "K_bins": 10,
+    "kernel": "Gaussian NW (CKME Eq.11)"
+  },
+  "elapsed_s": 1.7253900299983798,
+  "numpy": "2.2.6"
+}

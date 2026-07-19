@@ -1,0 +1,42 @@
+==============================================================================
+CLAIM 3 (flash-attention half)  Tucker Attention is flash-attention compatible
+Paper Sec. 3.3: shared KV (single pair, all heads) + latent-rank chunks
+==============================================================================
+(a) FlashAttention-1 tiled recurrence vs naive softmax, 1 head, 5 tile sizes
+    max abs error = 5.551e-16
+
+(b) generic random Tucker Attention: tiled vs naive-Tucker forward, 10 (shape,tile-size) combos, 3 seeds
+    max abs error = 3.133e-12
+      nH=3 N=47 r2=5 r3=4 bq=7 bk=11  err=1.19e-12  peak_naive=6627  peak_tiled=77
+      nH=3 N=47 r2=5 r3=4 bq=16 bk=16  err=1.19e-12  peak_naive=6627  peak_tiled=256
+      nH=3 N=47 r2=5 r3=4 bq=47 bk=47  err=1.17e-12  peak_naive=6627  peak_tiled=2209
+      nH=3 N=47 r2=5 r3=4 bq=5 bk=6  err=1.17e-12  peak_naive=6627  peak_tiled=30
+      ... (6 more rows in results.json)
+
+(c) recovered special cases through the tiled kernel (vs their OWN reference layer)
+      MHA        tiled_vs_ref=8.88e-14  tiled_vs_naiveTucker=1.14e-13  peak_naive=11236  peak_tiled=77
+      GQA_nKV2   tiled_vs_ref=1.28e-13  tiled_vs_naiveTucker=2.30e-13  peak_naive=29768  peak_tiled=45
+      MLA        tiled_vs_ref=7.22e-12  tiled_vs_naiveTucker=3.58e-12  peak_naive=20886  peak_tiled=64
+
+(d) tiled + latent-RoPE + Tucker (MLA-shaped, nH=4 N=50 dcK=16) combined
+    max abs error tiled-vs-naive (both RoPE-rotated) = 5.684e-14
+    (repro_claim5.py already verifies latent RoPE itself: A=1.61e-15 B=2.27e-13 C=2.56e-13)
+
+(e) memory profile: peak intermediate array size (elements), naive O(N^2) vs tiled O(block^2)
+      N=  128  peak_naive=    16384  peak_tiled=  4096  ratio=     4.0x
+      N=  512  peak_naive=   262144  peak_tiled=  4096  ratio=    64.0x
+      N= 2048  peak_naive=  4194304  peak_tiled=  4096  ratio=  1024.0x
+      N= 4096  peak_naive= 16777216  peak_tiled=  4096  ratio=  4096.0x
+
+------------------------------------------------------------------------------
+MEASURED vs TARGET (tol < 1e-9 for all exactness checks)
+  (a) flash-tile kernel sanity (1 head, 5 tile sizes)     5.55e-16  PASS
+  (b) generic Tucker tiled vs naive (10 combos)     3.13e-12  PASS
+  (c) MHA/GQA/MLA tiled vs reference layer                7.22e-12  PASS
+  (d) tiled+RoPE+Tucker vs naive+RoPE+Tucker               5.68e-14  PASS
+  (e) tiled peak intermediate size constant in N, naive grows O(N^2)  PASS
+
+VERDICT: Tucker Attention is exact under the FlashAttention tiled/online-softmax
+recurrence (shared-KV, latent-rank chunking, per Sec 3.3) -> VERIFIED
+==============================================================================
+[wrote results_flash.json]  runtime=0.750s

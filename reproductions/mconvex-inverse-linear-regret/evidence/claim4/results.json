@@ -1,0 +1,100 @@
+{
+  "claim": "Theorem 6.1: any algorithm incurs R_T = Omega(d) on M-convex hard instance (tightness up to log d)",
+  "target": "R_T = Omega(d); expected regret grows at least linearly in d (>= c*d) for every learner",
+  "acceptance_rule": "(A) E[R]/d ~const in [0.4,0.6]; (B) slope of E[R] vs d in [0.4,0.6], R^2>0.999; (C) E[R]>=0.3d for all learners",
+  "ds": [
+    16,
+    32,
+    64,
+    100,
+    144,
+    196,
+    256
+  ],
+  "segment_halflength_k_floor_sqrt_d_over_4": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    4
+  ],
+  "n_repetitions": 400,
+  "E_regret_by_strategy": {
+    "random": [
+      7.96,
+      15.88,
+      31.91,
+      49.73,
+      71.69,
+      97.69,
+      128.14
+    ],
+    "always_pos": [
+      7.81,
+      15.73,
+      31.9,
+      50.08,
+      71.92,
+      97.84,
+      128.0
+    ],
+    "history_majority": [
+      7.88,
+      15.77,
+      31.64,
+      49.49,
+      71.62,
+      97.42,
+      127.29
+    ]
+  },
+  "E_regret_over_d_by_strategy": {
+    "random": [
+      0.4972,
+      0.4961,
+      0.4987,
+      0.4973,
+      0.4978,
+      0.4984,
+      0.5005
+    ],
+    "always_pos": [
+      0.488,
+      0.4917,
+      0.4984,
+      0.5008,
+      0.4995,
+      0.4992,
+      0.5
+    ],
+    "history_majority": [
+      0.4923,
+      0.4927,
+      0.4943,
+      0.4949,
+      0.4974,
+      0.497,
+      0.4972
+    ]
+  },
+  "linear_slope_by_strategy": {
+    "random": 0.5002,
+    "always_pos": 0.5007,
+    "history_majority": 0.4979
+  },
+  "fit_r2_by_strategy": {
+    "random": 0.99999,
+    "always_pos": 0.99999,
+    "history_majority": 1.0
+  },
+  "all_strategies_linear_slope_~0.5": true,
+  "all_ratios_constant_0.4_0.6": true,
+  "no_learner_sublinear": true,
+  "verdict_rule_A": true,
+  "verdict_rule_B": true,
+  "verdict_rule_C": true,
+  "runtime_sec": 2.08,
+  "numpy_version": "2.2.6"
+}

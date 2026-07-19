@@ -1,0 +1,71 @@
+=== REAL benchmark datasets x REAL model pipeline: CKME re-calibration vs named priors ===
+datasets: california(20640x8), wine_red(1599x11), concrete(1030x8), energy(768x8), diabetes(442x10)
+models  : gbm = heteroscedastic GradientBoosting (Gaussian predictive);  rf = RandomForest/DRF-style kernel-smoothed predictive;  mdn = Mixture Density Network (real torch MLP, K=3, trained by NLL)
+priors  : Kuleshov 2018 (marginal PIT map), Song 2019 (parametric Beta) ; CKME = this paper (cond. kernel mean embedding)
+
+-- Suite mean over 15 (dataset x model) cells [95% CI across cells] --  lower=better
+  ACE     raw=0.0569[0.0367,0.0770]  Kuleshov18=0.0324[0.0238,0.0410]  Song19=0.0326[0.0240,0.0411]  CKME=0.0281[0.0193,0.0369]
+  CONDECE raw=0.1240[0.0980,0.1501]  Kuleshov18=0.0924[0.0764,0.1084]  Song19=0.0932[0.0776,0.1088]  CKME=0.0845[0.0673,0.1017]
+  CRPS    raw=1.0000[1.0000,1.0000]  Kuleshov18=0.9625[0.9387,0.9864]  Song19=0.9638[0.9408,0.9868]  CKME=0.9554[0.9299,0.9809]
+  ECE     raw=0.0771[0.0499,0.1043]  Kuleshov18=0.0296[0.0229,0.0364]  Song19=0.0321[0.0260,0.0383]  CKME=0.0294[0.0224,0.0365]
+  KS      raw=0.1578[0.1094,0.2062]  Kuleshov18=0.0845[0.0625,0.1066]  Song19=0.0856[0.0670,0.1043]  CKME=0.0805[0.0600,0.1010]
+
+-- Per-dataset (mean over 3 models: gbm+rf+mdn); ACE=SKCE-family energy auto-cal, CRPS ratio vs raw --
+  california (f=8 ) ACE: raw=0.0210 K=0.0069 S=0.0076 CKME=0.0032  | CRPS: K=0.9717 S=0.9749 CKME=0.9581
+  wine_red   (f=11) ACE: raw=0.0589 K=0.0416 S=0.0409 CKME=0.0271  | CRPS: K=0.9730 S=0.9745 CKME=0.9323
+  concrete   (f=8 ) ACE: raw=0.0469 K=0.0256 S=0.0257 CKME=0.0239  | CRPS: K=0.9657 S=0.9649 CKME=0.9667
+  energy     (f=8 ) ACE: raw=0.0625 K=0.0449 S=0.0467 CKME=0.0389  | CRPS: K=0.9704 S=0.9721 CKME=0.9694
+  diabetes   (f=10) ACE: raw=0.0950 K=0.0430 S=0.0419 CKME=0.0474  | CRPS: K=0.9319 S=0.9327 CKME=0.9506
+
+-- Per-dataset paired CKME vs Kuleshov (pooled seeds, 3 models) --
+  california  ACE gain=+0.0037 z=+4.1 (12/12 seeds CKME better)
+  wine_red    ACE gain=+0.0144 z=+14.0 (30/30 seeds CKME better)
+  concrete    ACE gain=+0.0017 z=+1.2 (17/30 seeds CKME better)
+  energy      ACE gain=+0.0060 z=+5.2 (23/30 seeds CKME better)
+  diabetes    ACE gain=-0.0044 z=-2.1 (11/30 seeds CKME better)
+
+CKME lowest ACE among priors: 12/15 ; condECE 12/15 ; CRPS 8/15
+CKME beats RAW on ACE: 14/15 ; CKME improves CRPS (<raw): 13/15 ; paired suite ACE z=2.4, better 12/15
+
+=== Table-1-style normalized CRPS (mean +/- std across seeds; uncalibrated raw = 1.000) ===
+  california /gbm (GBM (heteroscedastic Gradient Boosting)   ) raw=1.000+/-0.000  Kuleshov=0.923+/-0.004  Song=0.931+/-0.005  CKME=0.896+/-0.008
+  california /rf  (DRF (Random-Forest predictive, kernel-smoothed)) raw=1.000+/-0.000  Kuleshov=0.994+/-0.003  Song=0.996+/-0.003  CKME=0.988+/-0.005
+  california /mdn (MDN (Mixture Density Network, torch, K=3) ) raw=1.000+/-0.000  Kuleshov=0.998+/-0.002  Song=0.998+/-0.002  CKME=0.991+/-0.010
+  wine_red   /gbm (GBM (heteroscedastic Gradient Boosting)   ) raw=1.000+/-0.000  Kuleshov=0.923+/-0.009  Song=0.924+/-0.009  CKME=0.886+/-0.017
+  wine_red   /rf  (DRF (Random-Forest predictive, kernel-smoothed)) raw=1.000+/-0.000  Kuleshov=1.000+/-0.004  Song=1.000+/-0.004  CKME=0.957+/-0.016
+  wine_red   /mdn (MDN (Mixture Density Network, torch, K=3) ) raw=1.000+/-0.000  Kuleshov=0.996+/-0.013  Song=0.999+/-0.011  CKME=0.954+/-0.024
+  concrete   /gbm (GBM (heteroscedastic Gradient Boosting)   ) raw=1.000+/-0.000  Kuleshov=0.906+/-0.013  Song=0.905+/-0.013  CKME=0.905+/-0.024
+  concrete   /rf  (DRF (Random-Forest predictive, kernel-smoothed)) raw=1.000+/-0.000  Kuleshov=0.998+/-0.008  Song=0.997+/-0.007  CKME=0.992+/-0.022
+  concrete   /mdn (MDN (Mixture Density Network, torch, K=3) ) raw=1.000+/-0.000  Kuleshov=0.993+/-0.019  Song=0.993+/-0.016  CKME=1.003+/-0.031
+  energy     /gbm (GBM (heteroscedastic Gradient Boosting)   ) raw=1.000+/-0.000  Kuleshov=0.958+/-0.028  Song=0.959+/-0.028  CKME=0.941+/-0.038
+  energy     /rf  (DRF (Random-Forest predictive, kernel-smoothed)) raw=1.000+/-0.000  Kuleshov=0.978+/-0.036  Song=0.973+/-0.024  CKME=0.987+/-0.073
+  energy     /mdn (MDN (Mixture Density Network, torch, K=3) ) raw=1.000+/-0.000  Kuleshov=0.975+/-0.054  Song=0.985+/-0.046  CKME=0.980+/-0.092
+  diabetes   /gbm (GBM (heteroscedastic Gradient Boosting)   ) raw=1.000+/-0.000  Kuleshov=0.860+/-0.033  Song=0.869+/-0.021  CKME=0.874+/-0.017
+  diabetes   /rf  (DRF (Random-Forest predictive, kernel-smoothed)) raw=1.000+/-0.000  Kuleshov=0.997+/-0.019  Song=0.995+/-0.019  CKME=1.021+/-0.026
+  diabetes   /mdn (MDN (Mixture Density Network, torch, K=3) ) raw=1.000+/-0.000  Kuleshov=0.938+/-0.050  Song=0.934+/-0.038  CKME=0.957+/-0.059
+
+  [paper Table 1 quoted-format check] normalized CRPS, MDN on Energy, CKME-recalibrated: 0.980+/-0.092  vs 1.000 uncalibrated
+
+=== O(n log n) characteristic EDK (re-run at larger n) ===
+max rel err SORT vs BRUTE (150 cases): 8.42e-15 (<1e-10)
+   n=   2000     0.356 ms
+   n=   4000     0.705 ms
+   n=   8000     1.478 ms
+   n=  16000     3.191 ms
+   n=  32000     7.118 ms
+   n=  65536    17.701 ms
+   n= 131072    41.021 ms
+   n= 262144    85.875 ms
+SORT slope=1.144 (0.9-1.3) ; BRUTE slope=2.006 (1.8-2.1)
+
+=== Predeclared rules ===
+  A_edk_exact_lt_1e10                   : True
+  A_onlogn_slopes                       : True
+  C1_ckme_beats_raw_cond_ge8            : True
+  C1_ckme_lowest_suite_ace              : True
+  C1_ckme_lowest_suite_condece          : True
+  C1_ckme_wins_ace_ge7                  : True
+  C2_ckme_lowest_suite_crps_lt1         : True
+  C2_ckme_improves_crps_ge8             : True
+  C2_california_paired_decisive         : True
+CLAIM1 verified: True  |  CLAIM2 verified: True

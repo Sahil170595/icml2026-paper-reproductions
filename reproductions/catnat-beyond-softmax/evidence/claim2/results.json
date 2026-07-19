@@ -1,0 +1,214 @@
+{
+  "orid": "ClBpWdkPZd",
+  "claim": 2,
+  "claim_text": "catnat consistently achieves higher test performance across graph structure learning, VAEs, and RL tasks",
+  "proxy_task": "categorical VAE (N=1 exact-ELBO), exact held-out test NLL",
+  "metric": "exact test NLL (lower is better)",
+  "setup": {
+    "model": "encoder MLP q(c|x) + MLP decoder p(x|c)",
+    "D": 64,
+    "H": 40,
+    "K": 8,
+    "optimizer": "plain full-batch GD",
+    "primary_lr": 0.2,
+    "beta": 0.2,
+    "iters": 300,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "n_train": 600,
+    "n_test": 300
+  },
+  "gradient_check_max_rel_err": {
+    "softmax": 5.470179378658139e-07,
+    "catnat_sigmoid": 7.117529172918511e-06,
+    "catnat_nu": 5.764450676713107e-06
+  },
+  "primary": {
+    "softmax": {
+      "test": {
+        "mean": 25.625127566963847,
+        "median": 24.716529811007348,
+        "std": 2.9676949281675515,
+        "max": 32.3408038586227,
+        "min": 21.022149645461724,
+        "per_seed": [
+          24.688,
+          24.711,
+          24.711,
+          32.341,
+          21.022,
+          24.953,
+          24.728,
+          24.716,
+          24.717,
+          29.666
+        ]
+      },
+      "train": {
+        "mean": 25.341262402313596,
+        "median": 24.417611014678542,
+        "std": 3.064652394590895,
+        "max": 32.53562438580023,
+        "min": 20.64173000447534,
+        "per_seed": [
+          24.394,
+          24.405,
+          24.406,
+          32.536,
+          20.642,
+          24.524,
+          24.535,
+          24.409,
+          24.426,
+          29.136
+        ]
+      }
+    },
+    "catnat_sigmoid": {
+      "test": {
+        "mean": 23.79049968152509,
+        "median": 24.689302836313225,
+        "std": 1.4796797857227517,
+        "max": 25.750702557192696,
+        "min": 21.024318106058523,
+        "per_seed": [
+          22.447,
+          22.449,
+          24.693,
+          24.689,
+          24.903,
+          21.024,
+          24.87,
+          24.69,
+          25.751,
+          22.389
+        ]
+      },
+      "train": {
+        "mean": 23.370148442886794,
+        "median": 24.38095060580103,
+        "std": 1.5194329627862253,
+        "max": 25.238454238986506,
+        "min": 20.6418221506097,
+        "per_seed": [
+          21.951,
+          21.957,
+          24.421,
+          24.395,
+          24.493,
+          20.642,
+          24.461,
+          24.367,
+          25.238,
+          21.776
+        ]
+      }
+    },
+    "catnat_nu": {
+      "test": {
+        "mean": 23.26788950461328,
+        "median": 23.561266880890123,
+        "std": 1.775557203011519,
+        "max": 25.781745875142317,
+        "min": 21.007543559388203,
+        "per_seed": [
+          21.008,
+          22.442,
+          24.707,
+          24.658,
+          22.465,
+          21.025,
+          24.88,
+          24.7,
+          25.782,
+          21.013
+        ]
+      },
+      "train": {
+        "mean": 22.873478787627988,
+        "median": 23.18319578196513,
+        "std": 1.7789433672930342,
+        "max": 25.243097628984767,
+        "min": 20.621587505984852,
+        "per_seed": [
+          20.622,
+          21.955,
+          24.413,
+          24.361,
+          22.005,
+          20.642,
+          24.471,
+          24.381,
+          25.243,
+          20.643
+        ]
+      }
+    }
+  },
+  "learning_curve": {
+    "softmax": {
+      "25": 27.29,
+      "50": 26.411,
+      "100": 26.077,
+      "200": 26.088,
+      "300": 25.625
+    },
+    "catnat_sigmoid": {
+      "25": 27.218,
+      "50": 24.267,
+      "100": 24.123,
+      "200": 24.135,
+      "300": 23.79
+    },
+    "catnat_nu": {
+      "25": 26.384,
+      "50": 23.656,
+      "100": 23.251,
+      "200": 23.269,
+      "300": 23.268
+    }
+  },
+  "win_rate": {
+    "catnat_sigmoid": 7,
+    "catnat_nu": 7
+  },
+  "robustness_lr_sweep": {
+    "0.15": {
+      "softmax": 26.455,
+      "catnat_sigma": 24.192,
+      "catnat_nu": 23.117
+    },
+    "0.2": {
+      "softmax": 26.088,
+      "catnat_sigma": 24.135,
+      "catnat_nu": 23.269
+    },
+    "0.25": {
+      "softmax": 26.088,
+      "catnat_sigma": 23.652,
+      "catnat_nu": 23.269
+    },
+    "0.3": {
+      "softmax": 26.087,
+      "catnat_sigma": 23.656,
+      "catnat_nu": 23.944
+    }
+  },
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "omp_num_threads": "1"
+  },
+  "runtime_s": 22.54,
+  "verdict": "SUPPORTS (toy-scale): both catnat variants reach lower mean held-out test NLL than softmax with lower cross-seed variance; catnat_nu best"
+}

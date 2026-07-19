@@ -1,0 +1,35 @@
+{
+  "claim": "ViT: Tucker matches GQA/MLA val perf with ~10x fewer params (Fig 3)",
+  "status": "CPU layer sanity PASS; full-scale accuracy deferred to GPU kit (not fabricated)",
+  "cpu_layer_config": {
+    "d": 32,
+    "nH": 4,
+    "dH": 8,
+    "r1": 4,
+    "r2": 12,
+    "r3": 12,
+    "N": 6,
+    "dtype": "float64"
+  },
+  "err_forward_vs_numpy": 1.0842021724855044e-18,
+  "gradcheck_input_jacobian": true,
+  "param_grad_max_rel_err": 1.4806243964881875e-06,
+  "layer_params": 2720,
+  "analytic_params": 2720,
+  "param_count_match": true,
+  "vit_b16_params_per_layer": {
+    "MHA": 2359296,
+    "GQA_nKV1": 1277952,
+    "MLA_dc16": 651264,
+    "Tucker_8_16_16": 53440,
+    "Tucker_8_32_32": 114880
+  },
+  "reduction_tucker_vs_gqa_x": 23.91,
+  "reduction_tucker_vs_mla_x": 12.19,
+  "cpu_layer_sanity_pass": true,
+  "accuracy_result": "deferred_to_gpu_kit",
+  "runtime_s": 1.111,
+  "torch": "2.13.0+cpu",
+  "numpy": "2.2.6",
+  "script_sha256": "f376943982be763b494d25488c699b646ad92708a67e4d6bf34ed8bb41a7e109"
+}

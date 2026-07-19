@@ -1,0 +1,73 @@
+{
+  "claim": "5-boltzmann",
+  "note": "Real 2D asymmetric double-well potential (not Gaussian mixture); trained MLP diffusion score model on exact rejection-sampled data; Rex-integrated likelihood + self-normalized importance sampling.",
+  "potential": {
+    "a": 4.0,
+    "b": 2.0,
+    "c": 0.5,
+    "formula": "a*(x1^2-1)^2 + b*x2^2 + c*x1"
+  },
+  "ground_truth": {
+    "quadrature": {
+      "grid_shape": [
+        900,
+        700
+      ],
+      "p_plus": 0.28243465217416147,
+      "p_minus": 0.7175653478258389,
+      "dF": 0.9324168165052141
+    },
+    "mcmc": {
+      "n_chains": 6,
+      "n_steps_per_chain": 200000,
+      "burnin": 20000,
+      "accept_rate": 0.46855833333333335,
+      "p_plus": 0.27436203703703704,
+      "p_plus_std_across_chains": 0.02550896022208269,
+      "p_minus": 0.725637962962963,
+      "dF": 0.9726026795507924,
+      "runtime_s": 3.76
+    },
+    "cross_check_abs_diff": 0.04018586304557825
+  },
+  "training": {
+    "n_params": 4546,
+    "n_train": 4000,
+    "n_heldout": 400,
+    "train_steps": 1200,
+    "final_loss": 0.08871253579854965,
+    "train_time_s": 0.84
+  },
+  "reversibility": {
+    "steps": 24,
+    "roundtrip_err": 2.7755575615628914e-15,
+    "ok": true
+  },
+  "importance_sampling": {
+    "n_samples": 800,
+    "accurate": {
+      "gen_steps": 30,
+      "order": 3,
+      "ess_over_n": 0.5931798164265768,
+      "p_plus_hat": 0.2837566121869896,
+      "dF_hat": 0.9259031649259146,
+      "abs_err_vs_quadrature": 0.0065136515792995064,
+      "abs_err_vs_mcmc": 0.04669951462487776
+    },
+    "crude": {
+      "gen_steps": 2,
+      "order": 1,
+      "ess_over_n": 0.18638603453865013,
+      "p_plus_hat": 0.743137887786425,
+      "dF_hat": -1.0623421974240217,
+      "abs_err_vs_quadrature": 1.9947590139292357
+    }
+  },
+  "lik_ok": true,
+  "boltz_ok": true,
+  "gt_cross_check_ok": true,
+  "verdict": "SUPPORTED (real double-well potential)",
+  "torch_version": "2.13.0+cpu",
+  "numpy_version": "2.2.6",
+  "runtime_s": 6.87
+}

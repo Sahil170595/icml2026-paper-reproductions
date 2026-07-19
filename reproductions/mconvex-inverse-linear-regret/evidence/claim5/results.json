@@ -1,0 +1,77 @@
+{
+  "claim": "Headline: under M-convex sets regret is FINITE (T-independent), resolving the open problem; prior bounds were O(d log T)",
+  "target": "R_T bounded independent of T; R_T<=C(d,2) (toposort), <=log_{e/(e-1)}(d!) (centroid); d*ln(T) diverges",
+  "acceptance_rule": "(A) plateau ratio R_1e6/R_1e3 in [0.98,1.02]; (B) R_T<=finite cap at all T; (C) prior d*ln(T) grows >=1.5x",
+  "Tmax": 1000000,
+  "by_dimension": {
+    "12": {
+      "binom_d_2": 66,
+      "grunbaum_bound": 43.6,
+      "R_T_toposort": {
+        "100": 23,
+        "1000": 23,
+        "10000": 23,
+        "100000": 23,
+        "1000000": 23
+      },
+      "R_T_centroid": {
+        "100": 14,
+        "1000": 14,
+        "10000": 14,
+        "100000": 14,
+        "1000000": 14
+      },
+      "prior_reference_d_lnT": {
+        "100": 55.3,
+        "1000": 82.9,
+        "10000": 110.5,
+        "100000": 138.2,
+        "1000000": 165.8
+      },
+      "order_determined_at_round_topo": 388,
+      "order_determined_at_round_cent": 228,
+      "plateau_ratio_toposort_1e6_over_1e3": 1.0,
+      "plateau_ratio_centroid_1e6_over_1e3": 1.0,
+      "prior_dlnT_growth_1e3_to_1e6": 2.0,
+      "toposort_le_binom": true,
+      "centroid_le_grunbaum": true
+    },
+    "20": {
+      "binom_d_2": 190,
+      "grunbaum_bound": 92.3,
+      "R_T_toposort": {
+        "100": 29,
+        "1000": 46,
+        "10000": 46,
+        "100000": 46,
+        "1000000": 46
+      },
+      "R_T_centroid": {
+        "100": 14,
+        "1000": 22,
+        "10000": 22,
+        "100000": 22,
+        "1000000": 22
+      },
+      "prior_reference_d_lnT": {
+        "100": 92.1,
+        "1000": 138.2,
+        "10000": 184.2,
+        "100000": 230.3,
+        "1000000": 276.3
+      },
+      "order_determined_at_round_topo": 748,
+      "order_determined_at_round_cent": 910,
+      "plateau_ratio_toposort_1e6_over_1e3": 1.0,
+      "plateau_ratio_centroid_1e6_over_1e3": 1.0,
+      "prior_dlnT_growth_1e3_to_1e6": 1.999,
+      "toposort_le_binom": true,
+      "centroid_le_grunbaum": true
+    }
+  },
+  "verdict_rule_A_plateau": true,
+  "verdict_rule_B_finite_cap": true,
+  "verdict_rule_C_prior_grows": true,
+  "runtime_sec": 0.5,
+  "numpy_version": "2.2.6"
+}

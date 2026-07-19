@@ -1,0 +1,16 @@
+{
+ "size": "P7",
+ "n": 7,
+ "desc": "triangle face poset (3 vertices, 3 edges, 1 face), Aut=S3, |G|=6",
+ "group_order": 6,
+ "n_train": 1024,
+ "n_test": 320,
+ "auto_check": "6/6 verified Pi A Pi^T == A",
+ "eq_residual_TA": 3.3306690738754696e-16,
+ "eq_residual_TB": 9.992007221626409e-16,
+ "eq_residual_TC": 0.7589449599340959,
+ "eq_residual_P": 0.0,
+ "floor_TC_rel": 0.06768439486862056,
+ "primitive_linfit_resid_TA": 0.09007240489922355,
+ "primitive_linfit_resid_TB": 0.09816478032110983
+}

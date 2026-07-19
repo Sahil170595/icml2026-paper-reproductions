@@ -1,0 +1,22 @@
+{
+  "claim": "DAVE layer-derivative decomposition D_X F = L(X) [effective] + operator-variation (Eq.3), and multiplicative composition of effective transformations W_L=prod W_Li (Eq. after 4)",
+  "model": "compact real ViT (img32/patch8/dim32/depth2/4heads), pure-PyTorch, float64, random-init weights",
+  "dtype": "float64",
+  "unit_roundoff_f64": 2.22e-16,
+  "per_layer_worst_abs_err": {
+    "LayerNorm": 0.0,
+    "MHSA(attention)": 1.0842021724855044e-19,
+    "MLP(GELU)": 0.0,
+    "Linear(head)": 0.0
+  },
+  "worst_per_layer_abs_err": 1.0842021724855044e-19,
+  "composition_abs_err": 1.3552527156068805e-20,
+  "composition_rel_err": 9.419167314651124e-16,
+  "opvar_fraction_of_raw_gradient_mean": 0.3522577236007657,
+  "opvar_fraction_of_raw_gradient_range": [
+    0.1740744357709888,
+    0.6203919554313885
+  ],
+  "runtime_s": 2.76,
+  "verdict": "VERIFIED: Eq.3 decomposition holds to machine precision (worst 1.1e-19) on 4 real ViT layer types; effective transformation composes multiplicatively to 1.4e-20; operator variation is a non-trivial ~35% of the raw gradient."
+}

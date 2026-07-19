@@ -1,0 +1,85 @@
+{
+  "claim": 3,
+  "note_ode": "Paper arXiv 2603.09276 contains no ODE / differential equation / well-posedness statement; that fragment of the auto-extracted claim is a mis-extraction and is not reproducible. Reproducible core = Theorem 3.5 improved sqrt(T)-type cumulative regret upper bound.",
+  "setup": {
+    "domain": "[0,1] grid (K points > horizon, continuous approx)",
+    "kernel": "squared-exponential",
+    "K": 200,
+    "ell": 0.02,
+    "noise": 0.25,
+    "M_draws": 40,
+    "seed0": 4000,
+    "T_grid": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "sampling": "exact Matheron / pathwise posterior",
+    "wall_s": 32.924049854278564
+  },
+  "measured": {
+    "T": [
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "E_RT": [
+      50.09383028346376,
+      67.48685908755826,
+      81.70394911782778,
+      95.34098296412613,
+      110.62927798314942,
+      126.39559955072866
+    ],
+    "avg_regret_RT_over_T": [
+      1.5654321963582425,
+      1.0544821732430978,
+      0.6383121024830295,
+      0.3724257147036177,
+      0.21607280856083871,
+      0.12343320268625846
+    ],
+    "rho_RT_over_sqrtT_logT": [
+      2.5551346151643104,
+      2.028394936058179,
+      1.4883825256755905,
+      1.0745934634048744,
+      0.7837311834661974,
+      0.5698447020688235
+    ],
+    "rho_reference_if_linear": [
+      1.632223114554863,
+      1.9235933878519513,
+      2.3317473065069474,
+      2.8853900817779268,
+      3.627162476788585,
+      4.6166241308446825
+    ],
+    "per_doubling_increment": [
+      17.3930288040945,
+      14.217090030269517,
+      13.637033846298351,
+      15.288295019023295,
+      15.76632156757924
+    ]
+  },
+  "empirical_power_exponent": 0.25823033991650485,
+  "fit_R2": {
+    "linear_aT": -2.6145850286005814,
+    "sqrtT_logT": -0.8124509994567488,
+    "log_form": 0.9989371671292616
+  },
+  "fit_const_C_for_sqrtT_logT_upper_bound": 2.5551346151643104,
+  "checks": {
+    "sublinear_avg_regret_to_zero": true,
+    "upper_bound_O_sqrtT_logT_holds_rho_nonincreasing": true,
+    "linear_regret_rejected_sqrtlog_fits_better": true
+  },
+  "numpy": "2.2.6"
+}

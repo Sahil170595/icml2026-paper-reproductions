@@ -1,0 +1,16 @@
+{
+  "claim": "diffusion distance == Mahalanobis with RWDK K_t=P^{2t}D_d^{-1} (Prop 4.1); parametrized digraph RWDK P_(nu)^{2t}D^{-1} symmetric PSD; Eq.7 single-power embedding PSD only for even t; rank-1 limit",
+  "numpy": "2.2.6",
+  "undirected_mahalanobis_maxdiff": 2.7755575615628914e-17,
+  "undirected_Kt_eq_P2t_Dd_inv_maxdiff": 1.0408340855860843e-17,
+  "undirected_RWDK_symmetry": 3.469446951953614e-18,
+  "undirected_RWDK_min_eig": -1.072715112399773e-18,
+  "digraph_parametrized_mahalanobis_maxdiff": 8.326672684688674e-17,
+  "digraph_RWDK_double_power_symmetry": 1.0408340855860843e-17,
+  "digraph_RWDK_double_power_min_eig": -6.042134662732354e-18,
+  "digraph_Eq7_embedding_symmetry": 5.551115123125783e-17,
+  "digraph_Eq7_embedding_even_t_min_eig": 2.2478031145896238e-12,
+  "digraph_Eq7_embedding_odd_t_min_eig": -0.4472255889792588,
+  "rank1_diffusion_limit_maxdiff": 2.2768245622195593e-17,
+  "verdict": "PASS"
+}

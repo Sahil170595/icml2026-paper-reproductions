@@ -1,0 +1,94 @@
+{
+  "paper": "arXiv 2606.00835 (rZTiFcDihH)",
+  "phi": 1.618033988749895,
+  "sqrt2": 1.4142135623730951,
+  "experimentA_upperbound_exhaustive": {
+    "2": {
+      "theta_K": 1.4142135623730951,
+      "slots": 5,
+      "instances_enumerated": 59048,
+      "worst_ratio": 1.0000000000000002,
+      "exceeds_theta_K": false
+    },
+    "3": {
+      "theta_K": 1.5,
+      "slots": 4,
+      "instances_enumerated": 65535,
+      "worst_ratio": 1.4,
+      "exceeds_theta_K": false
+    },
+    "4": {
+      "theta_K": 1.5391888728108891,
+      "slots": 3,
+      "instances_enumerated": 15624,
+      "worst_ratio": 1.4608111271891109,
+      "exceeds_theta_K": false
+    }
+  },
+  "experimentB_tightness_gadget": {
+    "2": {
+      "theta_K": 1.4142135623730951,
+      "gadget_ratio": 1.414213561373095,
+      "gap_to_theta_K": 1.000000082740371e-09
+    },
+    "3": {
+      "theta_K": 1.5,
+      "gadget_ratio": 1.499999999,
+      "gap_to_theta_K": 1.000000082740371e-09
+    },
+    "4": {
+      "theta_K": 1.5391888728108891,
+      "gadget_ratio": 1.539188871810889,
+      "gap_to_theta_K": 1.000000082740371e-09
+    },
+    "5": {
+      "theta_K": 1.5615528128088303,
+      "gadget_ratio": 1.5615528118088302,
+      "gap_to_theta_K": 1.000000082740371e-09
+    },
+    "6": {
+      "theta_K": 1.5758985463772526,
+      "gadget_ratio": 1.5758985453772527,
+      "gap_to_theta_K": 9.99999860695766e-10
+    },
+    "7": {
+      "theta_K": 1.585786437626905,
+      "gadget_ratio": 1.585786436626905,
+      "gap_to_theta_K": 1.000000082740371e-09
+    },
+    "8": {
+      "theta_K": 1.5929354086909486,
+      "gadget_ratio": 1.5929354076909488,
+      "gap_to_theta_K": 9.99999860695766e-10
+    },
+    "9": {
+      "theta_K": 1.5982787968721308,
+      "gadget_ratio": 1.598278795872131,
+      "gap_to_theta_K": 9.99999860695766e-10
+    },
+    "10": {
+      "theta_K": 1.6023681709031592,
+      "gadget_ratio": 1.6023681699031593,
+      "gap_to_theta_K": 9.99999860695766e-10
+    }
+  },
+  "experimentBp_convergence_K3": {
+    "theta_K": 1.5,
+    "ratio_by_eps": {
+      "1e-01": 1.4,
+      "1e-02": 1.49,
+      "1e-03": 1.499,
+      "1e-06": 1.499999,
+      "1e-09": 1.499999999
+    }
+  },
+  "experimentC_tight_targets": {
+    "theta_2": 1.4142135623730951,
+    "theta_2_target_sqrt2": 1.4142135623730951,
+    "theta_2_err": 0.0,
+    "theta_3": 1.5,
+    "theta_3_target_1.5": 1.5,
+    "theta_3_err": 0.0
+  },
+  "runtime_s": 1.62
+}

@@ -1,0 +1,47 @@
+==============================================================================
+[Setup] Synthetic decentralized PCA: n=10 agents, d=50, k=5, population gap=0.150, N_samples/agent=6000
+==============================================================================
+Graph: 10 nodes, 32 edges (ring + random chords), gossip spectral gap gamma_W=0.3950, accelerated-gossip omega=0.1134
+Empirical A_mean eigenvalues: lambda_k=0.9883, lambda_k+1=0.8557, empirical gap=0.1326 (population gap was 0.15)
+beta* (from empirical lambda_k+1) = 0.18304; condition lambda_k > 2 sqrt(beta*) >= lambda_k+1 holds: 0.9883 > 0.8557 >= 0.8557
+
+====================================================================================================
+   L     method  T_reach(eps=1e-3)   total_comm=T*L   final mean sin
+====================================================================================================
+   2      ADePM               None             None       8.4525e-03
+   2       DePM               None             None       6.5114e-03
+   2     DeEPCA                 54             6912       5.7947e-06
+   3      ADePM               None             None       2.6613e-03
+   3       DePM               None             None       2.0474e-03
+   3     DeEPCA                 54            10368       1.8609e-06
+   5      ADePM                 19             6080       4.0610e-04
+   5       DePM                 54            17280       3.0853e-04
+   5     DeEPCA                 54            17280       2.5966e-07
+  10      ADePM                 17            10880       2.7779e-06
+  10       DePM                 54            34560       2.1078e-06
+  10     DeEPCA                 54            34560       1.7820e-09
+  20      ADePM                 17            21760       8.5599e-11
+  20       DePM                 54            69120       6.4885e-11
+  20     DeEPCA                 54            69120       6.8488e-14
+  40      ADePM                 17            43520       1.5109e-15
+  40       DePM                 54           138240       1.0333e-15
+  40     DeEPCA                 54           138240       7.9895e-14
+  80      ADePM                 17            87040       1.5970e-15
+  80       DePM                 54           276480       1.0545e-15
+  80     DeEPCA                 54           276480       7.2285e-14
+
+==============================================================================
+[Headline] ADePM vs DePM speedup at IDENTICAL L (same per-iteration comm cost)
+==============================================================================
+L=  2: ADePM t_reach=None  DePM t_reach=None (one or both did not reach target within T_MAX=400 -- see note below)
+L=  3: ADePM t_reach=None  DePM t_reach=None (one or both did not reach target within T_MAX=400 -- see note below)
+L=  5: ADePM 19 iters vs DePM 54 iters to eps=1e-03  -> speedup 2.84x  (comm ratio ADePM/DePM = 0.352, i.e. ADePM uses less total communication for the SAME accuracy target)
+L= 10: ADePM 17 iters vs DePM 54 iters to eps=1e-03  -> speedup 3.18x  (comm ratio ADePM/DePM = 0.315, i.e. ADePM uses less total communication for the SAME accuracy target)
+L= 20: ADePM 17 iters vs DePM 54 iters to eps=1e-03  -> speedup 3.18x  (comm ratio ADePM/DePM = 0.315, i.e. ADePM uses less total communication for the SAME accuracy target)
+L= 40: ADePM 17 iters vs DePM 54 iters to eps=1e-03  -> speedup 3.18x  (comm ratio ADePM/DePM = 0.315, i.e. ADePM uses less total communication for the SAME accuracy target)
+L= 80: ADePM 17 iters vs DePM 54 iters to eps=1e-03  -> speedup 3.18x  (comm ratio ADePM/DePM = 0.315, i.e. ADePM uses less total communication for the SAME accuracy target)
+
+At small L the one-shot averaging methods (ADePM, DePM) may fail to reach a tight target at all (insufficient consensus per PCA step), while DeEPCA's gradient-tracking makes its accuracy asymptotically L-independent -- this is expected and matches the paper's Table 2 characterization (ADePM/DePM require L = Omega(1/sqrt(gamma_W) log(.)); DeEPCA does not).
+
+Total runtime: 11.8s
+[written] claim2/results.json

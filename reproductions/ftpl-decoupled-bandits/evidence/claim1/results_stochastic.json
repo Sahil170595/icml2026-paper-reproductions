@@ -1,0 +1,75 @@
+{
+  "orid": "q1KhliMwKP",
+  "claim": "1_stochastic",
+  "regime": "SCA/stochastic",
+  "setup": {
+    "K": 5,
+    "mu_loss": [
+      0.4,
+      0.45,
+      0.55,
+      0.7,
+      0.8
+    ],
+    "best_arm": 0,
+    "Delta": [
+      0.0,
+      0.05,
+      0.15,
+      0.3,
+      0.4
+    ],
+    "Delta_min": 0.04999999999999999,
+    "alpha": 3.0,
+    "c": 2.0,
+    "seeds": 500,
+    "T_max": 80000,
+    "seed0": 20260716
+  },
+  "checkpoints_T": [
+    1000,
+    2000,
+    5000,
+    10000,
+    20000,
+    50000,
+    80000
+  ],
+  "regret_mean": [
+    36.079,
+    48.086,
+    63.666,
+    71.899,
+    78.137,
+    83.453,
+    85.02
+  ],
+  "regret_sem": [
+    0.862,
+    1.268,
+    2.099,
+    2.727,
+    3.532,
+    4.462,
+    4.471
+  ],
+  "sqrtT_reference": [
+    36.079,
+    51.024,
+    80.676,
+    114.092,
+    161.351,
+    255.118,
+    322.702
+  ],
+  "loglog_slope_full": 0.1865,
+  "loglog_slope_tail": 0.0802,
+  "sqrtT_reference_slope": 0.5,
+  "plateau_ratio_tail_over_1e4": 1.1825,
+  "regret_at_T1e4": 71.899,
+  "regret_at_Tmax": 85.02,
+  "corollary3_O1_bound_order": 425.0,
+  "wall_seconds": 14.4,
+  "passed": true,
+  "verdict": "verified"
+}

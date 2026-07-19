@@ -1,0 +1,3 @@
+{"utc": "2026-07-18T00:34:03Z", "cmd": "python claim1/repro_claim1.py", "exit_code": 0, "duration_s": 2.1, "cwd": "evidence-package", "note": "Claim 1: scalar/diagonal/time-varying SSD equivalence, 14500 total runs"}
+{"utc": "2026-07-18T00:34:05Z", "cmd": "python claim2/repro_claim2.py", "exit_code": 0, "duration_s": 4.2, "cwd": "evidence-package", "note": "Claim 2: exact 4NTd op count + O(T) vs O(T^2) timing sweep"}
+{"utc": "2026-07-18T00:34:09Z", "cmd": "python claim3/repro_claim3.py", "exit_code": 0, "duration_s": 11.6, "cwd": "evidence-package", "note": "Claim 3: Theorem 4.1 necessary/sufficient/impossibility, T up to 512, N up to 16"}

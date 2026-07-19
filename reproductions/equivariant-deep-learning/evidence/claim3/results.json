@@ -1,0 +1,247 @@
+{
+  "config": {
+    "n": 240,
+    "p": 0.05,
+    "sig_dim": 3,
+    "n_trials": 5,
+    "labeled": 40,
+    "test": 200,
+    "arch": "2-layer P-relu-P softmax"
+  },
+  "feature_sweep": [
+    {
+      "feat_noise": 0.5,
+      "gcn_mean": 0.7979999999999999,
+      "gcn_std": 0.016309506430300054,
+      "sheaf_mean": 1.0,
+      "sheaf_std": 0.0,
+      "gcn_acc": [
+        0.815,
+        0.785,
+        0.79,
+        0.78,
+        0.82
+      ],
+      "sheaf_acc": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "separated": true
+    },
+    {
+      "feat_noise": 1.0,
+      "gcn_mean": 0.7389999999999999,
+      "gcn_std": 0.01593737745050924,
+      "sheaf_mean": 1.0,
+      "sheaf_std": 0.0,
+      "gcn_acc": [
+        0.735,
+        0.725,
+        0.755,
+        0.72,
+        0.76
+      ],
+      "sheaf_acc": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "separated": true
+    },
+    {
+      "feat_noise": 1.5,
+      "gcn_mean": 0.68,
+      "gcn_std": 0.02810693864511038,
+      "sheaf_mean": 1.0,
+      "sheaf_std": 0.0,
+      "gcn_acc": [
+        0.645,
+        0.68,
+        0.73,
+        0.68,
+        0.665
+      ],
+      "sheaf_acc": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "separated": true
+    },
+    {
+      "feat_noise": 2.0,
+      "gcn_mean": 0.616,
+      "gcn_std": 0.03954743986657041,
+      "sheaf_mean": 1.0,
+      "sheaf_std": 0.0,
+      "gcn_acc": [
+        0.58,
+        0.625,
+        0.675,
+        0.635,
+        0.565
+      ],
+      "sheaf_acc": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "separated": true
+    },
+    {
+      "feat_noise": 2.5,
+      "gcn_mean": 0.592,
+      "gcn_std": 0.054918120870983946,
+      "sheaf_mean": 1.0,
+      "sheaf_std": 0.0,
+      "gcn_acc": [
+        0.505,
+        0.615,
+        0.67,
+        0.605,
+        0.565
+      ],
+      "sheaf_acc": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "separated": true
+    }
+  ],
+  "edge_sweep": [
+    {
+      "edge_flip": 0.0,
+      "gcn_mean": 0.6449999999999999,
+      "gcn_std": 0.046904157598234304,
+      "sheaf_mean": 1.0,
+      "sheaf_std": 0.0,
+      "gcn_acc": [
+        0.65,
+        0.73,
+        0.595,
+        0.64,
+        0.61
+      ],
+      "sheaf_acc": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "separated": true
+    },
+    {
+      "edge_flip": 0.1,
+      "gcn_mean": 0.645,
+      "gcn_std": 0.027748873851023242,
+      "sheaf_mean": 0.9970000000000001,
+      "sheaf_std": 0.00244948974278318,
+      "gcn_acc": [
+        0.655,
+        0.685,
+        0.635,
+        0.65,
+        0.6
+      ],
+      "sheaf_acc": [
+        1.0,
+        0.995,
+        1.0,
+        0.995,
+        0.995
+      ],
+      "separated": true
+    },
+    {
+      "edge_flip": 0.2,
+      "gcn_mean": 0.645,
+      "gcn_std": 0.027748873851023242,
+      "sheaf_mean": 0.986,
+      "sheaf_std": 0.011575836902790237,
+      "gcn_acc": [
+        0.655,
+        0.685,
+        0.635,
+        0.65,
+        0.6
+      ],
+      "sheaf_acc": [
+        1.0,
+        0.965,
+        0.985,
+        0.99,
+        0.99
+      ],
+      "separated": true
+    },
+    {
+      "edge_flip": 0.3,
+      "gcn_mean": 0.645,
+      "gcn_std": 0.027748873851023242,
+      "sheaf_mean": 0.933,
+      "sheaf_std": 0.02379075450674061,
+      "gcn_acc": [
+        0.655,
+        0.685,
+        0.635,
+        0.65,
+        0.6
+      ],
+      "sheaf_acc": [
+        0.955,
+        0.905,
+        0.91,
+        0.965,
+        0.93
+      ],
+      "separated": true
+    },
+    {
+      "edge_flip": 0.4,
+      "gcn_mean": 0.645,
+      "gcn_std": 0.027748873851023242,
+      "sheaf_mean": 0.805,
+      "sheaf_std": 0.02323790007724447,
+      "gcn_acc": [
+        0.655,
+        0.685,
+        0.635,
+        0.65,
+        0.6
+      ],
+      "sheaf_acc": [
+        0.84,
+        0.78,
+        0.78,
+        0.82,
+        0.805
+      ],
+      "separated": true
+    }
+  ],
+  "controls": {
+    "c1_signblind_matches_gcn": true,
+    "acc_gcn": 0.68,
+    "acc_signblind": 0.68,
+    "c2_random_chance": true,
+    "acc_rand_gcn": 0.53,
+    "acc_rand_sheaf": 0.485
+  },
+  "sheaf_wins_all_cells": true,
+  "cells_separated_beyond_errbars": 10,
+  "n_cells": 10,
+  "overall_pass": true
+}

@@ -1,0 +1,88 @@
+{
+ "claim": "1: reward close to teacher -> generalization error decreases monotonically with k",
+ "paper": {
+  "arxiv_id": "2512.19905",
+  "openreview_id": "ANVg7NnupP",
+  "title": "Demystifying LLM-as-a-Judge: Analytically Tractable Model for Inference-Time Scaling"
+ },
+ "config": {
+  "d": 60,
+  "n_train": 300,
+  "S": 1.0,
+  "sigma": 0.15,
+  "gamma": 0.5,
+  "n_test": 1200,
+  "eta_misalignment": 0.05,
+  "k_max": 1000
+ },
+ "diagnostics": {
+  "eta": 0.05,
+  "mean_teacher_bias2": 0.006451148927184833,
+  "mean_reward_teacher_gap2": 0.0028279972165075533,
+  "mean_s2": 0.02797315543710671,
+  "max_abs_tprime": 2.0528894723527618
+ },
+ "delta_of_k_report_points": [
+  [
+   1,
+   0.034424304364291544
+  ],
+  [
+   2,
+   0.014145463172227602
+  ],
+  [
+   3,
+   0.00870977006190013
+  ],
+  [
+   5,
+   0.005255862634290248
+  ],
+  [
+   10,
+   0.0034857867120044704
+  ],
+  [
+   20,
+   0.002989181443885985
+  ],
+  [
+   50,
+   0.0028515851648670213
+  ],
+  [
+   100,
+   0.0028339163662626844
+  ],
+  [
+   200,
+   0.0028298665486633577
+  ],
+  [
+   300,
+   0.0028291484310141463
+  ],
+  [
+   500,
+   0.002828785559542949
+  ],
+  [
+   750,
+   0.0028286728235128746
+  ],
+  [
+   1000,
+   0.0028286334457589004
+  ]
+ ],
+ "delta_1": 0.034424304364291544,
+ "delta_kmax": 0.0028286334457589004,
+ "min_delta": 0.0028286334457589004,
+ "argmin_k": 1000,
+ "strictly_decreasing_all_k_1_to_kmax": true,
+ "num_non_decreasing_steps": 0,
+ "max_nonneg_diff": -1.0133928982428153e-10,
+ "floor_mean_reward_teacher_gap2": 0.0028279972165075533,
+ "runtime_s": 253.0
+}

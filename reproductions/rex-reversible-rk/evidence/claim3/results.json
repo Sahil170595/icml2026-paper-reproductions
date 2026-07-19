@@ -1,0 +1,43 @@
+{
+  "claim": 3,
+  "note": "mechanism proxy for Fig 7 image inversion (analytic GMM diffusion)",
+  "schedule": "VP",
+  "D": 8,
+  "tstart": 0.05,
+  "tend": 3.0,
+  "nfe_rows": {
+    "10": {
+      "rex_p2": 4.7388019434417096e-14,
+      "rex_p1": 2.919886554764162e-14,
+      "ddim": 0.17677599480243486,
+      "ratio": 3730394241250.8916
+    },
+    "20": {
+      "rex_p2": 5.815718277328112e-14,
+      "rex_p1": 2.961519918187605e-14,
+      "ddim": 0.08808648098752168,
+      "ratio": 1514627717283.2869
+    },
+    "50": {
+      "rex_p2": 3.2020682401897225e-14,
+      "rex_p1": 3.3949694907183435e-14,
+      "ddim": 0.03732911230906079,
+      "ratio": 1165781285999.359
+    },
+    "100": {
+      "rex_p2": 2.847259465236599e-14,
+      "rex_p1": 4.359475743361448e-14,
+      "ddim": 0.019043235743238764,
+      "ratio": 668826848263.9437
+    }
+  },
+  "mean_rex_p2": 4.150961981549036e-14,
+  "mean_ddim": 0.08030870596056401,
+  "rex_ok": true,
+  "separation_ok": true,
+  "rex_nfe_independent": true,
+  "ddim_scales_with_nfe": true,
+  "verdict": "SUPPORTED",
+  "numpy": "2.2.6",
+  "runtime_s": 0.316
+}

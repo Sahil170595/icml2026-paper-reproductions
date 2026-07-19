@@ -1,0 +1,39 @@
+{
+  "claim": "SGShift outperforms baselines Diff/WhyShift/SHAP",
+  "per_cell": {
+    "diabetes/matched": {
+      "best_sgshift": 0.857078853046595,
+      "best_baseline": 0.7620967741935484,
+      "gap": 0.09498207885304666
+    },
+    "diabetes/mismatch": {
+      "best_sgshift": 0.889336917562724,
+      "best_baseline": 0.8700716845878135,
+      "gap": 0.019265232974910562
+    },
+    "support2/matched": {
+      "best_sgshift": 1.0,
+      "best_baseline": 0.9918300653594772,
+      "gap": 0.008169934640522847
+    },
+    "support2/mismatch": {
+      "best_sgshift": 0.9991830065359477,
+      "best_baseline": 0.9877450980392157,
+      "gap": 0.011437908496731986
+    },
+    "adult/matched": {
+      "best_sgshift": 1.0,
+      "best_baseline": 0.9944444444444445,
+      "gap": 0.005555555555555536
+    },
+    "adult/mismatch": {
+      "best_sgshift": 0.9722222222222222,
+      "best_baseline": 0.9666666666666668,
+      "gap": 0.005555555555555425
+    }
+  },
+  "cells_won": 6,
+  "cells_total": 6,
+  "mean_auc_gap": 0.024161044346053834,
+  "verdict": "SUPPORTED"
+}

@@ -1,0 +1,76 @@
+{
+  "claim": "GQA/MQA are exact special cases of Tucker Attention, rank (nH,d,nKV*dH) (Thm B.3)",
+  "cases": [
+    {
+      "tag": "GQA n_KV=2",
+      "nH": 8,
+      "nKV": 2,
+      "dH": 4,
+      "d_model": 32,
+      "N": 9,
+      "err_pre": 1.7763568394002505e-15,
+      "err_post": 1.7763568394002505e-15,
+      "err_out": 6.394884621840902e-14,
+      "measured_ranks_W": [
+        8,
+        32,
+        8
+      ],
+      "target_ranks": [
+        8,
+        32,
+        8
+      ],
+      "ok": true
+    },
+    {
+      "tag": "GQA n_KV=4",
+      "nH": 8,
+      "nKV": 4,
+      "dH": 4,
+      "d_model": 32,
+      "N": 9,
+      "err_pre": 3.552713678800501e-15,
+      "err_post": 1.7763568394002505e-15,
+      "err_out": 4.263256414560601e-14,
+      "measured_ranks_W": [
+        8,
+        32,
+        16
+      ],
+      "target_ranks": [
+        8,
+        32,
+        16
+      ],
+      "ok": true
+    },
+    {
+      "tag": "MQA (n_KV=1)",
+      "nH": 8,
+      "nKV": 1,
+      "dH": 4,
+      "d_model": 32,
+      "N": 9,
+      "err_pre": 1.7763568394002505e-15,
+      "err_post": 1.7763568394002505e-15,
+      "err_out": 7.283063041541027e-14,
+      "measured_ranks_W": [
+        8,
+        32,
+        4
+      ],
+      "target_ranks": [
+        8,
+        32,
+        4
+      ],
+      "ok": true
+    }
+  ],
+  "verified": true,
+  "tol": 1e-09,
+  "runtime_s": 0.008,
+  "numpy": "2.2.6",
+  "script_sha256": "bd0b22769d85120da588b0173aecb0efcfb2a793d7cda011408f69517b385e94"
+}

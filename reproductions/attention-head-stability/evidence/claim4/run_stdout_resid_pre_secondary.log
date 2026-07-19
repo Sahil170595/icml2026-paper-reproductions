@@ -1,0 +1,47 @@
+W0718 01:22:14.829000 55544 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W0718 01:22:16.622000 55544 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loaded 100 official prompts (sha256-verified).
+
+--- l8_h8 (Adam) ---
+  seed 1: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed1_epoch1_c4_gelu\final.pt
+  seed 2: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed2_epoch1_c4_gelu\final.pt
+  seed 3: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed3_epoch1_c4_gelu\final.pt
+  seed 4: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed4_epoch1_c4_gelu\final.pt
+  seed 5: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed5_epoch1_c4_gelu\final.pt
+  finished refit 1/5 as inst_1
+  finished refit 2/5 as inst_1
+  finished refit 3/5 as inst_1
+  finished refit 4/5 as inst_1
+  finished refit 5/5 as inst_1
+  Layer-wise residual CKA (RBF): 1:0.883830, 2:0.895795, 3:0.922366, 4:0.928149, 5:0.901385, 6:0.931127, 7:0.924634, 8:0.913838
+  Overall mean (all pairs incl. self): 0.912641
+  Overall mean (off-diagonal pairs only): 0.890801
+
+--- l8_h8_wd (AdamW) ---
+  seed 1: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed1_epoch1_c4_gelu\final.pt
+  seed 2: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed2_epoch1_c4_gelu\final.pt
+  seed 3: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed3_epoch1_c4_gelu\final.pt
+  seed 4: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed4_epoch1_c4_gelu\final.pt
+  seed 5: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed5_epoch1_c4_gelu\final.pt
+  finished refit 1/5 as inst_1
+  finished refit 2/5 as inst_1
+  finished refit 3/5 as inst_1
+  finished refit 4/5 as inst_1
+  finished refit 5/5 as inst_1
+  Layer-wise residual CKA (RBF): 1:0.926340, 2:0.935130, 3:0.924930, 4:0.903397, 5:0.882244, 6:0.875505, 7:0.866213, 8:0.898956
+  Overall mean (all pairs incl. self): 0.901589
+  Overall mean (off-diagonal pairs only): 0.876987
+
+=== Residual-stream vs. head-level stability summary ===
+Adam  residual CKA (RBF, all pairs)   = 0.912641
+AdamW residual CKA (RBF, all pairs)   = 0.901589
+Adam  residual CKA (RBF, off-diagonal) = 0.890801
+AdamW residual CKA (RBF, off-diagonal) = 0.876987
+[cross-ref] Adam head-level mean stability  = 0.815329
+[cross-ref] AdamW head-level mean stability  = 0.862876
+Residual > head stability (Adam):  True
+Residual > head stability (AdamW): True
+Wall time: 1897.118s
+
+Wrote C:\Users\sahil\OneDrive\Documents\Playground\icml-repro-pilot\submissions\attention-head-stability-pilot\.trackio\logbook\evidence-package\claim4\results.json
+EXIT_CODE=0

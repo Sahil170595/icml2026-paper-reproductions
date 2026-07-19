@@ -1,0 +1,10 @@
+========================================================================
+CLAIM 2  l2-ball param-noise Theta(sqrt(dT sigma_q^2)) vs additive d sqrt(T)
+[P1] param   d-slope= 0.551  R= [316.4, 517.1, 818.7, 1040.6, 1673.3, 2163.0]  accept= True
+[P2] additive d-slope= 0.974  R= [451.9, 1000.4, 2197.3, 3829.4, 8029.2, 13052.4]  accept= True
+[P4] additive/param ratio= [1.43, 1.93, 2.68, 3.68, 4.8, 6.03]  slope= 0.422  max= 6.03  accept= True
+[P3] param T-slope= 0.43  accept= True
+[P5] est-err slope param= 0.041  additive= 0.529  accept= True
+========================================================================
+ALL ACCEPT = True  runtime= 0.02 s
+wrote /sessions/keen-fervent-hamilton/mnt/icml-repro-pilot/submissions/linbandit-paramnoise-pilot/.trackio/logbook/evidence-package/claim2/results.json

@@ -1,0 +1,5 @@
+numpy 2.2.6
+Traceback (most recent call last):
+  File "<stdin>", line 11, in <module>
+AttributeError: module 'mdp_core' has no attribute 'run_episodes'
+exit=1

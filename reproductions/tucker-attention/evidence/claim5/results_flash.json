@@ -1,0 +1,262 @@
+{
+  "claim": "Tucker Attention is fully compatible with flash-attention (Sec. 3.3) -- algorithmic exactness under the FlashAttention-1 tiled online-softmax recurrence",
+  "tol": 1e-09,
+  "a_flash_kernel_sanity": {
+    "err": 5.551115123125783e-16,
+    "tile_sizes": [
+      [
+        1,
+        1
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        16,
+        16
+      ],
+      [
+        37,
+        41
+      ],
+      [
+        9,
+        3
+      ]
+    ]
+  },
+  "b_generic_tucker_cases": [
+    {
+      "seed": 200,
+      "nH": 3,
+      "d": 22,
+      "dH": 7,
+      "r2": 5,
+      "r3": 4,
+      "N": 47,
+      "bq": 7,
+      "bk": 11,
+      "err": 1.1937117960769683e-12,
+      "peak_naive": 6627,
+      "peak_tiled": 77
+    },
+    {
+      "seed": 200,
+      "nH": 3,
+      "d": 22,
+      "dH": 7,
+      "r2": 5,
+      "r3": 4,
+      "N": 47,
+      "bq": 16,
+      "bk": 16,
+      "err": 1.1937117960769683e-12,
+      "peak_naive": 6627,
+      "peak_tiled": 256
+    },
+    {
+      "seed": 200,
+      "nH": 3,
+      "d": 22,
+      "dH": 7,
+      "r2": 5,
+      "r3": 4,
+      "N": 47,
+      "bq": 47,
+      "bk": 47,
+      "err": 1.1652900866465643e-12,
+      "peak_naive": 6627,
+      "peak_tiled": 2209
+    },
+    {
+      "seed": 200,
+      "nH": 3,
+      "d": 22,
+      "dH": 7,
+      "r2": 5,
+      "r3": 4,
+      "N": 47,
+      "bq": 5,
+      "bk": 6,
+      "err": 1.1652900866465643e-12,
+      "peak_naive": 6627,
+      "peak_tiled": 30
+    },
+    {
+      "seed": 201,
+      "nH": 4,
+      "d": 24,
+      "dH": 6,
+      "r2": 8,
+      "r3": 7,
+      "N": 63,
+      "bq": 9,
+      "bk": 13,
+      "err": 3.133493464702042e-12,
+      "peak_naive": 15876,
+      "peak_tiled": 117
+    },
+    {
+      "seed": 201,
+      "nH": 4,
+      "d": 24,
+      "dH": 6,
+      "r2": 8,
+      "r3": 7,
+      "N": 63,
+      "bq": 32,
+      "bk": 32,
+      "err": 3.133493464702042e-12,
+      "peak_naive": 15876,
+      "peak_tiled": 1024
+    },
+    {
+      "seed": 201,
+      "nH": 4,
+      "d": 24,
+      "dH": 6,
+      "r2": 8,
+      "r3": 7,
+      "N": 63,
+      "bq": 63,
+      "bk": 20,
+      "err": 3.133493464702042e-12,
+      "peak_naive": 15876,
+      "peak_tiled": 1260
+    },
+    {
+      "seed": 202,
+      "nH": 2,
+      "d": 18,
+      "dH": 9,
+      "r2": 4,
+      "r3": 3,
+      "N": 30,
+      "bq": 4,
+      "bk": 4,
+      "err": 3.8546943414985435e-13,
+      "peak_naive": 1800,
+      "peak_tiled": 16
+    },
+    {
+      "seed": 202,
+      "nH": 2,
+      "d": 18,
+      "dH": 9,
+      "r2": 4,
+      "r3": 3,
+      "N": 30,
+      "bq": 30,
+      "bk": 30,
+      "err": 3.8546943414985435e-13,
+      "peak_naive": 1800,
+      "peak_tiled": 900
+    },
+    {
+      "seed": 202,
+      "nH": 2,
+      "d": 18,
+      "dH": 9,
+      "r2": 4,
+      "r3": 3,
+      "N": 30,
+      "bq": 7,
+      "bk": 12,
+      "err": 3.836930773104541e-13,
+      "peak_naive": 1800,
+      "peak_tiled": 84
+    }
+  ],
+  "b_generic_max_err": 3.133493464702042e-12,
+  "c_special_cases": {
+    "MHA": {
+      "nH": 4,
+      "dH": 5,
+      "d": 20,
+      "N": 53,
+      "err_tucker_construction": 1.7763568394002505e-15,
+      "err_tucker_construction_post": 1.7763568394002505e-15,
+      "err_naive_vs_reference": 1.1368683772161603e-13,
+      "err_tiled_vs_reference": 8.881784197001252e-14,
+      "err_tiled_vs_naive": 1.1368683772161603e-13,
+      "peak_naive": 11236,
+      "peak_tiled": 77
+    },
+    "GQA_nKV2": {
+      "nH": 8,
+      "nKV": 2,
+      "dH": 4,
+      "d": 32,
+      "N": 61,
+      "err_naive_vs_reference": 2.353672812205332e-13,
+      "err_tiled_vs_reference": 1.2789769243681803e-13,
+      "err_tiled_vs_naive": 2.3003821070233244e-13,
+      "peak_naive": 29768,
+      "peak_tiled": 45
+    },
+    "MLA": {
+      "nH": 6,
+      "dH": 6,
+      "d": 36,
+      "dcQ": 8,
+      "dcK": 6,
+      "N": 59,
+      "err_naive_vs_reference": 3.637978807091713e-12,
+      "err_tiled_vs_reference": 7.219114195322618e-12,
+      "err_tiled_vs_naive": 3.581135388230905e-12,
+      "peak_naive": 20886,
+      "peak_tiled": 64
+    }
+  },
+  "c_special_max_err": 7.219114195322618e-12,
+  "d_rope_plus_tiled": {
+    "config": {
+      "nH": 4,
+      "dH": 6,
+      "dcQ": 12,
+      "dcK": 16,
+      "N": 4096
+    },
+    "err_tiled_vs_naive": 5.684341886080802e-14,
+    "peak_naive_elems": 10000,
+    "peak_tiled_elems": 77
+  },
+  "e_memory_profile": [
+    {
+      "N": 128,
+      "peak_naive_elems": 16384,
+      "peak_tiled_elems": 4096,
+      "ratio": 4.0
+    },
+    {
+      "N": 512,
+      "peak_naive_elems": 262144,
+      "peak_tiled_elems": 4096,
+      "ratio": 64.0
+    },
+    {
+      "N": 2048,
+      "peak_naive_elems": 4194304,
+      "peak_tiled_elems": 4096,
+      "ratio": 1024.0
+    },
+    {
+      "N": 4096,
+      "peak_naive_elems": 16777216,
+      "peak_tiled_elems": 4096,
+      "ratio": 4096.0
+    }
+  ],
+  "checks": {
+    "sanity": true,
+    "generic": true,
+    "special": true,
+    "rope": true,
+    "memory": true
+  },
+  "verified": true,
+  "runtime_s": 0.741,
+  "numpy": "2.2.6",
+  "script_sha256": "573b761cfd2167aaa3b75120128559852ce0b7056a8d5ebcd1a436e80d152fe5"
+}

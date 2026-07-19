@@ -1,0 +1,107 @@
+{
+  "paper": "Minimum Distance Summaries for Robust Neural Posterior Estimation",
+  "arxiv_id": "2602.09161",
+  "openreview": "lq8fNVME8v",
+  "tex_sha256": "ff81fd973e3bcba86fb23e9a0c102ec88e240f62361315c7875de54e29ea4fd2",
+  "tex_sha256_matches_pin": true,
+  "official_repo": "https://github.com/Shermjj/Minimum-Distance-Summaries",
+  "official_commit": "45158124f0cbdc2f6c1ac602c9fc5501dce20af3",
+  "n_robustness_assumptions": 10,
+  "n_consistency_assumptions": 4,
+  "robustness_assumption_lines": [
+    497,
+    560
+  ],
+  "consistency_assumption_lines": [
+    686,
+    705
+  ],
+  "dag": {
+    "R0_perturbation_path": {
+      "ok": true,
+      "n_anchors": 4,
+      "missing": []
+    },
+    "R1_bounded_influence": {
+      "ok": true,
+      "n_anchors": 7,
+      "missing": []
+    },
+    "R2_summary_to_likelihood": {
+      "ok": true,
+      "n_anchors": 5,
+      "missing": []
+    },
+    "R3_likelihood_to_KL": {
+      "ok": true,
+      "n_anchors": 5,
+      "missing": []
+    },
+    "C1_posterior_to_predictive": {
+      "ok": true,
+      "n_anchors": 3,
+      "missing": []
+    },
+    "C2_weak_to_MMD": {
+      "ok": true,
+      "n_anchors": 3,
+      "missing": []
+    },
+    "C3_argmin_contraction": {
+      "ok": true,
+      "n_anchors": 4,
+      "missing": []
+    },
+    "C4_identifiability": {
+      "ok": true,
+      "n_anchors": 2,
+      "missing": []
+    }
+  },
+  "robustness_chain_complete": true,
+  "consistency_chain_complete": true,
+  "tex_findings": [
+    "L601: bound writes sup k(z,z') without absolute value; licensed by boundedness (itm:infl1) since k>=0 for RBF, sup|k|=sup k.",
+    "L656: second Phi subscript s(Q_eps,y) drops the argmin star (should be s^*); typographical, does not affect the argument.",
+    "L720: consistency proof explicitly excludes learned approximation error (exact conditionals assumed).",
+    "Theorem 4.1 is a one-sided derivative d/deps KL|_{eps=0}; relies on KL(0)=0 and existence of the influence-function limit (Lemma)."
+  ],
+  "bounded_influence": {
+    "s_star_clean": [
+      0.0,
+      0.0
+    ],
+    "sup_influence": 1.8327302564686228,
+    "tail_influence": 0.0,
+    "bounded_ok": true,
+    "gamma": 0.25,
+    "y_radii": [
+      1.0,
+      60.0
+    ]
+  },
+  "posterior_contraction": {
+    "N": [
+      10,
+      20,
+      50,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "radius": [
+      0.4264014327112209,
+      0.3086066999241838,
+      0.19802950859533486,
+      0.14071950894605836,
+      0.09975093361076329,
+      0.06318240236065634,
+      0.04469901562676742
+    ],
+    "loglog_slope": -0.49096054460018396,
+    "monotone": true,
+    "ok": true
+  },
+  "verdict": "verified within the paper's stated scope"
+}

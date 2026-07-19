@@ -1,0 +1,95 @@
+{
+  "orid": "q1KhliMwKP",
+  "claim": "2_compute",
+  "claim_text": "avoids convex optimization and resampling -> substantial compute reduction",
+  "alpha": 3.0,
+  "beta_tsallis": 0.6666666666666666,
+  "N_timed_reps": 3000,
+  "state_horizon": 1000,
+  "K_grid": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "ftpl_ms_per_step": [
+    0.010481,
+    0.009816,
+    0.009752,
+    0.010041,
+    0.011011,
+    0.012053,
+    0.016973,
+    0.021921,
+    0.040187
+  ],
+  "ftrl_ms_per_step": [
+    0.171488,
+    0.158352,
+    0.153718,
+    0.170003,
+    0.184409,
+    0.195019,
+    0.232218,
+    0.34619,
+    0.527519
+  ],
+  "ftrl_over_ftpl_ratio": [
+    16.362,
+    16.133,
+    15.763,
+    16.931,
+    16.748,
+    16.18,
+    13.682,
+    15.792,
+    13.127
+  ],
+  "ftrl_newton_iters_per_step": [
+    31,
+    30,
+    29,
+    31,
+    31,
+    30,
+    29,
+    31,
+    30
+  ],
+  "ftpl_convex_opt_iters_per_step": 0,
+  "ftpl_resamples_per_step": 0,
+  "runtime_vs_K_loglog_slope": {
+    "ftpl": 0.2183,
+    "ftrl": 0.1876
+  },
+  "note_k_scaling": "vectorized NumPy: per-step FTRL/FTPL ratio ~constant (~15x) across K; order-of-magnitude matches paper ~20x. Robust evidence=op-counts.",
+  "max_speedup_FTRL_over_FTPL": 16.931,
+  "mean_speedup_FTRL_over_FTPL": 15.635,
+  "geometric_resampling": [
+    {
+      "K": 8,
+      "ftpl_resamples": 0,
+      "ftpl_gr_mean_resamples": 2.6,
+      "ftpl_gr_max_resamples": 57
+    },
+    {
+      "K": 64,
+      "ftpl_resamples": 0,
+      "ftpl_gr_mean_resamples": 42.4,
+      "ftpl_gr_max_resamples": 1000
+    },
+    {
+      "K": 512,
+      "ftpl_resamples": 0,
+      "ftpl_gr_mean_resamples": 273.88,
+      "ftpl_gr_max_resamples": 1000
+    }
+  ],
+  "passed": true,
+  "verdict": "verified"
+}

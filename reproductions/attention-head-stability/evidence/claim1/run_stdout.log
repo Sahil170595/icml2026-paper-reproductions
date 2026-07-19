@@ -1,0 +1,35 @@
+W0718 01:11:26.785000 43408 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W0718 01:11:28.428000 43408 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loaded 100 official prompts (sha256-verified).
+Building and loading l8_h8 seeds [1, 2, 3, 4, 5] ...
+  seed 1: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed1_epoch1_c4_gelu\final.pt
+  seed 2: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed2_epoch1_c4_gelu\final.pt
+  seed 3: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed3_epoch1_c4_gelu\final.pt
+  seed 4: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed4_epoch1_c4_gelu\final.pt
+  seed 5: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed5_epoch1_c4_gelu\final.pt
+Architecture: n_layers=8, n_heads=8, d_model=512
+Running forward passes over 100 prompts x 5 refits (attention patterns only) ...
+Computing cross-refit head stability (Eq. 5) ...
+Computing within-refit head commonness (distinctness = 1 - commonness) ...
+
+=== Layer-wise stability S_l (mean over 8 anchor heads) ===
+  layer 1: S_l = 0.974524 (std 0.007445)  distinctness = 0.034749
+  layer 2: S_l = 0.906740 (std 0.078334)  distinctness = 0.205113
+  layer 3: S_l = 0.857632 (std 0.063700)  distinctness = 0.356560
+  layer 4: S_l = 0.775304 (std 0.029586)  distinctness = 0.437211
+  layer 5: S_l = 0.621026 (std 0.047160)  distinctness = 0.444973
+  layer 6: S_l = 0.702108 (std 0.108418)  distinctness = 0.449327
+  layer 7: S_l = 0.865754 (std 0.110867)  distinctness = 0.216477
+  layer 8: S_l = 0.819540 (std 0.048863)  distinctness = 0.227094
+
+Least-stable layer: 5 (S_l=0.621026)
+Most-stable layer:  1 (S_l=0.974524)
+Most-distinct layer (lowest commonness): 6 (distinctness=0.449327)
+Least-distinct layer (highest commonness): 1 (distinctness=0.034749)
+
+Least-stable layer in middle band [2, 3, 4, 5, 6, 7]: True
+Most-distinct layer in middle band [2, 3, 4, 5, 6, 7]: True
+Wall time: 111.549s
+
+Wrote C:\Users\sahil\OneDrive\Documents\Playground\icml-repro-pilot\submissions\attention-head-stability-pilot\.trackio\logbook\evidence-package\claim1\results.json
+EXIT_CODE=0

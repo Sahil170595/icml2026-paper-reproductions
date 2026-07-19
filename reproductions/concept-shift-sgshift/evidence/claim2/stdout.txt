@@ -1,0 +1,13 @@
+CLAIM 2  Diabetes Readmission (real, ER vs non-ER split): SGShift detects concept shift
+dataset: Diabetes 130-US 30-day readmission | non-ER(source)=32717 ER(target)=37273 total=69990 features=37 | update-term fit sample n_fit=6000 shifted=6
+(paper: 73,615 samples, 33 features, ER vs non-ER split; source 49,213 / target 24,402)
+method          AUC matched   AUC mismatch   Rec matched  Rec mismatch
+SGShift      0.843+/-0.040  0.869+/-0.044  0.750       0.806
+SGShift-A    0.806+/-0.046  0.874+/-0.046  0.611       0.750
+SGShift-K    0.857+/-0.043  0.887+/-0.039  0.750       0.806
+SGShift-KA   0.850+/-0.039  0.889+/-0.039  0.722       0.806
+Diff         0.743+/-0.062  0.835+/-0.061  0.611       0.750
+WhyShift     0.762+/-0.062  0.870+/-0.046  0.639       0.778
+SHAP         0.675+/-0.083  0.805+/-0.062  0.583       0.722
+best SGShift-K/KA diabetes AUC = 0.889 (target > 0.85); VERDICT: SUPPORTED
+wrote results.json

@@ -1,0 +1,1 @@
+{"cmd": "python3 repro.py", "cwd": "evidence-package", "exit_code": 0, "duration_s": 2.0, "produces": "evidence.json", "evidence_sha256": "e7d440b0e680efa4787213db9f2a94fc6c6f776aa15854671d71763ffe858439", "note": "deterministic numpy/scipy; 18 synthetic graph configs; verified rerun 2026-07-18"}

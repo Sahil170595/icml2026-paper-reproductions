@@ -1,0 +1,11 @@
+CLAIM 3  SGShift > baselines (Diff / WhyShift / SHAP) at detecting shifted features
+dataset/config        best SGShift  best baseline  gap(AUC)  SG wins
+diabetes/matched     0.857        0.762         +0.095     True
+diabetes/mismatch    0.889        0.870         +0.019     True
+support2/matched     1.000        0.992         +0.008     True
+support2/mismatch    0.999        0.988         +0.011     True
+adult/matched        1.000        0.994         +0.006     True
+adult/mismatch       0.972        0.967         +0.006     True
+SGShift best-or-tied in 6/6 cells; mean AUC gap = +0.024; VERDICT: SUPPORTED
+(paper: SGShift AUC typically 0.1-0.2 higher than baselines, recall 2-3x)
+wrote results.json

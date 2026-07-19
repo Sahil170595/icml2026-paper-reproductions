@@ -1,0 +1,16 @@
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python flagship_run.py adv 1.3", "exit": 1, "duration_s": 0.3, "ts_utc": "2026-07-17T22:36:37Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python flagship_run.py adv 1.5", "exit": 1, "duration_s": 0.2, "ts_utc": "2026-07-17T22:36:37Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python flagship_run.py adv 2.0", "exit": 1, "duration_s": 0.2, "ts_utc": "2026-07-17T22:36:37Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python flagship_run.py adv 1.3", "exit": 0, "duration_s": 90.4, "ts_utc": "2026-07-17T22:39:17Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python flagship_run.py adv 1.5", "exit": 0, "duration_s": 86.3, "ts_utc": "2026-07-17T22:40:43Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python flagship_run.py adv 2.0", "exit": 0, "duration_s": 110.4, "ts_utc": "2026-07-17T22:42:34Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python flagship_run.py stoch 1.3", "exit": 0, "duration_s": 176.6, "ts_utc": "2026-07-17T22:46:19Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python flagship_run.py stoch 1.5", "exit": 0, "duration_s": 159.7, "ts_utc": "2026-07-17T22:48:59Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python flagship_run.py stoch 2.0", "exit": 0, "duration_s": 191.3, "ts_utc": "2026-07-17T22:52:10Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python sweep_run.py S stoch 1.5", "exit": 0, "duration_s": 378.0, "ts_utc": "2026-07-17T22:58:51Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python sweep_run.py S adv 1.5", "exit": 0, "duration_s": 445.1, "ts_utc": "2026-07-17T22:59:55Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python sweep_run.py H stoch 1.5", "exit": 0, "duration_s": 191.1, "ts_utc": "2026-07-17T23:02:02Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python sweep_run.py H adv 1.5", "exit": 0, "duration_s": 238.9, "ts_utc": "2026-07-17T23:03:54Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python sweep_run.py A stoch 1.5", "exit": 0, "duration_s": 208.9, "ts_utc": "2026-07-17T23:06:22Z"}
+{"cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python sweep_run.py A adv 1.5", "exit": 0, "duration_s": 230.1, "ts_utc": "2026-07-17T23:07:44Z"}
+{"cmd": "python combine_scale.py", "exit": 0, "duration_s": 0.2, "ts_utc": "2026-07-17T23:08:20Z"}

@@ -1,0 +1,430 @@
+  G6_TA_4_0 stage1/3: train=2.63e-01 (continuing)
+  G6_TA_4_0 stage2/3: train=2.23e-01 (continuing)
+  G6_TA_4_0 DONE (3 stages x200it): train=2.23e-01 test=2.31e-01 ttest=2.31e-01 eq=2.9e-16
+  G6_TA_4_1 stage1/3: train=2.94e-01 (continuing)
+  G6_TA_4_1 stage2/3: train=2.23e-01 (continuing)
+  G6_TA_4_1 DONE (3 stages x200it): train=2.23e-01 test=2.31e-01 ttest=2.31e-01 eq=3.4e-16
+  G6_TB_4_0 stage1/3: train=2.87e-01 (continuing)
+  G6_TB_4_0 stage2/3: train=2.37e-01 (continuing)
+  G6_TB_4_0 DONE (3 stages x200it): train=2.37e-01 test=2.41e-01 ttest=2.41e-01 eq=1.2e-15
+  G6_TB_4_1 stage1/3: train=2.59e-01 (continuing)
+  G6_TB_4_1 stage2/3: train=2.37e-01 (continuing)
+  G6_TB_4_1 DONE (3 stages x200it): train=2.37e-01 test=2.41e-01 ttest=2.41e-01 eq=1.0e-15
+  G6_TC_4_0 stage1/3: train=3.94e-01 (continuing)
+  G6_TC_4_0 stage2/3: train=3.43e-01 (continuing)
+  G6_TC_4_0 DONE (3 stages x200it): train=3.43e-01 test=3.30e-01 ttest=3.30e-01 eq=7.0e-16
+  G6_TC_4_1 stage1/3: train=4.52e-01 (continuing)
+  G6_TC_4_1 stage2/3: train=3.43e-01 (continuing)
+  G6_TC_4_1 DONE (3 stages x200it): train=3.43e-01 test=3.30e-01 ttest=3.30e-01 eq=7.0e-16
+  G6_CT_4_0 stage1/3: train=3.93e-01 (continuing)
+  G6_CT_4_0 stage2/3: train=3.22e-01 (continuing)
+  G6_CT_4_0 DONE (3 stages x200it): train=3.22e-01 test=3.23e-01 ttest=3.25e-01 eq=6.5e-02
+  G6_TA_8_0 stage1/3: train=5.99e-02 (continuing)
+  G6_TA_8_0 stage2/3: train=3.45e-02 (continuing)
+  G6_TA_8_0 DONE (3 stages x200it): train=3.38e-02 test=3.57e-02 ttest=3.57e-02 eq=4.3e-16
+  G6_TA_8_1 stage1/3: train=6.79e-02 (continuing)
+  G6_TA_8_1 stage2/3: train=3.42e-02 (continuing)
+  G6_TA_8_1 DONE (3 stages x200it): train=3.36e-02 test=3.53e-02 ttest=3.53e-02 eq=2.3e-16
+  G6_TB_8_0 stage1/3: train=1.31e-01 (continuing)
+  G6_TB_8_0 stage2/3: train=8.82e-02 (continuing)
+  G6_TB_8_0 DONE (3 stages x200it): train=8.54e-02 test=9.28e-02 ttest=9.28e-02 eq=2.5e-15
+  G6_TB_8_1 stage1/3: train=1.24e-01 (continuing)
+  G6_TB_8_1 stage2/3: train=8.96e-02 (continuing)
+  G6_TB_8_1 DONE (3 stages x200it): train=8.72e-02 test=9.55e-02 ttest=9.55e-02 eq=1.6e-15
+  G6_TC_8_0 stage1/3: train=2.02e-01 (continuing)
+  G6_TC_8_0 stage2/3: train=1.40e-01 (continuing)
+  G6_TC_8_0 DONE (3 stages x200it): train=1.36e-01 test=1.41e-01 ttest=1.41e-01 eq=7.6e-16
+  G6_TC_8_1 stage1/3: train=2.07e-01 (continuing)
+  G6_TC_8_1 stage2/3: train=1.36e-01 (continuing)
+  G6_TC_8_1 DONE (3 stages x200it): train=1.35e-01 test=1.40e-01 ttest=1.40e-01 eq=8.0e-16
+  G6_CT_8_0 stage1/3: train=9.13e-02 (continuing)
+  G6_CT_8_0 stage2/3: train=3.90e-02 (continuing)
+  G6_CT_8_0 DONE (3 stages x200it): train=3.82e-02 test=3.97e-02 ttest=4.06e-02 eq=4.1e-02
+  G6_TA_16_0 stage1/3: train=2.07e-02 (continuing)
+  G6_TA_16_0 stage2/3: train=1.43e-02 (continuing)
+  G6_TA_16_0 DONE (3 stages x200it): train=1.30e-02 test=1.57e-02 ttest=1.57e-02 eq=3.4e-16
+  G6_TA_16_1 stage1/3: train=2.00e-02 (continuing)
+  G6_TA_16_1 stage2/3: train=1.40e-02 (continuing)
+  G6_TA_16_1 DONE (3 stages x200it): train=1.26e-02 test=1.56e-02 ttest=1.56e-02 eq=4.2e-16
+  G6_TB_16_0 stage1/3: train=5.11e-02 (continuing)
+  G6_TB_16_0 stage2/3: train=1.50e-02 (continuing)
+  G6_TB_16_0 DONE (3 stages x200it): train=1.18e-02 test=1.30e-02 ttest=1.30e-02 eq=2.6e-15
+  G6_TB_16_1 stage1/3: train=5.02e-02 (continuing)
+[train G6] budget reached, PENDING remain; call again
+  G6_TB_16_1 stage2/3: train=1.47e-02 (continuing)
+  G6_TB_16_1 DONE (3 stages x200it): train=1.17e-02 test=1.33e-02 ttest=1.33e-02 eq=1.9e-15
+  G6_TC_16_0 stage1/3: train=9.76e-02 (continuing)
+  G6_TC_16_0 stage2/3: train=5.66e-02 (continuing)
+  G6_TC_16_0 DONE (3 stages x200it): train=5.38e-02 test=6.75e-02 ttest=6.75e-02 eq=1.0e-15
+  G6_TC_16_1 stage1/3: train=9.75e-02 (continuing)
+  G6_TC_16_1 stage2/3: train=5.75e-02 (continuing)
+  G6_TC_16_1 DONE (3 stages x200it): train=5.55e-02 test=6.48e-02 ttest=6.48e-02 eq=9.2e-16
+  G6_CT_16_0 stage1/3: train=2.20e-02 (continuing)
+  G6_CT_16_0 stage2/3: train=1.56e-02 (continuing)
+  G6_CT_16_0 DONE (3 stages x200it): train=1.44e-02 test=1.75e-02 ttest=1.84e-02 eq=6.5e-02
+  G6_TA_32_0 stage1/3: train=1.74e-02 (continuing)
+  G6_TA_32_0 stage2/3: train=7.51e-03 (continuing)
+  G6_TA_32_0 DONE (3 stages x200it): train=5.94e-03 test=9.20e-03 ttest=9.20e-03 eq=3.2e-16
+  G6_TA_32_1 stage1/3: train=1.70e-02 (continuing)
+  G6_TA_32_1 stage2/3: train=7.44e-03 (continuing)
+  G6_TA_32_1 DONE (3 stages x200it): train=5.94e-03 test=8.96e-03 ttest=8.96e-03 eq=3.6e-16
+  G6_TB_32_0 stage1/3: train=2.40e-02 (continuing)
+  G6_TB_32_0 stage2/3: train=3.65e-03 (continuing)
+  G6_TB_32_0 DONE (3 stages x200it): train=2.80e-03 test=3.62e-03 ttest=3.62e-03 eq=1.4e-15
+  G6_TB_32_1 stage1/3: train=2.07e-02 (continuing)
+  G6_TB_32_1 stage2/3: train=3.64e-03 (continuing)
+  G6_TB_32_1 DONE (3 stages x200it): train=2.84e-03 test=3.88e-03 ttest=3.88e-03 eq=1.1e-15
+  G6_TC_32_0 stage1/3: train=6.93e-02 (continuing)
+  G6_TC_32_0 stage2/3: train=4.28e-02 (continuing)
+  G6_TC_32_0 DONE (3 stages x200it): train=3.93e-02 test=8.90e-02 ttest=8.90e-02 eq=1.1e-15
+  G6_TC_32_1 stage1/3: train=6.88e-02 (continuing)
+  G6_TC_32_1 stage2/3: train=4.30e-02 (continuing)
+  G6_TC_32_1 DONE (3 stages x200it): train=3.92e-02 test=9.02e-02 ttest=9.02e-02 eq=1.3e-15
+  G6_CT_32_0 stage1/3: train=1.82e-02 (continuing)
+  G6_CT_32_0 stage2/3: train=8.42e-03 (continuing)
+  G6_CT_32_0 DONE (3 stages x200it): train=7.03e-03 test=1.20e-02 ttest=1.21e-02 eq=5.9e-02
+  G6_TA_64_0 stage1/2: train=1.42e-02 (continuing)
+  G6_TA_64_0 DONE (2 stages x200it): train=3.20e-03 test=5.78e-03 ttest=5.78e-03 eq=3.0e-16
+  G6_TA_64_1 stage1/2: train=1.30e-02 (continuing)
+  G6_TA_64_1 DONE (2 stages x200it): train=2.87e-03 test=5.67e-03 ttest=5.67e-03 eq=4.6e-16
+  G6_TB_64_0 stage1/2: train=1.06e-02 (continuing)
+  G6_TB_64_0 DONE (2 stages x200it): train=1.99e-03 test=2.88e-03 ttest=2.88e-03 eq=1.0e-15
+  G6_TB_64_1 stage1/2: train=1.09e-02 (continuing)
+[train G6] budget reached, PENDING remain; call again
+  G6_TB_64_1 DONE (2 stages x200it): train=1.95e-03 test=2.75e-03 ttest=2.75e-03 eq=1.3e-15
+  G6_TC_64_0 stage1/2: train=5.79e-02 (continuing)
+  G6_TC_64_0 DONE (2 stages x200it): train=2.51e-02 test=1.08e-01 ttest=1.08e-01 eq=2.3e-15
+  G6_TC_64_1 stage1/2: train=5.74e-02 (continuing)
+  G6_TC_64_1 DONE (2 stages x200it): train=2.58e-02 test=1.06e-01 ttest=1.06e-01 eq=1.4e-15
+  G6_CT_64_0 stage1/2: train=1.49e-02 (continuing)
+  G6_CT_64_0 DONE (2 stages x200it): train=3.11e-03 test=6.97e-03 ttest=7.04e-03 eq=6.5e-02
+[train G6] ALLDONE
+  G30_TA_4_0 stage1/3: train=7.93e-01 (continuing)
+  G30_TA_4_0 stage2/3: train=7.09e-01 (continuing)
+  G30_TA_4_0 DONE (3 stages x200it): train=7.08e-01 test=7.13e-01 ttest=7.13e-01 eq=3.8e-16
+  G30_TA_4_1 stage1/3: train=8.15e-01 (continuing)
+  G30_TA_4_1 stage2/3: train=7.08e-01 (continuing)
+  G30_TA_4_1 DONE (3 stages x200it): train=7.08e-01 test=7.12e-01 ttest=7.12e-01 eq=4.3e-16
+  G30_TB_4_0 stage1/3: train=7.92e-01 (continuing)
+  G30_TB_4_0 stage2/3: train=7.61e-01 (continuing)
+  G30_TB_4_0 DONE (3 stages x200it): train=7.60e-01 test=7.91e-01 ttest=7.91e-01 eq=1.4e-15
+  G30_TB_4_1 stage1/3: train=7.93e-01 (continuing)
+  G30_TB_4_1 stage2/3: train=7.63e-01 (continuing)
+  G30_TB_4_1 DONE (3 stages x200it): train=7.60e-01 test=7.93e-01 ttest=7.93e-01 eq=1.2e-15
+  G30_TC_4_0 stage1/3: train=8.89e-01 (continuing)
+  G30_TC_4_0 stage2/3: train=8.67e-01 (continuing)
+  G30_TC_4_0 DONE (3 stages x200it): train=8.65e-01 test=8.90e-01 ttest=8.90e-01 eq=1.6e-15
+[train G30] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+  G30_TC_4_1 stage1/3: train=8.87e-01 (continuing)
+  G30_TC_4_1 stage2/3: train=8.67e-01 (continuing)
+  G30_TC_4_1 DONE (3 stages x200it): train=8.65e-01 test=8.90e-01 ttest=8.90e-01 eq=2.5e-15
+  G30_CT_4_0 stage1/3: train=7.97e-01 (continuing)
+  G30_CT_4_0 stage2/3: train=7.29e-01 (continuing)
+  G30_CT_4_0 DONE (3 stages x200it): train=7.29e-01 test=7.32e-01 ttest=7.33e-01 eq=2.3e-01
+  G30_TA_8_0 stage1/3: train=5.85e-01 (continuing)
+  G30_TA_8_0 stage2/3: train=5.35e-01 (continuing)
+  G30_TA_8_0 DONE (3 stages x200it): train=5.34e-01 test=5.52e-01 ttest=5.52e-01 eq=6.5e-16
+  G30_TA_8_1 stage1/3: train=5.78e-01 (continuing)
+  G30_TA_8_1 stage2/3: train=5.35e-01 (continuing)
+  G30_TA_8_1 DONE (3 stages x200it): train=5.34e-01 test=5.52e-01 ttest=5.52e-01 eq=8.1e-16
+  G30_TB_8_0 stage1/3: train=6.01e-01 (continuing)
+  G30_TB_8_0 stage2/3: train=5.83e-01 (continuing)
+  G30_TB_8_0 DONE (3 stages x200it): train=5.83e-01 test=6.10e-01 ttest=6.10e-01 eq=1.4e-15
+  G30_TB_8_1 stage1/3: train=6.02e-01 (continuing)
+  G30_TB_8_1 stage2/3: train=5.85e-01 (continuing)
+  G30_TB_8_1 DONE (3 stages x200it): train=5.83e-01 test=6.10e-01 ttest=6.10e-01 eq=2.1e-15
+  G30_TC_8_0 stage1/3: train=8.00e-01 (continuing)
+  G30_TC_8_0 stage2/3: train=7.71e-01 (continuing)
+  G30_TC_8_0 DONE (3 stages x200it): train=7.70e-01 test=8.08e-01 ttest=8.08e-01 eq=2.5e-15
+  G30_TC_8_1 stage1/3: train=7.89e-01 (continuing)
+  G30_TC_8_1 stage2/3: train=7.72e-01 (continuing)
+[train G30] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+  G30_TC_8_1 DONE (3 stages x200it): train=7.70e-01 test=8.15e-01 ttest=8.15e-01 eq=3.5e-15
+  G30_CT_8_0 stage1/3: train=6.00e-01 (continuing)
+  G30_CT_8_0 stage2/3: train=5.55e-01 (continuing)
+  G30_CT_8_0 DONE (3 stages x200it): train=5.54e-01 test=5.67e-01 ttest=5.71e-01 eq=3.2e-01
+  G30_TA_16_0 stage1/3: train=2.90e-01 (continuing)
+  G30_TA_16_0 stage2/3: train=2.81e-01 (continuing)
+  G30_TA_16_0 DONE (3 stages x200it): train=2.80e-01 test=2.98e-01 ttest=2.98e-01 eq=7.9e-16
+  G30_TA_16_1 stage1/3: train=2.91e-01 (continuing)
+  G30_TA_16_1 stage2/3: train=2.79e-01 (continuing)
+  G30_TA_16_1 DONE (3 stages x200it): train=2.79e-01 test=2.97e-01 ttest=2.97e-01 eq=6.8e-16
+  G30_TB_16_0 stage1/3: train=3.58e-01 (continuing)
+  G30_TB_16_0 stage2/3: train=3.47e-01 (continuing)
+  G30_TB_16_0 DONE (3 stages x200it): train=3.47e-01 test=3.67e-01 ttest=3.67e-01 eq=3.6e-15
+  G30_TB_16_1 stage1/3: train=3.60e-01 (continuing)
+  G30_TB_16_1 stage2/3: train=3.46e-01 (continuing)
+  G30_TB_16_1 DONE (3 stages x200it): train=3.46e-01 test=3.67e-01 ttest=3.67e-01 eq=1.8e-15
+  G30_TC_16_0 stage1/3: train=6.28e-01 (continuing)
+  G30_TC_16_0 stage2/3: train=6.06e-01 (continuing)
+  G30_TC_16_0 DONE (3 stages x200it): train=6.04e-01 test=6.64e-01 ttest=6.64e-01 eq=2.3e-15
+[train G30] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+  G30_TC_16_1 stage1/3: train=6.27e-01 (continuing)
+  G30_TC_16_1 stage2/3: train=6.08e-01 (continuing)
+  G30_TC_16_1 DONE (3 stages x200it): train=6.06e-01 test=6.65e-01 ttest=6.65e-01 eq=2.2e-15
+  G30_CT_16_0 stage1/3: train=3.00e-01 (continuing)
+  G30_CT_16_0 stage2/3: train=2.90e-01 (continuing)
+  G30_CT_16_0 DONE (3 stages x200it): train=2.90e-01 test=3.04e-01 ttest=3.06e-01 eq=1.8e-01
+  G30_TA_32_0 stage1/3: train=7.14e-02 (continuing)
+  G30_TA_32_0 stage2/3: train=6.47e-02 (continuing)
+  G30_TA_32_0 DONE (3 stages x200it): train=6.43e-02 test=7.15e-02 ttest=7.15e-02 eq=8.8e-16
+  G30_TA_32_1 stage1/3: train=7.27e-02 (continuing)
+  G30_TA_32_1 stage2/3: train=6.47e-02 (continuing)
+  G30_TA_32_1 DONE (3 stages x200it): train=6.42e-02 test=7.17e-02 ttest=7.17e-02 eq=7.8e-16
+  G30_TB_32_0 stage1/3: train=1.56e-01 (continuing)
+  G30_TB_32_0 stage2/3: train=1.40e-01 (continuing)
+  G30_TB_32_0 DONE (3 stages x200it): train=1.39e-01 test=1.63e-01 ttest=1.63e-01 eq=2.2e-15
+  G30_TB_32_1 stage1/3: train=1.55e-01 (continuing)
+[train G30] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+  G30_TB_32_1 stage2/3: train=1.40e-01 (continuing)
+  G30_TB_32_1 DONE (3 stages x200it): train=1.39e-01 test=1.61e-01 ttest=1.61e-01 eq=1.8e-15
+  G30_TC_32_0 stage1/3: train=3.89e-01 (continuing)
+  G30_TC_32_0 stage2/3: train=3.60e-01 (continuing)
+  G30_TC_32_0 DONE (3 stages x200it): train=3.56e-01 test=4.34e-01 ttest=4.34e-01 eq=2.7e-15
+  G30_TC_32_1 stage1/3: train=3.97e-01 (continuing)
+  G30_TC_32_1 stage2/3: train=3.60e-01 (continuing)
+  G30_TC_32_1 DONE (3 stages x200it): train=3.55e-01 test=4.33e-01 ttest=4.33e-01 eq=3.2e-15
+  G30_CT_32_0 stage1/3: train=7.51e-02 (continuing)
+  G30_CT_32_0 stage2/3: train=6.90e-02 (continuing)
+  G30_CT_32_0 DONE (3 stages x200it): train=6.83e-02 test=7.60e-02 ttest=7.62e-02 eq=1.5e-01
+  G30_TA_64_0 stage1/3: train=2.02e-02 (continuing)
+  G30_TA_64_0 stage2/3: train=1.60e-02 (continuing)
+[train G30] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+  G30_TA_64_0 DONE (3 stages x126it): train=1.50e-02 test=2.86e-02 ttest=2.86e-02 eq=7.0e-16
+  G30_TA_64_1 stage1/3: train=2.04e-02 (continuing)
+  G30_TA_64_1 stage2/3: train=1.61e-02 (continuing)
+  G30_TA_64_1 DONE (3 stages x126it): train=1.51e-02 test=2.93e-02 ttest=2.93e-02 eq=6.5e-16
+  G30_TB_64_0 stage1/3: train=6.09e-02 (continuing)
+  G30_TB_64_0 stage2/3: train=3.51e-02 (continuing)
+  G30_TB_64_0 DONE (3 stages x126it): train=2.97e-02 test=4.37e-02 ttest=4.37e-02 eq=2.2e-15
+  G30_TB_64_1 stage1/3: train=6.09e-02 (continuing)
+  G30_TB_64_1 stage2/3: train=3.48e-02 (continuing)
+  G30_TB_64_1 DONE (3 stages x126it): train=2.96e-02 test=4.32e-02 ttest=4.32e-02 eq=2.1e-15
+  G30_TC_64_0 stage1/3: train=1.35e-01 (continuing)
+  G30_TC_64_0 stage2/3: train=1.09e-01 (continuing)
+[train G30] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+  G30_TC_64_0 DONE (3 stages x126it): train=1.03e-01 test=2.03e-01 ttest=2.03e-01 eq=2.9e-15
+  G30_TC_64_1 stage1/3: train=1.40e-01 (continuing)
+  G30_TC_64_1 stage2/3: train=1.10e-01 (continuing)
+  G30_TC_64_1 DONE (3 stages x126it): train=1.04e-01 test=2.03e-01 ttest=2.03e-01 eq=2.5e-15
+  G30_CT_64_0 stage1/3: train=2.03e-02 (continuing)
+  G30_CT_64_0 stage2/3: train=1.58e-02 (continuing)
+  G30_CT_64_0 DONE (3 stages x126it): train=1.48e-02 test=2.92e-02 ttest=2.88e-02 eq=1.4e-01
+[train G30] ALLDONE
+  G100_TA_4_0 stage1/3: train=9.79e-01 (continuing)
+  G100_TA_4_0 stage2/3: train=9.41e-01 (continuing)
+  G100_TA_4_0 DONE (3 stages x200it): train=9.34e-01 test=1.01e+00 ttest=1.01e+00 eq=9.3e-16
+  G100_TA_4_1 stage1/3: train=9.82e-01 (continuing)
+[train G100] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+[train G30] ALLDONE
+  G100_TA_4_1 stage2/3: train=9.48e-01 (continuing)
+  G100_TA_4_1 DONE (3 stages x200it): train=9.39e-01 test=1.01e+00 ttest=1.01e+00 eq=5.2e-16
+  G100_TB_4_0 stage1/3: train=9.66e-01 (continuing)
+  G100_TB_4_0 stage2/3: train=9.40e-01 (continuing)
+  G100_TB_4_0 DONE (3 stages x200it): train=9.38e-01 test=1.00e+00 ttest=1.00e+00 eq=7.7e-16
+  G100_TB_4_1 stage1/3: train=9.60e-01 (continuing)
+  G100_TB_4_1 stage2/3: train=9.37e-01 (continuing)
+  G100_TB_4_1 DONE (3 stages x200it): train=9.35e-01 test=9.80e-01 ttest=9.80e-01 eq=7.4e-16
+[train G100] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+[train G30] ALLDONE
+  G100_TC_4_0 stage1/3: train=9.68e-01 (continuing)
+  G100_TC_4_0 stage2/3: train=9.55e-01 (continuing)
+  G100_TC_4_0 DONE (3 stages x200it): train=9.55e-01 test=1.00e+00 ttest=1.00e+00 eq=1.1e-15
+  G100_TC_4_1 stage1/3: train=9.68e-01 (continuing)
+  G100_TC_4_1 stage2/3: train=9.56e-01 (continuing)
+  G100_TC_4_1 DONE (3 stages x200it): train=9.55e-01 test=1.01e+00 ttest=1.01e+00 eq=1.4e-15
+  G100_CT_4_0 stage1/3: train=9.89e-01 (continuing)
+  G100_CT_4_0 stage2/3: train=9.53e-01 (continuing)
+  G100_CT_4_0 DONE (3 stages x200it): train=9.43e-01 test=1.00e+00 ttest=1.01e+00 eq=2.8e-01
+[train G100] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+[train G30] ALLDONE
+  G100_TA_8_0 stage1/3: train=9.06e-01 (continuing)
+  G100_TA_8_0 stage2/3: train=8.34e-01 (continuing)
+  G100_TA_8_0 DONE (3 stages x200it): train=8.21e-01 test=9.52e-01 ttest=9.52e-01 eq=3.3e-16
+  G100_TA_8_1 stage1/3: train=9.35e-01 (continuing)
+  G100_TA_8_1 stage2/3: train=8.45e-01 (continuing)
+  G100_TA_8_1 DONE (3 stages x200it): train=8.28e-01 test=1.01e+00 ttest=1.01e+00 eq=6.1e-16
+  G100_TB_8_0 stage1/3: train=8.97e-01 (continuing)
+  G100_TB_8_0 stage2/3: train=8.83e-01 (continuing)
+[train G100] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+[train G30] ALLDONE
+  G100_TB_8_0 DONE (3 stages x200it): train=8.81e-01 test=9.48e-01 ttest=9.48e-01 eq=9.6e-16
+  G100_TB_8_1 stage1/3: train=8.96e-01 (continuing)
+  G100_TB_8_1 stage2/3: train=8.84e-01 (continuing)
+  G100_TB_8_1 DONE (3 stages x200it): train=8.82e-01 test=9.50e-01 ttest=9.50e-01 eq=1.2e-15
+  G100_TC_8_0 stage1/3: train=9.31e-01 (continuing)
+  G100_TC_8_0 stage2/3: train=9.19e-01 (continuing)
+  G100_TC_8_0 DONE (3 stages x200it): train=9.18e-01 test=1.01e+00 ttest=1.01e+00 eq=1.5e-15
+[train G100] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+[train G30] ALLDONE
+  G100_TC_8_1 stage1/3: train=9.32e-01 (continuing)
+  G100_TC_8_1 stage2/3: train=9.19e-01 (continuing)
+  G100_TC_8_1 DONE (3 stages x200it): train=9.18e-01 test=9.96e-01 ttest=9.96e-01 eq=1.4e-15
+  G100_CT_8_0 stage1/3: train=9.06e-01 (continuing)
+  G100_CT_8_0 stage2/3: train=8.42e-01 (continuing)
+  G100_CT_8_0 DONE (3 stages x200it): train=8.31e-01 test=9.21e-01 ttest=9.22e-01 eq=3.9e-01
+  G100_TA_16_0 stage1/3: train=7.20e-01 (continuing)
+  G100_TA_16_0 stage2/3: train=6.70e-01 (continuing)
+[train G100] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+[train G30] ALLDONE
+  G100_TA_16_0 DONE (3 stages x200it): train=6.66e-01 test=7.67e-01 ttest=7.67e-01 eq=4.2e-16
+  G100_TA_16_1 stage1/3: train=7.22e-01 (continuing)
+  G100_TA_16_1 stage2/3: train=6.71e-01 (continuing)
+  G100_TA_16_1 DONE (3 stages x200it): train=6.67e-01 test=7.67e-01 ttest=7.67e-01 eq=5.9e-16
+  G100_TB_16_0 stage1/3: train=7.96e-01 (continuing)
+  G100_TB_16_0 stage2/3: train=7.86e-01 (continuing)
+  G100_TB_16_0 DONE (3 stages x200it): train=7.85e-01 test=8.97e-01 ttest=8.97e-01 eq=1.2e-15
+[train G100] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+  G30_TB_32_0 stage1/3: train=1.56e-01 (continuing)
+  G30_TB_32_0 stage2/3: train=1.40e-01 (continuing)
+  G30_TB_32_0 DONE (3 stages x200it): train=1.39e-01 test=1.63e-01 ttest=1.63e-01 eq=2.2e-15
+  G30_TB_32_1 stage1/3: train=1.55e-01 (continuing)
+  G30_TB_32_1 stage2/3: train=1.40e-01 (continuing)
+  G30_TB_32_1 DONE (3 stages x200it): train=1.39e-01 test=1.61e-01 ttest=1.61e-01 eq=1.8e-15
+  G30_TB_64_0 stage1/4: train=6.09e-02 (continuing)
+  G30_TB_64_0 stage2/4: train=3.51e-02 (continuing)
+  G30_TB_64_0 stage3/4: train=2.97e-02 (continuing)
+  G30_TB_64_0 DONE (4 stages x126it): train=2.61e-02 test=3.97e-02 ttest=3.97e-02 eq=2.2e-15
+  G30_TB_64_1 stage1/4: train=6.09e-02 (continuing)
+  G30_TB_64_1 stage2/4: train=3.48e-02 (continuing)
+  G30_TB_64_1 stage3/4: train=2.96e-02 (continuing)
+  G30_TB_64_1 DONE (4 stages x126it): train=2.57e-02 test=3.83e-02 ttest=3.83e-02 eq=2.3e-15
+[train G30] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+  G30_TA_256_0 stage1/8: train=1.19e-02 (continuing)
+  G30_TA_256_0 stage2/8: train=8.67e-03 (continuing)
+  G30_TA_256_0 stage3/8: train=7.46e-03 (continuing)
+  G30_TA_256_0 stage4/8: train=6.55e-03 (continuing)
+  G30_TA_256_0 stage5/8: train=5.88e-03 (continuing)
+  G30_TA_256_0 stage6/8: train=5.30e-03 (continuing)
+  G30_TA_256_0 stage7/8: train=4.83e-03 (continuing)
+  G30_TA_256_0 DONE (8 stages x22it): train=4.43e-03 test=3.29e-02 ttest=3.29e-02 eq=5.6e-16
+  G30_TB_256_0 stage1/8: train=1.16e-02 (continuing)
+  G30_TB_256_0 stage2/8: train=8.69e-03 (continuing)
+  G30_TB_256_0 stage3/8: train=7.73e-03 (continuing)
+  G30_TB_256_0 stage4/8: train=7.08e-03 (continuing)
+  G30_TB_256_0 stage5/8: train=6.57e-03 (continuing)
+  G30_TB_256_0 stage6/8: train=6.10e-03 (continuing)
+  G30_TB_256_0 stage7/8: train=5.72e-03 (continuing)
+[train G30] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+  G30_TB_256_0 DONE (8 stages x22it): train=5.38e-03 test=4.82e-02 ttest=4.82e-02 eq=1.1e-15
+  G30_CT_256_0 stage1/8: train=1.15e-02 (continuing)
+  G30_CT_256_0 stage2/8: train=7.90e-03 (continuing)
+  G30_CT_256_0 stage3/8: train=6.37e-03 (continuing)
+  G30_CT_256_0 stage4/8: train=5.42e-03 (continuing)
+  G30_CT_256_0 stage5/8: train=4.78e-03 (continuing)
+  G30_CT_256_0 stage6/8: train=4.26e-03 (continuing)
+  G30_CT_256_0 stage7/8: train=3.86e-03 (continuing)
+  G30_CT_256_0 DONE (8 stages x22it): train=3.52e-03 test=3.66e-02 ttest=3.61e-02 eq=1.4e-01
+[train G30] ALLDONE
+  G100_TB_16_1 stage1/3: train=7.97e-01 (continuing)
+  G100_TB_16_1 stage2/3: train=7.86e-01 (continuing)
+  G100_TB_16_1 DONE (3 stages x200it): train=7.85e-01 test=8.97e-01 ttest=8.97e-01 eq=1.0e-15
+[train G100] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+[train G30] ALLDONE
+  G100_TC_16_0 stage1/3: train=8.65e-01 (continuing)
+  G100_TC_16_0 stage2/3: train=8.52e-01 (continuing)
+  G100_TC_16_0 DONE (3 stages x200it): train=8.51e-01 test=1.04e+00 ttest=1.04e+00 eq=1.8e-15
+  G100_TC_16_1 stage1/3: train=8.64e-01 (continuing)
+  G100_TC_16_1 stage2/3: train=8.52e-01 (continuing)
+  G100_TC_16_1 DONE (3 stages x200it): train=8.52e-01 test=1.06e+00 ttest=1.06e+00 eq=3.3e-15
+  G100_CT_16_0 stage1/3: train=7.42e-01 (continuing)
+[train G100] budget reached, PENDING remain; call again
+[train G6] ALLDONE
+[train G30] ALLDONE
+  G100_CT_16_0 stage2/3: train=6.77e-01 (continuing)
+  G100_CT_16_0 DONE (3 stages x200it): train=6.74e-01 test=7.72e-01 ttest=7.70e-01 eq=3.1e-01
+  G100_TA_32_0 stage1/4: train=4.94e-01 (continuing)
+  G100_TA_32_0 stage2/4: train=4.65e-01 (continuing)
+  G100_TA_32_0 DONE (3 stages x120it): train=4.62e-01 test=6.03e-01 ttest=6.03e-01 eq=4.8e-16
+  G100_TA_32_1 stage1/4: train=4.98e-01 (continuing)
+  G100_TA_32_1 stage2/4: train=4.67e-01 (continuing)
+[train G100] budget reached, PENDING remain; call again
+[train G30] ALLDONE
+  G100_TA_32_1 DONE (3 stages x120it): train=4.63e-01 test=6.10e-01 ttest=6.10e-01 eq=5.0e-16
+  G100_TB_32_0 stage1/4: train=6.42e-01 (continuing)
+  G100_TB_32_0 stage2/4: train=6.30e-01 (continuing)
+  G100_TB_32_0 DONE (3 stages x120it): train=6.28e-01 test=8.25e-01 ttest=8.25e-01 eq=1.3e-15
+  G100_TB_32_1 stage1/4: train=6.40e-01 (continuing)
+  G100_TB_32_1 stage2/4: train=6.29e-01 (continuing)
+  G100_TB_32_1 DONE (3 stages x120it): train=6.28e-01 test=8.24e-01 ttest=8.24e-01 eq=1.3e-15
+  G100_TC_32_0 stage1/4: train=7.57e-01 (continuing)
+  G100_TC_32_0 stage2/4: train=7.38e-01 (continuing)
+[train G100] budget reached, PENDING remain; call again
+[train G30] ALLDONE
+  G100_TC_32_0 DONE (3 stages x120it): train=7.35e-01 test=1.32e+00 ttest=1.32e+00 eq=4.5e-15
+  G100_TC_32_1 stage1/4: train=7.51e-01 (continuing)
+  G100_TC_32_1 stage2/4: train=7.37e-01 (continuing)
+  G100_TC_32_1 DONE (3 stages x120it): train=7.35e-01 test=1.30e+00 ttest=1.30e+00 eq=3.6e-15
+  G100_CT_32_0 stage1/4: train=4.97e-01 (continuing)
+  G100_CT_32_0 stage2/4: train=4.71e-01 (continuing)
+  G100_CT_32_0 DONE (3 stages x120it): train=4.68e-01 test=6.06e-01 ttest=6.06e-01 eq=3.7e-01
+  G100_TA_64_0 stage1/7: train=2.51e-01 (continuing)
+  G100_TA_64_0 stage2/7: train=2.34e-01 (continuing)
+[train G100] budget reached, PENDING remain; call again
+[train G30] ALLDONE
+  G100_TA_64_0 DONE (3 stages x59it): train=2.29e-01 test=4.84e-01 ttest=4.84e-01 eq=6.0e-16
+  G100_TA_64_1 stage1/7: train=2.49e-01 (continuing)
+  G100_TA_64_1 stage2/7: train=2.36e-01 (continuing)
+  G100_TA_64_1 DONE (3 stages x59it): train=2.33e-01 test=4.77e-01 ttest=4.77e-01 eq=5.5e-16
+  G100_TB_64_0 stage1/7: train=4.16e-01 (continuing)
+  G100_TB_64_0 stage2/7: train=4.02e-01 (continuing)
+  G100_TB_64_0 DONE (3 stages x59it): train=3.99e-01 test=9.89e-01 ttest=9.89e-01 eq=2.0e-15
+  G100_TB_64_1 stage1/7: train=4.16e-01 (continuing)
+  G100_TB_64_1 stage2/7: train=4.02e-01 (continuing)
+  G100_TB_64_1 DONE (3 stages x59it): train=3.99e-01 test=9.73e-01 ttest=9.73e-01 eq=2.3e-15
+[train G100] budget reached, PENDING remain; call again
+  G100_TC_64_0 stage1/7: train=5.71e-01 (continuing)
+  G100_TC_64_0 stage2/7: train=5.53e-01 (continuing)
+  G100_TC_64_0 DONE (3 stages x59it): train=5.49e-01 test=1.30e+00 ttest=1.30e+00 eq=3.8e-15
+  G100_TC_64_1 stage1/7: train=5.70e-01 (continuing)
+  G100_TC_64_1 stage2/7: train=5.53e-01 (continuing)
+  G100_TC_64_1 DONE (3 stages x59it): train=5.49e-01 test=1.30e+00 ttest=1.30e+00 eq=4.0e-15
+  G100_CT_64_0 stage1/7: train=2.50e-01 (continuing)
+  G100_CT_64_0 stage2/7: train=2.36e-01 (continuing)
+  G100_CT_64_0 DONE (3 stages x59it): train=2.33e-01 test=4.93e-01 ttest=4.93e-01 eq=4.5e-01
+  G100_TA_256_0 stage1/9: train=5.99e-03 (continuing)
+  G100_TA_256_0 stage2/9: train=4.12e-03 (continuing)
+  G100_TA_256_0 stage3/9: train=3.50e-03 (continuing)
+  G100_TA_256_0 stage4/9: train=3.10e-03 (continuing)
+  G100_TA_256_0 stage5/9: train=2.79e-03 (continuing)
+  G100_TA_256_0 stage6/9: train=2.55e-03 (continuing)
+[train G100] budget reached, PENDING remain; call again
+  G100_TA_256_0 stage7/9: train=2.35e-03 (continuing)
+  G100_TA_256_0 stage8/9: train=2.18e-03 (continuing)
+  G100_TA_256_0 DONE (9 stages x20it): train=2.04e-03 test=3.10e-01 ttest=3.10e-01 eq=6.9e-16
+  G100_TB_256_0 stage1/9: train=2.35e-02 (continuing)
+  G100_TB_256_0 stage2/9: train=1.80e-02 (continuing)
+  G100_TB_256_0 stage3/9: train=1.66e-02 (continuing)
+  G100_TB_256_0 stage4/9: train=1.59e-02 (continuing)
+  G100_TB_256_0 stage5/9: train=1.56e-02 (continuing)
+  G100_TB_256_0 stage6/9: train=1.54e-02 (continuing)
+  G100_TB_256_0 stage7/9: train=1.52e-02 (continuing)
+  G100_TB_256_0 stage8/9: train=1.51e-02 (continuing)
+  G100_TB_256_0 DONE (9 stages x20it): train=1.50e-02 test=6.34e-01 ttest=6.34e-01 eq=2.6e-15
+  G100_CT_256_0 stage1/9: train=5.90e-03 (continuing)
+[train G100] budget reached, PENDING remain; call again
+  G100_CT_256_0 stage2/9: train=3.93e-03 (continuing)
+  G100_CT_256_0 stage3/9: train=3.27e-03 (continuing)
+  G100_CT_256_0 stage4/9: train=2.85e-03 (continuing)
+  G100_CT_256_0 stage5/9: train=2.55e-03 (continuing)
+  G100_CT_256_0 stage6/9: train=2.31e-03 (continuing)
+  G100_CT_256_0 stage7/9: train=2.07e-03 (continuing)
+  G100_CT_256_0 stage8/9: train=1.89e-03 (continuing)
+  G100_CT_256_0 DONE (9 stages x20it): train=1.77e-03 test=3.16e-01 ttest=3.15e-01 eq=4.4e-01
+[train G100] ALLDONE

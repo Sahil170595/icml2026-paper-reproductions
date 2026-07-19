@@ -1,0 +1,167 @@
+{
+  "moment": {
+    "setup": {
+      "K": 8,
+      "ell": 0.25,
+      "noise": 0.05,
+      "seed": 20260717,
+      "T_fixed": 300,
+      "M_fixed": 40000,
+      "domain": "[0,1] grid, SE kernel, Bayesian f~prior"
+    },
+    "m1_mean_RT": 7.495695489601963,
+    "m2_mean_RT2": 69.827377091221,
+    "std_RT": 3.6934978297518732,
+    "delta_table": [
+      {
+        "delta": 0.5,
+        "emp_quantile": 6.780975328119692,
+        "bound_old_1_over_delta": 14.991390979203926,
+        "bound_new_1_over_sqrt_delta": 11.817561262055804,
+        "exceedance_new": 0.0709,
+        "improve_factor_old_over_new": 1.2685689243971812
+      },
+      {
+        "delta": 0.25,
+        "emp_quantile": 8.46418806742043,
+        "bound_old_1_over_delta": 29.982781958407852,
+        "bound_new_1_over_sqrt_delta": 16.71255541097423,
+        "exceedance_new": 0.018825,
+        "improve_factor_old_over_new": 1.7940273776875428
+      },
+      {
+        "delta": 0.125,
+        "emp_quantile": 10.20095086575667,
+        "bound_old_1_over_delta": 59.965563916815704,
+        "bound_new_1_over_sqrt_delta": 23.63512252411161,
+        "exceedance_new": 0.005725,
+        "improve_factor_old_over_new": 2.5371378487943623
+      },
+      {
+        "delta": 0.0625,
+        "emp_quantile": 12.238354900620033,
+        "bound_old_1_over_delta": 119.93112783363141,
+        "bound_new_1_over_sqrt_delta": 33.42511082194846,
+        "exceedance_new": 0.00165,
+        "improve_factor_old_over_new": 3.5880547553750857
+      },
+      {
+        "delta": 0.03125,
+        "emp_quantile": 14.64262837824085,
+        "bound_old_1_over_delta": 239.86225566726281,
+        "bound_new_1_over_sqrt_delta": 47.27024504822322,
+        "exceedance_new": 0.0006,
+        "improve_factor_old_over_new": 5.074275697588725
+      },
+      {
+        "delta": 0.015625,
+        "emp_quantile": 17.563611033604943,
+        "bound_old_1_over_delta": 479.72451133452563,
+        "bound_new_1_over_sqrt_delta": 66.85022164389692,
+        "exceedance_new": 0.000275,
+        "improve_factor_old_over_new": 7.176109510750171
+      }
+    ],
+    "improvement_factor_exponent_vs_inv_delta": 0.49999999999999994,
+    "empirical_quantile_exponent_q": 0.2714292232879831,
+    "new_bound_valid_all_delta": true,
+    "second_moment_T_sweep": {
+      "T": [
+        75,
+        150,
+        300,
+        600
+      ],
+      "m2": [
+        45.614553310207896,
+        56.27740286486346,
+        72.77939227868644,
+        91.71559099190736
+      ],
+      "m2_exponent_in_T": 0.33939926925822844
+    }
+  },
+  "_meta": {
+    "paper": "arXiv 2603.09276",
+    "claim": 2,
+    "numpy": "2.2.6"
+  },
+  "lenient": {
+    "setup": {
+      "K": 12,
+      "ell": 0.2,
+      "noise": 0.05,
+      "seed": 20260718,
+      "M": 1500,
+      "T": 1024
+    },
+    "by_Delta": {
+      "Delta_0.3": {
+        "T": [
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "E_RT": [
+          7.372152185973767,
+          8.275221173050113,
+          9.212368181432755,
+          10.221845354618399,
+          11.357576450374518
+        ],
+        "E_badpulls": [
+          6.160666666666667,
+          6.592,
+          6.991333333333333,
+          7.417333333333334,
+          7.8406666666666665
+        ],
+        "E_lenient_LR": [
+          5.93678126126034,
+          6.2580668527078185,
+          6.561891457772132,
+          6.8509436070571015,
+          7.152446615316747
+        ],
+        "exp_cumulative_RT": 0.1551780409683055,
+        "exp_badpulls": 0.08659640603008259,
+        "exp_lenient": 0.06680973714582131
+      },
+      "Delta_0.6": {
+        "T": [
+          64,
+          128,
+          256,
+          512,
+          1024
+        ],
+        "E_RT": [
+          7.372152185973767,
+          8.275221173050113,
+          9.212368181432755,
+          10.221845354618399,
+          11.357576450374518
+        ],
+        "E_badpulls": [
+          3.5913333333333335,
+          3.744666666666667,
+          3.8953333333333333,
+          4.038,
+          4.17
+        ],
+        "E_lenient_LR": [
+          4.854791690389236,
+          5.065540323034566,
+          5.268275382169493,
+          5.444975647174855,
+          5.629889102604515
+        ],
+        "exp_cumulative_RT": 0.1551780409683055,
+        "exp_badpulls": 0.05398592469021935,
+        "exp_lenient": 0.05316036534487611
+      }
+    }
+  }
+}

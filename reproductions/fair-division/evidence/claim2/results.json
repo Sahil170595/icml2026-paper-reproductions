@@ -1,0 +1,59 @@
+{
+  "claim": "The algorithm models utility as an unknown linear function of item-agent features and learns theta* from limited observed (selected-arm) utilities.",
+  "target_rule": "(a) ||theta_hat-theta*||->0 with decay exponent p>0 (OLS rate ~0.5); (b) held-out utility RMSE -> noise floor sigma and far below no-learning (predict-0) and shuffled-feedback controls; (c) OFD-UCB beats OFD-Uniform in regret. Falsified if p<=0, or learned RMSE not below controls, or UCB does not beat Uniform.",
+  "config": {
+    "T": 8000,
+    "dm": 4,
+    "dn": 4,
+    "d": 8,
+    "N": 10,
+    "sigma_R": 0.1,
+    "lambda": 1.0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "observed_fraction_per_item": 0.1,
+    "held_out_pool_items": 2000
+  },
+  "recovery": {
+    "theta_err_by_t": {
+      "250": 0.24973395934886228,
+      "500": 0.18018142542299453,
+      "1000": 0.14066728747058574,
+      "2000": 0.10116077860233885,
+      "4000": 0.08382097663746654,
+      "8000": 0.06608459337246719
+    },
+    "decay_exponent_p": 0.30713208634659667,
+    "final_theta_err": 0.06608459337246719
+  },
+  "generalisation": {
+    "heldout_rmse_learned_by_t": {
+      "250": 0.032859047888791584,
+      "500": 0.023641768781163152,
+      "1000": 0.018362944831378607,
+      "2000": 0.012399870440412786,
+      "4000": 0.009757026942616626,
+      "8000": 0.008110505832083458
+    },
+    "final_rmse_learned": 0.008110505832083458,
+    "final_rmse_shuffled_control": 0.30900875416899076,
+    "no_learning_predict0_rmse": 0.30077905399216776,
+    "noise_floor_sigma": 0.1
+  },
+  "allocation": {
+    "ofd_ucb_regret": 60.99921111106649,
+    "ofd_uniform_regret": 1088.0702891810793,
+    "ratio_uni_over_ucb": 17.837448540112042
+  },
+  "verdict": {
+    "recovers": true,
+    "generalises": true,
+    "beats_no_learning": true,
+    "verified": true
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "rho": 0.6,
+  "se": 0.7,
+  "mopt": 1.5,
+  "sw": 1.2,
+  "alpha": 0.01,
+  "nsamp": 8000,
+  "seeds": 5,
+  "sizes": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "per_size": [
+    {
+      "T": 1,
+      "K": 2,
+      "nodes": 6,
+      "sel_kept": 18134,
+      "f1_gplus": 1.0,
+      "shd_proposed": 0,
+      "shd_naive": 1,
+      "proposed_beats": true
+    },
+    {
+      "T": 2,
+      "K": 2,
+      "nodes": 9,
+      "sel_kept": 9935,
+      "f1_gplus": 1.0,
+      "shd_proposed": 0,
+      "shd_naive": 2,
+      "proposed_beats": true
+    },
+    {
+      "T": 2,
+      "K": 3,
+      "nodes": 12,
+      "sel_kept": 8955,
+      "f1_gplus": 1.0,
+      "shd_proposed": 0,
+      "shd_naive": 6,
+      "proposed_beats": true
+    },
+    {
+      "T": 3,
+      "K": 2,
+      "nodes": 12,
+      "sel_kept": 5571,
+      "f1_gplus": 1.0,
+      "shd_proposed": 0,
+      "shd_naive": 3,
+      "proposed_beats": true
+    },
+    {
+      "T": 3,
+      "K": 3,
+      "nodes": 16,
+      "sel_kept": 4785,
+      "f1_gplus": 1.0,
+      "shd_proposed": 0,
+      "shd_naive": 9,
+      "proposed_beats": true
+    },
+    {
+      "T": 4,
+      "K": 3,
+      "nodes": 20,
+      "sel_kept": 2564,
+      "f1_gplus": 1.0,
+      "shd_proposed": 0,
+      "shd_naive": 12,
+      "proposed_beats": true
+    }
+  ],
+  "mean_f1_gplus": 1.0,
+  "proposed_beats_all": true,
+  "real_world_datasets": "not-CPU-accessible (toy/protocol-only); not fabricated",
+  "synthetic_verified": true,
+  "verified": true
+}

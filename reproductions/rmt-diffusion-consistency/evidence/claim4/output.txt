@@ -1,0 +1,40 @@
+==============================================================================
+CLAIM 4  sampling-map deterministic equivalence (Results 5.1 & 5.2)
+fractional-power DE:  x = Sigma_hat^{1/2} xbar   -- independent NumPy
+==============================================================================
+d=140 n=110 gamma=1.273  bounded spectrum [0.25,4.0] (mean 1), lam_max=2.95
+quadrature: u in [0,6666] via t-map, 300 nodes
+
+Prop 5.1  E[ u_k^T Sigma_hat^{1/2} u_k ]  (over-shrinkage to the mean):
+     mode     lam_k       emp   frac-DE naive sqrt   rel-err
+        0    0.1841    0.2477    0.2528     0.4290    0.0205
+       10    0.2247    0.2909    0.2954     0.4740    0.0156
+       30    0.3349    0.3901    0.3987     0.5787    0.0218
+       60    0.6092    0.5918    0.6073     0.7805    0.0262
+      100    1.3530    0.9872    1.0185     1.1632    0.0318
+      139    2.9453    1.5443    1.6287     1.7162    0.0547
+    median rel-err=0.0279  max rel-err=0.0547
+    over-shrinkage (frac-DE<sqrt(lam) & emp tracks DE not naive), low modes? True
+    d->large convergence of the fractional-power DE (fixed gamma):
+        d=  70 n=  55  max rel-err = 0.0537
+        d= 140 n= 110  max rel-err = 0.0485
+        d= 280 n= 220  max rel-err = 0.0478
+    max rel-err decreasing in d? True
+    (5.1) fractional-power DE expectation verified? True
+
+Prop 5.2  Var[ v^T Sigma_hat^{1/2} xbar ]  (double-integral fractional DE):
+     mode     lam_k      emp Var       DE Var   ratio
+        0    0.1841   1.3071e-01   1.3326e-01   0.981
+       10    0.2247   1.3988e-01   1.5292e-01   0.915
+       30    0.3349   1.9438e-01   1.9788e-01   0.982
+       60    0.6092   2.5342e-01   2.7944e-01   0.907
+      100    1.3530   3.7126e-01   4.1304e-01   0.899
+      139    2.9453   5.1108e-01   5.6681e-01   0.902
+    variance span across probes = 3.9x (anisotropic)
+    (5.2) double-integral fractional DE verified? True
+
+==============================================================================
+VERDICT claim4: Prop5.1 expectation=True  Prop5.2 variance=True
+CLAIM 4 VERIFIED = True
+==============================================================================
+wrote results.json  runtime=7.17s

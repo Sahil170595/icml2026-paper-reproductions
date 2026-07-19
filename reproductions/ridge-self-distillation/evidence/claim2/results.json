@@ -1,0 +1,234 @@
+{
+  "claim": "Claim 2: the optimal mixing weight can surprisingly be negative",
+  "paper": "arXiv:2602.17565 (OpenReview MdHcU4C4Rm), Theorem 2.2 sign rule / Corollary 3.2 isotropic boundary",
+  "structural_sign_sweep": {
+    "rows": [
+      {
+        "config": "gamma=0.4_iso",
+        "n": 300,
+        "p": 120,
+        "cov": "iso",
+        "n_checked": 704,
+        "n_negative": 394,
+        "n_positive": 310,
+        "max_abs_diff_direct_vs_derivative": 2.4363089323742315e-10
+      },
+      {
+        "config": "gamma=0.4_aniso",
+        "n": 300,
+        "p": 120,
+        "cov": "aniso",
+        "n_checked": 704,
+        "n_negative": 388,
+        "n_positive": 316,
+        "max_abs_diff_direct_vs_derivative": 5.0590642786119133e-11
+      },
+      {
+        "config": "gamma=1.0_iso",
+        "n": 200,
+        "p": 200,
+        "cov": "iso",
+        "n_checked": 704,
+        "n_negative": 342,
+        "n_positive": 362,
+        "max_abs_diff_direct_vs_derivative": 2.0509105524979532e-10
+      },
+      {
+        "config": "gamma=1.0_aniso",
+        "n": 200,
+        "p": 200,
+        "cov": "aniso",
+        "n_checked": 704,
+        "n_negative": 372,
+        "n_positive": 332,
+        "max_abs_diff_direct_vs_derivative": 2.958699951705057e-11
+      },
+      {
+        "config": "gamma=2.0_iso",
+        "n": 150,
+        "p": 300,
+        "cov": "iso",
+        "n_checked": 704,
+        "n_negative": 310,
+        "n_positive": 394,
+        "max_abs_diff_direct_vs_derivative": 9.760071861819597e-09
+      },
+      {
+        "config": "gamma=2.0_aniso",
+        "n": 150,
+        "p": 300,
+        "cov": "aniso",
+        "n_checked": 704,
+        "n_negative": 365,
+        "n_positive": 339,
+        "max_abs_diff_direct_vs_derivative": 8.452246902379557e-09
+      }
+    ],
+    "summary": {
+      "total_checked": 4224,
+      "total_negative": 2171,
+      "total_positive": 2053,
+      "sign_rule_holds_fraction": 1.0,
+      "min_xi": -614.7367792930133,
+      "max_xi": 350.09656250496784,
+      "most_negative_config": {
+        "config": "gamma=0.4_iso",
+        "lam": 1000.0,
+        "seed": 518677875
+      }
+    }
+  },
+  "corollary32_boundary": {
+    "rows": [
+      {
+        "gamma": 0.2,
+        "r2": 1.0,
+        "sigma2": 1.0,
+        "lambda_star_predicted": 0.2,
+        "lambda_star_found": 0.20000000000000012,
+        "abs_diff": 1.1102230246251565e-16,
+        "xi_below_star": 0.872549019607854,
+        "xi_above_star": -0.3717948717948724,
+        "D_at_star": 0.03201643761673312,
+        "sign_below_positive": true,
+        "sign_above_negative": true
+      },
+      {
+        "gamma": 0.5,
+        "r2": 1.0,
+        "sigma2": 1.0,
+        "lambda_star_predicted": 0.5,
+        "lambda_star_found": 0.5000000000000001,
+        "abs_diff": 1.1102230246251565e-16,
+        "xi_below_star": 0.7083333333333326,
+        "xi_above_star": -0.4083333333333361,
+        "D_at_star": 0.08838834764831827,
+        "sign_below_positive": true,
+        "sign_above_negative": true
+      },
+      {
+        "gamma": 1.0,
+        "r2": 1.0,
+        "sigma2": 1.0,
+        "lambda_star_predicted": 1.0,
+        "lambda_star_found": 1.0000000000000002,
+        "abs_diff": 2.220446049250313e-16,
+        "xi_below_star": 0.6428571428571423,
+        "xi_above_star": -0.4230769230769258,
+        "D_at_star": 0.08944271909999113,
+        "sign_below_positive": true,
+        "sign_above_negative": true
+      },
+      {
+        "gamma": 2.0,
+        "r2": 1.0,
+        "sigma2": 1.0,
+        "lambda_star_predicted": 2.0,
+        "lambda_star_found": 1.9999999999999991,
+        "abs_diff": 8.881784197001252e-16,
+        "xi_below_star": 0.6666666666666644,
+        "xi_above_star": -0.4242424242424249,
+        "D_at_star": 0.057067205890902084,
+        "sign_below_positive": true,
+        "sign_above_negative": true
+      },
+      {
+        "gamma": 0.5,
+        "r2": 2.0,
+        "sigma2": 1.0,
+        "lambda_star_predicted": 0.25,
+        "lambda_star_found": 0.25000000000000006,
+        "abs_diff": 5.551115123125783e-17,
+        "xi_below_star": 0.7592592592592587,
+        "xi_above_star": -0.39430894308943226,
+        "D_at_star": 0.11413441178180372,
+        "sign_below_positive": true,
+        "sign_above_negative": true
+      },
+      {
+        "gamma": 0.5,
+        "r2": 1.0,
+        "sigma2": 4.0,
+        "lambda_star_predicted": 2.0,
+        "lambda_star_found": 1.999999999999995,
+        "abs_diff": 5.10702591327572e-15,
+        "xi_below_star": 0.629629629629628,
+        "xi_above_star": -0.4424242424242392,
+        "D_at_star": 0.12189171659598586,
+        "sign_below_positive": true,
+        "sign_above_negative": true
+      },
+      {
+        "gamma": 1.5,
+        "r2": 0.5,
+        "sigma2": 2.0,
+        "lambda_star_predicted": 6.0,
+        "lambda_star_found": 5.999999999999981,
+        "abs_diff": 1.865174681370263e-14,
+        "xi_below_star": 0.595092024539877,
+        "xi_above_star": -0.45867393278838686,
+        "D_at_star": 0.03338056483927865,
+        "sign_below_positive": true,
+        "sign_above_negative": true
+      }
+    ],
+    "summary": {
+      "n_settings": 7,
+      "max_abs_diff_lambda_star": 1.865174681370263e-14,
+      "all_sign_transitions_correct": true
+    }
+  },
+  "finite_sample_convergence": {
+    "gamma": 0.5,
+    "r2": 1.0,
+    "sigma2": 1.0,
+    "lam": 0.2,
+    "target_asymptotic_xi": 0.9535714285714275,
+    "rows": [
+      {
+        "n": 100,
+        "p": 50,
+        "mean_xi": 0.933579787601027,
+        "sem_xi": 0.027608461380964667,
+        "abs_err_vs_asymptotic": 0.019991640970400515
+      },
+      {
+        "n": 200,
+        "p": 100,
+        "mean_xi": 0.9429868234514082,
+        "sem_xi": 0.02046477430973964,
+        "abs_err_vs_asymptotic": 0.010584605120019352
+      },
+      {
+        "n": 400,
+        "p": 200,
+        "mean_xi": 0.9514221410236763,
+        "sem_xi": 0.013721742502539004,
+        "abs_err_vs_asymptotic": 0.002149287547751233
+      },
+      {
+        "n": 800,
+        "p": 400,
+        "mean_xi": 0.9507838118773426,
+        "sem_xi": 0.009756353493381458,
+        "abs_err_vs_asymptotic": 0.0027876166940848934
+      },
+      {
+        "n": 1600,
+        "p": 800,
+        "mean_xi": 0.9567225236712955,
+        "sem_xi": 0.006932587442500097,
+        "abs_err_vs_asymptotic": 0.0031510950998679954
+      },
+      {
+        "n": 3200,
+        "p": 1600,
+        "mean_xi": 0.9538533213285916,
+        "sem_xi": 0.004427655023263918,
+        "abs_err_vs_asymptotic": 0.0002818927571640595
+      }
+    ]
+  },
+  "verdict": "VERIFIED. Structural (finite-sample, Theorem 2.2): 2171/4224 evaluations give xi*<0, sign rule sign(xi*)=-sign(R') holds on 100.0% of checks, most negative xi*=-614.74 in the over-regularized tail. Asymptotic (Corollary 3.2, closed-form, no simulation): the exact sign-transition boundary lambda*=gamma*sigma^2/r^2 is reproduced to max abs error 1.87e-14 across 7 (gamma, r2, sigma2) settings, with correct sign on both sides in all cases. Finite-sample Monte Carlo averages converge toward the asymptotic curve as n,p grow at fixed gamma.",
+  "runtime_s": 138.86
+}

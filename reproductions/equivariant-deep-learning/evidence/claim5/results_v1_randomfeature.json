@@ -1,0 +1,173 @@
+{
+  "graph_n": 6,
+  "stalk_dim": 2,
+  "n_edges": 8,
+  "PF_structural_equivariance_worst": 4.440892098500626e-16,
+  "target_equivariance_worst": {
+    "T1_gentle": 8.881784197001252e-16,
+    "T2_oscillatory": 3.1086244689504383e-15,
+    "T3_compound": 8.881784197001252e-16
+  },
+  "network_equivariance_worst": {
+    "T1_gentle": 4.440892098500626e-15,
+    "T2_oscillatory": 2.1933566074494593e-12,
+    "T3_compound": 1.199040866595169e-13
+  },
+  "widths": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "sweep": {
+    "T1_gentle": [
+      {
+        "width": 4,
+        "train_mse": 0.10462687575867577,
+        "test_mse": 0.10123409942014722
+      },
+      {
+        "width": 8,
+        "train_mse": 0.048112974543167444,
+        "test_mse": 0.050943749683302286
+      },
+      {
+        "width": 16,
+        "train_mse": 0.00016383174197226924,
+        "test_mse": 0.00018794271439920608
+      },
+      {
+        "width": 32,
+        "train_mse": 9.863346498958848e-05,
+        "test_mse": 0.00012180082911854184
+      },
+      {
+        "width": 64,
+        "train_mse": 6.212852908779622e-06,
+        "test_mse": 8.124815607483612e-06
+      },
+      {
+        "width": 128,
+        "train_mse": 1.0333790685622156e-07,
+        "test_mse": 2.0080974054691834e-07
+      },
+      {
+        "width": 256,
+        "train_mse": 1.0884610751683452e-09,
+        "test_mse": 7.436279530841204e-09
+      },
+      {
+        "width": 512,
+        "train_mse": 9.14488905642217e-11,
+        "test_mse": 3.594783886227514e-09
+      }
+    ],
+    "T2_oscillatory": [
+      {
+        "width": 4,
+        "train_mse": 0.6251939436843192,
+        "test_mse": 0.6436905396868052
+      },
+      {
+        "width": 8,
+        "train_mse": 0.4987773309968542,
+        "test_mse": 0.5126475528129805
+      },
+      {
+        "width": 16,
+        "train_mse": 0.31264956918626335,
+        "test_mse": 0.32509430718074145
+      },
+      {
+        "width": 32,
+        "train_mse": 0.2815785399667067,
+        "test_mse": 0.30383012338387355
+      },
+      {
+        "width": 64,
+        "train_mse": 0.14454159361759913,
+        "test_mse": 0.16574869055339184
+      },
+      {
+        "width": 128,
+        "train_mse": 0.040326573131949366,
+        "test_mse": 0.08289290845341145
+      },
+      {
+        "width": 256,
+        "train_mse": 0.005256409591919636,
+        "test_mse": 0.01247618024427734
+      },
+      {
+        "width": 512,
+        "train_mse": 0.0006018985286682852,
+        "test_mse": 0.010620542056181188
+      }
+    ],
+    "T3_compound": [
+      {
+        "width": 4,
+        "train_mse": 0.28921244209789354,
+        "test_mse": 0.3042843017021825
+      },
+      {
+        "width": 8,
+        "train_mse": 0.21371197738539033,
+        "test_mse": 0.2360420312189487
+      },
+      {
+        "width": 16,
+        "train_mse": 0.07519647967045638,
+        "test_mse": 0.07734426217126457
+      },
+      {
+        "width": 32,
+        "train_mse": 0.01929441963399895,
+        "test_mse": 0.020648440729368337
+      },
+      {
+        "width": 64,
+        "train_mse": 0.008771265864740797,
+        "test_mse": 0.011759023367322749
+      },
+      {
+        "width": 128,
+        "train_mse": 0.0012004438824356422,
+        "test_mse": 0.003792786747196623
+      },
+      {
+        "width": 256,
+        "train_mse": 0.00019370270664643274,
+        "test_mse": 0.0019021722304212356
+      },
+      {
+        "width": 512,
+        "train_mse": 4.422388664006034e-05,
+        "test_mse": 0.0013097279071683783
+      }
+    ]
+  },
+  "checks": {
+    "T1_gentle_train_monotone_nonincreasing": true,
+    "T1_gentle_test_error_reduced_ge_70pct": true,
+    "T1_gentle_final_test_mse_small": true,
+    "T2_oscillatory_train_monotone_nonincreasing": true,
+    "T2_oscillatory_test_error_reduced_ge_70pct": true,
+    "T2_oscillatory_final_test_mse_small": true,
+    "T3_compound_train_monotone_nonincreasing": true,
+    "T3_compound_test_error_reduced_ge_70pct": true,
+    "T3_compound_final_test_mse_small": true,
+    "PF_structural_equivariance": true,
+    "T1_gentle_target_equivariance": true,
+    "T1_gentle_network_equivariance": true,
+    "T2_oscillatory_target_equivariance": true,
+    "T2_oscillatory_network_equivariance": true,
+    "T3_compound_target_equivariance": true,
+    "T3_compound_network_equivariance": true
+  },
+  "overall_pass": true
+}

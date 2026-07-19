@@ -1,0 +1,145 @@
+  part yacht/gdn split 0: n(tr/va/te)=[221, 56, 31] lam=0.00013 crps_norm[ckme]=1.920 pval[none,ckme]=[0.093,0.387] (6.0s)
+  part yacht/gdn split 2: n(tr/va/te)=[221, 56, 31] lam=0.0005981 crps_norm[ckme]=1.707 pval[none,ckme]=[0.139,0.021] (2.0s)
+  part yacht/gdn split 4: n(tr/va/te)=[221, 56, 31] lam=5.932e-05 crps_norm[ckme]=1.424 pval[none,ckme]=[0.170,0.085] (3.9s)
+  part yacht/gdn split 6: n(tr/va/te)=[221, 56, 31] lam=0.0002453 crps_norm[ckme]=1.307 pval[none,ckme]=[0.379,0.165] (4.3s)
+  part yacht/gdn split 8: n(tr/va/te)=[221, 56, 31] lam=0.0004899 crps_norm[ckme]=1.949 pval[none,ckme]=[0.069,0.045] (3.2s)
+  part bostonHousing/gdn split 0: n(tr/va/te)=[364, 91, 51] lam=0.001962 crps_norm[ckme]=1.166 pval[none,ckme]=[0.251,0.129] (1.6s)
+  part bostonHousing/gdn split 2: n(tr/va/te)=[364, 91, 51] lam=0.003766 crps_norm[ckme]=1.360 pval[none,ckme]=[0.336,0.013] (1.8s)
+BUDGET reached
+ASSEMBLED yacht/gdn (38.8s total)
+MISSING CELLS: 19 [('yacht', 'mdn'), ('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'gdn'), ('bostonHousing', 'mdn')]
+  part bostonHousing/gdn split 4: n(tr/va/te)=[364, 91, 51] lam=0.002123 crps_norm[ckme]=1.203 pval[none,ckme]=[0.065,0.014] (3.4s)
+  part bostonHousing/gdn split 6: n(tr/va/te)=[364, 91, 51] lam=0.004912 crps_norm[ckme]=1.043 pval[none,ckme]=[0.187,0.061] (1.4s)
+  part bostonHousing/gdn split 8: n(tr/va/te)=[364, 91, 51] lam=0.002687 crps_norm[ckme]=1.001 pval[none,ckme]=[0.147,0.148] (1.2s)
+  part energy/gdn split 0: n(tr/va/te)=[552, 139, 77] lam=0.0001244 crps_norm[ckme]=0.831 pval[none,ckme]=[0.130,0.100] (3.7s)
+  part energy/gdn split 2: n(tr/va/te)=[552, 139, 77] lam=0.0001312 crps_norm[ckme]=1.020 pval[none,ckme]=[0.423,0.151] (4.8s)
+  part energy/gdn split 4: n(tr/va/te)=[552, 139, 77] lam=0.0001583 crps_norm[ckme]=1.010 pval[none,ckme]=[0.209,0.357] (4.7s)
+  part energy/gdn split 6: n(tr/va/te)=[552, 139, 77] lam=0.000162 crps_norm[ckme]=1.246 pval[none,ckme]=[0.083,0.008] (4.7s)
+BUDGET reached
+MISSING CELLS: 18 [('yacht', 'mdn'), ('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'mdn'), ('bostonHousing', 'bnn')]
+  part energy/gdn split 8: n(tr/va/te)=[552, 139, 77] lam=0.0001534 crps_norm[ckme]=0.795 pval[none,ckme]=[0.164,0.249] (5.7s)
+  part concrete/gdn split 0: n(tr/va/te)=[741, 186, 103] lam=0.001824 crps_norm[ckme]=1.046 pval[none,ckme]=[0.435,0.328] (1.7s)
+  part concrete/gdn split 2: n(tr/va/te)=[741, 186, 103] lam=0.0008757 crps_norm[ckme]=1.023 pval[none,ckme]=[0.545,0.342] (2.7s)
+  part concrete/gdn split 4: n(tr/va/te)=[741, 186, 103] lam=0.0008141 crps_norm[ckme]=1.061 pval[none,ckme]=[0.248,0.000] (4.0s)
+  part concrete/gdn split 6: n(tr/va/te)=[741, 186, 103] lam=0.001107 crps_norm[ckme]=1.026 pval[none,ckme]=[0.090,0.390] (2.4s)
+  part concrete/gdn split 8: n(tr/va/te)=[741, 186, 103] lam=0.0009891 crps_norm[ckme]=1.031 pval[none,ckme]=[0.666,0.532] (2.3s)
+  part wine-quality-red/gdn split 0: n(tr/va/te)=[1151, 288, 160] lam=0.009152 crps_norm[ckme]=0.913 pval[none,ckme]=[0.000,0.077] (2.2s)
+  part wine-quality-red/gdn split 2: n(tr/va/te)=[1151, 288, 160] lam=0.02523 crps_norm[ckme]=0.925 pval[none,ckme]=[0.000,0.000] (2.2s)
+BUDGET reached
+ASSEMBLED energy/gdn (46.8s total)
+ASSEMBLED concrete/gdn (23.2s total)
+MISSING CELLS: 16 [('yacht', 'mdn'), ('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'mdn'), ('bostonHousing', 'bnn')]
+  part wine-quality-red/gdn split 4: n(tr/va/te)=[1151, 288, 160] lam=0.006571 crps_norm[ckme]=0.871 pval[none,ckme]=[0.000,0.000] (4.9s)
+  part wine-quality-red/gdn split 6: n(tr/va/te)=[1151, 288, 160] lam=0.04195 crps_norm[ckme]=0.944 pval[none,ckme]=[0.000,0.000] (2.0s)
+  part wine-quality-red/gdn split 8: n(tr/va/te)=[1151, 288, 160] lam=0.00679 crps_norm[ckme]=0.874 pval[none,ckme]=[0.000,0.006] (2.2s)
+  part yacht/mdn split 0: n(tr/va/te)=[221, 56, 31] lam=0.0002344 crps_norm[ckme]=2.313 pval[none,ckme]=[0.015,0.244] (4.9s)
+  part yacht/mdn split 2: n(tr/va/te)=[221, 56, 31] lam=0.0003377 crps_norm[ckme]=1.879 pval[none,ckme]=[0.178,0.014] (4.7s)
+  part yacht/mdn split 4: n(tr/va/te)=[221, 56, 31] lam=0.0004265 crps_norm[ckme]=1.947 pval[none,ckme]=[0.307,0.041] (4.7s)
+BUDGET reached
+ASSEMBLED wine-quality-red/gdn (27.4s total)
+MISSING CELLS: 15 [('yacht', 'mdn'), ('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'mdn'), ('bostonHousing', 'bnn')]
+  part yacht/mdn split 6: n(tr/va/te)=[221, 56, 31] lam=0.0001309 crps_norm[ckme]=1.011 pval[none,ckme]=[0.029,0.048] (6.7s)
+  part yacht/mdn split 8: n(tr/va/te)=[221, 56, 31] lam=0.0003905 crps_norm[ckme]=1.917 pval[none,ckme]=[0.013,0.018] (4.7s)
+  part bostonHousing/mdn split 0: n(tr/va/te)=[364, 91, 51] lam=0.002192 crps_norm[ckme]=1.244 pval[none,ckme]=[0.579,0.024] (2.3s)
+  part bostonHousing/mdn split 2: n(tr/va/te)=[364, 91, 51] lam=0.002931 crps_norm[ckme]=1.355 pval[none,ckme]=[0.382,0.005] (2.4s)
+  part bostonHousing/mdn split 4: n(tr/va/te)=[364, 91, 51] lam=0.002122 crps_norm[ckme]=1.268 pval[none,ckme]=[0.261,0.030] (2.3s)
+  part bostonHousing/mdn split 6: n(tr/va/te)=[364, 91, 51] lam=0.002962 crps_norm[ckme]=1.062 pval[none,ckme]=[0.046,0.054] (2.0s)
+  part bostonHousing/mdn split 8: n(tr/va/te)=[364, 91, 51] lam=0.001247 crps_norm[ckme]=0.909 pval[none,ckme]=[0.089,0.188] (2.6s)
+BUDGET reached
+ASSEMBLED yacht/mdn (51.7s total)
+ASSEMBLED bostonHousing/mdn (23.8s total)
+MISSING CELLS: 13 [('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'bnn'), ('bostonHousing', 'drf'), ('energy', 'mdn')]
+  part energy/mdn split 0: n(tr/va/te)=[552, 139, 77] lam=0.0001026 crps_norm[ckme]=0.853 pval[none,ckme]=[0.174,0.076] (10.5s)
+  part energy/mdn split 2: n(tr/va/te)=[552, 139, 77] lam=0.0001144 crps_norm[ckme]=0.799 pval[none,ckme]=[0.263,0.039] (8.4s)
+  part energy/mdn split 4: n(tr/va/te)=[552, 139, 77] lam=0.0001109 crps_norm[ckme]=0.829 pval[none,ckme]=[0.190,0.115] (8.1s)
+BUDGET reached
+MISSING CELLS: 13 [('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'bnn'), ('bostonHousing', 'drf'), ('energy', 'mdn')]
+  part energy/mdn split 6: n(tr/va/te)=[552, 139, 77] lam=0.0001378 crps_norm[ckme]=0.871 pval[none,ckme]=[0.035,0.012] (10.3s)
+  part energy/mdn split 8: n(tr/va/te)=[552, 139, 77] lam=0.0001062 crps_norm[ckme]=0.983 pval[none,ckme]=[0.253,0.263] (8.4s)
+  part concrete/mdn split 0: n(tr/va/te)=[741, 186, 103] lam=0.001082 crps_norm[ckme]=1.112 pval[none,ckme]=[0.524,0.158] (3.4s)
+BUDGET reached
+ASSEMBLED energy/mdn (89.6s total)
+MISSING CELLS: 12 [('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'bnn'), ('bostonHousing', 'drf'), ('energy', 'bnn')]
+  part concrete/mdn split 2: n(tr/va/te)=[741, 186, 103] lam=0.0006386 crps_norm[ckme]=1.010 pval[none,ckme]=[0.516,0.286] (7.0s)
+  part concrete/mdn split 4: n(tr/va/te)=[741, 186, 103] lam=0.0009628 crps_norm[ckme]=1.019 pval[none,ckme]=[0.027,0.000] (9.1s)
+  part concrete/mdn split 6: n(tr/va/te)=[741, 186, 103] lam=0.0008776 crps_norm[ckme]=1.069 pval[none,ckme]=[0.663,0.721] (3.8s)
+  part concrete/mdn split 8: n(tr/va/te)=[741, 186, 103] lam=0.000968 crps_norm[ckme]=1.036 pval[none,ckme]=[0.728,0.440] (6.5s)
+BUDGET reached
+ASSEMBLED concrete/mdn (54.2s total)
+MISSING CELLS: 11 [('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'bnn'), ('bostonHousing', 'drf'), ('energy', 'bnn')]
+  part wine-quality-red/mdn split 0: n(tr/va/te)=[1151, 288, 160] lam=0.01873 crps_norm[ckme]=1.017 pval[none,ckme]=[0.008,0.010] (11.1s)
+  part wine-quality-red/mdn split 2: n(tr/va/te)=[1151, 288, 160] lam=0.03222 crps_norm[ckme]=1.017 pval[none,ckme]=[0.018,0.004] (9.7s)
+  part wine-quality-red/mdn split 4: n(tr/va/te)=[1151, 288, 160] lam=0.005703 crps_norm[ckme]=0.957 pval[none,ckme]=[0.000,0.000] (8.5s)
+BUDGET reached
+MISSING CELLS: 11 [('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'bnn'), ('bostonHousing', 'drf'), ('energy', 'bnn')]
+  part wine-quality-red/mdn split 6: n(tr/va/te)=[1151, 288, 160] lam=0.03557 crps_norm[ckme]=1.035 pval[none,ckme]=[0.000,0.000] (10.8s)
+  part wine-quality-red/mdn split 8: n(tr/va/te)=[1151, 288, 160] lam=0.009865 crps_norm[ckme]=1.037 pval[none,ckme]=[0.000,0.001] (8.5s)
+  part yacht/bnn split 0: n(tr/va/te)=[221, 56, 31] lam=0.0002448 crps_norm[ckme]=1.918 pval[none,ckme]=[0.242,0.231] (5.5s)
+BUDGET reached
+MISSING CELLS: 10 [('yacht', 'bnn'), ('yacht', 'drf'), ('bostonHousing', 'bnn'), ('bostonHousing', 'drf'), ('energy', 'bnn')]
+  part yacht/bnn split 2: n(tr/va/te)=[221, 56, 31] lam=0.001696 crps_norm[ckme]=1.468 pval[none,ckme]=[0.133,0.023] (6.1s)
+  part yacht/bnn split 4: n(tr/va/te)=[221, 56, 31] lam=0.0001077 crps_norm[ckme]=0.831 pval[none,ckme]=[0.061,0.061] (5.3s)
+  part yacht/bnn split 6: n(tr/va/te)=[221, 56, 31] lam=0.0005879 crps_norm[ckme]=1.097 pval[none,ckme]=[0.112,0.127] (5.5s)
+  part yacht/bnn split 8: n(tr/va/te)=[221, 56, 31] lam=0.0005763 crps_norm[ckme]=1.968 pval[none,ckme]=[0.095,0.065] (5.2s)
+BUDGET reached
+ASSEMBLED yacht/bnn (59.2s total)
+MISSING CELLS: 9 [('yacht', 'drf'), ('bostonHousing', 'bnn'), ('bostonHousing', 'drf'), ('energy', 'bnn'), ('energy', 'drf')]
+  part bostonHousing/bnn split 0: n(tr/va/te)=[364, 91, 51] lam=0.001941 crps_norm[ckme]=1.133 pval[none,ckme]=[0.291,0.116] (4.7s)
+  part bostonHousing/bnn split 2: n(tr/va/te)=[364, 91, 51] lam=0.003074 crps_norm[ckme]=1.328 pval[none,ckme]=[0.455,0.009] (2.9s)
+  part bostonHousing/bnn split 4: n(tr/va/te)=[364, 91, 51] lam=0.002309 crps_norm[ckme]=1.219 pval[none,ckme]=[0.021,0.006] (2.3s)
+  part bostonHousing/bnn split 6: n(tr/va/te)=[364, 91, 51] lam=0.004753 crps_norm[ckme]=1.211 pval[none,ckme]=[0.396,0.048] (1.9s)
+  part bostonHousing/bnn split 8: n(tr/va/te)=[364, 91, 51] lam=0.002952 crps_norm[ckme]=1.019 pval[none,ckme]=[0.096,0.069] (1.8s)
+  part energy/bnn split 0: n(tr/va/te)=[552, 139, 77] lam=0.0002225 crps_norm[ckme]=0.913 pval[none,ckme]=[0.048,0.086] (6.7s)
+  part energy/bnn split 2: n(tr/va/te)=[552, 139, 77] lam=9.671e-05 crps_norm[ckme]=0.597 pval[none,ckme]=[0.018,0.125] (6.3s)
+BUDGET reached
+MISSING CELLS: 8 [('yacht', 'drf'), ('bostonHousing', 'drf'), ('energy', 'bnn'), ('energy', 'drf'), ('concrete', 'bnn')]
+  part energy/bnn split 4: n(tr/va/te)=[552, 139, 77] lam=0.0001248 crps_norm[ckme]=0.775 pval[none,ckme]=[0.105,0.430] (8.6s)
+  part energy/bnn split 6: n(tr/va/te)=[552, 139, 77] lam=0.0001851 crps_norm[ckme]=1.135 pval[none,ckme]=[0.054,0.009] (6.4s)
+  part energy/bnn split 8: n(tr/va/te)=[552, 139, 77] lam=0.0002066 crps_norm[ckme]=0.919 pval[none,ckme]=[0.003,0.048] (6.6s)
+  part concrete/bnn split 0: n(tr/va/te)=[741, 186, 103] lam=0.001092 crps_norm[ckme]=1.045 pval[none,ckme]=[0.539,0.141] (4.0s)
+BUDGET reached
+MISSING CELLS: 7 [('yacht', 'drf'), ('bostonHousing', 'drf'), ('energy', 'drf'), ('concrete', 'bnn'), ('concrete', 'drf')]
+  part concrete/bnn split 2: n(tr/va/te)=[741, 186, 103] lam=0.0007774 crps_norm[ckme]=0.976 pval[none,ckme]=[0.565,0.302] (5.4s)
+  part concrete/bnn split 4: n(tr/va/te)=[741, 186, 103] lam=0.0009107 crps_norm[ckme]=1.029 pval[none,ckme]=[0.007,0.000] (9.0s)
+  part concrete/bnn split 6: n(tr/va/te)=[741, 186, 103] lam=0.0009369 crps_norm[ckme]=1.004 pval[none,ckme]=[0.028,0.581] (8.0s)
+BUDGET reached
+MISSING CELLS: 7 [('yacht', 'drf'), ('bostonHousing', 'drf'), ('energy', 'drf'), ('concrete', 'bnn'), ('concrete', 'drf')]
+  part concrete/bnn split 8: n(tr/va/te)=[741, 186, 103] lam=0.0009287 crps_norm[ckme]=0.996 pval[none,ckme]=[0.468,0.247] (8.9s)
+  part wine-quality-red/bnn split 0: n(tr/va/te)=[1151, 288, 160] lam=0.009265 crps_norm[ckme]=0.940 pval[none,ckme]=[0.000,0.006] (3.9s)
+  part wine-quality-red/bnn split 2: n(tr/va/te)=[1151, 288, 160] lam=0.02776 crps_norm[ckme]=0.939 pval[none,ckme]=[0.000,0.004] (3.7s)
+  part wine-quality-red/bnn split 4: n(tr/va/te)=[1151, 288, 160] lam=0.008613 crps_norm[ckme]=0.863 pval[none,ckme]=[0.000,0.000] (3.9s)
+  part wine-quality-red/bnn split 6: n(tr/va/te)=[1151, 288, 160] lam=0.03438 crps_norm[ckme]=0.934 pval[none,ckme]=[0.000,0.000] (3.0s)
+BUDGET reached
+MISSING CELLS: 6 [('yacht', 'drf'), ('bostonHousing', 'drf'), ('energy', 'drf'), ('concrete', 'drf'), ('wine-quality-red', 'bnn')]
+  part wine-quality-red/bnn split 8: n(tr/va/te)=[1151, 288, 160] lam=0.01751 crps_norm[ckme]=0.876 pval[none,ckme]=[0.000,0.001] (6.7s)
+  part yacht/drf split 0: n(tr/va/te)=[221, 56, 31] lam=0.001148 crps_norm[ckme]=1.278 pval[none,ckme]=[0.594,0.565] (1.4s)
+  part yacht/drf split 2: n(tr/va/te)=[221, 56, 31] lam=0.0004813 crps_norm[ckme]=2.712 pval[none,ckme]=[0.204,0.026] (0.5s)
+  part yacht/drf split 4: n(tr/va/te)=[221, 56, 31] lam=0.000458 crps_norm[ckme]=1.614 pval[none,ckme]=[0.316,0.051] (0.4s)
+  part yacht/drf split 6: n(tr/va/te)=[221, 56, 31] lam=0.00118 crps_norm[ckme]=1.229 pval[none,ckme]=[0.024,0.014] (0.5s)
+  part yacht/drf split 8: n(tr/va/te)=[221, 56, 31] lam=0.000654 crps_norm[ckme]=1.309 pval[none,ckme]=[0.060,0.048] (0.5s)
+  part bostonHousing/drf split 0: n(tr/va/te)=[364, 91, 51] lam=0.002854 crps_norm[ckme]=1.090 pval[none,ckme]=[0.353,0.271] (1.0s)
+  part bostonHousing/drf split 2: n(tr/va/te)=[364, 91, 51] lam=0.004228 crps_norm[ckme]=1.216 pval[none,ckme]=[0.179,0.030] (1.0s)
+  part bostonHousing/drf split 4: n(tr/va/te)=[364, 91, 51] lam=0.003035 crps_norm[ckme]=1.148 pval[none,ckme]=[0.300,0.012] (1.0s)
+  part bostonHousing/drf split 6: n(tr/va/te)=[364, 91, 51] lam=0.003419 crps_norm[ckme]=1.092 pval[none,ckme]=[0.028,0.036] (0.9s)
+  part bostonHousing/drf split 8: n(tr/va/te)=[364, 91, 51] lam=0.001838 crps_norm[ckme]=0.998 pval[none,ckme]=[0.165,0.156] (0.9s)
+  part energy/drf split 0: n(tr/va/te)=[552, 139, 77] lam=0.0001287 crps_norm[ckme]=0.977 pval[none,ckme]=[0.594,0.175] (0.7s)
+  part energy/drf split 2: n(tr/va/te)=[552, 139, 77] lam=0.0002073 crps_norm[ckme]=1.057 pval[none,ckme]=[0.415,0.180] (0.7s)
+  part energy/drf split 4: n(tr/va/te)=[552, 139, 77] lam=0.0001595 crps_norm[ckme]=0.834 pval[none,ckme]=[0.413,0.356] (0.7s)
+  part energy/drf split 6: n(tr/va/te)=[552, 139, 77] lam=0.0003637 crps_norm[ckme]=1.084 pval[none,ckme]=[0.112,0.032] (0.7s)
+  part energy/drf split 8: n(tr/va/te)=[552, 139, 77] lam=0.000363 crps_norm[ckme]=1.161 pval[none,ckme]=[0.442,0.138] (0.7s)
+  part concrete/drf split 0: n(tr/va/te)=[741, 186, 103] lam=0.001636 crps_norm[ckme]=0.992 pval[none,ckme]=[0.468,0.417] (1.5s)
+  part concrete/drf split 2: n(tr/va/te)=[741, 186, 103] lam=0.0004609 crps_norm[ckme]=0.915 pval[none,ckme]=[0.258,0.416] (1.3s)
+  part concrete/drf split 4: n(tr/va/te)=[741, 186, 103] lam=0.0004025 crps_norm[ckme]=0.951 pval[none,ckme]=[0.017,0.002] (1.4s)
+BUDGET reached
+MISSING CELLS: 2 [('concrete', 'drf'), ('wine-quality-red', 'drf')]
+  part concrete/drf split 6: n(tr/va/te)=[741, 186, 103] lam=0.0009225 crps_norm[ckme]=0.997 pval[none,ckme]=[0.522,0.720] (1.8s)
+  part concrete/drf split 8: n(tr/va/te)=[741, 186, 103] lam=0.0001582 crps_norm[ckme]=0.972 pval[none,ckme]=[0.119,0.240] (1.2s)
+  part wine-quality-red/drf split 0: n(tr/va/te)=[1151, 288, 160] lam=0.02095 crps_norm[ckme]=1.041 pval[none,ckme]=[0.026,0.036] (2.7s)
+  part wine-quality-red/drf split 2: n(tr/va/te)=[1151, 288, 160] lam=0.01485 crps_norm[ckme]=1.031 pval[none,ckme]=[0.073,0.023] (2.7s)
+  part wine-quality-red/drf split 4: n(tr/va/te)=[1151, 288, 160] lam=0.0121 crps_norm[ckme]=1.015 pval[none,ckme]=[0.000,0.000] (2.6s)
+  part wine-quality-red/drf split 6: n(tr/va/te)=[1151, 288, 160] lam=0.01195 crps_norm[ckme]=1.014 pval[none,ckme]=[0.003,0.001] (2.5s)
+  part wine-quality-red/drf split 8: n(tr/va/te)=[1151, 288, 160] lam=0.01837 crps_norm[ckme]=1.049 pval[none,ckme]=[0.000,0.000] (2.5s)
+ALL PARTS DONE (this worker)
+ASSEMBLED concrete/drf (14.9s total)
+ASSEMBLED wine-quality-red/drf (27.8s total)
+MISSING CELLS: 0 []

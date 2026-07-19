@@ -1,0 +1,210 @@
+{
+  "config": {
+    "n_agents": 10,
+    "d": 50,
+    "k": 5,
+    "gap_pop": 0.15,
+    "n_samples": 6000,
+    "extra_edges": 22,
+    "eps_target": 0.001,
+    "t_max": 400,
+    "l_grid": [
+      2,
+      3,
+      5,
+      10,
+      20,
+      40,
+      80
+    ],
+    "seed": 0
+  },
+  "setup": {
+    "n_edges": 32,
+    "gamma_W": 0.39501105163262173,
+    "omega": 0.11344075833764224,
+    "lambda_k_emp": 0.9882791516933654,
+    "lambda_k1_emp": 0.8556578743290703,
+    "beta_star": 0.18303759947533574,
+    "eigengap_emp": 0.1326212773642952
+  },
+  "rows": [
+    {
+      "L": 2,
+      "method": "ADePM",
+      "t_reach": null,
+      "total_comm": null,
+      "final_mean_sin": 0.008452520113885283,
+      "runtime_s": 0.16451382637023926
+    },
+    {
+      "L": 2,
+      "method": "DePM",
+      "t_reach": null,
+      "total_comm": null,
+      "final_mean_sin": 0.006511418649931303,
+      "runtime_s": 0.14636993408203125
+    },
+    {
+      "L": 2,
+      "method": "DeEPCA",
+      "t_reach": 54,
+      "total_comm": 6912,
+      "final_mean_sin": 5.794686568826468e-06,
+      "runtime_s": 0.14534783363342285
+    },
+    {
+      "L": 3,
+      "method": "ADePM",
+      "t_reach": null,
+      "total_comm": null,
+      "final_mean_sin": 0.002661291369462844,
+      "runtime_s": 0.15593576431274414
+    },
+    {
+      "L": 3,
+      "method": "DePM",
+      "t_reach": null,
+      "total_comm": null,
+      "final_mean_sin": 0.0020473989760699312,
+      "runtime_s": 0.12495231628417969
+    },
+    {
+      "L": 3,
+      "method": "DeEPCA",
+      "t_reach": 54,
+      "total_comm": 10368,
+      "final_mean_sin": 1.8608697847515386e-06,
+      "runtime_s": 0.1396012306213379
+    },
+    {
+      "L": 5,
+      "method": "ADePM",
+      "t_reach": 19,
+      "total_comm": 6080,
+      "final_mean_sin": 0.0004060989683869299,
+      "runtime_s": 0.16005563735961914
+    },
+    {
+      "L": 5,
+      "method": "DePM",
+      "t_reach": 54,
+      "total_comm": 17280,
+      "final_mean_sin": 0.0003085324386958221,
+      "runtime_s": 0.13904690742492676
+    },
+    {
+      "L": 5,
+      "method": "DeEPCA",
+      "t_reach": 54,
+      "total_comm": 17280,
+      "final_mean_sin": 2.59655730651538e-07,
+      "runtime_s": 0.14269399642944336
+    },
+    {
+      "L": 10,
+      "method": "ADePM",
+      "t_reach": 17,
+      "total_comm": 10880,
+      "final_mean_sin": 2.7779336256518524e-06,
+      "runtime_s": 0.18022394180297852
+    },
+    {
+      "L": 10,
+      "method": "DePM",
+      "t_reach": 54,
+      "total_comm": 34560,
+      "final_mean_sin": 2.1077542047419546e-06,
+      "runtime_s": 0.15398287773132324
+    },
+    {
+      "L": 10,
+      "method": "DeEPCA",
+      "t_reach": 54,
+      "total_comm": 34560,
+      "final_mean_sin": 1.7820235251468606e-09,
+      "runtime_s": 0.17652225494384766
+    },
+    {
+      "L": 20,
+      "method": "ADePM",
+      "t_reach": 17,
+      "total_comm": 21760,
+      "final_mean_sin": 8.559889060580002e-11,
+      "runtime_s": 0.22601318359375
+    },
+    {
+      "L": 20,
+      "method": "DePM",
+      "t_reach": 54,
+      "total_comm": 69120,
+      "final_mean_sin": 6.488478907529001e-11,
+      "runtime_s": 0.19565105438232422
+    },
+    {
+      "L": 20,
+      "method": "DeEPCA",
+      "t_reach": 54,
+      "total_comm": 69120,
+      "final_mean_sin": 6.848839906921598e-14,
+      "runtime_s": 0.2101423740386963
+    },
+    {
+      "L": 40,
+      "method": "ADePM",
+      "t_reach": 17,
+      "total_comm": 43520,
+      "final_mean_sin": 1.5108502608481845e-15,
+      "runtime_s": 0.30859994888305664
+    },
+    {
+      "L": 40,
+      "method": "DePM",
+      "t_reach": 54,
+      "total_comm": 138240,
+      "final_mean_sin": 1.033312959184989e-15,
+      "runtime_s": 0.27668333053588867
+    },
+    {
+      "L": 40,
+      "method": "DeEPCA",
+      "t_reach": 54,
+      "total_comm": 138240,
+      "final_mean_sin": 7.989529137380395e-14,
+      "runtime_s": 0.3174471855163574
+    },
+    {
+      "L": 80,
+      "method": "ADePM",
+      "t_reach": 17,
+      "total_comm": 87040,
+      "final_mean_sin": 1.5969708295593425e-15,
+      "runtime_s": 0.4796755313873291
+    },
+    {
+      "L": 80,
+      "method": "DePM",
+      "t_reach": 54,
+      "total_comm": 276480,
+      "final_mean_sin": 1.0545444665243297e-15,
+      "runtime_s": 0.4369218349456787
+    },
+    {
+      "L": 80,
+      "method": "DeEPCA",
+      "t_reach": 54,
+      "total_comm": 276480,
+      "final_mean_sin": 7.228462630354284e-14,
+      "runtime_s": 0.4960477352142334
+    }
+  ],
+  "speedups_identical_L": [
+    2.8421052631578947,
+    3.176470588235294,
+    3.176470588235294,
+    3.176470588235294,
+    3.176470588235294
+  ],
+  "note": "At small L the one-shot averaging methods (ADePM, DePM) may fail to reach a tight target at all (insufficient consensus per PCA step), while DeEPCA's gradient-tracking makes its accuracy asymptotically L-independent -- this is expected and matches the paper's Table 2 characterization (ADePM/DePM require L = Omega(1/sqrt(gamma_W) log(.)); DeEPCA does not).",
+  "total_runtime_s": 12.824824094772339
+}

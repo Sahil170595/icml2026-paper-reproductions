@@ -1,0 +1,136 @@
+{
+  "experiment": "claim2c_confidence_interval_coverage",
+  "paper": "arXiv 2509.20345 GESPI (miscoverage task)",
+  "n": 50,
+  "N": 500,
+  "alpha": 0.05,
+  "eps": 0.02,
+  "bound_miscoverage": 0.07,
+  "sigma": 1.0,
+  "theta_star": 0.0,
+  "reps": 200000,
+  "seed": 31415926,
+  "results": {
+    "matched(P=Q)": {
+      "OnlyReal": {
+        "coverage": 0.949845,
+        "coverage_se": 0.00048805468943039545,
+        "miscoverage": 0.05015499999999995,
+        "width": 0.5543615297398711,
+        "width_se": 5.438959822042074e-20
+      },
+      "OnlyReal_ae": {
+        "coverage": 0.930315,
+        "coverage_se": 0.0005693373375029957,
+        "miscoverage": 0.069685,
+        "width": 0.512485729499625,
+        "width_se": 2.5335656736717034e-19
+      },
+      "NaivePooled": {
+        "coverage": 0.95055,
+        "coverage_se": 0.00048479221064286914,
+        "miscoverage": 0.049449999999999994,
+        "width": 0.1671462902140544,
+        "width_se": 6.206428477450726e-20
+      },
+      "OnlySynth": {
+        "coverage": 0.95021,
+        "coverage_se": 0.000486368974647849,
+        "miscoverage": 0.04979,
+        "width": 0.17530450811531623,
+        "width_se": 1.8771753653822086e-19
+      },
+      "GESPI": {
+        "coverage": 0.94837,
+        "coverage_se": 0.0004947946195139958,
+        "miscoverage": 0.051629999999999954,
+        "width": 0.5159576195259552,
+        "width_se": 1.6843799141756703e-05
+      }
+    },
+    "mild-shift": {
+      "OnlyReal": {
+        "coverage": 0.950715,
+        "coverage_se": 0.00048402473477602377,
+        "miscoverage": 0.04928500000000002,
+        "width": 0.5543615297398711,
+        "width_se": 5.44094241479958e-20
+      },
+      "OnlyReal_ae": {
+        "coverage": 0.93057,
+        "coverage_se": 0.000568372567511839,
+        "miscoverage": 0.06942999999999999,
+        "width": 0.512485729499625,
+        "width_se": 2.531929268428901e-19
+      },
+      "NaivePooled": {
+        "coverage": 0.010305,
+        "coverage_se": 0.00022581858841778284,
+        "miscoverage": 0.989695,
+        "width": 0.1671462902140544,
+        "width_se": 7.187381200849242e-20
+      },
+      "OnlySynth": {
+        "coverage": 0.005685,
+        "coverage_se": 0.0001681172325343241,
+        "miscoverage": 0.994315,
+        "width": 0.17530450811531623,
+        "width_se": 1.802429749188485e-19
+      },
+      "GESPI": {
+        "coverage": 0.93093,
+        "coverage_se": 0.0005670067684781195,
+        "miscoverage": 0.06906999999999996,
+        "width": 0.5207591131904589,
+        "width_se": 2.214721513988318e-05
+      }
+    },
+    "ADVERSARIAL": {
+      "OnlyReal": {
+        "coverage": 0.95032,
+        "coverage_se": 0.0004858595352568474,
+        "miscoverage": 0.049679999999999946,
+        "width": 0.5543615297398711,
+        "width_se": 5.436409711803256e-20
+      },
+      "OnlyReal_ae": {
+        "coverage": 0.93012,
+        "coverage_se": 0.0005700736162988077,
+        "miscoverage": 0.06988000000000005,
+        "width": 0.512485729499625,
+        "width_se": 2.5323612847979913e-19
+      },
+      "NaivePooled": {
+        "coverage": 0.0,
+        "coverage_se": 0.0,
+        "miscoverage": 1.0,
+        "width": 0.16714629021405436,
+        "width_se": 1.6263062100684525e-19
+      },
+      "OnlySynth": {
+        "coverage": 0.0,
+        "coverage_se": 0.0,
+        "miscoverage": 1.0,
+        "width": 0.17530450811531623,
+        "width_se": 2.2906490071520305e-19
+      },
+      "GESPI": {
+        "coverage": 0.93012,
+        "coverage_se": 0.0005700736162988077,
+        "miscoverage": 0.06988000000000005,
+        "width": 0.5166491688536131,
+        "width_se": 1.8141306323619378e-05
+      }
+    }
+  },
+  "checks": {
+    "gespi_distribution_free_valid": true,
+    "gespi_informative_near_nominal": true,
+    "onlyreal_exact_1_minus_alpha": true,
+    "efficiency_separated": true,
+    "gespi_width_reduction_pct": 6.927592943171312,
+    "naive_valid_when_matched": true,
+    "naive_violates_under_shift": true,
+    "PASS": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "P1_param_dslope": {
+    "ds": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "R_param": [
+      316.4,
+      517.1,
+      818.7,
+      1040.6,
+      1673.3,
+      2163.0
+    ],
+    "slope": 0.5513,
+    "rule": "[0.40,0.70] -> sqrt(dT sigma_q^2)",
+    "accept": true
+  },
+  "P2_additive_dslope": {
+    "R_additive": [
+      451.9,
+      1000.4,
+      2197.3,
+      3829.4,
+      8029.2,
+      13052.4
+    ],
+    "slope": 0.9736,
+    "rule": "[0.85,1.15] -> d sqrt(T)",
+    "accept": true
+  },
+  "P4_improvement": {
+    "ratio_add_over_param": [
+      1.43,
+      1.93,
+      2.68,
+      3.68,
+      4.8,
+      6.03
+    ],
+    "loglog_slope": 0.4224,
+    "ratio_at_max_d": 6.03,
+    "rule": "ratio grows ~sqrt(d): slope in [0.30,0.65] and max ratio>=3",
+    "accept": true
+  },
+  "P3_param_Tslope": {
+    "Ts": [
+      5000,
+      10000,
+      20000,
+      40000,
+      80000
+    ],
+    "R_T": [
+      380.4,
+      450.0,
+      623.6,
+      831.5,
+      1240.9
+    ],
+    "slope": 0.4297,
+    "rule": "[0.40,0.60] -> sqrt T",
+    "accept": true
+  },
+  "P5_mechanism": {
+    "ds": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "err_param": [
+      0.0596,
+      0.0651,
+      0.0712,
+      0.0677,
+      0.0692,
+      0.0707
+    ],
+    "err_additive": [
+      0.0916,
+      0.1283,
+      0.1899,
+      0.2781,
+      0.3996,
+      0.5592
+    ],
+    "param_slope": 0.0409,
+    "additive_slope": 0.529,
+    "rule": "additive err ~sqrt(d) (slope~0.5); param err ~const (slope<0.30): sqrt(trSigma) vs sqrt(d)",
+    "accept": true
+  },
+  "all_accept": true,
+  "runtime_sec": 0.02,
+  "env": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "seeds": 8,
+    "sigma2": 1.0,
+    "normalisation": "param sigma_q^2 = additive Var(eta) = sigma^2"
+  }
+}

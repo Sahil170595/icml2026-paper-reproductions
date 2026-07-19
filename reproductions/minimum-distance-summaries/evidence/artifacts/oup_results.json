@@ -1,0 +1,116 @@
+{
+  "mechanism": "oup",
+  "seed": 20260717,
+  "N": 100,
+  "T": 25,
+  "dt": 0.2,
+  "sigma2": 0.1,
+  "X0": 10.0,
+  "theta_c": [
+    -0.5,
+    1.0
+  ],
+  "sigma2_c": 0.5,
+  "d_theta": 2,
+  "d_s": 3,
+  "m_train": 10000,
+  "k_rff": 512,
+  "eps_levels": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "trials_per_level": 50,
+  "npe_params": 17669,
+  "npe_hidden": [
+    128,
+    128
+  ],
+  "npe_frozen_sha256": "658cce1ce85a4611231f59d4fddf7bc58088ff0445497f3c5d2910b4bf5c8df2",
+  "rff_gamma": 0.003510936221132378,
+  "sigma_med": 11.933656476659028,
+  "decoder_final_mse": 0.0006544150038622319,
+  "decoder_fit_time_s": 110.86337300000014,
+  "hash_identity_checks": 250,
+  "hash_identity_all_ok": true,
+  "per_level": [
+    {
+      "eps": 0.0,
+      "trials": 50,
+      "rmse_obs": 0.6283901612895487,
+      "rmse_mds": 0.6321817028847251,
+      "reduction_pct": -0.6033738000282396,
+      "wins": 19,
+      "median_ms": 7.69770001352299,
+      "p95_ms": 17.927120004605964,
+      "mean_summary_gap_to_oracle": 0.07621131591741617
+    },
+    {
+      "eps": 0.1,
+      "trials": 50,
+      "rmse_obs": 3.441971174715515,
+      "rmse_mds": 1.3300612017156441,
+      "reduction_pct": 61.35757290804227,
+      "wins": 44,
+      "median_ms": 42.99610000452958,
+      "p95_ms": 69.72540000570005,
+      "mean_summary_gap_to_oracle": 1.276882063208093
+    },
+    {
+      "eps": 0.2,
+      "trials": 50,
+      "rmse_obs": 3.578353751935111,
+      "rmse_mds": 1.1737577413333484,
+      "reduction_pct": 67.19838722768534,
+      "wins": 45,
+      "median_ms": 38.53249999519903,
+      "p95_ms": 70.4536549950717,
+      "mean_summary_gap_to_oracle": 1.4417279779332326
+    },
+    {
+      "eps": 0.3,
+      "trials": 50,
+      "rmse_obs": 3.424992180983008,
+      "rmse_mds": 1.4127273977898216,
+      "reduction_pct": 58.75239057087849,
+      "wins": 45,
+      "median_ms": 50.26224999164697,
+      "p95_ms": 80.45329999440582,
+      "mean_summary_gap_to_oracle": 2.1773699288830035
+    },
+    {
+      "eps": 0.4,
+      "trials": 50,
+      "rmse_obs": 3.539433167586867,
+      "rmse_mds": 1.1994338006992697,
+      "reduction_pct": 66.1122630684668,
+      "wins": 44,
+      "median_ms": 64.00340000982396,
+      "p95_ms": 103.88898999808588,
+      "mean_summary_gap_to_oracle": 2.164831834464963
+    }
+  ],
+  "mean_reduction_nonsevere_pct": 63.35515344376823,
+  "rff_vs_exact": {
+    "mean_abs_gap": 0.002491580446835473,
+    "max_abs_gap": 0.00460567003216307,
+    "corr": 0.7258282159873811,
+    "mean_exact": 0.05768125977817971,
+    "mean_rff": 0.05969225107290475
+  },
+  "total_runtime_s": 153.82506949998788,
+  "env": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "python": "3.13.1",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit_learn": "1.8.0",
+    "torch": "2.11.0+cu128",
+    "device": "cpu",
+    "gpu_used": false,
+    "torch_threads": 1
+  }
+}

@@ -1,0 +1,9 @@
+[MDP] genuine DOE-MDP baseline S=12 A=4 H=4 D_max=4 K=25000 (S*A=48 kernels, 16 seeds)
+[K    ] UCB slope=0.504 (R2=0.997)  floor slope=0.501 (R2=1.000)  target=0.5  UCB/floor=3.25-3.47
+[S    ] UCB slope=0.474 (R2=0.999)  floor slope=0.499 (R2=1.000)  target=0.5  UCB/floor=3.22-3.42
+[A    ] UCB slope=0.533 (R2=0.990)  floor slope=0.499 (R2=1.000)  target=0.5  UCB/floor=3.21-3.42
+[D_max] UCB slope=0.494 (R2=1.000)  floor slope=0.498 (R2=1.000)  target=0.5  UCB/floor=3.14-3.30
+[H    ] UCB slope=1.006 (R2=0.995)  floor slope=1.000 (R2=1.000)  target=1.0  UCB/floor=3.20-3.55
+[corr] random-kernel augmented MDP: UCBVI slope_K=0.609 (Rf=46.9) vs linear control 0.991 (Rf=280.7)
+runtime 21.6s
+WROTE results.json

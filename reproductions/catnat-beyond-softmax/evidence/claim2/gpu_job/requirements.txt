@@ -1,0 +1,6 @@
+# Full-scale GPU reproduction of Claim 2 (Categorical VAE, paper Table 3).
+# Tested against these lower bounds; newer patch versions are fine.
+torch>=2.1
+torchvision>=0.16
+numpy>=1.24
+huggingface_hub>=0.24

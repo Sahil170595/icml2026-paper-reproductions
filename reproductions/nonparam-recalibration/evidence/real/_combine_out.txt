@@ -1,0 +1,112 @@
+=== REAL datasets x REAL models: CKME re-calibration vs named priors ===
+datasets: california(20640x8), diabetes(442x10), concrete(1030x8), energy(768x8), wine_red(1599x11)
+models: gbm=heteroscedastic GradientBoosting Gaussian ; rf=RandomForest kernel-smoothed predictive
+methods: raw, Kuleshov18, Song19, CKME, CKME-fullX
+
+-- Suite mean over 10 (dataset x model) cells [95% CI over cells] --
+  CONDECE
+     raw         0.1322  [0.0988,0.1655]
+     Kuleshov18  0.0930  [0.0730,0.1130]
+     Song19      0.0942  [0.0750,0.1135]
+     CKME        0.0846  [0.0618,0.1075]
+     CKME-fullX  0.0900  [0.0698,0.1101]
+  ACE
+     raw         0.0622  [0.0352,0.0891]
+     Kuleshov18  0.0325  [0.0217,0.0433]
+     Song19      0.0329  [0.0222,0.0435]
+     CKME        0.0281  [0.0166,0.0396]
+     CKME-fullX  0.0305  [0.0200,0.0409]
+  CRPS
+     raw         1.0000  [1.0000,1.0000]
+     Kuleshov18  0.9538  [0.9191,0.9885]
+     Song19      0.9550  [0.9222,0.9877]
+     CKME        0.9446  [0.9074,0.9818]
+     CKME-fullX  0.9498  [0.9139,0.9858]
+  ECE
+     raw         0.0864  [0.0489,0.1239]
+     Kuleshov18  0.0303  [0.0210,0.0396]
+     Song19      0.0331  [0.0251,0.0412]
+     CKME        0.0301  [0.0204,0.0399]
+     CKME-fullX  0.0312  [0.0217,0.0408]
+  KS
+     raw         0.1736  [0.1068,0.2404]
+     Kuleshov18  0.0870  [0.0556,0.1185]
+     Song19      0.0892  [0.0643,0.1142]
+     CKME        0.0832  [0.0539,0.1125]
+     CKME-fullX  0.0837  [0.0562,0.1113]
+  CKME vs best prior (Kuleshov18) on CONDECE: CKME 0.0846 vs 0.0930 -> 95% CIs overlap
+  CKME vs best prior (Kuleshov18) on ACE: CKME 0.0281 vs 0.0325 -> 95% CIs overlap
+  CKME vs best prior (Kuleshov18) on CRPS: CKME 0.9446 vs 0.9538 -> 95% CIs overlap
+
+-- Per-dataset (mean over gbm+rf) --
+  california  feats=8
+     ace     raw=0.0289 Kuleshov18=0.0083 Song19=0.0092 CKME=0.0031
+     condece raw=0.0894 Kuleshov18=0.0447 Song19=0.0486 CKME=0.0302
+     crps    raw=1.0000 Kuleshov18=0.9588 Song19=0.9635 CKME=0.9416
+     ece     raw=0.0721 Kuleshov18=0.0098 Song19=0.0181 CKME=0.0093
+     ks      raw=0.1337 Kuleshov18=0.0304 Song19=0.0426 CKME=0.0279
+  diabetes    feats=10
+     ace     raw=0.0921 Kuleshov18=0.0407 Song19=0.0393 CKME=0.0477
+     condece raw=0.1645 Kuleshov18=0.1114 Song19=0.1094 CKME=0.1181
+     crps    raw=1.0000 Kuleshov18=0.9287 Song19=0.9319 CKME=0.9474
+     ece     raw=0.1161 Kuleshov18=0.0460 Song19=0.0435 CKME=0.0477
+     ks      raw=0.2405 Kuleshov18=0.1500 Song19=0.1269 CKME=0.1432
+  concrete    feats=8
+     ace     raw=0.0536 Kuleshov18=0.0264 Song19=0.0266 CKME=0.0233
+     condece raw=0.1234 Kuleshov18=0.0870 Song19=0.0875 CKME=0.0811
+     crps    raw=1.0000 Kuleshov18=0.9519 Song19=0.9510 CKME=0.9486
+     ece     raw=0.0816 Kuleshov18=0.0314 Song19=0.0301 CKME=0.0288
+     ks      raw=0.1650 Kuleshov18=0.0847 Song19=0.0772 CKME=0.0780
+  energy      feats=8
+     ace     raw=0.0668 Kuleshov18=0.0431 Song19=0.0461 CKME=0.0369
+     condece raw=0.1402 Kuleshov18=0.1111 Song19=0.1151 CKME=0.1034
+     crps    raw=1.0000 Kuleshov18=0.9680 Song19=0.9659 CKME=0.9640
+     ece     raw=0.0809 Kuleshov18=0.0375 Song19=0.0435 CKME=0.0372
+     ks      raw=0.1683 Kuleshov18=0.1003 Song19=0.1138 CKME=0.0926
+  wine_red    feats=11
+     ace     raw=0.0696 Kuleshov18=0.0442 Song19=0.0431 CKME=0.0294
+     condece raw=0.1433 Kuleshov18=0.1110 Song19=0.1106 CKME=0.0905
+     crps    raw=1.0000 Kuleshov18=0.9616 Song19=0.9624 CKME=0.9214
+     ece     raw=0.0813 Kuleshov18=0.0267 Song19=0.0306 CKME=0.0276
+     ks      raw=0.1606 Kuleshov18=0.0697 Song19=0.0856 CKME=0.0744
+
+CKME lowest ACE among priors: 8/10 cells ; condECE 8/10 ; CRPS 6/10
+CKME beats RAW on ACE: 9/10 ; CKME CRPS<raw: 9/10
+Paired ACE separation (Kuleshov18-CKME) across cells: z=1.9, CKME better in 8/10
+
+=== O(n log n) characteristic EDK (larger n) ===
+max rel err SORT vs BRUTE (150 cases): 8.42e-15
+SORT timings:
+   n=   2000     0.152 ms
+   n=   4000     0.319 ms
+   n=   8000     0.710 ms
+   n=  16000     1.544 ms
+   n=  32000     3.427 ms
+   n=  65536     8.326 ms
+   n= 131072    20.658 ms
+   n= 262144    47.290 ms
+SORT slope=1.181 (target 0.9-1.3) ; BRUTE slope=1.988 (target 1.8-2.1)
+
+=== Predeclared rules ===
+  C1_ckme_beats_raw_cond                  : False
+  C1_ace_ci_below_best_prior              : False
+  C1_condece_ci_below_best_prior          : False
+  C1_ace_wins_ge_8                        : True
+  C2_crps_ci_below_best_prior_and_lt1     : False
+  C2_edk_exact                            : True
+  C2_onlogn_slopes                        : True
+CLAIM1 verified: False  |  CLAIM2 verified: False
+Traceback (most recent call last):
+  File "/sessions/keen-fervent-hamilton/mnt/icml-repro-pilot/submissions/nonparam-recalibration-pilot/.trackio/logbook/evidence-package/real/combine.py", line 159, in <module>
+    (HERE / "results_real.json").write_text(json.dumps(out, indent=2))
+  File "/usr/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.10/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.10/json/encoder.py", line 376, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+TypeError: keys must be str, int, float, bool or None, not tuple

@@ -1,0 +1,20 @@
+{
+ "model": "timm/vit_tiny_patch16_224.augreg_in21k_ft_in1k (pretrained, HF-hub safetensors)",
+ "image": "n01440764_ILSVRC2012_val_00009111.JPEG",
+ "response": "DAVE effective response sum(g_eff*(X+s u)) along a fixed unit ray, 241 real evaluations on [-6sigma,6sigma]",
+ "sigma": 0.5,
+ "convolution_reference": 17.780160098803304,
+ "phi_at_0": 17.773700714111328,
+ "mc_rms": {
+  "10": 0.0058299273719860335,
+  "30": 0.0033680452672754813,
+  "100": 0.0019022148696508263,
+  "300": 0.001043000697486136,
+  "1000": 0.0006348859081496253,
+  "3000": 0.00033961683647744297,
+  "10000": 0.00018481951984898663
+ },
+ "loglog_slope": -0.497,
+ "slope_target": -0.5,
+ "verdict": "MC Gaussian average of the REAL pretrained ViT effective response converges to the Gaussian-kernel convolution at 1/sqrt(n) (slope -0.497), confirming Eq. 7 on real weights."
+}

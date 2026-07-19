@@ -1,0 +1,50 @@
+{
+  "claim": "NMF of HSR yields sparse low-rank basis elevated at bottlenecks, matching SR-SVD reconstruction; NMF on SR collapses (Fig 4)",
+  "paper": "arXiv 2602.12753 / OpenReview txswvMHt4u",
+  "gamma": 0.95,
+  "N": 68,
+  "doors": [
+    33,
+    34,
+    12,
+    55
+  ],
+  "K": 8,
+  "basis_metrics": {
+    "eSR": {
+      "nmf_gini": 0.6988899488909905,
+      "bottleneck_ratio": 0.990530670926579
+    },
+    "eHSR": {
+      "nmf_gini": 0.6242831578620942,
+      "bottleneck_ratio": 1.0100610003741548
+    }
+  },
+  "reconstruction_mse": {
+    "4": {
+      "SR_SVD": 0.015422635798591544,
+      "SR_NMF": 0.01628257569869326,
+      "HSR_SVD": 0.016208965989210806,
+      "HSR_NMF": 0.016534319622672343
+    },
+    "8": {
+      "SR_SVD": 0.010775359008505136,
+      "SR_NMF": 0.011604448955518702,
+      "HSR_SVD": 0.01103483897558092,
+      "HSR_NMF": 0.011734740331288716
+    },
+    "16": {
+      "SR_SVD": 0.005293564206685091,
+      "SR_NMF": 0.005805159508638303,
+      "HSR_SVD": 0.005595591739528845,
+      "HSR_NMF": 0.006090119450613359
+    }
+  },
+  "HSR_NMF_sparser": false,
+  "HSR_NMF_bottleneck_elevated": false,
+  "HSR_NMF_matches_SR_SVD": true,
+  "SR_NMF_feature_collapse": false,
+  "overall_reproduced": false,
+  "verdict": "not_reproduced",
+  "runtime_s": 0.21901512145996094
+}

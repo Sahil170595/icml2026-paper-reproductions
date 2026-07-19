@@ -1,0 +1,1 @@
+{"size": "P52", "target": "TB", "width": 32, "seed": 1, "stages": 4, "lbfgs_iters_per_stage": 154, "train_rel_mse": 0.010782934166469997, "test_rel_mse": 0.016901914132848896, "transformed_test_rel_mse": 0.016901914132848896, "net_eq_residual": 8.881784197001252e-16}

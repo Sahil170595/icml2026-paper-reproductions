@@ -1,0 +1,202 @@
+{
+  "l8_h8/seed1": {
+    "family": "l8_h8",
+    "seed": 1,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8/causal_attn_l8_h8_seed1_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8\\causal_attn_l8_h8_seed1_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "f22e8b22ed514d1126612c41bdd0b00319dd5ddff62e8bc1edbac6262feb14fb"
+  },
+  "l8_h8/seed2": {
+    "family": "l8_h8",
+    "seed": 2,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8/causal_attn_l8_h8_seed2_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8\\causal_attn_l8_h8_seed2_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "cb426eb02406278f1ec4082315a77edff83510a571cdd9c0638427b8ae7934e9"
+  },
+  "l8_h8/seed3": {
+    "family": "l8_h8",
+    "seed": 3,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8/causal_attn_l8_h8_seed3_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8\\causal_attn_l8_h8_seed3_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "f3dfb00bf7a50778a058edb6b1f5e67b8d436eb3af9ee54bb7cc602894702cc6"
+  },
+  "l8_h8/seed4": {
+    "family": "l8_h8",
+    "seed": 4,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8/causal_attn_l8_h8_seed4_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8\\causal_attn_l8_h8_seed4_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "a25dd4139494150a1b8e19f17a99f05f94a7309304bea7991b4701965b441c40"
+  },
+  "l8_h8/seed5": {
+    "family": "l8_h8",
+    "seed": 5,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8/causal_attn_l8_h8_seed5_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8\\causal_attn_l8_h8_seed5_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "20de2488cf3c807e7bd158f2578e6fa80ebd293366a0edd964681f0aacced0bd"
+  },
+  "l8_h8_wd/seed1": {
+    "family": "l8_h8_wd",
+    "seed": 1,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8_wd/causal_attn_l8_h8_seed1_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8_wd\\causal_attn_l8_h8_seed1_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "c305ed8d4cfff818739e6492310119a04bce39fa2d271a0bdbefdb7575d62a87"
+  },
+  "l8_h8_wd/seed2": {
+    "family": "l8_h8_wd",
+    "seed": 2,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8_wd/causal_attn_l8_h8_seed2_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8_wd\\causal_attn_l8_h8_seed2_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "e30fb14f5a9ecefc36f425d20a9d57fb69ee304a615a4983e1ca8303e7a4ce34"
+  },
+  "l8_h8_wd/seed3": {
+    "family": "l8_h8_wd",
+    "seed": 3,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8_wd/causal_attn_l8_h8_seed3_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8_wd\\causal_attn_l8_h8_seed3_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "5903e5a87b4a5d1d059b51192861e705a68db8d08c7f89435ee26104b6e33757"
+  },
+  "l8_h8_wd/seed4": {
+    "family": "l8_h8_wd",
+    "seed": 4,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8_wd/causal_attn_l8_h8_seed4_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8_wd\\causal_attn_l8_h8_seed4_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "9c7b78d58cb5089b220ed8b57cd062e4559ac8ead747717efbd8986ba6fee48d"
+  },
+  "l8_h8_wd/seed5": {
+    "family": "l8_h8_wd",
+    "seed": 5,
+    "repo_id": "karanbali/attention_head_seed_stability",
+    "revision": "a1148a78942455dea94e971632a8b48159c64e86",
+    "rel_path": "l8_h8_wd/causal_attn_l8_h8_seed5_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--karanbali--attention_head_seed_stability\\snapshots\\a1148a78942455dea94e971632a8b48159c64e86\\l8_h8_wd\\causal_attn_l8_h8_seed5_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 309287570,
+    "sha256": "a94c83b2419d9eb813456ccad135125dd893428984039896ba97bd9ce9ddbf58"
+  },
+  "l2_h8/seed1": {
+    "family": "l2_h8",
+    "seed": 1,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l2_h8/causal_attn_l2_h8_seed1_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l2_h8\\causal_attn_l2_h8_seed1_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 227304956,
+    "sha256": "72280c2109e08f7e1fc269ef09a77a70a5f6bcc6df73fc178e157a6f203e6b01"
+  },
+  "l2_h8/seed2": {
+    "family": "l2_h8",
+    "seed": 2,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l2_h8/causal_attn_l2_h8_seed2_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l2_h8\\causal_attn_l2_h8_seed2_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 227304956,
+    "sha256": "ddc1b2fb79e96764f5f55d103875c9eea66733d90c923502f51e883ed72d23d9"
+  },
+  "l2_h8/seed3": {
+    "family": "l2_h8",
+    "seed": 3,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l2_h8/causal_attn_l2_h8_seed3_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l2_h8\\causal_attn_l2_h8_seed3_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 227304956,
+    "sha256": "0f78a329a041fe3c41256bb97e93f08a999774c0805a358be51e7f58d4a7dc44"
+  },
+  "l2_h8/seed4": {
+    "family": "l2_h8",
+    "seed": 4,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l2_h8/causal_attn_l2_h8_seed4_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l2_h8\\causal_attn_l2_h8_seed4_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 227304956,
+    "sha256": "b9ddbf793be380c910cfc97a931bacdb1444af930f23ae791b0553ecb499e0ac"
+  },
+  "l2_h8/seed5": {
+    "family": "l2_h8",
+    "seed": 5,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l2_h8/causal_attn_l2_h8_seed5_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l2_h8\\causal_attn_l2_h8_seed5_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 227304956,
+    "sha256": "a3af07137db04323dd772cc71725d1f33b6b7d0286d46804a8ad7d72d2607972"
+  },
+  "l4_h8/seed1": {
+    "family": "l4_h8",
+    "seed": 1,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l4_h8/causal_attn_l4_h8_seed1_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l4_h8\\causal_attn_l4_h8_seed1_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 254632456,
+    "sha256": "f645cc4c96ad44b6c4594081942ca98ee7a2fa8519b5c2c2116dc186f9ed9e45"
+  },
+  "l4_h8/seed2": {
+    "family": "l4_h8",
+    "seed": 2,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l4_h8/causal_attn_l4_h8_seed2_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l4_h8\\causal_attn_l4_h8_seed2_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 254632456,
+    "sha256": "bc8b591b11e8bad09130522a49d081f180a4954651d727941fd6c19fc224ca7e"
+  },
+  "l4_h8/seed3": {
+    "family": "l4_h8",
+    "seed": 3,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l4_h8/causal_attn_l4_h8_seed3_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l4_h8\\causal_attn_l4_h8_seed3_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 254632456,
+    "sha256": "1e2a54b0f14cd46df0a439a4413540b3e6fd817e641a0a011a0e4228cda79ecc"
+  },
+  "l4_h8/seed4": {
+    "family": "l4_h8",
+    "seed": 4,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l4_h8/causal_attn_l4_h8_seed4_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l4_h8\\causal_attn_l4_h8_seed4_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 254632456,
+    "sha256": "21abde5824e284d19c014b142a8dd676e99dcdebcb545544122ae02af2353c21"
+  },
+  "l4_h8/seed5": {
+    "family": "l4_h8",
+    "seed": 5,
+    "repo_id": "Icml26AttnHeadStab/icml26AttnHeadStab-anon-weights",
+    "revision": "7024304d20f3a2e0a303894467c14373594448d6",
+    "rel_path": "l4_h8/causal_attn_l4_h8_seed5_epoch1_c4_gelu/final.pt",
+    "local_cache_path": "C:\\Users\\sahil\\.cache\\huggingface\\hub\\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\\snapshots\\7024304d20f3a2e0a303894467c14373594448d6\\l4_h8\\causal_attn_l4_h8_seed5_epoch1_c4_gelu\\final.pt",
+    "size_bytes": 254632456,
+    "sha256": "92ff7859741660d4b84e46dc521cd4422a89a3c73e3762bea52fab9680ae6e53"
+  }
+}

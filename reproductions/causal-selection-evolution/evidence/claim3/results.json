@@ -1,0 +1,21 @@
+{
+  "T": 2,
+  "K": 3,
+  "rho": 0.6,
+  "se": 0.7,
+  "mopt": 1.5,
+  "sw": 1.2,
+  "n_obs": 12,
+  "triples": 67584,
+  "agree_plus": 67584,
+  "frac_plus": 1.0,
+  "agree_naive": 59232,
+  "frac_naive": 0.8764204545454546,
+  "naive_disagree": 8352,
+  "n_selected": 336959,
+  "empirical_triples": 462,
+  "empirical_agree": 462,
+  "empirical_frac": 1.0,
+  "alpha": 0.001,
+  "verified": true
+}

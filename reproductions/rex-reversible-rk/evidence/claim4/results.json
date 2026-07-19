@@ -1,0 +1,44 @@
+{
+  "claim": 4,
+  "note": "solver-accuracy proxy for Fig 7-9 FID/CLIP; benchmark itself out of CPU scope",
+  "TSTART": 0.05,
+  "TEND": 2.0,
+  "rex_sampling_zeta": 0.9,
+  "sampling": {
+    "nfe48": {
+      "ddim": 0.03098839023187765,
+      "edict": 0.05936676886432049,
+      "rex_p2": 0.015055374523481407,
+      "rex_p3": 0.03045020390219462,
+      "rex_best": 0.015055374523481407,
+      "improves": true
+    },
+    "nfe96": {
+      "ddim": 0.015601608917745487,
+      "edict": 0.02648590707746656,
+      "rex_p2": 0.004098645751846309,
+      "rex_p3": 0.0018530450510412886,
+      "rex_best": 0.0018530450510412886,
+      "improves": true
+    },
+    "nfe192": {
+      "ddim": 0.007820167518622221,
+      "edict": 0.012552146455998558,
+      "rex_p2": 0.0010309650922881823,
+      "rex_p3": 9.3421469355464e-05,
+      "rex_best": 9.3421469355464e-05,
+      "improves": true
+    }
+  },
+  "reconstruction": {
+    "rex_p2": 4.735795089416683e-15,
+    "ddim": 0.03373723990941038,
+    "edict": 22.114794923906416
+  },
+  "improves_all_nfe": true,
+  "improves_at_192": true,
+  "recon_best": true,
+  "verdict": "SUPPORTED (proxy)",
+  "numpy": "2.2.6",
+  "runtime_s": 0.38
+}

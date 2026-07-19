@@ -1,0 +1,1 @@
+{"size": "G6", "target": "TC", "width": 64, "seed": 0, "stages": 2, "lbfgs_iters_per_stage": 200, "train_rel_mse": 0.025063117419959778, "test_rel_mse": 0.10774524169683096, "transformed_test_rel_mse": 0.10774524169683093, "net_eq_residual": 2.2819679077241243e-15}

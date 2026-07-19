@@ -1,0 +1,44 @@
+W0718 01:14:07.871000 58920 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W0718 01:14:09.833000 58920 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loaded 100 official prompts (sha256-verified).
+
+--- l2_h8 ---
+  seed 1: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l2_h8\causal_attn_l2_h8_seed1_epoch1_c4_gelu\final.pt
+  seed 2: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l2_h8\causal_attn_l2_h8_seed2_epoch1_c4_gelu\final.pt
+  seed 3: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l2_h8\causal_attn_l2_h8_seed3_epoch1_c4_gelu\final.pt
+  seed 4: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l2_h8\causal_attn_l2_h8_seed4_epoch1_c4_gelu\final.pt
+  seed 5: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l2_h8\causal_attn_l2_h8_seed5_epoch1_c4_gelu\final.pt
+  n_layers=2, n_heads=8
+  Layer-wise S_l: 1:0.966470, 2:0.830516
+  Gap (S_max - S_min) = 0.135955  (min at layer 2, r_min=1.0000; max at layer 1)
+
+--- l4_h8 ---
+  seed 1: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l4_h8\causal_attn_l4_h8_seed1_epoch1_c4_gelu\final.pt
+  seed 2: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l4_h8\causal_attn_l4_h8_seed2_epoch1_c4_gelu\final.pt
+  seed 3: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l4_h8\causal_attn_l4_h8_seed3_epoch1_c4_gelu\final.pt
+  seed 4: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l4_h8\causal_attn_l4_h8_seed4_epoch1_c4_gelu\final.pt
+  seed 5: loaded from C:\Users\sahil\.cache\huggingface\hub\models--Icml26AttnHeadStab--icml26AttnHeadStab-anon-weights\snapshots\7024304d20f3a2e0a303894467c14373594448d6\l4_h8\causal_attn_l4_h8_seed5_epoch1_c4_gelu\final.pt
+  n_layers=4, n_heads=8
+  Layer-wise S_l: 1:0.984121, 2:0.896571, 3:0.804584, 4:0.887258
+  Gap (S_max - S_min) = 0.179537  (min at layer 3, r_min=0.7500; max at layer 1)
+
+--- l8_h8 ---
+  seed 1: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed1_epoch1_c4_gelu\final.pt
+  seed 2: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed2_epoch1_c4_gelu\final.pt
+  seed 3: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed3_epoch1_c4_gelu\final.pt
+  seed 4: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed4_epoch1_c4_gelu\final.pt
+  seed 5: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed5_epoch1_c4_gelu\final.pt
+  n_layers=8, n_heads=8
+  Layer-wise S_l: 1:0.974524, 2:0.906740, 3:0.857632, 4:0.775304, 5:0.621026, 6:0.702108, 7:0.865754, 8:0.819540
+  Gap (S_max - S_min) = 0.353497  (min at layer 5, r_min=0.6250; max at layer 1)
+
+=== Cross-depth summary (Eq. 6-7) ===
+Gap2 = 0.135955
+Gap4 = 0.179537
+Gap8 = 0.353497
+C_gap = Gap8 - max(Gap2, Gap4) = 0.173960
+Monotone Gap2 < Gap4 < Gap8: True
+Depth-8 minimum layer: 5 / 8  (r_min=0.6250); in [0.4, 0.8]: True
+Wall time: 222.285s
+
+Wrote C:\Users\sahil\OneDrive\Documents\Playground\icml-repro-pilot\submissions\attention-head-stability-pilot\.trackio\logbook\evidence-package\claim2\results.json

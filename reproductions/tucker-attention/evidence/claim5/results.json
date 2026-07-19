@@ -1,0 +1,23 @@
+{
+  "claim": "Latent RoPE relative-position property + simplified MLA RoPE (Cor 3.2.1)",
+  "config": {
+    "d_model": 24,
+    "nH": 4,
+    "dH": 6,
+    "dcQ": 12,
+    "dcK": 16,
+    "r3": 16,
+    "N": 12,
+    "base": 10000.0
+  },
+  "errA_rope_identity": 1.609823385706477e-15,
+  "errB_relative_position": 2.2737367544323206e-13,
+  "errC_query_fusion": 2.5579538487363607e-13,
+  "errD_control_headdim_notfusable": 1335.0058613421954,
+  "control_logit_magnitude": 996.539,
+  "verified": true,
+  "tol": 1e-09,
+  "runtime_s": 0.007,
+  "numpy": "2.2.6",
+  "script_sha256": "9843df3aad956dd2464952799f1971d13935dae4cfd6a0922ab0261e28f57745"
+}

@@ -1,0 +1,40 @@
+{
+  "claim": "DAVE is the most faithful under pixel deletion (flattest deletion curve / highest deletion AUC) vs baselines on ViT-B/16 and DeiT-III-B/16 over ImageNet-1k (Fig. 6).",
+  "scale": "CPU MECHANISM CHECK on compact random-init ViT (NOT the ImageNet-scale claim)",
+  "deletion_auc_mean": {
+    "DAVE": 0.7396820044682156,
+    "IxG": 0.7631212721490725,
+    "random": 0.4853131442780179
+  },
+  "deletion_auc_per_image": {
+    "DAVE": [
+      0.8611879214840152,
+      0.7266558441649168,
+      0.5699649161279239,
+      0.7275283293279134,
+      0.6484189317902617,
+      0.9043360839142621
+    ],
+    "IxG": [
+      0.876847428767781,
+      0.7880564228702457,
+      0.5800614117158077,
+      0.7498723448489415,
+      0.6710618234433513,
+      0.9128282012483084
+    ],
+    "random": [
+      0.612969494401765,
+      0.44973864695987226,
+      0.38846988523097503,
+      0.515341810930573,
+      0.29051399005236594,
+      0.6548450380925565
+    ]
+  },
+  "dave_minus_random": 0.2544,
+  "dave_minus_ixg": -0.0234,
+  "gpu_kit": "gpu_job/ (hf jobs run) runs the full Fig.6 deletion benchmark on real pretrained models",
+  "verdict": "MECHANISM-CHECK (not verified at scale): deletion metric implemented and run on the compact ViT; DAVE and I x G both beat random ordering. The ImageNet-scale 'DAVE beats all baselines' claim requires real pretrained ViT-B/DeiT-III weights and is emitted as a GPU kit.",
+  "runtime_s": 0.25
+}

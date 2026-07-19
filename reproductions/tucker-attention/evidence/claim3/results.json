@@ -1,0 +1,127 @@
+{
+  "claim": "MLA is an exact special case of Tucker Attention (Thm B.4)",
+  "cases": [
+    {
+      "tag": "MLA dcQ=8 dcK=6",
+      "nH": 6,
+      "dH": 6,
+      "d_model": 36,
+      "dcQ": 8,
+      "dcK": 6,
+      "N": 9,
+      "err_pre": 4.263256414560601e-14,
+      "err_post": 7.105427357601002e-15,
+      "err_out": 8.526512829121202e-14,
+      "measured_ranks_W": [
+        6,
+        8,
+        6
+      ],
+      "measured_ranks_Wt": [
+        6,
+        36,
+        6
+      ],
+      "target_ranks_W": [
+        6,
+        8,
+        6
+      ],
+      "target_ranks_Wt": [
+        6,
+        36,
+        6
+      ],
+      "maximal_ranks_Wt": [
+        6,
+        36,
+        6
+      ],
+      "out_mode_eq_dmodel": true,
+      "ok": true
+    },
+    {
+      "tag": "MLA dcQ=12 dcK=8",
+      "nH": 6,
+      "dH": 6,
+      "d_model": 36,
+      "dcQ": 12,
+      "dcK": 8,
+      "N": 9,
+      "err_pre": 4.263256414560601e-14,
+      "err_post": 1.0658141036401503e-14,
+      "err_out": 9.237055564881302e-14,
+      "measured_ranks_W": [
+        6,
+        12,
+        8
+      ],
+      "measured_ranks_Wt": [
+        6,
+        36,
+        8
+      ],
+      "target_ranks_W": [
+        6,
+        12,
+        8
+      ],
+      "target_ranks_Wt": [
+        6,
+        36,
+        8
+      ],
+      "maximal_ranks_Wt": [
+        6,
+        36,
+        8
+      ],
+      "out_mode_eq_dmodel": true,
+      "ok": true
+    },
+    {
+      "tag": "MLA dcQ=dcK=16",
+      "nH": 4,
+      "dH": 8,
+      "d_model": 32,
+      "dcQ": 16,
+      "dcK": 16,
+      "N": 9,
+      "err_pre": 1.1368683772161603e-13,
+      "err_post": 1.4210854715202004e-14,
+      "err_out": 1.1368683772161603e-13,
+      "measured_ranks_W": [
+        4,
+        16,
+        16
+      ],
+      "measured_ranks_Wt": [
+        4,
+        32,
+        16
+      ],
+      "target_ranks_W": [
+        4,
+        16,
+        16
+      ],
+      "target_ranks_Wt": [
+        4,
+        32,
+        16
+      ],
+      "maximal_ranks_Wt": [
+        4,
+        32,
+        16
+      ],
+      "out_mode_eq_dmodel": true,
+      "ok": true
+    }
+  ],
+  "verified": true,
+  "tol": 1e-09,
+  "runtime_s": 0.007,
+  "numpy": "2.2.6",
+  "script_sha256": "e339cdce803d1cd112a6d15eeb69e62bc48da0e3d548054aa15a63db1f45b725"
+}

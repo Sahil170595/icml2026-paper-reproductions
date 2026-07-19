@@ -1,0 +1,1 @@
+{"size": "P20", "target": "TA", "width": 16, "seed": 0, "stages": 3, "lbfgs_iters_per_stage": 200, "train_rel_mse": 0.04388061935845416, "test_rel_mse": 0.04984102210079657, "transformed_test_rel_mse": 0.04984102210079657, "net_eq_residual": 2.3592239273284576e-16}

@@ -1,0 +1,35 @@
+{
+  "claim": "MHA is an exact special case of Tucker Attention (Thm B.2)",
+  "config": {
+    "N": 7,
+    "nH": 4,
+    "dH": 5,
+    "d_model": 20,
+    "dtype": "float64",
+    "seed": 0
+  },
+  "err_reformulation_eq6": 4.618527782440651e-13,
+  "err_pre_reconstruction": 1.7763568394002505e-15,
+  "err_post_reconstruction": 1.7763568394002505e-15,
+  "err_tucker_forward_vs_mha": 6.039613253960852e-14,
+  "measured_ranks_W": [
+    4,
+    20,
+    20
+  ],
+  "measured_ranks_Wt": [
+    4,
+    20,
+    20
+  ],
+  "target_ranks": [
+    4,
+    20,
+    20
+  ],
+  "tol": 1e-09,
+  "verified": true,
+  "runtime_s": 0.006,
+  "numpy": "2.2.6",
+  "script_sha256": "3e5ab806524c01e655742ffdd2eccc14d591e93529fbfabda1927df8e427e356"
+}

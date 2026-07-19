@@ -1,0 +1,23 @@
+GESPI Claim 2B | LLM win-rate test | n=15 N=100 alpha=0.05 eps=0.02 bound=0.07 reps=40000 seed=424242
+
+[POWER] real & synthetic under the alternative (p>0.5):
+comparison               p_real  p_syn   GESPI OnlyReal    gain OnlySynth  G>=OR
+Comp1 (strong signal)      0.70   0.67  0.5392   0.4662  0.0729    0.9667   True
+Comp2 (weaker signal)      0.63   0.60  0.3110   0.2629  0.0481    0.6417   True
+
+[TYPE I] shuffled responses -> real null (p=0.5):
+synthetic setting              p_real  p_syn   GESPI   +-SE OnlyReal OnlySynth G<=a+e?
+benign shuffle (p_syn=0.50)      0.50   0.50  0.0524 0.0011   0.0500    0.0502    True
+ADVERSARIAL (p_syn=0.65)         0.50   0.65  0.0675 0.0013   0.0478    0.9187    True
+
+--- Checks (pre-registered) ---
+[efficiency] GESPI power > OnlyReal power (>2SE) in BOTH comparisons: True
+    Comp1 (strong signal): GESPI=0.5392 OnlyReal=0.4662 gain=0.0729 (2SE=0.0071)
+    Comp2 (weaker signal): GESPI=0.3110 OnlyReal=0.2629 gain=0.0481 (2SE=0.0064)
+[no-harm] GESPI power >= OnlyReal always: True
+[validity] GESPI Type I <= bound 0.07 incl adversarial: True (benign=0.0524, adv=0.0675)
+[validity] benign shuffle Type I ~ alpha=0.05: True
+[control] OnlySynth (paper baseline) VIOLATES Type I under adversarial shuffle: True (OnlySynth Type I=0.9187 > 0.07)
+
+VERDICT PASS = True
+wrote results_2b.json

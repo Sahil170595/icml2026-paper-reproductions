@@ -1,0 +1,46 @@
+{
+  "claim": "Gaussian-perturbation averaging of the effective transformation equals convolution with the Gaussian smoothing kernel: E_{eps~N(0,Sigma)}[W_L^eq(X+eps)] = (W_L^eq * K)(X)  (Eq.7).",
+  "quadratic_max_abs_identity_error": 0.0,
+  "quadratic_rows_sigma_Eavg_conv_diff": [
+    [
+      0.25,
+      1.14375,
+      1.14375,
+      0.0
+    ],
+    [
+      0.5,
+      1.2750000000000001,
+      1.2750000000000001,
+      0.0
+    ],
+    [
+      1.0,
+      1.8,
+      1.8,
+      0.0
+    ],
+    [
+      2.0,
+      3.9,
+      3.9,
+      0.0
+    ]
+  ],
+  "real_vit_convolution_reference": -0.008867422628625055,
+  "real_vit_mc_rms_errors": {
+    "10": 6.875324095806982e-05,
+    "30": 4.21153254313614e-05,
+    "100": 2.1626671151616023e-05,
+    "300": 1.2990495568117847e-05,
+    "1000": 7.4398149058159575e-06,
+    "3000": 3.973497353275588e-06,
+    "10000": 2.202360686253832e-06
+  },
+  "real_vit_rms_loglog_slope": -0.5,
+  "real_vit_slope_target": -0.5,
+  "sigma": 0.5,
+  "model": "compact real ViT (img32/patch8/dim32/depth2), effective-transformation response along an input ray",
+  "runtime_s": 1.74,
+  "verdict": "VERIFIED: the Gaussian-averaging = convolution identity holds to machine precision (0.0e+00) in closed form on a quadratic, and the MC Gaussian average of the real ViT effective response converges to the kernel convolution at rate 1/sqrt(n) (measured slope -0.50)."
+}

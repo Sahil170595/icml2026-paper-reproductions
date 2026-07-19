@@ -1,0 +1,223 @@
+{
+  "n_seeds": 5,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_params": 69197,
+  "pretrain_steps": 120,
+  "rl_steps": 100,
+  "rl_group": 8,
+  "n_heldout": 200,
+  "n_eval_samp": 16,
+  "per_seed": [
+    {
+      "seed": 0,
+      "n_params": 69197,
+      "pretrain_steps": 120,
+      "rl_steps": 100,
+      "rl_group": 8,
+      "rl_batch": 24,
+      "n_heldout": 200,
+      "n_eval_samp": 16,
+      "pretrain_loss": 0.6608156561851501,
+      "baseline_passk": {
+        "1": 0.1975,
+        "4": 0.4960741758241759,
+        "8": 0.6651775446775445
+      },
+      "reinforce_passk": {
+        "1": 0.41875,
+        "4": 0.7184450549450548,
+        "8": 0.7846181041181041
+      },
+      "maxrl_passk": {
+        "1": 0.4259375,
+        "4": 0.7884862637362637,
+        "8": 0.8768636363636364
+      },
+      "hardhalf_pass1": {
+        "baseline": 0.055,
+        "reinforce": 0.340625,
+        "maxrl": 0.343125
+      },
+      "runtime_s": 10.88
+    },
+    {
+      "seed": 1,
+      "n_params": 69197,
+      "pretrain_steps": 120,
+      "rl_steps": 100,
+      "rl_group": 8,
+      "rl_batch": 24,
+      "n_heldout": 200,
+      "n_eval_samp": 16,
+      "pretrain_loss": 1.0434327125549316,
+      "baseline_passk": {
+        "1": 0.05,
+        "4": 0.18255494505494507,
+        "8": 0.3282132867132867
+      },
+      "reinforce_passk": {
+        "1": 0.04875,
+        "4": 0.06253296703296703,
+        "8": 0.07216666666666667
+      },
+      "maxrl_passk": {
+        "1": 0.06875,
+        "4": 0.20632417582417584,
+        "8": 0.3087086247086247
+      },
+      "hardhalf_pass1": {
+        "baseline": 0.005625,
+        "reinforce": 0.058125,
+        "maxrl": 0.065
+      },
+      "runtime_s": 10.58
+    },
+    {
+      "seed": 2,
+      "n_params": 69197,
+      "pretrain_steps": 120,
+      "rl_steps": 100,
+      "rl_group": 8,
+      "rl_batch": 24,
+      "n_heldout": 200,
+      "n_eval_samp": 16,
+      "pretrain_loss": 0.8655042052268982,
+      "baseline_passk": {
+        "1": 0.0996875,
+        "4": 0.31956318681318685,
+        "8": 0.5037878787878788
+      },
+      "reinforce_passk": {
+        "1": 0.124375,
+        "4": 0.283206043956044,
+        "8": 0.3893236208236208
+      },
+      "maxrl_passk": {
+        "1": 0.1709375,
+        "4": 0.39134890109890114,
+        "8": 0.523083916083916
+      },
+      "hardhalf_pass1": {
+        "baseline": 0.025,
+        "reinforce": 0.08375,
+        "maxrl": 0.105625
+      },
+      "runtime_s": 10.6
+    },
+    {
+      "seed": 3,
+      "n_params": 69197,
+      "pretrain_steps": 120,
+      "rl_steps": 100,
+      "rl_group": 8,
+      "rl_batch": 24,
+      "n_heldout": 200,
+      "n_eval_samp": 16,
+      "pretrain_loss": 0.8837388157844543,
+      "baseline_passk": {
+        "1": 0.07375,
+        "4": 0.25712087912087916,
+        "8": 0.4364195804195804
+      },
+      "reinforce_passk": {
+        "1": 0.06375,
+        "4": 0.09401373626373627,
+        "8": 0.11164568764568765
+      },
+      "maxrl_passk": {
+        "1": 0.096875,
+        "4": 0.30221428571428577,
+        "8": 0.4691301476301477
+      },
+      "hardhalf_pass1": {
+        "baseline": 0.02,
+        "reinforce": 0.021875,
+        "maxrl": 0.09875
+      },
+      "runtime_s": 10.34
+    },
+    {
+      "seed": 4,
+      "n_params": 69197,
+      "pretrain_steps": 120,
+      "rl_steps": 100,
+      "rl_group": 8,
+      "rl_batch": 24,
+      "n_heldout": 200,
+      "n_eval_samp": 16,
+      "pretrain_loss": 0.7443960309028625,
+      "baseline_passk": {
+        "1": 0.15625,
+        "4": 0.44163461538461546,
+        "8": 0.6231091686091687
+      },
+      "reinforce_passk": {
+        "1": 0.29375,
+        "4": 0.45889835164835163,
+        "8": 0.5024735819735819
+      },
+      "maxrl_passk": {
+        "1": 0.2434375,
+        "4": 0.5040439560439561,
+        "8": 0.6129463869463869
+      },
+      "hardhalf_pass1": {
+        "baseline": 0.045,
+        "reinforce": 0.2225,
+        "maxrl": 0.160625
+      },
+      "runtime_s": 11.21
+    }
+  ],
+  "baseline_passk_mean": {
+    "1": 0.1154375,
+    "4": 0.33938956043956053,
+    "8": 0.5113414918414918
+  },
+  "baseline_passk_std": {
+    "1": 0.0541625158666028,
+    "4": 0.11555296409774153,
+    "8": 0.1227711970430973
+  },
+  "reinforce_passk_mean": {
+    "1": 0.18987500000000002,
+    "4": 0.32341923076923074,
+    "8": 0.3720455322455322
+  },
+  "reinforce_passk_std": {
+    "1": 0.14372738952614425,
+    "4": 0.24360033574246923,
+    "8": 0.2627780617368253
+  },
+  "maxrl_passk_mean": {
+    "1": 0.20118750000000002,
+    "4": 0.43848351648351647,
+    "8": 0.5581465423465424
+  },
+  "maxrl_passk_std": {
+    "1": 0.1277759574900537,
+    "4": 0.2007431338786469,
+    "8": 0.18759327814777718
+  },
+  "hardhalf_pass1_mean": {
+    "baseline": 0.030125000000000002,
+    "reinforce": 0.145375,
+    "maxrl": 0.154625
+  },
+  "hardhalf_pass1_std": {
+    "baseline": 0.017714753738056872,
+    "reinforce": 0.11893971687371717,
+    "maxrl": 0.09912003455406986
+  },
+  "verdict": {
+    "maxrl_beats_reinforce_pass1": true,
+    "maxrl_beats_reinforce_hardhalf": true,
+    "note": "Real char-level transformer LM (torch, CPU), 2-digit addition as a verifiable-reward generation task. REINFORCE/GRPO-style (group-mean-centered advantage) vs MaxRL (self-normalized group weights) RL-finetuned from the SAME brief pretrained checkpoint, matched compute (same steps/group/batch/lr schedule). Reported honestly whichever way it comes out."
+  }
+}

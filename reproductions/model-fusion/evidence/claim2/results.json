@@ -1,0 +1,49 @@
+{
+  "claim": "Neuron-centric family of fusion algorithms incorporating neuron attribution scores and generalizing to arbitrary layer types.",
+  "partA_theorem1_decomposition_eq4": {
+    "J_IMP_lhs": 2393.524209,
+    "approximation_error": 1618.009558,
+    "grouping_error": 775.514651,
+    "cross_term": -3.6415315207705135e-14,
+    "identity_residual_abs": 0.0,
+    "tolerance": 1e-08,
+    "exact_decomposition_holds": true,
+    "both_error_terms_strictly_positive": true
+  },
+  "partB_theorem2a_hungarian_optimality": {
+    "n_neurons": 8,
+    "matchings_bruteforced": 40320,
+    "hungarian_cost": 98.874244,
+    "bruteforce_min_cost": 98.874244,
+    "gap": 0.0,
+    "hungarian_is_globally_optimal": true
+  },
+  "partC_attribution_scores_change_fusion": {
+    "attribution": "gradient x activation (conductance-style), per hidden neuron",
+    "n_hidden_neurons": 40,
+    "clusters": 12,
+    "fraction_neurons_reassigned_uniform_vs_importance": 0.025,
+    "centroid_L2_shift_uniform_vs_importance": 8.1604,
+    "weighted_grouping_cost_uniform_clustering": 0.1051,
+    "weighted_grouping_cost_importance_clustering": 0.101,
+    "importance_clustering_lowers_weighted_cost": true,
+    "scores_materially_change_fusion": true,
+    "paper_reference": "Fig 2 + appendix: DeepLIFT/Conductance (49.4/49.3) > Uniform (46.9)."
+  },
+  "partD_arbitrary_layer_types": {
+    "layer_type": "Conv2d (channels as neurons)",
+    "conv_channel_permutation_max_abs_diff": 5.21540641784668e-08,
+    "tolerance": 0.0001,
+    "conv_function_preserved_under_channel_permutation": true,
+    "conv_hungarian_match_cost": 0.0,
+    "hungarian_recovers_true_channel_permutation": true,
+    "note": "Linear-layer permutation invariance is verified in claim1; the SAME matching machinery is shown here on convolutional channels -> generalizes across layer types."
+  },
+  "verdict": "VERIFIED (theory/structural): the exact Eq.4 decomposition, Hungarian global optimality (Thm 2a), attribution scores changing/improving the fusion, and generalization to convolutional layers all reproduce deterministically.",
+  "runtime_s": 1.48,
+  "versions": {
+    "torch": "2.13.0+cpu",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  }
+}

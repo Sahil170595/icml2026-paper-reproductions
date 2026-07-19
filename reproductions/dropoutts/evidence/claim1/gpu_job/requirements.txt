@@ -1,0 +1,19 @@
+# DropoutTS official deps (pinned commit 64a096ec6801d9506ab3a30541b6f1b6dbbd7f40)
+# torch is provided by the base pytorch image in the `hf jobs run` command.
+easy-torch==1.3.3
+easydict
+packaging
+setproctitle
+pandas
+scikit-learn
+tables
+sympy
+openpyxl
+setuptools==59.5.0
+numpy==1.24.4
+tqdm==4.67.1
+tensorboard==2.18.0
+transformers==4.40.1
+matplotlib
+einops
+huggingface_hub>=0.24

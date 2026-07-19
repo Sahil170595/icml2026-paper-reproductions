@@ -1,0 +1,43 @@
+==========================================================================
+CLAIM 1 - per-arm IPW error martingale wrt single-arm filtration
+Anytime-Valid Inference Under Outcome Delay (arXiv 2603.25971v1, FXWnvznHMW)
+==========================================================================
+design: N=400 fixed potential outcomes; only randomness = assignment
+        pi=0.5, R=20000 MC draws, alpha=0.05, eta(boundary)=0.1
+        arm-1 median event time 6.75 (pull-forward) < arm-0 median 9.81  -> asymmetric clocks
+        mean |y0|=1.246  mean |y1|=0.672 (treatment lower magnitude), bounded
+
+--------------------------------------------------------------------------
+(A) PER-ARM IPW ERROR IS A MARTINGALE wrt single-arm filtration (arm 1)
+--------------------------------------------------------------------------
+  A1 increment E[dM_k|past]~0 : max|z_k| over 400 event steps = 3.34 (frac |z|<=2 = 0.960)
+     terminal error mean E[M_T]  = +0.0160  (z = +0.17; expect 0)
+  A2 increment unpredictable  : worst Cov(M_(k-1),dM_k) z = -2.06 (slope = -9.83e-04; expect 0)
+  A3 Lemma4.7 Cov(M_s,M_t)=Var(M_s): max|ratio-1| = 0.0206, max|z| = -2.89
+     example (s=9.26, t=10.65): ratio=0.9904  z=-2.89
+  => A1 PASS | A2 PASS | A3 PASS  (martingale property holds)
+
+--------------------------------------------------------------------------
+(B) NEGATIVE RESULT: treatment-effect (difference) error is NOT a martingale
+    under ANY filtration  (Prop 4.8: Cov(D_s,D_t) != Var(D_s))
+--------------------------------------------------------------------------
+  max|ratio-1| = 0.5177, max standardized |z| = +37.04
+     example (s=3.99, t=6.88): Cov/Var ratio=1.3453  z=+37.04  (!= 1 => violation)
+  => PASS (violation is decisive; martingale fails for the difference)
+
+--------------------------------------------------------------------------
+(C) ANYTIME-VALID coverage from the martingale CS  vs  naive pointwise CI
+    single-arm CS (Thm 4.6) checked at all 400 event times (continuous monitoring)
+--------------------------------------------------------------------------
+  confidence SEQUENCE  uniform coverage = 99.56%  (miscover 0.44% <= 5%?  yes)
+  naive pointwise CI   uniform coverage = 29.59%  (miscover 70.42% -> over-rejects under optional stopping)
+  naive pointwise CI   single-look coverage: mid=94.73%  late=95.17%  (~95% => pointwise valid, only sequential use breaks)
+  => PASS (martingale CS is anytime-valid; naive CI is not)
+
+==========================================================================
+OVERALL CLAIM 1: VERIFIED
+  per-arm IPW error IS a martingale wrt the single-arm filtration (A);
+  the treatment-effect error is NOT a martingale under any filtration (B);
+  the martingale CS is anytime-valid while the naive CI over-rejects (C).
+==========================================================================
+wrote results.json  (runtime 1.08s)

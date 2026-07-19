@@ -1,0 +1,45 @@
+==============================================================================
+CLAIM 5  non-linear denoiser validates consistency / overshrinkage /
+         eigenmode-dependence (Fig 5) -- CPU non-parametric surrogate for UNet/DiT
+==============================================================================
+d=14  sigma^2=0.7  256 held-out noisy queries  (spectrum lam_j~j^-1.0)
+
+NON-LINEAR (KDE) denoiser across dataset size n:
+      n  cross-split  ->Gaussian  nearest-NN  cross/NN
+     16       0.7339      0.3008      0.0662    11.080
+     32       0.5719      0.2413      0.0840     6.806
+     64       0.4576      0.1690      0.0941     4.862
+    128       0.3834      0.1245      0.1149     3.336
+    256       0.2999      0.0916      0.1224     2.451
+    512       0.2125      0.0667      0.1311     1.621
+   1024       0.1501      0.0477      0.1366     1.099
+   2048       0.1098      0.0317      0.1405     0.782
+
+  (A) non-memorization (cross-split MSE falls, crosses below nearest-NN)? True
+      cross/NN: n=16 -> 11.08 (memorization) ; n=2048 -> 0.78 (consistent)
+  (B) generations approach the Gaussian predictor (MSE decreasing)? True
+      MSE(nonlinear,Gaussian): n=16 -> 0.3008 ; n=2048 -> 0.0317
+
+(C) OVER-SHRINKAGE: effective per-mode gain of the NON-LINEAR denoiser
+    g_k = <u_k,D(x)>.<u_k,x_clean> / |<u_k,x_clean>|^2, vs naive Wiener lam/(lam+sig^2):
+  n=200 gamma=0.070 kappa=0.725:
+      mode  0 lam= 4.306: KDE gain=0.782  naive=0.860  rmt(kappa)=0.856
+      mode  4 lam= 0.861: KDE gain=0.435  naive=0.552  rmt(kappa)=0.543
+      mode  9 lam= 0.431: KDE gain=0.273  naive=0.381  rmt(kappa)=0.373
+      mode 13 lam= 0.308: KDE gain=0.209  naive=0.305  rmt(kappa)=0.298
+      low-mode over-shrinkage (naive-KDE) = +0.105 (>0 ?)  gain eigenmode-ordered Spearman(g,lam)=1.000
+  n=1000 gamma=0.014 kappa=0.705:
+      mode  0 lam= 4.306: KDE gain=0.818  naive=0.860  rmt(kappa)=0.859
+      mode  4 lam= 0.861: KDE gain=0.479  naive=0.552  rmt(kappa)=0.550
+      mode  9 lam= 0.431: KDE gain=0.319  naive=0.381  rmt(kappa)=0.379
+      mode 13 lam= 0.308: KDE gain=0.247  naive=0.305  rmt(kappa)=0.304
+      low-mode over-shrinkage (naive-KDE) = +0.060 (>0 ?)  gain eigenmode-ordered Spearman(g,lam)=1.000
+
+  over-shrinkage present at finite n? True  decays with n (0.105->0.060)? True  eigenmode-ordered? True
+  (C) over-shrinkage / eigenmode-dependence verified? True
+
+==============================================================================
+VERDICT claim5: consistency(A)=True  ->Gaussian(B)=True  overshrinkage(C)=True
+CLAIM 5 VERIFIED (nonlinear surrogate) = True
+==============================================================================
+wrote results.json  runtime=0.48s

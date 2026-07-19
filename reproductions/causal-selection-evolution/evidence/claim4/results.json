@@ -1,0 +1,54 @@
+{
+  "T": 2,
+  "K": 3,
+  "rho": 0.6,
+  "se": 0.7,
+  "mopt": 1.5,
+  "sw": 1.2,
+  "n_nodes": 12,
+  "gplus_edges": 21,
+  "oracle": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "shd": 0,
+    "soundness": 1.0,
+    "n_oriented": 3,
+    "selection_oriented": 0,
+    "vstruct_recovered": 3,
+    "selection_unoriented": 6,
+    "n_selection": 6,
+    "directed_edges": [
+      [
+        "e0_2",
+        "X_2"
+      ],
+      [
+        "e1_2",
+        "X_2"
+      ],
+      [
+        "e2_2",
+        "X_2"
+      ]
+    ]
+  },
+  "finite_sample": {
+    "2000": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "shd": 0,
+      "soundness": 1.0,
+      "sel_oriented": 0,
+      "vstruct": 3
+    },
+    "5000": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "shd": 0,
+      "soundness": 1.0,
+      "sel_oriented": 0,
+      "vstruct": 3
+    }
+  },
+  "verified": true
+}

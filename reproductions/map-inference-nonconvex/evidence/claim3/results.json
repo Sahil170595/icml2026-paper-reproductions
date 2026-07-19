@@ -1,0 +1,16 @@
+{
+  "claim": "Correctness of Omega^PP piecewise-polynomial message operations (Thm A.5, TMC ops, Prop A.6)",
+  "maxout_ThmA5_err": 3.552713678800501e-15,
+  "maxout_points": 4746,
+  "product_err": 2.842170943040401e-14,
+  "pointmax_err": 0.0,
+  "propA6_bound_holds": true,
+  "propA6_worst_ratio": 0.125,
+  "propA6_max_pieces": 6,
+  "verified": true,
+  "runtime_s": 0.7203843593597412,
+  "env": {
+    "numpy": "2.2.6",
+    "threads": "1"
+  }
+}

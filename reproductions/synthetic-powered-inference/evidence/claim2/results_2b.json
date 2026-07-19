@@ -1,0 +1,68 @@
+{
+  "experiment": "claim2b_llm_winrate_test",
+  "paper": "arXiv 2509.20345 GESPI Sec 4.2",
+  "n": 15,
+  "N": 100,
+  "alpha": 0.05,
+  "eps": 0.02,
+  "bound": 0.07,
+  "reps": 40000,
+  "seed": 424242,
+  "results": {
+    "Comp1 (strong signal)": {
+      "power": {
+        "p_real": 0.7,
+        "p_synt": 0.67,
+        "gespi": 0.539175,
+        "gespi_se": 0.0024923147843671353,
+        "onlyreal": 0.46625,
+        "onlyreal_se": 0.0024942981853619665,
+        "onlysynth": 0.96675,
+        "dominates": 1.0
+      }
+    },
+    "Comp2 (weaker signal)": {
+      "power": {
+        "p_real": 0.63,
+        "p_synt": 0.6,
+        "gespi": 0.311025,
+        "gespi_se": 0.002314565020554618,
+        "onlyreal": 0.2629,
+        "onlyreal_se": 0.0022010428778195122,
+        "onlysynth": 0.64165,
+        "dominates": 1.0
+      }
+    },
+    "typeI": {
+      "benign shuffle (p_syn=0.50)": {
+        "p_real": 0.5,
+        "p_synt": 0.5,
+        "gespi": 0.05245,
+        "gespi_se": 0.0011146635983560241,
+        "onlyreal": 0.050025,
+        "onlyreal_se": 0.0010899827908618558,
+        "onlysynth": 0.0502,
+        "within_bound": true
+      },
+      "ADVERSARIAL (p_syn=0.65)": {
+        "p_real": 0.5,
+        "p_synt": 0.65,
+        "gespi": 0.0675,
+        "gespi_se": 0.00125442965127583,
+        "onlyreal": 0.047775,
+        "onlyreal_se": 0.0010664491241381372,
+        "onlysynth": 0.918675,
+        "within_bound": true
+      }
+    }
+  },
+  "checks": {
+    "power_gain_gt_2se": true,
+    "gespi_never_loses": true,
+    "detects_A_beats_B": true,
+    "typeI_within_bound": true,
+    "benign_near_alpha": true,
+    "only_synth_breaks": true,
+    "PASS": true
+  }
+}

@@ -1,0 +1,12 @@
+========================================================================
+CLAIM 1  VASE upper bound sqrt(dT log(K/delta) sigma^2_max) + matching LB d sqrt(T) sigma_max
+[A] T-scaling: T= [1000, 2000, 4000, 8000, 16000]
+    R_T= [160.09, 226.98, 321.45, 454.94, 643.62]  slope= 0.5018  accept= True
+[B] sigma: [0.25, 0.5, 1.0, 2.0]  R_T= [278.12, 557.32, 1103.01, 2229.94]  ratios= [2.004, 1.979, 2.022]  accept= True
+[C] logK: K= [16, 64, 256, 1024, 4096]  R_T= [501.36, 594.79, 602.68, 590.68, 588.52]  growth256x= 1.174  accept= True
+[D] d(fixK): d= [2, 4, 8, 16]  R_T= [267.87, 445.45, 582.87, 829.1]  slope= 0.5278  accept= True
+[E] FORM FIT mean R/pred= 1.478  CV= 0.117  accept= True
+[F] LB hyper d-slope= 0.7972  (fixedK 0.5278 ) T-slope= 0.5  sigma-ratios= [2.0, 2.0]  accept= True
+========================================================================
+ALL ACCEPT = True  runtime= 1.5 s
+wrote /sessions/keen-fervent-hamilton/mnt/icml-repro-pilot/submissions/linbandit-paramnoise-pilot/.trackio/logbook/evidence-package/claim1/results.json

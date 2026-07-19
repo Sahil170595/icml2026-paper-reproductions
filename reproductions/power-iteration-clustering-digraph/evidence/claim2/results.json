@@ -1,0 +1,29 @@
+{
+  "claim": "P_gamma=gamma*P_out+(1-gamma)*P_in row-stochastic for gamma in [0,1]; vertex measure Eq.8 positive; gamma outside [0,1] fails; App A.3.1 nu->pi_half^alpha",
+  "numpy": "2.2.6",
+  "gamma_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "cases": 99,
+  "Pout_max_rowsum_dev": 2.220446049250313e-16,
+  "Pin_max_rowsum_dev": 4.440892098500626e-16,
+  "Pgamma_min_entry": 0.0,
+  "Pgamma_max_rowsum_dev": 4.440892098500626e-16,
+  "endpoint_gamma1_eq_Pout_maxdiff": 0.0,
+  "endpoint_gamma0_eq_Pin_maxdiff": 0.0,
+  "monotone_interpolation": true,
+  "vertex_measure_min": 0.0003059309536403999,
+  "control_min_entry_gamma_outside_0_1": -0.5,
+  "appA31_nu_to_pihalf_alpha_maxdiff": 1.0685896612017132e-15,
+  "verdict": "PASS"
+}

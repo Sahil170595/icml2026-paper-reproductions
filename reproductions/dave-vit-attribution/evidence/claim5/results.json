@@ -1,0 +1,26 @@
+{
+  "claim": "DAVE applies to inherently interpretable B-cos ViTs and improves over the inherent B-cos explanation on GridPG/EnergyPG (Table 2): B-cos-ViT 84.00/78.55, B-cos-ViT-C 88.43/79.63.",
+  "cpu_exact": "DAVE decomposition identity verified on real B-cos layers to machine precision",
+  "bcos_decomposition_worst_abs_err": 5.551115123125783e-17,
+  "bcos_layers_checked": {
+    "B-cos linear (B=2)": 0.0,
+    "B-cos linear (B=2.5)": 5.551115123125783e-17,
+    "B-cos 2-layer MLP": 2.7755575615628914e-17
+  },
+  "bcos_opvar_fraction": {
+    "B-cos linear (B=2)": 0.4851309954307982,
+    "B-cos linear (B=2.5)": 0.582143810654797,
+    "B-cos 2-layer MLP": 0.48662634148445105
+  },
+  "paper_table2_gridpg": {
+    "B-cos-ViT": 84.0,
+    "B-cos-ViT-C": 88.43
+  },
+  "paper_table2_energypg": {
+    "B-cos-ViT": 78.55,
+    "B-cos-ViT-C": 79.63
+  },
+  "gpu_kit": "gpu_job/ (hf jobs run) runs the full Table-2 benchmark on real B-cos-ViT / B-cos-ViT-C",
+  "verdict": "PARTIAL-VERIFIED: DAVE's decomposition extends to real B-cos dynamic-linear layers to machine precision (worst 5.6e-17) -- the architecture-versatility claim behind Table 2. The ImageNet GridPG/EnergyPG numbers (DAVE 84-88/78-80) need real pretrained B-cos weights and are emitted as a GPU kit.",
+  "runtime_s": 0.31
+}

@@ -1,0 +1,33 @@
+W0718 01:18:29.495000 54368 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W0718 01:18:31.209000 54368 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loaded 100 official prompts (sha256-verified).
+
+--- l8_h8 (Adam) ---
+  seed 1: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed1_epoch1_c4_gelu\final.pt
+  seed 2: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed2_epoch1_c4_gelu\final.pt
+  seed 3: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed3_epoch1_c4_gelu\final.pt
+  seed 4: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed4_epoch1_c4_gelu\final.pt
+  seed 5: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8\causal_attn_l8_h8_seed5_epoch1_c4_gelu\final.pt
+  Layer-wise S_l: 1:0.974524, 2:0.906740, 3:0.857632, 4:0.775304, 5:0.621026, 6:0.702108, 7:0.865754, 8:0.819540
+  Overall mean stability (l8_h8): 0.815329
+
+--- l8_h8_wd (AdamW) ---
+  seed 1: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed1_epoch1_c4_gelu\final.pt
+  seed 2: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed2_epoch1_c4_gelu\final.pt
+  seed 3: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed3_epoch1_c4_gelu\final.pt
+  seed 4: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed4_epoch1_c4_gelu\final.pt
+  seed 5: loaded from C:\Users\sahil\.cache\huggingface\hub\models--karanbali--attention_head_seed_stability\snapshots\a1148a78942455dea94e971632a8b48159c64e86\l8_h8_wd\causal_attn_l8_h8_seed5_epoch1_c4_gelu\final.pt
+  Layer-wise S_l: 1:0.970816, 2:0.952580, 3:0.834354, 4:0.875678, 5:0.868897, 6:0.811490, 7:0.726224, 8:0.862970
+  Overall mean stability (l8_h8_wd): 0.862876
+
+=== Adam vs AdamW summary ===
+Adam  (l8_h8)    overall mean head stability = 0.815329
+AdamW (l8_h8_wd) overall mean head stability = 0.862876
+Delta (AdamW - Adam) = 0.047548
+AdamW higher than Adam: True
+Layers where AdamW > Adam: 5 / 8
+Per-layer delta: 1:-0.003707, 2:+0.045839, 3:-0.023278, 4:+0.100374, 5:+0.247871, 6:+0.109382, 7:-0.139530, 8:+0.043429
+Wall time: 203.475s
+
+Wrote C:\Users\sahil\OneDrive\Documents\Playground\icml-repro-pilot\submissions\attention-head-stability-pilot\.trackio\logbook\evidence-package\claim3\results.json
+EXIT_CODE=0

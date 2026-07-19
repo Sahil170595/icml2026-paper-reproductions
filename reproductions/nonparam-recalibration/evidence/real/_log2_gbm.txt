@@ -1,0 +1,11 @@
+RUN diabetes/gbm
+DONE diabetes/gbm 2.1s
+RUN energy/gbm
+DONE energy/gbm 1.4s
+RUN concrete/gbm
+DONE concrete/gbm 3.1s
+RUN wine_red/gbm
+DONE wine_red/gbm 5.1s
+RUN california/gbm
+DONE california/gbm 8.7s
+PRESENT: ['california__gbm.json', 'concrete__gbm.json', 'diabetes__gbm.json', 'energy__gbm.json', 'wine_red__gbm.json']

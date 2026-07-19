@@ -1,0 +1,49 @@
+==============================================================================
+CLAIM 3  denoiser variance: anisotropy + inhomogeneity + decay (Result 4.2)
+paper: arXiv 2602.02908 / iPjuUQbkfl  (Prop 4.2) -- independent NumPy
+==============================================================================
+d=120 n=100 gamma=1.200 sigma^2=0.1  kappa=0.3244  df2(kappa)=43.338  n-df2=56.662  prefactor=1.8572e-03
+
+(A) ANISOTROPY -- probe v=u_k over eigenmodes (x fixed):
+     mode     lam_k      emp Var     pred Var   ratio
+        0   22.3511   2.7694e-03   2.6634e-03   1.040
+        3    5.5878   1.0141e-02   9.7949e-03   1.035
+       10    2.0319   2.2417e-02   2.2423e-02   1.000
+       30    0.7210   4.0144e-02   4.0423e-02   0.993
+       70    0.3148   4.7392e-02   4.7209e-02   1.004
+      119    0.1863   4.3064e-02   4.3764e-02   0.984
+    variance span across all 120 modes = 17.7x ; Pearson(log emp,log pred)=0.9987
+    (A) anisotropy predicted? True
+
+(B) INHOMOGENEITY -- input x aligned with u_j (v=u_5 fixed):
+     x~u_j     lam_j      emp Var     pred Var   ratio
+         0   22.3511   5.2106e-02   4.9188e-02   1.059
+         3    5.5878   4.7132e-02   4.5223e-02   1.042
+        10    2.0319   3.8546e-02   3.7646e-02   1.024
+        30    0.7210   2.4616e-02   2.4081e-02   1.022
+        70    0.3148   1.2328e-02   1.2279e-02   1.004
+       119    0.1863   6.6276e-03   6.7352e-03   0.984
+    location-dependent variance span = 7.9x
+    (B) inhomogeneity predicted? True
+
+(C1) DECAY WITH DATASET SIZE -- formula tracks measured Var (v=u_10, x fixed):
+        n   gamma    kappa      emp Var     pred Var   ratio
+       50   2.400   0.8677   9.4691e-02   9.1427e-02   1.036
+      100   1.200   0.3244   2.2045e-02   2.2423e-02   0.983
+      200   0.600   0.1733   4.4905e-03   4.3174e-03   1.040
+      400   0.300   0.1294   1.2064e-03   1.2001e-03   1.005
+      800   0.150   0.1132   4.5820e-04   4.4671e-04   1.026
+    formula matches at every n & Var decreases monotonically? True
+
+(C2) ASYMPTOTIC 1/n scaling from the validated formula (large n, kappa->sigma^2):
+    n=   2000  kappa=0.10499  predicted Var=1.5013e-04
+    n=   8000  kappa=0.10121  predicted Var=3.4446e-05
+    n=  32000  kappa=0.10030  predicted Var=8.4298e-06
+    n= 128000  kappa=0.10007  predicted Var=2.0963e-06
+    asymptotic log-log slope = -1.026 in [-1.1,-0.9] (global 1/n)? True
+
+==============================================================================
+VERDICT claim3: anisotropy(A)=True  inhomogeneity(B)=True  decay(C1 formula=True, C2 1/n=True)
+CLAIM 3 VERIFIED = True
+==============================================================================
+wrote results.json  runtime=14.36s

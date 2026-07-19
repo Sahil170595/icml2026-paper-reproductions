@@ -1,0 +1,91 @@
+{
+  "claim": "The contextual-bandit approach (OFD-UCB) for online fair division provides a provable sub-linear regret upper bound (Theorem 1).",
+  "target_rule": "OFD-UCB log-log regret exponent < 1 (sub-linear) and >=10x below no-learning baseline in R_T/T; tight-instance exponent in [0.45,0.65]; OFD-Uniform linear (exponent>=0.9). Falsified if OFD-UCB exponent>=0.9 or does not beat OFD-Uniform.",
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "sigma_R": 0.1,
+    "lambda": 1.0,
+    "delta": 0.05,
+    "expA": {
+      "T": 12000,
+      "dm": 3,
+      "dn": 3,
+      "d": 6,
+      "N": 10
+    },
+    "expB": {
+      "T": 6000,
+      "d": 30,
+      "M": 500
+    }
+  },
+  "expA_ofd_process": {
+    "ofd_ucb": {
+      "final_R_T": 41.878297091539466,
+      "R_T_over_T": 0.003489858090961622,
+      "loglog_exponent": 0.34286643418618223
+    },
+    "ofd_uniform": {
+      "final_R_T": 2878.530858225199,
+      "R_T_over_T": 0.2398775715187666,
+      "loglog_exponent": 0.9999258059336793
+    },
+    "R_over_T_ratio_uni_over_ucb": 68.735623416902
+  },
+  "expB_tight_rate": {
+    "ofd_ucb": {
+      "final_R_T": 594.1203159156832,
+      "loglog_exponent": 0.49572079839894484
+    },
+    "ofd_uniform": {
+      "final_R_T": 3350.332919349067,
+      "loglog_exponent": 0.9967162376619259
+    },
+    "checkpoints": {
+      "751": {
+        "R_ucb": 165.39294500358682,
+        "ucb_over_sqrt": 6.0352742794707686,
+        "ucb_over_t": 0.22023028628972946,
+        "R_uni": 420.666897794159,
+        "uni_over_sqrt": 15.350353114679635,
+        "uni_over_t": 0.560142340604739
+      },
+      "1501": {
+        "R_ucb": 274.7966662245294,
+        "ucb_over_sqrt": 7.092855521281944,
+        "ucb_over_t": 0.18307572699835403,
+        "R_uni": 839.378953014157,
+        "uni_over_sqrt": 21.66545076085381,
+        "uni_over_t": 0.5592131599028362
+      },
+      "3001": {
+        "R_ucb": 421.70952648590753,
+        "ucb_over_sqrt": 7.698044445197064,
+        "ucb_over_t": 0.14052300116158198,
+        "R_uni": 1679.760894299765,
+        "uni_over_sqrt": 30.662987695289058,
+        "uni_over_t": 0.5597337201931906
+      },
+      "6000": {
+        "R_ucb": 594.1203159156832,
+        "ucb_over_sqrt": 7.670060297283102,
+        "ucb_over_t": 0.09902005265261388,
+        "R_uni": 3350.332919349067,
+        "uni_over_sqrt": 43.25261200296472,
+        "uni_over_t": 0.5583888198915112
+      }
+    }
+  },
+  "verdict": {
+    "expB_ucb_exponent_in_band": true,
+    "baseline_linear": true,
+    "expA_ucb_sublinear_beats_baseline": true,
+    "verified": true
+  }
+}

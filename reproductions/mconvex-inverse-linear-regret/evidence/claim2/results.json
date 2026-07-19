@@ -1,0 +1,94 @@
+{
+  "claim": "Theorem 4.2: Algorithm 1 with center-of-gravity prediction achieves R_T = O(d log d)",
+  "target": "R_T = O(d log d); certificate R_T <= log_{e/(e-1)}(d!)",
+  "acceptance_rule": "(A) regret<=Grunbaum bound; (B) regret/(d ln d) flat (band<1.5) while /d grows & /d^2 shrinks, alpha2<1.9; (C) vol ratio<=1-1/e=0.6321; (D) centroid<<toposort",
+  "ds": [
+    4,
+    6,
+    8,
+    10,
+    12,
+    16,
+    20,
+    24
+  ],
+  "centroid_regret_meanof3seeds": [
+    4.0,
+    8.33,
+    13.0,
+    19.67,
+    25.0,
+    39.67,
+    54.67,
+    71.33
+  ],
+  "grunbaum_bound_log_e_over_e1_dfact": [
+    6.9,
+    14.3,
+    23.1,
+    32.9,
+    43.6,
+    66.9,
+    92.3,
+    119.4
+  ],
+  "d_log_d": [
+    5.5,
+    10.8,
+    16.6,
+    23.0,
+    29.8,
+    44.4,
+    59.9,
+    76.3
+  ],
+  "c_fit_regret_over_dlogd": 0.839,
+  "ratio_regret_over_d_min_max": [
+    1.0,
+    2.972
+  ],
+  "ratio_regret_over_d2_min_max": [
+    0.1238,
+    0.25
+  ],
+  "ratio_regret_over_dlogd_min_max": [
+    0.721,
+    0.935
+  ],
+  "dlogd_band_maxover_min": 1.297,
+  "over_d_growth_factor": 2.97,
+  "over_d2_shrink_factor": 2.02,
+  "toposort_regret_same_instances": [
+    6,
+    15,
+    28,
+    45,
+    66,
+    120,
+    190,
+    276
+  ],
+  "toposort_over_centroid_ratio": [
+    1.5,
+    1.8,
+    2.15,
+    2.29,
+    2.64,
+    3.03,
+    3.48,
+    3.87
+  ],
+  "alpha2_loglog_slope": 1.5984,
+  "fit_r2": 0.99825,
+  "grunbaum_certificate_holds": true,
+  "lemma41_volratio_max_at_d16": 0.568,
+  "lemma41_volratio_mean_at_d16": 0.455,
+  "one_minus_1_over_e": 0.6321,
+  "lemma41_holds": true,
+  "verdict_rule_A": true,
+  "verdict_rule_B": true,
+  "verdict_rule_C": true,
+  "verdict_rule_D": true,
+  "runtime_sec": 6.23,
+  "numpy_version": "2.2.6"
+}

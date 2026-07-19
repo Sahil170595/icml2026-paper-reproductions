@@ -1,0 +1,54 @@
+==============================================================================
+[A] Theorem 2.3: worst-case lower-bound-matching scaling
+    instance A = diag(lambda_k x k, 2*sqrt(beta) x (d-k))  (noiseless)
+==============================================================================
+gap=1.0000e-01 seed=0  iterations to tan<=1e-6: 41
+gap=1.0000e-01 seed=1  iterations to tan<=1e-6: 41
+gap=3.1623e-02 seed=0  iterations to tan<=1e-6: 75
+gap=3.1623e-02 seed=1  iterations to tan<=1e-6: 74
+gap=1.0000e-02 seed=0  iterations to tan<=1e-6: 134
+gap=1.0000e-02 seed=1  iterations to tan<=1e-6: 133
+gap=3.1623e-03 seed=0  iterations to tan<=1e-6: 238
+gap=3.1623e-03 seed=1  iterations to tan<=1e-6: 237
+gap=1.0000e-03 seed=0  iterations to tan<=1e-6: 424
+gap=1.0000e-03 seed=1  iterations to tan<=1e-6: 421
+
+Mean iterations-to-target(1e-6) vs gap:
+  gap=1.0000e-01  mean_T=41.0
+  gap=3.1623e-02  mean_T=74.5
+  gap=1.0000e-02  mean_T=133.5
+  gap=3.1623e-03  mean_T=237.5
+  gap=1.0000e-03  mean_T=422.5
+
+log-log slope: -0.5059  (Theorem 2.3 lower bound / Theorem 2.2 upper bound: -0.5)  R2=0.9999
+This is the SAME exponent (-0.5) measured for the ANPM upper bound in claim 1's gap sweep -- the explicit worst-case (lower-bound) instance requires iterations scaling exactly as fast as the general upper bound allows, i.e. the analysis cannot be improved (worst-case optimal).
+
+==============================================================================
+[B] Tightness of condition (3): fixed-direction noise Xi_t = c*gap*eps*e_(k+1),
+    scanning the multiplicative constant c around the paper's c=1/32
+==============================================================================
+Constructed X0 with tan(theta_0) = 0.020000  (target 2*eps = 0.020000)
+
+         c    min tan/eps    final tan/eps    reaches tan<=eps?
+   0.03125         0.0313           0.0313                 True
+   0.12500         0.1250           0.1250                 True
+   0.50000         0.5000           0.5000                 True
+   0.75000         0.7500           0.7500                 True
+   1.00000         1.0001           1.0001                False
+   2.00000         2.0000           2.0004                False
+   8.00000         2.0000           8.0257                False
+
+Sharp transition: constants c <= 1 reach tan(theta) <= eps; c > 1 fail to converge to the target (the perturbation magnitude exceeds what the accelerated contraction can absorb). The paper's own proven constant c=1/32 is well inside the safe region; the empirical failure boundary (c~1) shows the CONSTANT has analysis slack, but the FUNCTIONAL FORM (linear in gap*eps, i.e. cannot be scaled up by an arbitrary constant) is tight: relaxing it enough (c>1 here) breaks convergence.
+
+==============================================================================
+[C] Attempted tightness test of condition (4) -- NEGATIVE RESULT (disclosed)
+==============================================================================
+One-step sanity check (this reproduction's noise scale elsewhere is ~1e-4):
+  tan(theta_k) after step, NO noise:                    4.042678e+01
+  tan(theta_k) after step, +1e6-magnitude U_k-confined noise: 1.237274e-06
+  -> a perturbation ~1e10x larger than this script's other noise scales, confined to the target eigenspace, IMPROVES alignment rather than breaking it.
+
+Verdict: this specific necessity construction for condition (4) does not reproduce -- disclosed as a limitation (see script docstring for the invariant-subspace argument). Condition (3)'s tightness (part [B]) and Theorem 2.3's worst-case-optimal scaling (part [A]) ARE reproduced with a real, sharp, measured transition / matching exponent.
+
+Total runtime: 9.7s
+[written] claim3/results.json

@@ -1,0 +1,54 @@
+=== REAL benchmark datasets x REAL model pipeline: CKME re-calibration vs named priors ===
+datasets: california(20640x8), wine_red(1599x11), concrete(1030x8), energy(768x8), diabetes(442x10)
+models  : gbm = heteroscedastic GradientBoosting (Gaussian predictive);  rf = RandomForest kernel-smoothed predictive
+priors  : Kuleshov 2018 (marginal PIT map), Song 2019 (parametric Beta) ; CKME = this paper (cond. kernel mean embedding)
+
+-- Suite mean over 10 (dataset x model) cells [95% CI across cells] --  lower=better
+  ACE     raw=0.0622[0.0352,0.0891]  Kuleshov18=0.0325[0.0217,0.0433]  Song19=0.0329[0.0222,0.0435]  CKME=0.0281[0.0166,0.0396]
+  CONDECE raw=0.1322[0.0988,0.1655]  Kuleshov18=0.0930[0.0730,0.1130]  Song19=0.0942[0.0750,0.1135]  CKME=0.0846[0.0618,0.1075]
+  CRPS    raw=1.0000[1.0000,1.0000]  Kuleshov18=0.9538[0.9191,0.9885]  Song19=0.9550[0.9222,0.9877]  CKME=0.9446[0.9074,0.9818]
+  ECE     raw=0.0864[0.0489,0.1239]  Kuleshov18=0.0303[0.0210,0.0396]  Song19=0.0331[0.0251,0.0412]  CKME=0.0301[0.0204,0.0399]
+  KS      raw=0.1736[0.1068,0.2404]  Kuleshov18=0.0870[0.0556,0.1185]  Song19=0.0892[0.0643,0.1142]  CKME=0.0832[0.0539,0.1125]
+
+-- Per-dataset (mean over gbm+rf); ACE=SKCE-family energy auto-cal, CRPS ratio vs raw --
+  california (f=8 ) ACE: raw=0.0289 K=0.0083 S=0.0092 CKME=0.0031  | CRPS: K=0.9588 S=0.9635 CKME=0.9416
+  wine_red   (f=11) ACE: raw=0.0696 K=0.0442 S=0.0431 CKME=0.0294  | CRPS: K=0.9616 S=0.9624 CKME=0.9214
+  concrete   (f=8 ) ACE: raw=0.0536 K=0.0264 S=0.0266 CKME=0.0233  | CRPS: K=0.9519 S=0.9510 CKME=0.9486
+  energy     (f=8 ) ACE: raw=0.0668 K=0.0431 S=0.0461 CKME=0.0369  | CRPS: K=0.9680 S=0.9659 CKME=0.9640
+  diabetes   (f=10) ACE: raw=0.0921 K=0.0407 S=0.0393 CKME=0.0477  | CRPS: K=0.9287 S=0.9319 CKME=0.9474
+
+-- Per-dataset paired CKME vs Kuleshov (pooled seeds, both models) --
+  california  ACE gain=+0.0052 z=+4.9 (8/8 seeds CKME better)
+  wine_red    ACE gain=+0.0148 z=+11.8 (20/20 seeds CKME better)
+  concrete    ACE gain=+0.0031 z=+1.8 (12/20 seeds CKME better)
+  energy      ACE gain=+0.0062 z=+4.5 (16/20 seeds CKME better)
+  diabetes    ACE gain=-0.0070 z=-3.3 (5/20 seeds CKME better)
+
+CKME lowest ACE among priors: 8/10 ; condECE 8/10 ; CRPS 6/10
+CKME beats RAW on ACE: 9/10 ; CKME improves CRPS (<raw): 9/10 ; paired suite ACE z=1.9, better 8/10
+
+=== O(n log n) characteristic EDK (re-run at larger n) ===
+max rel err SORT vs BRUTE (150 cases): 8.42e-15 (<1e-10)
+   n=   2000     0.164 ms
+   n=   4000     0.353 ms
+   n=   8000     0.771 ms
+   n=  16000     1.726 ms
+   n=  32000     3.902 ms
+   n=  65536     9.197 ms
+   n= 131072    22.379 ms
+   n= 262144    48.253 ms
+SORT slope=1.174 (0.9-1.3) ; BRUTE slope=1.925 (1.8-2.1)
+
+=== Predeclared rules ===
+  A_edk_exact_lt_1e10                   : True
+  A_onlogn_slopes                       : True
+  C1_ckme_beats_raw_cond_ge8            : True
+  C1_ckme_lowest_suite_ace              : True
+  C1_ckme_lowest_suite_condece          : True
+  C1_ckme_wins_ace_ge7                  : True
+  C2_ckme_lowest_suite_crps_lt1         : True
+  C2_ckme_improves_crps_ge8             : True
+  C2_california_paired_decisive         : True
+CLAIM1 verified: True  |  CLAIM2 verified: True
+
+wrote results_real.json

@@ -1,0 +1,33 @@
+{
+  "reduction_residual": 0.0,
+  "signed_residual": 0.0,
+  "signed_symmetry": 0.0,
+  "signed_min_eig": 0.7639320225002109,
+  "signed_vs_graph_gap": 2.0,
+  "rot_symmetry": 0.0,
+  "rot_min_eig": 0.2617660283608455,
+  "rot_block_residual": 0.0,
+  "rot_nonscalar_dist": 0.41792868421576623,
+  "vardim_total": 8,
+  "vardim_symmetry": 0.0,
+  "vardim_min_eig": 8.053681058862366e-17,
+  "ctrl_worst_symmetry": 0.0,
+  "ctrl_worst_min_eig": -3.95323944400949e-15,
+  "ctrl_worst_reduction": 0.0,
+  "checks": {
+    "reduction_exact": true,
+    "signed_exact": true,
+    "signed_symm": true,
+    "signed_psd": true,
+    "rot_symm": true,
+    "rot_psd": true,
+    "rot_block_exact": true,
+    "rot_nonscalar": true,
+    "vardim_symm": true,
+    "vardim_psd": true,
+    "ctrl_symm": true,
+    "ctrl_psd": true,
+    "ctrl_reduction": true
+  },
+  "overall_pass": true
+}

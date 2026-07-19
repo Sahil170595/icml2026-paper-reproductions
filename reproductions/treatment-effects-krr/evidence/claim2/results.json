@@ -1,0 +1,124 @@
+{
+  "claim": "Claim 2 data-driven model selection adaptivity (Alg 2 / Thm 4.2)",
+  "arxiv": "2604.13410",
+  "id": "ziqS4yXFQX",
+  "n_main": 1000,
+  "d": 3,
+  "R": 10,
+  "sigma": 6.0,
+  "M": "n",
+  "rule": "worst-cell oracle-ratio<=1.5 AND bounded in n AND selected rate within 0.15 of oracle (both kernels) AND lambda* range>=2 with theory-floor fixed worse than data-driven",
+  "table": {
+    "rbf_g1.0": {
+      "mise_oracle": 0.18018231574058824,
+      "mise_sel": 0.2352489101683255,
+      "rho": 1.305615976803282,
+      "med_lam_star": 3.5,
+      "med_lam_hat": 6.0,
+      "n_eff": 1000.0
+    },
+    "rbf_g0.5": {
+      "mise_oracle": 0.18792256195021245,
+      "mise_sel": 0.2512210611057453,
+      "rho": 1.3368328874331916,
+      "med_lam_star": 3.5,
+      "med_lam_hat": 4.0,
+      "n_eff": 500.0
+    },
+    "rbf_g0.25": {
+      "mise_oracle": 0.1925640797376752,
+      "mise_sel": 0.2586043863018038,
+      "rho": 1.3429523650210025,
+      "med_lam_star": 2.0,
+      "med_lam_hat": 7.5,
+      "n_eff": 250.0
+    },
+    "lap_g1.0": {
+      "mise_oracle": 0.1506075035270777,
+      "mise_sel": 0.20246147655723307,
+      "rho": 1.3442987355595637,
+      "med_lam_star": 1.0,
+      "med_lam_hat": 3.5,
+      "n_eff": 1000.0
+    },
+    "lap_g0.5": {
+      "mise_oracle": 0.2107169125284052,
+      "mise_sel": 0.25214334414910067,
+      "rho": 1.1965975636393738,
+      "med_lam_star": 3.5,
+      "med_lam_hat": 4.5,
+      "n_eff": 500.0
+    },
+    "lap_g0.25": {
+      "mise_oracle": 0.17541862762391996,
+      "mise_sel": 0.21653573963091394,
+      "rho": 1.2343942177859524,
+      "med_lam_star": 2.0,
+      "med_lam_hat": 5.0,
+      "n_eff": 250.0
+    }
+  },
+  "worst_dd_rho": 1.3442987355595637,
+  "floor_worst_rho": 1.5161851148576841,
+  "large_worst_rho": 2.186033418046458,
+  "best_fixed_idx": 4,
+  "best_fixed_worst_rho": 1.2515837704251989,
+  "idx_star_per_cell": [
+    3.5,
+    3.5,
+    2.0,
+    1.0,
+    3.5,
+    2.0
+  ],
+  "idx_star_range": 2.5,
+  "rate": {
+    "rbf": {
+      "n": [
+        500,
+        1000,
+        2000
+      ],
+      "mise_sel": [
+        0.3023761516974548,
+        0.1911407339087287,
+        0.1300008036145345
+      ],
+      "mise_oracle": [
+        0.23103222613552213,
+        0.16023475463214168,
+        0.09114041401133043
+      ],
+      "slope_sel": -0.608911908862194,
+      "slope_oracle": -0.6709656372752424
+    },
+    "lap": {
+      "n": [
+        500,
+        1000,
+        2000
+      ],
+      "mise_sel": [
+        0.2816861717939907,
+        0.24317440368040433,
+        0.1608140830839776
+      ],
+      "mise_oracle": [
+        0.19120033358710026,
+        0.15734319300568603,
+        0.12627988056853157
+      ],
+      "slope_sel": -0.4043474940874208,
+      "slope_oracle": -0.29923011954028933
+    }
+  },
+  "ratios_bigN": {
+    "rbf": 1.4263793403261589,
+    "lap": 1.2734735126448307
+  },
+  "cond_a": true,
+  "cond_b": true,
+  "cond_c": true,
+  "cond_d": true,
+  "overall_pass": true
+}

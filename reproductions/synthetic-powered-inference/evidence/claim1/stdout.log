@@ -1,0 +1,32 @@
+GESPI Claim 1 | randomized binomial test | n=50 N=500 alpha=0.05 eps=0.02 bound=0.07 reps=40000 seed=12345
+reg  rho rho_s metric   GESPI   +-SE OnlyReal OnlySyn  G>=OR  desc
+a   0.60  0.50  power  0.4157 0.0025   0.4081  0.0490   True  real ALT, synth NULL
+b   0.60  0.55  power  0.4661 0.0025   0.4102  0.7214   True  both ALT
+c   0.50  0.50  TypeI  0.0523 0.0011   0.0503  0.0517   True  both NULL
+d   0.50  0.70  TypeI  0.0693 0.0013   0.0497  1.0000   True  real NULL, ADVERSARIAL synth ALT
+
+Figure-6 sweep over rho_synt:
+  rho=0.6 (POWER):  rho_s ->  GESPI / OnlyReal
+    0.30: 0.4079 / 0.4079   (OnlySynth 0.0000)
+    0.40: 0.4083 / 0.4083   (OnlySynth 0.0000)
+    0.50: 0.4169 / 0.4096   (OnlySynth 0.0486)
+    0.55: 0.4617 / 0.4036   (OnlySynth 0.7298)
+    0.60: 0.4773 / 0.4084   (OnlySynth 0.9978)
+    0.70: 0.4768 / 0.4084   (OnlySynth 1.0000)
+  rho=0.5 (TypeI):  rho_s ->  GESPI / OnlyReal
+    0.30: 0.0502 / 0.0502   (OnlySynth 0.0000)
+    0.40: 0.0510 / 0.0510   (OnlySynth 0.0000)
+    0.50: 0.0507 / 0.0482   (OnlySynth 0.0500)
+    0.55: 0.0679 / 0.0507   (OnlySynth 0.7234)
+    0.60: 0.0691 / 0.0502   (OnlySynth 0.9979)
+    0.70: 0.0692 / 0.0500   (OnlySynth 1.0000)
+
+--- Checks ---
+[validity] Type I <= bound 0.07 in null regimes c,d: True (c=0.0523, d=0.0693 adversarial)
+[validity] benign-null (c) Type I ~ alpha=0.05: True (c=0.0523)
+[efficiency] power gain (b): GESPI=0.4661 > OnlyReal=0.4102, diff=0.0559 > 2SE=0.0070? True
+[no-harm] GESPI power >= OnlyReal in EVERY regime: True
+[context] OnlySynth INVALID under adversarial null (d): 1.0000 > 0.07? True
+
+VERDICT PASS = True
+wrote results.json

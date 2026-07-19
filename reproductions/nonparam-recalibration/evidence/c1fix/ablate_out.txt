@@ -1,0 +1,33 @@
+
+=== Ablation: CKME SKCE/acceptance vs bandwidth scale and lambda ===
+-- wine_red/gbm (mean over 3 seeds; raw baseline first) --
+  rawbase   skce=4.244e-02  p=0.000  acc=0.00  crps_n=1.000  lam=0
+  bw0.25    skce=1.227e-02  p=0.000  acc=0.00  crps_n=0.867  lam=0.04438
+  bw0.5     skce=1.106e-02  p=0.000  acc=0.00  crps_n=0.850  lam=0.02725
+  bw1.0     skce=1.049e-02  p=0.000  acc=0.00  crps_n=0.838  lam=0.01307
+  bw2.0     skce=1.024e-02  p=0.000  acc=0.00  crps_n=0.832  lam=0.00487
+  bw4.0     skce=1.016e-02  p=0.000  acc=0.00  crps_n=0.828  lam=0.001517
+  lam0.0001 skce=8.537e-03  p=0.000  acc=0.00  crps_n=0.965  lam=0.0001
+  lam0.01   skce=9.871e-03  p=0.000  acc=0.00  crps_n=0.832  lam=0.01
+  lam1.0    skce=2.230e+00  p=0.000  acc=0.00  crps_n=1.050  lam=1
+-- energy/rf (mean over 3 seeds; raw baseline first) --
+  rawbase   skce=2.215e-04  p=0.001  acc=0.00  crps_n=1.000  lam=0
+  bw0.25    skce=3.919e-04  p=0.000  acc=0.00  crps_n=1.044  lam=0.007281
+  bw0.5     skce=2.807e-04  p=0.000  acc=0.00  crps_n=0.944  lam=0.002646
+  bw1.0     skce=2.635e-04  p=0.000  acc=0.00  crps_n=0.920  lam=0.0008731
+  bw2.0     skce=2.603e-04  p=0.000  acc=0.00  crps_n=0.916  lam=0.0002725
+  bw4.0     skce=2.607e-04  p=0.000  acc=0.00  crps_n=0.918  lam=8.016e-05
+  lam0.0001 skce=2.524e-04  p=0.001  acc=0.00  crps_n=0.947  lam=0.0001
+  lam0.01   skce=1.121e-03  p=0.000  acc=0.00  crps_n=1.492  lam=0.01
+  lam1.0    skce=8.981e+00  p=0.000  acc=0.00  crps_n=10.678  lam=1
+-- concrete/gbm (mean over 3 seeds; raw baseline first) --
+  rawbase   skce=8.620e-04  p=0.002  acc=0.00  crps_n=1.000  lam=0
+  bw0.25    skce=2.190e-03  p=0.000  acc=0.00  crps_n=1.174  lam=0.02672
+  bw0.5     skce=8.782e-04  p=0.012  acc=0.00  crps_n=1.020  lam=0.009908
+  bw1.0     skce=6.635e-04  p=0.031  acc=0.33  crps_n=0.975  lam=0.003199
+  bw2.0     skce=6.191e-04  p=0.038  acc=0.33  crps_n=0.962  lam=0.0009243
+  bw4.0     skce=6.052e-04  p=0.041  acc=0.33  crps_n=0.958  lam=0.0002502
+  lam0.0001 skce=5.732e-04  p=0.063  acc=0.33  crps_n=1.098  lam=0.0001
+  lam0.01   skce=1.496e-03  p=0.001  acc=0.00  crps_n=1.042  lam=0.01
+  lam1.0    skce=7.534e+00  p=0.000  acc=0.00  crps_n=2.872  lam=1
+wrote results_ablate.json

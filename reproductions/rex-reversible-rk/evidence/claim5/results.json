@@ -1,0 +1,33 @@
+{
+  "claim": 5,
+  "note": "likelihood+reversibility proxy for Table 1 tri-alanine; trained flow out of CPU scope",
+  "D": 4,
+  "tstart": 0.05,
+  "tend": 3.0,
+  "likelihood_err": {
+    "1": 0.28703820497397203,
+    "2": 0.020865957276168023,
+    "3": 4.277737407403226e-05
+  },
+  "order2_halving_rate": 1.9660911478121565,
+  "roundtrip_err": {
+    "1": 1.9406698470447738e-14,
+    "2": 3.8469227803261674e-14,
+    "3": 3.714112351005383e-14
+  },
+  "boltzmann": {
+    "true_2nd_moment": 4.180967483607192,
+    "est_accurate": 4.09672039401606,
+    "est_crude": 0.15380227168898505,
+    "err_accurate": 0.08424708959113225,
+    "err_crude": 4.0271652119182075,
+    "ess_accurate": 0.9999838506559012,
+    "ess_crude": 0.0011184201005302423
+  },
+  "likelihood_ok": true,
+  "reversible_ok": true,
+  "boltzmann_ok": true,
+  "verdict": "SUPPORTED (proxy)",
+  "numpy": "2.2.6",
+  "runtime_s": 14.235
+}

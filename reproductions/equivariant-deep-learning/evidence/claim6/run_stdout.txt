@@ -1,0 +1,19 @@
+[P7] n=7 |G|=6 floor=0.0677
+   TA: w4=3.53e-03 w8=1.16e-03 w16=2.64e-04 w32=1.29e-04 w64=2.37e-04
+   TB: w4=2.97e-03 w8=5.97e-04 w16=1.62e-04 w32=8.72e-05 w64=1.80e-04
+   TC: w4=6.78e-02 w8=7.02e-02 w16=8.51e-02 w32=1.11e-01 w64=8.50e-02
+   CT: w4=1.01e-01 w8=5.99e-03 w16=2.07e-03 w32=7.39e-04 w64=9.29e-04
+   checks: {"TA_best_test_le_bar": true, "TB_best_test_le_bar": true, "TA_test_reduction_ge_bar": true, "TB_test_reduction_ge_bar": true, "TA_decreasing_to_min": true, "TB_decreasing_to_min": true, "TA_train_approx_le_bar": true, "TB_train_approx_le_bar": true, "TC_floor_respected_all_widths": true, "net_equivariance_lt_1e-9": true, "CT_control_nonequivariant": true, "max_net_eq_residual": 6.661338147750939e-16, "CT_eq_residual": 0.0941059284857153, "floor_TC_rel": 0.06768439486862056, "TA_best_test": 0.000129018322, "TB_best_test": 8.7197108e-05, "CT_over_TA_test_ratio": [28.528, 5.162, 7.834, 5.727, 3.913]}
+[P20] n=20 |G|=4 floor=0.0308
+   TA: w4=3.27e-01 w8=1.65e-01 w16=4.95e-02 w32=2.72e-02 w64=2.03e-02
+   TB: w4=1.84e-01 w8=5.68e-02 w16=7.21e-03 w32=2.47e-03 w64=2.25e-03
+   TC: w4=3.79e-01 w8=1.10e-01 w16=3.41e-02 w32=5.02e-02 w64=7.63e-02
+   CT: w4=6.90e-01 w8=4.28e-01 w16=2.06e-01 w32=5.62e-02 w64=7.79e-02
+   checks: {"TA_best_test_le_bar": true, "TB_best_test_le_bar": true, "TA_test_reduction_ge_bar": true, "TB_test_reduction_ge_bar": true, "TA_decreasing_to_min": true, "TB_decreasing_to_min": true, "TA_train_approx_le_bar": true, "TB_train_approx_le_bar": true, "TC_floor_respected_all_widths": true, "net_equivariance_lt_1e-9": true, "CT_control_nonequivariant": true, "max_net_eq_residual": 1.3877787807814457e-15, "CT_eq_residual": 0.37511453596119737, "floor_TC_rel": 0.030817674257499594, "TA_best_test": 0.020345262697, "TB_best_test": 0.002249258582, "CT_over_TA_test_ratio": [2.111, 2.598, 4.16, 2.066, 3.827]}
+[P52] n=52 |G|=4 floor=0.0624
+   TA: w4=7.01e-01 w8=4.82e-01 w16=2.51e-01 w32=1.03e-01 w64=2.74e-01
+   TB: w4=4.50e-01 w8=2.22e-01 w16=8.84e-02 w32=1.65e-02 w64=9.31e-03
+   TC: w4=7.25e-01 w8=5.27e-01 w16=2.93e-01 w32=1.31e-01 w64=4.88e-01
+   CT: w4=8.72e-01 w8=7.96e-01 w16=6.40e-01 w32=3.84e-01 w64=3.24e-01
+   checks: {"TA_best_test_le_bar": true, "TB_best_test_le_bar": true, "TA_test_reduction_ge_bar": true, "TB_test_reduction_ge_bar": true, "TA_decreasing_to_min": true, "TB_decreasing_to_min": true, "TA_train_approx_le_bar": true, "TB_train_approx_le_bar": true, "TC_floor_respected_all_widths": true, "net_equivariance_lt_1e-9": true, "CT_control_nonequivariant": true, "max_net_eq_residual": 1.5543122344752192e-15, "CT_eq_residual": 1.036395823822705, "floor_TC_rel": 0.062351371013771584, "TA_best_test": 0.103221397537, "TB_best_test": 0.009311207756, "CT_over_TA_test_ratio": [1.244, 1.65, 2.547, 3.721, 1.183]}
+ALL CHECKS PASS

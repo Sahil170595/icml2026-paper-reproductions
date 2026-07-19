@@ -1,0 +1,8 @@
+CELLS: diabetes__gbm.json
+
+diabetes/gbm f=10 s=10 1.9s
+  condece raw=0.2130 kuleshov=0.1137 song=0.1101 ckme=0.1145
+  ace     raw=0.1398 kuleshov=0.0422 song=0.0401 ckme=0.0431
+  crps    raw=1.0000 kuleshov=0.8600 song=0.8689 ckme=0.8581
+  ece     raw=0.1847 kuleshov=0.0506 song=0.0491 ckme=0.0531
+  ks      raw=0.3643 kuleshov=0.1812 song=0.1541 ckme=0.1617

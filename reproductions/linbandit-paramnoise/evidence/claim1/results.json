@@ -1,0 +1,196 @@
+{
+  "A_Tscaling": {
+    "Ts": [
+      1000,
+      2000,
+      4000,
+      8000,
+      16000
+    ],
+    "R_T": [
+      160.09,
+      226.98,
+      321.45,
+      454.94,
+      643.62
+    ],
+    "loglog_slope": 0.5018,
+    "rule": "slope in [0.40,0.60]",
+    "accept": true
+  },
+  "B_sigma": {
+    "sigmas": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "R_T": [
+      278.12,
+      557.32,
+      1103.01,
+      2229.94
+    ],
+    "doubling_ratios": [
+      2.004,
+      1.979,
+      2.022
+    ],
+    "rule": "each doubling ratio in [1.70,2.30]",
+    "accept": true
+  },
+  "C_logK": {
+    "Ks": [
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "R_T": [
+      501.36,
+      594.79,
+      602.68,
+      590.68,
+      588.52
+    ],
+    "growth_256x_K": 1.174,
+    "loglog_slope_vs_logK": 0.205,
+    "rule": "256x arms -> <1.6x regret (poly-log; no K^c)",
+    "accept": true
+  },
+  "D_dscaling": {
+    "ds": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "R_T": [
+      267.87,
+      445.45,
+      582.87,
+      829.1
+    ],
+    "loglog_slope_d": 0.5278,
+    "rule": "slope in [0.40,0.75] (sqrt d, fixed K)",
+    "accept": true
+  },
+  "E_formfit": {
+    "configs": [
+      {
+        "d": 4,
+        "K": 20,
+        "T": 8000,
+        "sigma": 0.5,
+        "R": 274.31,
+        "pred": 218.93,
+        "ratio": 1.253
+      },
+      {
+        "d": 6,
+        "K": 24,
+        "T": 12000,
+        "sigma": 0.5,
+        "R": 460.5,
+        "pred": 333.36,
+        "ratio": 1.381
+      },
+      {
+        "d": 8,
+        "K": 40,
+        "T": 16000,
+        "sigma": 0.5,
+        "R": 847.38,
+        "pred": 462.5,
+        "ratio": 1.832
+      },
+      {
+        "d": 5,
+        "K": 32,
+        "T": 10000,
+        "sigma": 1.0,
+        "R": 837.42,
+        "pred": 568.4,
+        "ratio": 1.473
+      },
+      {
+        "d": 6,
+        "K": 24,
+        "T": 8000,
+        "sigma": 0.25,
+        "R": 188.48,
+        "pred": 136.09,
+        "ratio": 1.385
+      },
+      {
+        "d": 10,
+        "K": 50,
+        "T": 16000,
+        "sigma": 0.5,
+        "R": 719.47,
+        "pred": 525.65,
+        "ratio": 1.369
+      },
+      {
+        "d": 6,
+        "K": 64,
+        "T": 12000,
+        "sigma": 0.5,
+        "R": 593.93,
+        "pred": 358.86,
+        "ratio": 1.655
+      },
+      {
+        "d": 7,
+        "K": 30,
+        "T": 14000,
+        "sigma": 0.75,
+        "R": 874.17,
+        "pred": 593.83,
+        "ratio": 1.472
+      }
+    ],
+    "mean_ratio": 1.478,
+    "CV": 0.117,
+    "rule": "R/sqrt(dT log(K/delta) sigma^2_max) ~ const, CV<0.20",
+    "accept": true
+  },
+  "F_lowerbound": {
+    "ds": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "R_hyper": [
+      197.32,
+      233.49,
+      268.84,
+      304.47,
+      339.56,
+      374.49,
+      409.29
+    ],
+    "hyper_d_slope": 0.7972,
+    "hyper_T_slope": 0.5,
+    "hyper_sigma_ratios": [
+      2.0,
+      2.0
+    ],
+    "rule": "hyper d-slope >= fixedK sqrt-d slope + 0.15 (climbs to d sqrt T); T-slope~0.5; sigma-ratio~2",
+    "accept": true
+  },
+  "all_accept": true,
+  "runtime_sec": 1.5,
+  "env": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "seeds_upper": 8,
+    "seeds_lb": 4,
+    "delta": 0.05
+  }
+}

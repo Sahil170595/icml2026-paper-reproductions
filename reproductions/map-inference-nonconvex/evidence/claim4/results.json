@@ -1,0 +1,17 @@
+{
+  "claim": "TMC (Def 4.2) holds for Omega^PP; general piecewise polys violate (ii) => WMI != MAP(LRA)",
+  "product_closure_err": 8.526512829121202e-14,
+  "symbolic_supremum_err": 7.105427357601002e-15,
+  "pointwise_max_err": 0.0,
+  "nonfactorized_sup_polyfit_rmse": 0.037937562639404655,
+  "nonfactorized_sup_matches_2xi1p5_rmse": 1.2002581119717778e-07,
+  "factorized_control_polyfit_rmse": 4.0935475153129056e-16,
+  "closures_hold": true,
+  "wmi_neq_maplra": true,
+  "verified": true,
+  "runtime_s": 0.3399016857147217,
+  "env": {
+    "numpy": "2.2.6",
+    "threads": "1"
+  }
+}

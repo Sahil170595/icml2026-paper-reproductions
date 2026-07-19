@@ -1,0 +1,80 @@
+{
+  "claim": "4-image",
+  "note": "Real sklearn-digits image data + trained MLP diffusion score model; Rex exact inversion/reconstruction and a real latent-space edit.",
+  "n_params": 33216,
+  "train_steps": 1500,
+  "final_train_loss": 0.10455458611249924,
+  "train_time_s": 1.28,
+  "n_train": 1497,
+  "n_heldout": 300,
+  "reconstruction": {
+    "n_images": 40,
+    "steps": 30,
+    "rex_mean_err": 2.0476675910430233e-15,
+    "rex_max_err": 4.884981308350689e-15,
+    "ddim_mean_err": 0.07761931365980423,
+    "ddim_max_err": 0.10913338115137017,
+    "rex_vs_ddim_ratio": 37906208018981.82
+  },
+  "edit": {
+    "n_edits": 30,
+    "steps": 24,
+    "zeta": 0.9,
+    "alpha": 1.0,
+    "classifier_train_acc": 0.9979959919839679,
+    "classifier_heldout_acc": 0.9666666666666667,
+    "frac_orig_classified_as_source": 0.9666666666666667,
+    "frac_noedit_regen_classified_as_source": 0.9666666666666667,
+    "frac_edited_classified_as_target": 0.8333333333333334,
+    "mmd_edited_vs_real_target_mean": 0.1428281741200172,
+    "mmd_unedited_source_vs_real_target_mean": 0.49800532835059796,
+    "per_target_class": {
+      "0": {
+        "mmd_edit_vs_real_target": 0.03143883799523173,
+        "mmd_unedited_source_vs_real_target": 0.4880544699764804
+      },
+      "1": {
+        "mmd_edit_vs_real_target": 0.2875410741058205,
+        "mmd_unedited_source_vs_real_target": 0.8236487609709149
+      },
+      "2": {
+        "mmd_edit_vs_real_target": 0.2740168935340106,
+        "mmd_unedited_source_vs_real_target": 0.6592039274065826
+      },
+      "3": {
+        "mmd_edit_vs_real_target": 0.03217037845307902,
+        "mmd_unedited_source_vs_real_target": 0.16866335355901502
+      },
+      "4": {
+        "mmd_edit_vs_real_target": 0.21850612725091534,
+        "mmd_unedited_source_vs_real_target": 0.42962677326171606
+      },
+      "5": {
+        "mmd_edit_vs_real_target": 0.04227147178847701,
+        "mmd_unedited_source_vs_real_target": 0.5513893175049935
+      },
+      "6": {
+        "mmd_edit_vs_real_target": 0.24596037223059902,
+        "mmd_unedited_source_vs_real_target": 0.4829737544533526
+      },
+      "7": {
+        "mmd_edit_vs_real_target": 0.07496461999839887,
+        "mmd_unedited_source_vs_real_target": 0.38267243653967414
+      },
+      "8": {
+        "mmd_edit_vs_real_target": 0.17063295708444237,
+        "mmd_unedited_source_vs_real_target": 0.5229457467022819
+      },
+      "9": {
+        "mmd_edit_vs_real_target": 0.0507790087591975,
+        "mmd_unedited_source_vs_real_target": 0.47087474313096833
+      }
+    }
+  },
+  "recon_ok": true,
+  "edit_ok": true,
+  "verdict": "SUPPORTED (real image data)",
+  "torch_version": "2.13.0+cpu",
+  "numpy_version": "2.2.6",
+  "runtime_s": 1.47
+}

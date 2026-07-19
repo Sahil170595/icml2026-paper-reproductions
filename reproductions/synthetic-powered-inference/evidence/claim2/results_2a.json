@@ -1,0 +1,313 @@
+{
+  "experiment": "claim2a_conformal_risk_control",
+  "paper": "arXiv 2509.20345 GESPI Sec 4.1",
+  "n": 10,
+  "N": 1000,
+  "eps": 0.05,
+  "alphas": [
+    0.05,
+    0.1,
+    0.15
+  ],
+  "M": 50,
+  "Rs": 5000,
+  "T": 3000,
+  "Rtest": 200000,
+  "seed": 20260717,
+  "results": {
+    "informative": {
+      "0.05": {
+        "OnlyReal": {
+          "risk": 0.0,
+          "risk_se": 0.0,
+          "abstain_pct": 100.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.04552019333333334,
+          "risk_se": 5.661489673208974e-05,
+          "abstain_pct": 71.99239533333333,
+          "abstain_se": 0.018699492762385788,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 28.007604666666673,
+          "abstain_reduction_pp": 28.007604666666666,
+          "abstain_reduction_pp_se": 0.018699492762385788
+        },
+        "NaivePooled": {
+          "risk": 0.045784221666666666,
+          "risk_se": 5.416615918489624e-05,
+          "abstain_pct": 71.90379,
+          "abstain_se": 0.01779101517214674,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 28.09621,
+          "abstain_reduction_pp": 28.096210000000003,
+          "abstain_reduction_pp_se": 0.01779101517214674
+        },
+        "GESPI": {
+          "risk": 0.011870533333333334,
+          "risk_se": 8.693560458220826e-05,
+          "abstain_pct": 87.29648183333333,
+          "abstain_se": 0.055927094744715945,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 12.703518166666662,
+          "abstain_reduction_pp": 12.703518166666667,
+          "abstain_reduction_pp_se": 0.05592709474471595
+        }
+      },
+      "0.10": {
+        "OnlyReal": {
+          "risk": 0.011870533333333334,
+          "risk_se": 8.693560458220826e-05,
+          "abstain_pct": 87.29648183333333,
+          "abstain_se": 0.055927094744715945,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.09685371833333332,
+          "risk_se": 7.733155076752428e-05,
+          "abstain_pct": 57.79745283333333,
+          "abstain_se": 0.018747166060133276,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 33.791773025079785,
+          "abstain_reduction_pp": 29.499029,
+          "abstain_reduction_pp_se": 0.05885921913532039
+        },
+        "NaivePooled": {
+          "risk": 0.09726567,
+          "risk_se": 7.343869726460446e-05,
+          "abstain_pct": 57.69671216666666,
+          "abstain_se": 0.017787371304151957,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 33.90717362834693,
+          "abstain_reduction_pp": 29.599769666666663,
+          "abstain_reduction_pp_se": 0.056931216789638805
+        },
+        "GESPI": {
+          "risk": 0.066311105,
+          "risk_se": 0.0002045850197111555,
+          "abstain_pct": 65.76350016666667,
+          "abstain_se": 0.05806995508412429,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 24.666494244037807,
+          "abstain_reduction_pp": 21.532981666666668,
+          "abstain_reduction_pp_se": 0.06286690570473437
+        }
+      },
+      "0.15": {
+        "OnlyReal": {
+          "risk": 0.066330685,
+          "risk_se": 0.0002055624932599776,
+          "abstain_pct": 65.75874716666667,
+          "abstain_se": 0.058287646013805164,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.14842315333333334,
+          "risk_se": 9.70886395513952e-05,
+          "abstain_pct": 46.9298595,
+          "abstain_se": 0.018263773695881176,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 28.633282229274414,
+          "abstain_reduction_pp": 18.828887666666667,
+          "abstain_reduction_pp_se": 0.06090494369794045
+        },
+        "NaivePooled": {
+          "risk": 0.148590245,
+          "risk_se": 9.219883681775612e-05,
+          "abstain_pct": 46.89792616666667,
+          "abstain_se": 0.01731932674755099,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 28.681843576181453,
+          "abstain_reduction_pp": 18.860821,
+          "abstain_reduction_pp_se": 0.057201570374594314
+        },
+        "GESPI": {
+          "risk": 0.121735555,
+          "risk_se": 0.0002581003937103469,
+          "abstain_pct": 52.31254,
+          "abstain_se": 0.05453953442300161,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 20.447784889494635,
+          "abstain_reduction_pp": 13.446207166666667,
+          "abstain_reduction_pp_se": 0.04160682577947986
+        }
+      }
+    },
+    "adversarial": {
+      "0.05": {
+        "OnlyReal": {
+          "risk": 0.0,
+          "risk_se": 0.0,
+          "abstain_pct": 100.0,
+          "abstain_se": 0.0,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.1347753,
+          "risk_se": 0.00012735989992493276,
+          "abstain_pct": 49.577531,
+          "abstain_se": 0.025235679246118976,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 50.42246900000001,
+          "abstain_reduction_pp": 50.422469,
+          "abstain_reduction_pp_se": 0.025235679246118976
+        },
+        "NaivePooled": {
+          "risk": 0.11860111166666666,
+          "risk_se": 0.00010985060262192045,
+          "abstain_pct": 52.89967583333334,
+          "abstain_se": 0.023380157848050736,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 47.10032416666666,
+          "abstain_reduction_pp": 47.10032416666666,
+          "abstain_reduction_pp_se": 0.023380157848050736
+        },
+        "GESPI": {
+          "risk": 0.011840653333333333,
+          "risk_se": 8.73919423055738e-05,
+          "abstain_pct": 87.315596,
+          "abstain_se": 0.05588724251398425,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 12.684403999999994,
+          "abstain_reduction_pp": 12.684404,
+          "abstain_reduction_pp_se": 0.05588724251398425
+        }
+      },
+      "0.10": {
+        "OnlyReal": {
+          "risk": 0.011840653333333333,
+          "risk_se": 8.73919423055738e-05,
+          "abstain_pct": 87.315596,
+          "abstain_se": 0.05588724251398425,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.23884384333333333,
+          "risk_se": 0.000143190864868603,
+          "abstain_pct": 31.805776666666667,
+          "abstain_se": 0.021412145778004557,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 63.57377361695309,
+          "abstain_reduction_pp": 55.509819333333326,
+          "abstain_reduction_pp_se": 0.06016831291799387
+        },
+        "NaivePooled": {
+          "risk": 0.21674547666666663,
+          "risk_se": 0.0001300034175483974,
+          "abstain_pct": 35.205848833333334,
+          "abstain_se": 0.020711649213253868,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 59.67977034328056,
+          "abstain_reduction_pp": 52.109747166666665,
+          "abstain_reduction_pp_se": 0.058073040611204926
+        },
+        "GESPI": {
+          "risk": 0.06653067166666667,
+          "risk_se": 0.0002021692810689958,
+          "abstain_pct": 65.6966375,
+          "abstain_se": 0.05719008285682176,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 24.759561281583654,
+          "abstain_reduction_pp": 21.6189585,
+          "abstain_reduction_pp_se": 0.06138673128895676
+        }
+      },
+      "0.15": {
+        "OnlyReal": {
+          "risk": 0.06653067166666667,
+          "risk_se": 0.0002021692810689958,
+          "abstain_pct": 65.6966375,
+          "abstain_se": 0.05719008285682176,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 0.0,
+          "abstain_reduction_pp": 0.0,
+          "abstain_reduction_pp_se": 0.0
+        },
+        "OnlySynth": {
+          "risk": 0.32447973,
+          "risk_se": 0.00014762513807738391,
+          "abstain_pct": 19.9980365,
+          "abstain_se": 0.018798596926819507,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 69.5600303744617,
+          "abstain_reduction_pp": 45.698601000000004,
+          "abstain_reduction_pp_se": 0.060793328860435
+        },
+        "NaivePooled": {
+          "risk": 0.29993934833333336,
+          "risk_se": 0.000134948298515885,
+          "abstain_pct": 23.20931,
+          "abstain_se": 0.01807044124837883,
+          "valid_le_alpha": false,
+          "guard_le_alpha_eps": false,
+          "abstain_reduction_vs_onlyreal_pct": 64.67199710183037,
+          "abstain_reduction_pp": 42.4873275,
+          "abstain_reduction_pp_se": 0.057727917815175826
+        },
+        "GESPI": {
+          "risk": 0.12213096666666665,
+          "risk_se": 0.00025991099119520526,
+          "abstain_pct": 52.22930016666666,
+          "abstain_se": 0.05445704662540103,
+          "valid_le_alpha": true,
+          "guard_le_alpha_eps": true,
+          "abstain_reduction_vs_onlyreal_pct": 20.499279484940658,
+          "abstain_reduction_pp": 13.467337333333335,
+          "abstain_reduction_pp_se": 0.043162651399636216
+        }
+      }
+    }
+  },
+  "checks": {
+    "onlyreal_valid": true,
+    "gespi_valid_informative": true,
+    "gespi_guardrail_adversarial": true,
+    "efficiency_separated": true,
+    "abstain_reductions_pct": [
+      12.7,
+      24.7,
+      20.4
+    ],
+    "naive_pooled_breaks": true,
+    "only_synth_breaks": true,
+    "PASS": true
+  }
+}

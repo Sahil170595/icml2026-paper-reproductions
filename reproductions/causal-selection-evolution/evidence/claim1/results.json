@@ -1,0 +1,21 @@
+{
+  "T": 3,
+  "K": 3,
+  "rho": 0.6,
+  "se": 0.7,
+  "n_trait": 4,
+  "n_factor": 12,
+  "n_sel": 3,
+  "total_edges": 24,
+  "acyclic": true,
+  "inventory_ok": true,
+  "faithful": true,
+  "max_pcorr_dsep": 0.004291660012951767,
+  "min_corr_adj": 0.5337317433097516,
+  "n_dsep_pairs": 48,
+  "n_adj_pairs": 21,
+  "dsep_compared": 12720,
+  "dsep_disagree_static": 2283,
+  "disagree_frac": 0.1794811320754717,
+  "verified": true
+}

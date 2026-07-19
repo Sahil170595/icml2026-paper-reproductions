@@ -1,0 +1,18 @@
+{
+  "claim": "P_(nu) reversible/self-adjoint in l2(V,nu+xi) => real spectrum in [-1,1] and ergodic pi_nu>0; raw directed P complex & reducible",
+  "numpy": "2.2.6",
+  "cases": 27,
+  "detailed_balance_max_asym": 1.1102230246251565e-16,
+  "P_nu_max_abs_imag": 0.0,
+  "P_nu_spectrum_excess_over_pm1": 3.552713678800501e-15,
+  "symmetric_similarity_max_asym": 1.1102230246251565e-16,
+  "raw_directed_max_abs_imag": 0.3167809948974831,
+  "raw_directed_mean_abs_imag": 0.2933979810504979,
+  "reducible_graph_strongly_connected": false,
+  "raw_stationary_zero_mass_vertices": 40,
+  "P_nu_stationary_min": 0.008422288871689025,
+  "P_nu_support_strongly_connected": true,
+  "spectral_gap_raw": 0.23123560150207867,
+  "spectral_gap_P_nu": 0.21605888499408077,
+  "verdict": "PASS"
+}

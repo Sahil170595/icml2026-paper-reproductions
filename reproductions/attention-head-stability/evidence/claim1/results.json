@@ -1,0 +1,716 @@
+{
+  "claim": "Middle-layer attention heads are the least stable yet the most representationally distinct across different training runs.",
+  "arch": "l8_h8",
+  "n_layers": 8,
+  "n_heads": 8,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "anchor_seed": 1,
+  "n_prompts": 100,
+  "layer_stability_mean": {
+    "1": 0.974523514509201,
+    "2": 0.9067401811480522,
+    "3": 0.8576324358582497,
+    "4": 0.7753043100237846,
+    "5": 0.6210261136293411,
+    "6": 0.7021079957485199,
+    "7": 0.8657541051506996,
+    "8": 0.819540299475193
+  },
+  "layer_stability_std": {
+    "1": 0.007444636492209177,
+    "2": 0.07833406553304034,
+    "3": 0.06370039404985722,
+    "4": 0.029585515284914304,
+    "5": 0.0471596332449656,
+    "6": 0.10841771555760557,
+    "7": 0.1108668209140267,
+    "8": 0.04886313382829648
+  },
+  "layer_commonness_mean": {
+    "1": 0.9652512669563293,
+    "2": 0.7948867529630661,
+    "3": 0.6434395983815193,
+    "4": 0.5627888292074203,
+    "5": 0.5550266802310944,
+    "6": 0.5506725087761879,
+    "7": 0.7835227474570274,
+    "8": 0.7729058265686035
+  },
+  "layer_distinctness_mean": {
+    "1": 0.034748733043670654,
+    "2": 0.2051132470369339,
+    "3": 0.3565604016184807,
+    "4": 0.43721117079257965,
+    "5": 0.44497331976890564,
+    "6": 0.4493274912238121,
+    "7": 0.21647725254297256,
+    "8": 0.22709417343139648
+  },
+  "min_stability_layer": 5,
+  "max_stability_layer": 1,
+  "max_distinctness_layer": 6,
+  "min_distinctness_layer": 1,
+  "middle_band_layers": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "middle_layer_is_least_stable": true,
+  "middle_layer_is_most_distinct": true,
+  "per_head_stability_rows": [
+    {
+      "layer": 1,
+      "head_anchor": 1,
+      "cos_sim": 0.9805021286010742
+    },
+    {
+      "layer": 1,
+      "head_anchor": 2,
+      "cos_sim": 0.9811548590660095
+    },
+    {
+      "layer": 1,
+      "head_anchor": 3,
+      "cos_sim": 0.9788442254066467
+    },
+    {
+      "layer": 1,
+      "head_anchor": 4,
+      "cos_sim": 0.9737521409988403
+    },
+    {
+      "layer": 1,
+      "head_anchor": 5,
+      "cos_sim": 0.9710974097251892
+    },
+    {
+      "layer": 1,
+      "head_anchor": 6,
+      "cos_sim": 0.9791925549507141
+    },
+    {
+      "layer": 1,
+      "head_anchor": 7,
+      "cos_sim": 0.9568937420845032
+    },
+    {
+      "layer": 1,
+      "head_anchor": 8,
+      "cos_sim": 0.9747510552406311
+    },
+    {
+      "layer": 2,
+      "head_anchor": 1,
+      "cos_sim": 0.9732405543327332
+    },
+    {
+      "layer": 2,
+      "head_anchor": 2,
+      "cos_sim": 0.7584889531135559
+    },
+    {
+      "layer": 2,
+      "head_anchor": 3,
+      "cos_sim": 0.9479628205299377
+    },
+    {
+      "layer": 2,
+      "head_anchor": 4,
+      "cos_sim": 0.9686949253082275
+    },
+    {
+      "layer": 2,
+      "head_anchor": 5,
+      "cos_sim": 0.988408088684082
+    },
+    {
+      "layer": 2,
+      "head_anchor": 6,
+      "cos_sim": 0.8243223428726196
+    },
+    {
+      "layer": 2,
+      "head_anchor": 7,
+      "cos_sim": 0.8547168970108032
+    },
+    {
+      "layer": 2,
+      "head_anchor": 8,
+      "cos_sim": 0.9380868673324585
+    },
+    {
+      "layer": 3,
+      "head_anchor": 1,
+      "cos_sim": 0.9268554449081421
+    },
+    {
+      "layer": 3,
+      "head_anchor": 2,
+      "cos_sim": 0.901984453201294
+    },
+    {
+      "layer": 3,
+      "head_anchor": 3,
+      "cos_sim": 0.7923949956893921
+    },
+    {
+      "layer": 3,
+      "head_anchor": 4,
+      "cos_sim": 0.9494017958641052
+    },
+    {
+      "layer": 3,
+      "head_anchor": 5,
+      "cos_sim": 0.8646717667579651
+    },
+    {
+      "layer": 3,
+      "head_anchor": 6,
+      "cos_sim": 0.7952021360397339
+    },
+    {
+      "layer": 3,
+      "head_anchor": 7,
+      "cos_sim": 0.867667019367218
+    },
+    {
+      "layer": 3,
+      "head_anchor": 8,
+      "cos_sim": 0.762881875038147
+    },
+    {
+      "layer": 4,
+      "head_anchor": 1,
+      "cos_sim": 0.7842209339141846
+    },
+    {
+      "layer": 4,
+      "head_anchor": 2,
+      "cos_sim": 0.7710275650024414
+    },
+    {
+      "layer": 4,
+      "head_anchor": 3,
+      "cos_sim": 0.7609170079231262
+    },
+    {
+      "layer": 4,
+      "head_anchor": 4,
+      "cos_sim": 0.7541146278381348
+    },
+    {
+      "layer": 4,
+      "head_anchor": 5,
+      "cos_sim": 0.8282484412193298
+    },
+    {
+      "layer": 4,
+      "head_anchor": 6,
+      "cos_sim": 0.7909989953041077
+    },
+    {
+      "layer": 4,
+      "head_anchor": 7,
+      "cos_sim": 0.7917274832725525
+    },
+    {
+      "layer": 4,
+      "head_anchor": 8,
+      "cos_sim": 0.7211794257164001
+    },
+    {
+      "layer": 5,
+      "head_anchor": 1,
+      "cos_sim": 0.6049156785011292
+    },
+    {
+      "layer": 5,
+      "head_anchor": 2,
+      "cos_sim": 0.656577467918396
+    },
+    {
+      "layer": 5,
+      "head_anchor": 3,
+      "cos_sim": 0.6216564178466797
+    },
+    {
+      "layer": 5,
+      "head_anchor": 4,
+      "cos_sim": 0.6512365341186523
+    },
+    {
+      "layer": 5,
+      "head_anchor": 5,
+      "cos_sim": 0.5147480964660645
+    },
+    {
+      "layer": 5,
+      "head_anchor": 6,
+      "cos_sim": 0.5991002917289734
+    },
+    {
+      "layer": 5,
+      "head_anchor": 7,
+      "cos_sim": 0.6434941291809082
+    },
+    {
+      "layer": 5,
+      "head_anchor": 8,
+      "cos_sim": 0.6764802932739258
+    },
+    {
+      "layer": 6,
+      "head_anchor": 1,
+      "cos_sim": 0.6462736129760742
+    },
+    {
+      "layer": 6,
+      "head_anchor": 2,
+      "cos_sim": 0.6445974111557007
+    },
+    {
+      "layer": 6,
+      "head_anchor": 3,
+      "cos_sim": 0.5898268818855286
+    },
+    {
+      "layer": 6,
+      "head_anchor": 4,
+      "cos_sim": 0.7112692594528198
+    },
+    {
+      "layer": 6,
+      "head_anchor": 5,
+      "cos_sim": 0.7919305562973022
+    },
+    {
+      "layer": 6,
+      "head_anchor": 6,
+      "cos_sim": 0.6815997958183289
+    },
+    {
+      "layer": 6,
+      "head_anchor": 7,
+      "cos_sim": 0.9424225091934204
+    },
+    {
+      "layer": 6,
+      "head_anchor": 8,
+      "cos_sim": 0.6089439392089844
+    },
+    {
+      "layer": 7,
+      "head_anchor": 1,
+      "cos_sim": 0.5825075507164001
+    },
+    {
+      "layer": 7,
+      "head_anchor": 2,
+      "cos_sim": 0.9090732932090759
+    },
+    {
+      "layer": 7,
+      "head_anchor": 3,
+      "cos_sim": 0.8964804410934448
+    },
+    {
+      "layer": 7,
+      "head_anchor": 4,
+      "cos_sim": 0.9229381084442139
+    },
+    {
+      "layer": 7,
+      "head_anchor": 5,
+      "cos_sim": 0.8410784006118774
+    },
+    {
+      "layer": 7,
+      "head_anchor": 6,
+      "cos_sim": 0.900073230266571
+    },
+    {
+      "layer": 7,
+      "head_anchor": 7,
+      "cos_sim": 0.9302133321762085
+    },
+    {
+      "layer": 7,
+      "head_anchor": 8,
+      "cos_sim": 0.9436684846878052
+    },
+    {
+      "layer": 8,
+      "head_anchor": 1,
+      "cos_sim": 0.916384220123291
+    },
+    {
+      "layer": 8,
+      "head_anchor": 2,
+      "cos_sim": 0.8131842613220215
+    },
+    {
+      "layer": 8,
+      "head_anchor": 3,
+      "cos_sim": 0.8428348898887634
+    },
+    {
+      "layer": 8,
+      "head_anchor": 4,
+      "cos_sim": 0.8213147521018982
+    },
+    {
+      "layer": 8,
+      "head_anchor": 5,
+      "cos_sim": 0.7525531053543091
+    },
+    {
+      "layer": 8,
+      "head_anchor": 6,
+      "cos_sim": 0.82371985912323
+    },
+    {
+      "layer": 8,
+      "head_anchor": 7,
+      "cos_sim": 0.7529169321060181
+    },
+    {
+      "layer": 8,
+      "head_anchor": 8,
+      "cos_sim": 0.8334143757820129
+    }
+  ],
+  "per_head_commonness_rows": [
+    {
+      "layer": 1,
+      "head_anchor": 1,
+      "commonness": 0.9713807106018066
+    },
+    {
+      "layer": 1,
+      "head_anchor": 2,
+      "commonness": 0.9742969274520874
+    },
+    {
+      "layer": 1,
+      "head_anchor": 3,
+      "commonness": 0.961161196231842
+    },
+    {
+      "layer": 1,
+      "head_anchor": 4,
+      "commonness": 0.9708679914474487
+    },
+    {
+      "layer": 1,
+      "head_anchor": 5,
+      "commonness": 0.9531513452529907
+    },
+    {
+      "layer": 1,
+      "head_anchor": 6,
+      "commonness": 0.9718969464302063
+    },
+    {
+      "layer": 1,
+      "head_anchor": 7,
+      "commonness": 0.9523026943206787
+    },
+    {
+      "layer": 1,
+      "head_anchor": 8,
+      "commonness": 0.9669523239135742
+    },
+    {
+      "layer": 2,
+      "head_anchor": 1,
+      "commonness": 0.8238098621368408
+    },
+    {
+      "layer": 2,
+      "head_anchor": 2,
+      "commonness": 0.7079277634620667
+    },
+    {
+      "layer": 2,
+      "head_anchor": 3,
+      "commonness": 0.8389793634414673
+    },
+    {
+      "layer": 2,
+      "head_anchor": 4,
+      "commonness": 0.8238447308540344
+    },
+    {
+      "layer": 2,
+      "head_anchor": 5,
+      "commonness": 0.8743700981140137
+    },
+    {
+      "layer": 2,
+      "head_anchor": 6,
+      "commonness": 0.6974486112594604
+    },
+    {
+      "layer": 2,
+      "head_anchor": 7,
+      "commonness": 0.7766191363334656
+    },
+    {
+      "layer": 2,
+      "head_anchor": 8,
+      "commonness": 0.8160944581031799
+    },
+    {
+      "layer": 3,
+      "head_anchor": 1,
+      "commonness": 0.7088174223899841
+    },
+    {
+      "layer": 3,
+      "head_anchor": 2,
+      "commonness": 0.5272231101989746
+    },
+    {
+      "layer": 3,
+      "head_anchor": 3,
+      "commonness": 0.6691714525222778
+    },
+    {
+      "layer": 3,
+      "head_anchor": 4,
+      "commonness": 0.581508219242096
+    },
+    {
+      "layer": 3,
+      "head_anchor": 5,
+      "commonness": 0.6272318363189697
+    },
+    {
+      "layer": 3,
+      "head_anchor": 6,
+      "commonness": 0.681053638458252
+    },
+    {
+      "layer": 3,
+      "head_anchor": 7,
+      "commonness": 0.7088645696640015
+    },
+    {
+      "layer": 3,
+      "head_anchor": 8,
+      "commonness": 0.6436465382575989
+    },
+    {
+      "layer": 4,
+      "head_anchor": 1,
+      "commonness": 0.5528877377510071
+    },
+    {
+      "layer": 4,
+      "head_anchor": 2,
+      "commonness": 0.5029440522193909
+    },
+    {
+      "layer": 4,
+      "head_anchor": 3,
+      "commonness": 0.6124471426010132
+    },
+    {
+      "layer": 4,
+      "head_anchor": 4,
+      "commonness": 0.5483176112174988
+    },
+    {
+      "layer": 4,
+      "head_anchor": 5,
+      "commonness": 0.5892488956451416
+    },
+    {
+      "layer": 4,
+      "head_anchor": 6,
+      "commonness": 0.5081381797790527
+    },
+    {
+      "layer": 4,
+      "head_anchor": 7,
+      "commonness": 0.5936161875724792
+    },
+    {
+      "layer": 4,
+      "head_anchor": 8,
+      "commonness": 0.5947108268737793
+    },
+    {
+      "layer": 5,
+      "head_anchor": 1,
+      "commonness": 0.5544272661209106
+    },
+    {
+      "layer": 5,
+      "head_anchor": 2,
+      "commonness": 0.6063656210899353
+    },
+    {
+      "layer": 5,
+      "head_anchor": 3,
+      "commonness": 0.5889171361923218
+    },
+    {
+      "layer": 5,
+      "head_anchor": 4,
+      "commonness": 0.5466501712799072
+    },
+    {
+      "layer": 5,
+      "head_anchor": 5,
+      "commonness": 0.46194231510162354
+    },
+    {
+      "layer": 5,
+      "head_anchor": 6,
+      "commonness": 0.5298685431480408
+    },
+    {
+      "layer": 5,
+      "head_anchor": 7,
+      "commonness": 0.5413991212844849
+    },
+    {
+      "layer": 5,
+      "head_anchor": 8,
+      "commonness": 0.6106432676315308
+    },
+    {
+      "layer": 6,
+      "head_anchor": 1,
+      "commonness": 0.4846906065940857
+    },
+    {
+      "layer": 6,
+      "head_anchor": 2,
+      "commonness": 0.5875757932662964
+    },
+    {
+      "layer": 6,
+      "head_anchor": 3,
+      "commonness": 0.5690433979034424
+    },
+    {
+      "layer": 6,
+      "head_anchor": 4,
+      "commonness": 0.5545270442962646
+    },
+    {
+      "layer": 6,
+      "head_anchor": 5,
+      "commonness": 0.5778451561927795
+    },
+    {
+      "layer": 6,
+      "head_anchor": 6,
+      "commonness": 0.5963405966758728
+    },
+    {
+      "layer": 6,
+      "head_anchor": 7,
+      "commonness": 0.5071351528167725
+    },
+    {
+      "layer": 6,
+      "head_anchor": 8,
+      "commonness": 0.5282223224639893
+    },
+    {
+      "layer": 7,
+      "head_anchor": 1,
+      "commonness": 0.40698063373565674
+    },
+    {
+      "layer": 7,
+      "head_anchor": 2,
+      "commonness": 0.832369863986969
+    },
+    {
+      "layer": 7,
+      "head_anchor": 3,
+      "commonness": 0.8432853817939758
+    },
+    {
+      "layer": 7,
+      "head_anchor": 4,
+      "commonness": 0.8548089861869812
+    },
+    {
+      "layer": 7,
+      "head_anchor": 5,
+      "commonness": 0.7866941094398499
+    },
+    {
+      "layer": 7,
+      "head_anchor": 6,
+      "commonness": 0.8480472564697266
+    },
+    {
+      "layer": 7,
+      "head_anchor": 7,
+      "commonness": 0.849713146686554
+    },
+    {
+      "layer": 7,
+      "head_anchor": 8,
+      "commonness": 0.8462826013565063
+    },
+    {
+      "layer": 8,
+      "head_anchor": 1,
+      "commonness": 0.813411295413971
+    },
+    {
+      "layer": 8,
+      "head_anchor": 2,
+      "commonness": 0.7230117321014404
+    },
+    {
+      "layer": 8,
+      "head_anchor": 3,
+      "commonness": 0.8015130758285522
+    },
+    {
+      "layer": 8,
+      "head_anchor": 4,
+      "commonness": 0.7697746157646179
+    },
+    {
+      "layer": 8,
+      "head_anchor": 5,
+      "commonness": 0.7458163499832153
+    },
+    {
+      "layer": 8,
+      "head_anchor": 6,
+      "commonness": 0.7813163995742798
+    },
+    {
+      "layer": 8,
+      "head_anchor": 7,
+      "commonness": 0.7590906620025635
+    },
+    {
+      "layer": 8,
+      "head_anchor": 8,
+      "commonness": 0.789312481880188
+    }
+  ],
+  "wall_time_s": 111.54940223693848,
+  "device": "cpu",
+  "cuda_available": false
+}

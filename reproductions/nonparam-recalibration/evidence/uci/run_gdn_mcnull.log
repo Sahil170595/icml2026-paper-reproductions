@@ -1,0 +1,61 @@
+RUN yacht/gdn
+  split 0: n(tr/va/te)=[221, 56, 31] lam=0.0003364 crps_norm[pit,beta,ckme]=[0.908,0.917,2.307] (20.9s)
+  split 1: n(tr/va/te)=[221, 56, 31] lam=0.0001396 crps_norm[pit,beta,ckme]=[1.091,1.076,1.979] (15.8s)
+  split 2: n(tr/va/te)=[221, 56, 31] lam=0.0003791 crps_norm[pit,beta,ckme]=[1.106,1.019,1.311] (13.5s)
+  split 3: n(tr/va/te)=[221, 56, 31] lam=0.0001248 crps_norm[pit,beta,ckme]=[0.991,0.971,2.599] (15.1s)
+  split 4: n(tr/va/te)=[221, 56, 31] lam=6.915e-05 crps_norm[pit,beta,ckme]=[0.970,0.919,1.114] (14.7s)
+  split 5: n(tr/va/te)=[221, 56, 31] lam=0.0007593 crps_norm[pit,beta,ckme]=[0.971,0.962,2.315] (14.7s)
+  split 6: n(tr/va/te)=[221, 56, 31] lam=0.0001478 crps_norm[pit,beta,ckme]=[1.107,1.080,1.771] (13.0s)
+  split 7: n(tr/va/te)=[221, 56, 31] lam=0.0006062 crps_norm[pit,beta,ckme]=[0.940,0.937,0.891] (11.2s)
+  split 8: n(tr/va/te)=[221, 56, 31] lam=0.0001455 crps_norm[pit,beta,ckme]=[0.983,0.967,1.478] (10.5s)
+  split 9: n(tr/va/te)=[221, 56, 31] lam=0.0003063 crps_norm[pit,beta,ckme]=[1.123,1.142,1.406] (9.6s)
+DONE yacht/gdn in 140.2s
+RUN bostonHousing/gdn
+  split 0: n(tr/va/te)=[364, 91, 51] lam=0.001962 crps_norm[pit,beta,ckme]=[0.983,1.017,1.166] (4.6s)
+  split 1: n(tr/va/te)=[364, 91, 51] lam=0.00367 crps_norm[pit,beta,ckme]=[1.005,1.023,1.348] (4.2s)
+  split 2: n(tr/va/te)=[364, 91, 51] lam=0.003766 crps_norm[pit,beta,ckme]=[1.008,1.006,1.360] (4.9s)
+  split 3: n(tr/va/te)=[364, 91, 51] lam=0.002274 crps_norm[pit,beta,ckme]=[1.015,1.029,1.543] (4.8s)
+  split 4: n(tr/va/te)=[364, 91, 51] lam=0.002123 crps_norm[pit,beta,ckme]=[1.000,1.005,1.203] (4.3s)
+  split 5: n(tr/va/te)=[364, 91, 51] lam=0.002241 crps_norm[pit,beta,ckme]=[1.035,1.034,1.285] (4.8s)
+  split 6: n(tr/va/te)=[364, 91, 51] lam=0.004912 crps_norm[pit,beta,ckme]=[0.979,0.973,1.043] (4.9s)
+  split 7: n(tr/va/te)=[364, 91, 51] lam=0.002879 crps_norm[pit,beta,ckme]=[0.997,0.999,1.099] (5.5s)
+  split 8: n(tr/va/te)=[364, 91, 51] lam=0.002687 crps_norm[pit,beta,ckme]=[1.012,1.002,1.001] (4.6s)
+  split 9: n(tr/va/te)=[364, 91, 51] lam=0.002337 crps_norm[pit,beta,ckme]=[1.002,0.999,1.119] (4.8s)
+DONE bostonHousing/gdn in 47.4s
+RUN energy/gdn
+  split 0: n(tr/va/te)=[552, 139, 77] lam=5.385e-05 crps_norm[pit,beta,ckme]=[1.001,0.991,0.745] (9.1s)
+  split 1: n(tr/va/te)=[552, 139, 77] lam=0.0001785 crps_norm[pit,beta,ckme]=[0.993,0.990,1.118] (16.9s)
+  split 2: n(tr/va/te)=[552, 139, 77] lam=7.948e-05 crps_norm[pit,beta,ckme]=[1.019,1.036,0.629] (17.3s)
+  split 3: n(tr/va/te)=[552, 139, 77] lam=0.0001535 crps_norm[pit,beta,ckme]=[0.994,0.991,1.111] (18.2s)
+  split 4: n(tr/va/te)=[552, 139, 77] lam=0.0002086 crps_norm[pit,beta,ckme]=[0.964,0.967,1.087] (18.9s)
+  split 5: n(tr/va/te)=[552, 139, 77] lam=5.037e-05 crps_norm[pit,beta,ckme]=[0.997,0.997,0.683] (14.2s)
+  split 6: n(tr/va/te)=[552, 139, 77] lam=0.0002016 crps_norm[pit,beta,ckme]=[0.994,0.990,1.214] (20.5s)
+  split 7: n(tr/va/te)=[552, 139, 77] lam=0.0001014 crps_norm[pit,beta,ckme]=[0.986,1.005,0.633] (18.6s)
+  split 8: n(tr/va/te)=[552, 139, 77] lam=0.0001818 crps_norm[pit,beta,ckme]=[0.988,0.982,0.780] (18.0s)
+  split 9: n(tr/va/te)=[552, 139, 77] lam=0.0002305 crps_norm[pit,beta,ckme]=[0.989,0.992,1.095] (18.1s)
+DONE energy/gdn in 169.7s
+RUN concrete/gdn
+  split 0: n(tr/va/te)=[741, 186, 103] lam=0.001824 crps_norm[pit,beta,ckme]=[1.006,1.011,1.046] (6.0s)
+  split 1: n(tr/va/te)=[741, 186, 103] lam=0.0009799 crps_norm[pit,beta,ckme]=[0.999,1.002,1.059] (6.9s)
+  split 2: n(tr/va/te)=[741, 186, 103] lam=0.0009171 crps_norm[pit,beta,ckme]=[0.998,0.996,1.028] (8.6s)
+  split 3: n(tr/va/te)=[741, 186, 103] lam=0.001914 crps_norm[pit,beta,ckme]=[0.997,1.000,1.000] (5.8s)
+  split 4: n(tr/va/te)=[741, 186, 103] lam=0.0008143 crps_norm[pit,beta,ckme]=[0.993,0.995,1.061] (15.0s)
+  split 5: n(tr/va/te)=[741, 186, 103] lam=0.001437 crps_norm[pit,beta,ckme]=[0.972,0.976,1.022] (7.8s)
+  split 6: n(tr/va/te)=[741, 186, 103] lam=0.001107 crps_norm[pit,beta,ckme]=[1.008,1.005,1.026] (8.4s)
+  split 7: n(tr/va/te)=[741, 186, 103] lam=0.001042 crps_norm[pit,beta,ckme]=[1.001,1.002,0.985] (8.3s)
+  split 8: n(tr/va/te)=[741, 186, 103] lam=0.0009891 crps_norm[pit,beta,ckme]=[1.004,0.999,1.031] (8.1s)
+  split 9: n(tr/va/te)=[741, 186, 103] lam=0.001013 crps_norm[pit,beta,ckme]=[1.004,1.004,1.062] (6.7s)
+DONE concrete/gdn in 81.5s
+RUN wine-quality-red/gdn
+  split 0: n(tr/va/te)=[1151, 288, 160] lam=0.009152 crps_norm[pit,beta,ckme]=[1.001,1.000,0.913] (7.1s)
+  split 1: n(tr/va/te)=[1151, 288, 160] lam=0.01169 crps_norm[pit,beta,ckme]=[0.995,1.005,0.893] (7.9s)
+  split 2: n(tr/va/te)=[1151, 288, 160] lam=0.02523 crps_norm[pit,beta,ckme]=[0.988,0.996,0.925] (7.1s)
+  split 3: n(tr/va/te)=[1151, 288, 160] lam=0.01967 crps_norm[pit,beta,ckme]=[1.002,1.003,0.875] (6.5s)
+  split 4: n(tr/va/te)=[1151, 288, 160] lam=0.006571 crps_norm[pit,beta,ckme]=[0.999,1.001,0.871] (7.6s)
+  split 5: n(tr/va/te)=[1151, 288, 160] lam=0.02313 crps_norm[pit,beta,ckme]=[1.018,1.028,0.930] (6.7s)
+  split 6: n(tr/va/te)=[1151, 288, 160] lam=0.04195 crps_norm[pit,beta,ckme]=[1.008,1.000,0.944] (6.5s)
+  split 7: n(tr/va/te)=[1151, 288, 160] lam=0.02995 crps_norm[pit,beta,ckme]=[0.989,0.994,0.865] (7.6s)
+  split 8: n(tr/va/te)=[1151, 288, 160] lam=0.00679 crps_norm[pit,beta,ckme]=[0.989,0.989,0.874] (8.3s)
+  split 9: n(tr/va/te)=[1151, 288, 160] lam=0.01804 crps_norm[pit,beta,ckme]=[1.012,1.013,0.893] (12.2s)
+DONE wine-quality-red/gdn in 77.4s
+PRESENT: ['bostonHousing__bnn.json', 'bostonHousing__drf.json', 'bostonHousing__gdn.json', 'bostonHousing__mdn.json', 'concrete__drf.json', 'concrete__gdn.json', 'energy__drf.json', 'energy__gdn.json', 'wine-quality-red__drf.json', 'wine-quality-red__gdn.json', 'yacht__bnn.json', 'yacht__drf.json', 'yacht__gdn.json', 'yacht__mdn.json']

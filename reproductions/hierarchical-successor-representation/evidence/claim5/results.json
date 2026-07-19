@@ -1,0 +1,51 @@
+{
+  "claim": "HSR (temporally-extended) enables scalable exploration: higher coverage than SR, gap grows with maze size (Fig 5)",
+  "paper": "arXiv 2602.12753 / OpenReview txswvMHt4u",
+  "gamma": 0.99,
+  "seeds": 8,
+  "budget_rule": "2*N",
+  "per_size": [
+    {
+      "size": 9,
+      "N": 40,
+      "SR_cov": 0.653125,
+      "HSR_cov": 0.7906249999999999,
+      "gap": 0.13749999999999996
+    },
+    {
+      "size": 11,
+      "N": 68,
+      "SR_cov": 0.636029411764706,
+      "HSR_cov": 0.6985294117647058,
+      "gap": 0.06249999999999989
+    },
+    {
+      "size": 13,
+      "N": 104,
+      "SR_cov": 0.5769230769230769,
+      "HSR_cov": 0.7728365384615385,
+      "gap": 0.19591346153846168
+    },
+    {
+      "size": 15,
+      "N": 148,
+      "SR_cov": 0.6765202702702703,
+      "HSR_cov": 0.6081081081081081,
+      "gap": -0.06841216216216217
+    },
+    {
+      "size": 17,
+      "N": 200,
+      "SR_cov": 0.586875,
+      "HSR_cov": 0.569375,
+      "gap": -0.01750000000000007
+    }
+  ],
+  "mean_gap": 0.06200025987525985,
+  "gap_vs_size_slope": -0.0011230365834655777,
+  "HSR_improves_coverage": true,
+  "gap_grows_with_size": false,
+  "overall_reproduced": false,
+  "verdict": "partial: HSR improves coverage but gap does NOT grow with maze size (opposite Fig 5c)",
+  "runtime_s": 1.6475284099578857
+}

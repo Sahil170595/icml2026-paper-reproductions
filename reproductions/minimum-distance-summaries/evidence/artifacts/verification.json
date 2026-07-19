@@ -1,0 +1,115 @@
+{
+  "n_assertions": 20,
+  "n_passed": 20,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "gaussian_npe_is_genuine_conditional_density",
+      "ok": true,
+      "detail": "NPE-vs-analytic posterior mean RMSE=0.0250"
+    },
+    {
+      "name": "gaussian_frozen_npe_hash_identity",
+      "ok": true,
+      "detail": "300 checks all identical"
+    },
+    {
+      "name": "oup_frozen_npe_hash_identity",
+      "ok": true,
+      "detail": "250 checks all identical"
+    },
+    {
+      "name": "gaussian_npe_param_count_small",
+      "ok": true,
+      "detail": "4677 params"
+    },
+    {
+      "name": "oup_npe_param_count",
+      "ok": true,
+      "detail": "17669 params"
+    },
+    {
+      "name": "gaussian_512_rff",
+      "ok": true,
+      "detail": "K=512"
+    },
+    {
+      "name": "oup_512_rff",
+      "ok": true,
+      "detail": "K=512"
+    },
+    {
+      "name": "gaussian_adaptation_lightweight_ms",
+      "ok": true,
+      "detail": "max median 16.80ms"
+    },
+    {
+      "name": "gaussian_rff_matches_exact_mmd",
+      "ok": true,
+      "detail": "gap=0.0012 corr=0.972"
+    },
+    {
+      "name": "oup_rff_matches_exact_mmd",
+      "ok": true,
+      "detail": "gap=0.0025"
+    },
+    {
+      "name": "gaussian_substantial_reduction",
+      "ok": true,
+      "detail": "mean reduction 86.18%"
+    },
+    {
+      "name": "gaussian_all_wins_nonsevere",
+      "ok": true,
+      "detail": "50/50 at eps 0.1-0.4"
+    },
+    {
+      "name": "oup_substantial_reduction",
+      "ok": true,
+      "detail": "mean reduction 63.36%"
+    },
+    {
+      "name": "oup_high_win_rate",
+      "ok": true,
+      "detail": ">=40/50 at eps 0.1-0.4"
+    },
+    {
+      "name": "gaussian_severe_case_disclosed",
+      "ok": true,
+      "detail": "eps=0.5 reduction 30.55% << non-severe mean"
+    },
+    {
+      "name": "tex_sha_pinned",
+      "ok": true,
+      "detail": "ff81fd973e3bcba8"
+    },
+    {
+      "name": "assumptions_10_4",
+      "ok": true,
+      "detail": "10 robustness + 4 consistency"
+    },
+    {
+      "name": "dag_complete",
+      "ok": true,
+      "detail": "R0->R3 and C1->C4 complete"
+    },
+    {
+      "name": "bounded_influence_finite",
+      "ok": true,
+      "detail": "sup|IF|=1.8327"
+    },
+    {
+      "name": "posterior_contraction_monotone",
+      "ok": true,
+      "detail": "slope=-0.4910"
+    }
+  ],
+  "checksums": {
+    "gaussian_results.json": "a2e4e8ef2cf9f95a98926c76ad1460828951f65222d0f066fd84372571e7031c",
+    "oup_results.json": "0507dbaf3cad159a594abb62977bafda53796a7b8466c2a4945f3af0f3103304",
+    "proof_certificate.json": "1d6c3631af6f9f111a64d1e9efce9696e5ad2b55d2804783cf81dac313c106c7",
+    "gaussian_npe.pt": "34fa7e6ea4f88f98fa980c5c208c536feed4245290fd640ca18a3c3cfe57f65b",
+    "oup_npe.pt": "0069246a445473b90119057f6695fec9aa9117d24cd752f697c3d9d4e6fe1eb4",
+    "arxiv_main.tex": "ff81fd973e3bcba86fb23e9a0c102ec88e240f62361315c7875de54e29ea4fd2"
+  }
+}

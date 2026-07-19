@@ -1,0 +1,3 @@
+{"utc": "2026-07-18T00:02:10+00:00", "cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python claim1/repro_claim1.py", "exit_code": 0, "duration_s": 50.9}
+{"utc": "2026-07-18T00:03:30+00:00", "cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python claim2/repro_claim2.py", "exit_code": 0, "duration_s": 11.8}
+{"utc": "2026-07-18T00:03:50+00:00", "cmd": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python claim3/repro_claim3.py", "exit_code": 0, "duration_s": 9.7}

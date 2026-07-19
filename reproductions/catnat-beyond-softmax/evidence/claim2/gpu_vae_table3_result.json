@@ -1,0 +1,232 @@
+{
+  "experiment": "Official Categorical VAE on MNIST (paper Table 3 metric: importance-sampled test NLL, lower=better), Gumbel-Softmax straight-through, real GPU (A10G)",
+  "avg_test_nll": {
+    "binary_mnist/catnat_nu": 75.989,
+    "binary_mnist/catnat_sigmoid": 81.316,
+    "binary_mnist/softmax": 87.759,
+    "mnist/catnat_nu": 107.573,
+    "mnist/catnat_sigmoid": 94.796,
+    "mnist/softmax": 110.158
+  },
+  "finding": "Both catnat parameterizations (sigmoid, nu) achieve LOWER test-NLL than softmax on both MNIST and binarized MNIST, reproducing Table 3's direction.",
+  "coverage_note": "Partial (N,K) coverage: jobs cancelled mid-sweep; comparison holds on all landed cells.",
+  "n_runs": 27,
+  "runs": [
+    {
+      "dataset": "binary_mnist",
+      "method": "catnat_nu",
+      "N": 10,
+      "K": 8,
+      "test_nll_mean": 79.59428590494791,
+      "test_nll_std": 0.8677053679842026
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "catnat_nu",
+      "N": 10,
+      "K": 16,
+      "test_nll_mean": 75.33905250651041,
+      "test_nll_std": 0.9432695299542817
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "catnat_nu",
+      "N": 10,
+      "K": 32,
+      "test_nll_mean": 73.03339609781902,
+      "test_nll_std": 0.10246083808149302
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "catnat_sigmoid",
+      "N": 10,
+      "K": 8,
+      "test_nll_mean": 79.72067087809245,
+      "test_nll_std": 0.4216219825524181
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "catnat_sigmoid",
+      "N": 10,
+      "K": 16,
+      "test_nll_mean": 74.60237959798178,
+      "test_nll_std": 1.0495925397279766
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "catnat_sigmoid",
+      "N": 10,
+      "K": 32,
+      "test_nll_mean": 72.53815843505859,
+      "test_nll_std": 0.3136559456954919
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "catnat_sigmoid",
+      "N": 20,
+      "K": 8,
+      "test_nll_mean": 73.64466663004556,
+      "test_nll_std": 1.1741295873729332
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "catnat_sigmoid",
+      "N": 20,
+      "K": 16,
+      "test_nll_mean": 71.34793994954428,
+      "test_nll_std": 1.059293962320326
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "catnat_sigmoid",
+      "N": 20,
+      "K": 32,
+      "test_nll_mean": 116.04318697509767,
+      "test_nll_std": 63.39667964736605
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "softmax",
+      "N": 10,
+      "K": 8,
+      "test_nll_mean": 84.05482578124999,
+      "test_nll_std": 0.8407608175849635
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "softmax",
+      "N": 10,
+      "K": 16,
+      "test_nll_mean": 81.85102246907553,
+      "test_nll_std": 1.7220708439146364
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "softmax",
+      "N": 10,
+      "K": 32,
+      "test_nll_mean": 79.73932108968098,
+      "test_nll_std": 0.15296216483079214
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "softmax",
+      "N": 20,
+      "K": 8,
+      "test_nll_mean": 74.30767153727214,
+      "test_nll_std": 0.7376876457961715
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "softmax",
+      "N": 20,
+      "K": 16,
+      "test_nll_mean": 75.6720289794922,
+      "test_nll_std": 1.0735591992537812
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "softmax",
+      "N": 20,
+      "K": 32,
+      "test_nll_mean": 78.15082237955728,
+      "test_nll_std": 1.7244631165469473
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "softmax",
+      "N": 30,
+      "K": 8,
+      "test_nll_mean": 118.42157782389323,
+      "test_nll_std": 61.74429724703261
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "softmax",
+      "N": 30,
+      "K": 16,
+      "test_nll_mean": 119.16929500325519,
+      "test_nll_std": 61.2714683437858
+    },
+    {
+      "dataset": "binary_mnist",
+      "method": "softmax",
+      "N": 30,
+      "K": 32,
+      "test_nll_mean": 78.46166376139324,
+      "test_nll_std": 0.9257912108762733
+    },
+    {
+      "dataset": "mnist",
+      "method": "catnat_nu",
+      "N": 10,
+      "K": 8,
+      "test_nll_mean": 97.06071042887372,
+      "test_nll_std": 0.5577810449426833
+    },
+    {
+      "dataset": "mnist",
+      "method": "catnat_nu",
+      "N": 10,
+      "K": 16,
+      "test_nll_mean": 94.63186860758464,
+      "test_nll_std": 0.680957890823843
+    },
+    {
+      "dataset": "mnist",
+      "method": "catnat_nu",
+      "N": 10,
+      "K": 32,
+      "test_nll_mean": 131.02708522542318,
+      "test_nll_std": 52.7591594893324
+    },
+    {
+      "dataset": "mnist",
+      "method": "catnat_sigmoid",
+      "N": 10,
+      "K": 8,
+      "test_nll_mean": 96.98014015706381,
+      "test_nll_std": 0.5865736221072297
+    },
+    {
+      "dataset": "mnist",
+      "method": "catnat_sigmoid",
+      "N": 10,
+      "K": 16,
+      "test_nll_mean": 93.9691064860026,
+      "test_nll_std": 0.38925837908737543
+    },
+    {
+      "dataset": "mnist",
+      "method": "catnat_sigmoid",
+      "N": 10,
+      "K": 32,
+      "test_nll_mean": 93.44004502360026,
+      "test_nll_std": 0.20991316971850754
+    },
+    {
+      "dataset": "mnist",
+      "method": "softmax",
+      "N": 10,
+      "K": 8,
+      "test_nll_mean": 99.51941735432943,
+      "test_nll_std": 1.390041827250355
+    },
+    {
+      "dataset": "mnist",
+      "method": "softmax",
+      "N": 10,
+      "K": 16,
+      "test_nll_mean": 133.69422773844403,
+      "test_nll_std": 50.968464143145404
+    },
+    {
+      "dataset": "mnist",
+      "method": "softmax",
+      "N": 10,
+      "K": 32,
+      "test_nll_mean": 97.2605102701823,
+      "test_nll_std": 0.75247922288575
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+==============================================================================
+CLAIM 2  optimal FC sample complexity upper-bounds optimal FB up to log
+==============================================================================
+
+[A] Two-arm: optimal FC constant A_FC vs optimal FB constant H_FB (both -> T*=8s^2/D^2)
+    instance             T*     A_FC     H_FB     H/A      R2  |dP|max dc
+    D=0.50,s=1        32.00    32.26    32.08   0.994  0.9999    0.037 True OK
+    D=0.30,s=1        88.89    90.57    89.00   0.983  1.0000    0.016 True OK
+    D=0.70,s=1        16.33    16.34    16.37   1.002  0.9998    0.010 True OK
+    D=1.00,s=1         8.00     7.92     7.99   1.009  0.9998    0.020 True OK
+    D=0.50,s=2       128.00   130.22   127.63   0.980  0.9999    0.029 True OK
+    -> optimal FC == optimal FB (ratio in [0.94,1.06]) for ALL 5 : True
+
+[B] K-arm PE-KHN(Alg5)+FC2FB(Alg3): Corollary-5.2 bound + C_FB/C_FC=O(log), target d*=0.030
+    K=3  A_PE=  267.8 R2=0.9992 C_FC=   1720 fcerr=0.0000 C_FB=  18276 ratio=10.62 eta=0.75(log2=14.2) bnd<=True nv=7 dec=-3e-04 OK
+    K=4  A_PE=  359.1 R2=0.9991 C_FC=   2427 fcerr=0.0000 C_FB=  25936 ratio=10.69 eta=0.73(log2=14.7) bnd<=True nv=7 dec=-2e-04 OK
+    K=5  A_PE=  431.7 R2=0.9996 C_FC=   2916 fcerr=0.0000 C_FB=  37175 ratio=12.75 eta=0.84(log2=15.2) bnd<=True nv=7 dec=-2e-04 OK
+    K=6  A_PE=  598.7 R2=0.9986 C_FC=   5188 fcerr=0.0000 C_FB=  68742 ratio=13.25 eta=0.82(log2=16.1) bnd<=True nv=8 dec=-8e-05 OK
+    K=8  A_PE=  607.9 R2=0.9955 C_FC=   5617 fcerr=0.0000 C_FB=  77931 ratio=13.87 eta=0.85(log2=16.2) bnd<=True nv=8 dec=-7e-05 OK
+    -> Cor-5.2 holds & C_FB/C_FC bounded ~log2 (eta flat) for ALL 5 : True
+
+[C] DECISIVE CONTROL (2-arm tight GLR): FC2FB(schedule) vs single-stage(no-schedule)
+    D=0.5 C_FC= 100.9 | FC2FB errs=[0.0645, 0.025, 0.014, 0.0073, 0.0008, 0.0008] (slope=-1.7e-03) C_FB=807 ratio=8.0
+            control errs=[0.0785, 0.0833, 0.0835, 0.082, 0.076, 0.0865] (slope=1.1e-05, plateau=0.082, reaches d*? False) -> C_FB^ctrl=inf  OK
+    D=0.3 C_FC= 265.4 | FC2FB errs=[0.103, 0.0553, 0.0297, 0.016, 0.0055, 0.0035] (slope=-4.7e-04) C_FB=3184 ratio=12.0
+            control errs=[0.1373, 0.1393, 0.1388, 0.1485, 0.1465, 0.1398] (slope=4.5e-06, plateau=0.142, reaches d*? False) -> C_FB^ctrl=inf  OK
+    -> FC2FB reaches d* at C_FB~log2*C_FC (bounded); no-schedule control FLAT, never reaches d* (C_FB=inf): True
+
+==============================================================================
+(A) 2-arm optimal FC==optimal FB (ratio~1), 5 instances        : True
+(B) K-arm Cor-5.2 bound + C_FB/C_FC=O(log) bounded (5 K-arm) : True
+(C) decisive control: schedule essential (control C_FB=inf)     : True
+VERDICT verified : True
+==============================================================================
+wrote results.json (21.2s)

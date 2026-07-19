@@ -1,0 +1,38 @@
+{
+ "platform_rerun": {
+  "python": "3.13.1",
+  "system": "Windows 11",
+  "machine": "AMD64",
+  "numpy": "2.2.6"
+ },
+ "configs": {
+  "c1_d10_s2p0": {
+   "status": "exact_match",
+   "n_fields": 29,
+   "n_exact": 29,
+   "n_close_lt_1e-9": 0,
+   "worst_rel_diff": 0.0,
+   "worst_field": null,
+   "mismatches": []
+  },
+  "c1_d100_s2p0": {
+   "status": "match_1e-9",
+   "n_fields": 29,
+   "n_exact": 10,
+   "n_close_lt_1e-9": 19,
+   "worst_rel_diff": 2.1877950817171512e-13,
+   "worst_field": "rec.10000[1]",
+   "mismatches": []
+  },
+  "c2_tshard_d20_T2000": {
+   "status": "match_1e-9",
+   "n_fields": 7,
+   "n_exact": 6,
+   "n_close_lt_1e-9": 1,
+   "worst_rel_diff": 1.19307454409787e-16,
+   "worst_field": "reg_ci95",
+   "mismatches": []
+  }
+ },
+ "all_configs_reproduced": true
+}

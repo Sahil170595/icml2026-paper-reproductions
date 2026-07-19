@@ -1,0 +1,26 @@
+{
+  "claim": "PAMAP decomposes non-convex feasible region into convex polytopes & recovers the GLOBAL constrained MAP; constraint-agnostic optimizers fail",
+  "example22_pamap_value": 2.0154750951959555,
+  "example22_pamap_point": [
+    1.8226502497739137,
+    1.825352396233861
+  ],
+  "example22_pamap_feasible": true,
+  "example22_rel_vs_truth": 3.183137811609494e-05,
+  "example22_agnostic_point": [
+    1.1587320512186432,
+    1.4054825211077873
+  ],
+  "example22_agnostic_feasible": false,
+  "battery_N": 12,
+  "battery_pamap_matches": 12,
+  "battery_worst_rel": 0.00037037968557643346,
+  "battery_agnostic_fail": 11,
+  "avg_polytopes_pruned_of_4": 1.75,
+  "verified": true,
+  "runtime_s": 3.12801456451416,
+  "env": {
+    "numpy": "2.2.6",
+    "threads": "1"
+  }
+}

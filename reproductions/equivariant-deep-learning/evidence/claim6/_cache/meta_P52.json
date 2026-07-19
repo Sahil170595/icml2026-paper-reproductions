@@ -1,0 +1,16 @@
+{
+ "size": "P52",
+ "n": 52,
+ "desc": "bounded poset: bottom + chains [(2, 15), (2, 10)] + top, Aut=S2 x S2, |G|=4",
+ "group_order": 4,
+ "n_train": 512,
+ "n_test": 320,
+ "auto_check": "4/4 verified Pi A Pi^T == A",
+ "eq_residual_TA": 2.220446049250313e-16,
+ "eq_residual_TB": 3.3306690738754696e-15,
+ "eq_residual_TC": 0.9220653215456203,
+ "eq_residual_P": 0.0,
+ "floor_TC_rel": 0.062351371013771584,
+ "primitive_linfit_resid_TA": 0.13147382570111613,
+ "primitive_linfit_resid_TB": 0.06624151379471645
+}

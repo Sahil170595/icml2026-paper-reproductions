@@ -1,0 +1,46 @@
+{
+  "claim": "Flow->Tree: entropically-homogeneous SDE induces a canonical hierarchical tree via moment-based merger times obeying an ultrametric inequality (Thm 2.9/2.10)",
+  "setup": {
+    "modes": 8,
+    "layout": "3-scale nested (leaf<subgroup<supergroup)",
+    "sigma": 0.5,
+    "forward": "VE heat diffusion dx=dW",
+    "criterion": "inter-centroid distance <= combined spread"
+  },
+  "V1_band_means": {
+    "leaf": 0.25,
+    "subgroup": 200.0,
+    "supergroup": 20100.0
+  },
+  "V1_gaps": {
+    "leaf_to_sub": 199.5,
+    "sub_to_super": 19600.0,
+    "within_band_spread": 600.0,
+    "separated": true
+  },
+  "V2_ultrametric_violation_raw": 400.5,
+  "V2_ultrametric_violation_cophenetic": 0.0,
+  "V3_cophenetic_pearson": 0.9084116425461862,
+  "V3_cophenetic_spearman": 1.0,
+  "V4_monotone_reversals": 0,
+  "V4_entropy_monotone": true,
+  "V4_entropy_H0": 3.4737400202902773,
+  "V4_entropy_HT": 10.18486540958911,
+  "V4_entropy_direction": "increasing",
+  "V4_entropy_rank_corr": 0.9999999999999998,
+  "V5_empirical_band_means": {
+    "leaf": 0.2575020161914581,
+    "subgroup": 206.70435237102743,
+    "supergroup": 20669.566924345963
+  },
+  "V5_empirical_bands_separated": true,
+  "targets": {
+    "ultrametric_cophenetic": "<1e-9 (exact)",
+    "cophenetic_corr": ">0.99",
+    "reversals": "0",
+    "bands": "3 separated",
+    "entropy": "monotone (Def 2.6)"
+  },
+  "verdict": "SUPPORTED",
+  "runtime_s": 0.85
+}

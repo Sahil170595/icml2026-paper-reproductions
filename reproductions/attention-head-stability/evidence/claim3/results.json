@@ -1,0 +1,67 @@
+{
+  "claim": "Weight decay optimization substantially improves attention-head stability across random model initializations.",
+  "families": [
+    "l8_h8",
+    "l8_h8_wd"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "anchor_seed": 1,
+  "n_prompts": 100,
+  "per_optimizer": {
+    "l8_h8": {
+      "n_layers": 8,
+      "n_heads": 8,
+      "layer_stability_mean": {
+        "1": 0.974523514509201,
+        "2": 0.9067401811480522,
+        "3": 0.8576324358582497,
+        "4": 0.7753043100237846,
+        "5": 0.6210261136293411,
+        "6": 0.7021079957485199,
+        "7": 0.8657541051506996,
+        "8": 0.819540299475193
+      },
+      "overall_mean_stability": 0.8153286194428802
+    },
+    "l8_h8_wd": {
+      "n_layers": 8,
+      "n_heads": 8,
+      "layer_stability_mean": {
+        "1": 0.9708161875605583,
+        "2": 0.95257967710495,
+        "3": 0.8343540728092194,
+        "4": 0.8756782785058022,
+        "5": 0.8688968122005463,
+        "6": 0.8114903941750526,
+        "7": 0.7262240536510944,
+        "8": 0.862969733774662
+      },
+      "overall_mean_stability": 0.8628761512227356
+    }
+  },
+  "adam_overall_mean": 0.8153286194428802,
+  "adamw_overall_mean": 0.8628761512227356,
+  "delta_adamw_minus_adam": 0.04754753177985549,
+  "adamw_higher_than_adam": true,
+  "per_layer_delta": {
+    "1": -0.0037073269486427307,
+    "2": 0.045839495956897736,
+    "3": -0.023278363049030304,
+    "4": 0.10037396848201752,
+    "5": 0.24787069857120514,
+    "6": 0.10938239842653275,
+    "7": -0.13953005149960518,
+    "8": 0.043429434299468994
+  },
+  "layers_where_adamw_higher": 5,
+  "n_layers": 8,
+  "wall_time_s": 203.47539806365967,
+  "device": "cpu",
+  "cuda_available": false
+}

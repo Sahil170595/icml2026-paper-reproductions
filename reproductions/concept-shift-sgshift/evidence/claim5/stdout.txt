@@ -1,0 +1,11 @@
+CLAIM 5  Absorption term improves detection under model misspecification (mismatched)
+dataset    cfg         SG AUC  SG-A AUC    dAUC   SG rec  SG-A rec    dRec
+diabetes   matched   0.843   0.806    -0.037  0.750    0.611    -0.139
+diabetes   mismatch  0.869   0.874    +0.005  0.806    0.750    -0.056
+support2   matched   0.992   0.976    -0.016  1.000    0.972    -0.028
+support2   mismatch  0.993   0.965    -0.028  1.000    0.944    -0.056
+adult      matched   0.989   0.989    +0.000  0.944    0.944    +0.000
+adult      mismatch  0.939   0.939    +0.000  0.833    0.861    +0.028
+mismatched mean dAUC = -0.008, mean dRecall = -0.028; absorption non-detrimental in 2/3 mismatched datasets; VERDICT: PARTIAL
+(paper: absorption 'increases performance in nearly every setting, especially recall'; reported effect is small, +0.01-0.02 AUC in Table 2)
+wrote results.json

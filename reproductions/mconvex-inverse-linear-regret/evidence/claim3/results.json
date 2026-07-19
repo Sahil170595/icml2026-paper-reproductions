@@ -1,0 +1,93 @@
+{
+  "claim": "Theorem 5.3: Algorithm 2 (restart-on-cycle) achieves R_T = O((C+1) d log d), no knowledge of C",
+  "target": "R_T = O((C+1) d log d); #restarts <= C; algorithm never reads C",
+  "acceptance_rule": "(A) restarts<=C; (B) regret linear in (C+1), slope in [0.6,1.4]*base, ratio~(C+1); (C) base~d log d",
+  "d": 16,
+  "C_values": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    12
+  ],
+  "regret": [
+    38,
+    76,
+    114,
+    190,
+    342,
+    496
+  ],
+  "restarts": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    12
+  ],
+  "base_regret_C0": 38,
+  "regret_over_base": [
+    1.0,
+    2.0,
+    3.0,
+    5.0,
+    9.0,
+    13.05
+  ],
+  "C_plus_1": [
+    1,
+    2,
+    3,
+    5,
+    9,
+    13
+  ],
+  "linear_slope": 38.14,
+  "linear_intercept": 37.71,
+  "linear_fit_r2": 0.99999,
+  "slope_over_base": 1.004,
+  "restarts_le_C": true,
+  "base_dims": [
+    8,
+    12,
+    16,
+    20
+  ],
+  "base_regret_by_dim": [
+    13,
+    25,
+    38,
+    54
+  ],
+  "base_over_dlogd": [
+    0.781,
+    0.838,
+    0.857,
+    0.901
+  ],
+  "random_injection_C_regret_restarts": [
+    [
+      0,
+      32,
+      0
+    ],
+    [
+      2,
+      87,
+      2
+    ],
+    [
+      8,
+      281,
+      8
+    ]
+  ],
+  "random_restarts_le_C": true,
+  "verdict_rule_A": true,
+  "verdict_rule_B": true,
+  "verdict_rule_C": true,
+  "runtime_sec": 4.77,
+  "numpy_version": "2.2.6"
+}

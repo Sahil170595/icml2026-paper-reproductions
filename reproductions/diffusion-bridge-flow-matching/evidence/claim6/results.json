@@ -1,0 +1,43 @@
+{
+  "N": 4000,
+  "d": 24,
+  "per_lambda": {
+    "lambda=0.1176": {
+      "theta": 36.125,
+      "frac_DB_strictly_lower": 1.0,
+      "frac_gap_positive": 1.0,
+      "mean_gap": 36.01829700206382,
+      "min_gap": 12.083141477547084,
+      "mean_ratio_DB_FM": 3.0273423330222024e-30
+    },
+    "lambda=0.5000": {
+      "theta": 2.0,
+      "frac_DB_strictly_lower": 1.0,
+      "frac_gap_positive": 1.0,
+      "mean_gap": 33.330271614636025,
+      "min_gap": 11.18138337805484,
+      "mean_ratio_DB_FM": 0.0746294414550962
+    },
+    "lambda=1.0000": {
+      "theta": 0.5,
+      "frac_DB_strictly_lower": 1.0,
+      "frac_gap_positive": 1.0,
+      "mean_gap": 15.05648712576138,
+      "min_gap": 5.051034591808064,
+      "mean_ratio_DB_FM": 0.5819767068693266
+    },
+    "lambda=2.0000": {
+      "theta": 0.125,
+      "frac_DB_strictly_lower": 1.0,
+      "frac_gap_positive": 1.0,
+      "mean_gap": 4.314886949802143,
+      "min_gap": 1.4475251140022944,
+      "mean_ratio_DB_FM": 0.8802029160469492
+    }
+  },
+  "input_invariance_max_err": 1.1102230246251565e-16,
+  "closed_form_max_err": 3.552713678800501e-15,
+  "all_DB_strictly_lower": true,
+  "verdict": true,
+  "scope_note": "Table 4 ablation is OpenReview version; verify theory not image metrics"
+}

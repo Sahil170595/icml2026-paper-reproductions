@@ -1,0 +1,52 @@
+=== FULL tabular-MDP scaling experiments (hard family + Dirichlet family) ===
+seeds=12  c_b=0.3  deterministic default_rng  numpy 2.2.6  single-thread
+[D_max] primary sweep {1,2,4,8} on full MDP S=36 (n_c=20,B=16) A=3 H_tot=32 K=12000
+  [D=1     ] S=36  A=3 H=32 D=1  K=12000  d*=0.0204  UCBVI=4228.1+-99.4  blind=4228.1  ETC*=4238.8(ne=16)  emp.floor=4228.1(ucbvi_delay)  BHref=1151.2  noLearn=5068  18s
+  [D=2     ] S=36  A=3 H=32 D=2  K=12000  d*=0.0288  UCBVI=6037.4+-145.7  blind=6394.2  ETC*=6001.7(ne=32)  emp.floor=6001.7(etc_oracle)  BHref=1627.9  noLearn=7154  35s
+  [D=4     ] S=36  A=3 H=32 D=4  K=12000  d*=0.0408  UCBVI=9056.9+-239.0  blind=9113.0  ETC*=7966.0(ne=2)  emp.floor=7966.0(etc_oracle)  BHref=2301.5  noLearn=10111  33s
+  [D=8     ] S=36  A=3 H=32 D=8  K=12000  d*=0.0576  UCBVI=11754.0+-385.9  blind=12367.9  ETC*=11856.5(ne=16)  emp.floor=11754.0(ucbvi_delay)  BHref=3253.1  noLearn=14283  35s
+[D_max_wide] confirmation sweep {1,4,16} on full MDP S=68 (n_c=36,B=32) A=2 H_tot=64 K=8000 (16x delay range)
+  [D=1     ] S=68  A=2 H=64 D=1  K=8000   d*=0.0335  UCBVI=6463.2+-290.2  blind=6463.2  ETC*=6477.2(ne=16)  emp.floor=6463.2(ucbvi_delay)  BHref=2562.3  noLearn=8442  26s
+  [D=4     ] S=68  A=2 H=64 D=4  K=8000   d*=0.0669  UCBVI=12848.7+-396.5  blind=14308.0  ETC*=13352.3(ne=16)  emp.floor=12848.7(ucbvi_delay)  BHref=5118.9  noLearn=16859  52s
+  [D=16    ] S=68  A=2 H=64 D=16 K=8000   d*=0.1326  UCBVI=28652.9+-856.1  blind=26657.0  ETC*=25949.2(ne=16)  emp.floor=25949.2(etc_oracle)  BHref=10191.6  noLearn=33405  55s
+[S] sweep {16,24,32,48,64} (n_c=3S/4, B=S/4) A=4 H_tot=8 D=2 K=20000
+  [S=16    ] S=16  A=4 H=8  D=2  K=20000  d*=0.0245  UCBVI=1286.0+-62.1  ETC*=1196.1(ne=64)  emp.floor=1196.1(etc_oracle)  BHref=519.9  noLearn=1716  8s
+  [S=24    ] S=24  A=4 H=8  D=2  K=20000  d*=0.0300  UCBVI=1529.4+-58.5  ETC*=1462.0(ne=64)  emp.floor=1462.0(etc_oracle)  BHref=636.7  noLearn=2099  10s
+  [S=32    ] S=32  A=4 H=8  D=2  K=20000  d*=0.0346  UCBVI=1814.7+-47.0  ETC*=1777.4(ne=8)  emp.floor=1777.4(etc_oracle)  BHref=735.1  noLearn=2425  10s
+  [S=48    ] S=48  A=4 H=8  D=2  K=20000  d*=0.0424  UCBVI=2198.2+-57.7  ETC*=2134.0(ne=32)  emp.floor=2134.0(etc_oracle)  BHref=900.1  noLearn=2968  14s
+  [S=64    ] S=64  A=4 H=8  D=2  K=20000  d*=0.0489  UCBVI=2502.1+-58.9  ETC*=2427.1(ne=32)  emp.floor=2427.1(etc_oracle)  BHref=1039.2  noLearn=3425  18s
+[A] sweep {2,4,6,8,10} on full MDP S=16 (n_c=12,B=4) H_tot=8 D=2 K=20000 (A/2 binary gates per junction)
+  [A=2     ] S=16  A=2 H=8  D=2  K=20000  d*=0.0173  UCBVI=1063.9+-39.6  ETC*=955.6(ne=16)  emp.floor=955.6(etc_oracle)  BHref=367.7  noLearn=1213  8s
+  [A=4     ] S=16  A=4 H=8  D=2  K=20000  d*=0.0245  UCBVI=1286.0+-62.1  ETC*=1196.1(ne=64)  emp.floor=1196.1(etc_oracle)  BHref=519.9  noLearn=1716  8s
+  [A=6     ] S=16  A=6 H=8  D=2  K=20000  d*=0.0300  UCBVI=1527.4+-28.3  ETC*=1311.5(ne=32)  emp.floor=1311.5(etc_oracle)  BHref=636.7  noLearn=2099  9s
+  [A=8     ] S=16  A=8 H=8  D=2  K=20000  d*=0.0346  UCBVI=1722.8+-41.2  ETC*=1402.1(ne=32)  emp.floor=1402.1(etc_oracle)  BHref=735.1  noLearn=2425  9s
+  [A=10    ] S=16  A=10 H=8  D=2  K=20000  d*=0.0387  UCBVI=1932.0+-59.1  ETC*=1456.9(ne=16)  emp.floor=1456.9(etc_oracle)  BHref=821.8  noLearn=2711  10s
+[H] sweep H_tot in {8,12,16,24,32} on full MDP S=16 A=4 D=2 K=20000
+  [H=8     ] S=16  A=4 H=8  D=2  K=20000  d*=0.0245  UCBVI=1286.0+-62.1  ETC*=1196.1(ne=64)  emp.floor=1196.1(etc_oracle)  BHref=519.9  noLearn=1716  8s
+  [H=12    ] S=16  A=4 H=12 D=2  K=20000  d*=0.0245  UCBVI=1881.2+-94.6  ETC*=1953.7(ne=64)  emp.floor=1881.2(ucbvi_delay)  BHref=817.0  noLearn=2697  11s
+  [H=16    ] S=16  A=4 H=16 D=2  K=20000  d*=0.0245  UCBVI=2703.5+-89.2  ETC*=2292.7(ne=32)  emp.floor=2292.7(etc_oracle)  BHref=1114.0  noLearn=3678  12s
+  [H=24    ] S=16  A=4 H=24 D=2  K=20000  d*=0.0245  UCBVI=4269.2+-168.2  ETC*=3833.5(ne=64)  emp.floor=3833.5(etc_oracle)  BHref=1708.2  noLearn=5639  14s
+  [H=32    ] S=16  A=4 H=32 D=2  K=20000  d*=0.0245  UCBVI=5640.7+-286.1  ETC*=5688.1(ne=64)  emp.floor=5640.7(ucbvi_delay)  BHref=2302.4  noLearn=7600  18s
+[K] sweep {2500,5000,10000,20000,40000} on full MDP S=16 A=4 H_tot=8 D=2 (per-K minimax gap)
+  [K=2500  ] S=16  A=4 H=8  D=2  K=2500   d*=0.0690  UCBVI=455.6+-23.3  ETC*=443.5(ne=8)  emp.floor=443.5(etc_oracle)  BHref=183.6  noLearn=604  1s
+  [K=5000  ] S=16  A=4 H=8  D=2  K=5000   d*=0.0489  UCBVI=662.3+-20.5  ETC*=529.2(ne=16)  emp.floor=529.2(etc_oracle)  BHref=259.8  noLearn=856  2s
+  [K=10000 ] S=16  A=4 H=8  D=2  K=10000  d*=0.0346  UCBVI=801.0+-33.0  ETC*=865.6(ne=32)  emp.floor=801.0(ucbvi_delay)  BHref=367.5  noLearn=1213  5s
+  [K=20000 ] S=16  A=4 H=8  D=2  K=20000  d*=0.0245  UCBVI=1286.0+-62.1  ETC*=1196.1(ne=64)  emp.floor=1196.1(etc_oracle)  BHref=519.9  noLearn=1716  8s
+  [K=40000 ] S=16  A=4 H=8  D=2  K=40000  d*=0.0173  UCBVI=1732.2+-57.2  ETC*=1755.9(ne=32)  emp.floor=1732.2(ucbvi_delay)  BHref=735.3  noLearn=2426  18s
+[sanity] learnability vs gap multiple (baseline config S=16 A=4 H=8 D=2 K=20000)
+  gap=0.0245 (1x d*=0.0245)  regret=1205 = 0.70 x no-learning ref 1716
+  gap=0.0490 (2x d*=0.0245)  regret=1654 = 0.48 x no-learning ref 3432
+  gap=0.0736 (3x d*=0.0245)  regret=1855 = 0.36 x no-learning ref 5149
+  gap=0.1226 (5x d*=0.0245)  regret=1555 = 0.18 x no-learning ref 8581
+[dirichlet] random-kernel full MDP S=12 A=3 B=8 H_tot=16 (K-scaling + delay)
+  [dirichlet] UCBVI K-slope=0.877 (R2=1.000) vs random control 1.000 (R2=1.000); delay regret ['27196.4', '32320.4', '36092.5'] (directional slope 0.20)  47s
+--- summary ---
+[D_max     ] UCBVI slope=0.501 (R2=0.993, CI95 0.483..0.525)  emp.floor slope=0.483 (R2=0.997)  BHref slope=0.500  target=0.5  UCB/floor=1.00-1.14
+[D_max_wide] UCBVI slope=0.537 (R2=0.998, CI95 0.496..0.580)  emp.floor slope=0.501 (R2=1.000)  BHref slope=0.498  target=0.5  UCB/floor=1.00-1.10
+[S         ] UCBVI slope=0.488 (R2=0.998, CI95 0.423..0.555)  emp.floor slope=0.517 (R2=0.995)  BHref slope=0.500  target=0.5  UCB/floor=1.02-1.08
+[A         ] UCBVI slope=0.369 (R2=0.985, CI95 0.329..0.403)  emp.floor slope=0.263 (R2=0.988)  BHref slope=0.500  target=0.5  UCB/floor=1.08-1.33
+[H         ] UCBVI slope=1.089 (R2=0.998, CI95 1.007..1.156)  emp.floor slope=1.101 (R2=0.992)  BHref slope=1.072  target=1.0  UCB/floor=1.00-1.18
+[K         ] UCBVI slope=0.481 (R2=0.988, CI95 0.443..0.515)  emp.floor slope=0.511 (R2=0.986)  BHref slope=0.501  target=0.5  UCB/floor=1.00-1.25
+verdict: {"upper_sqrt_Dmax_full_mdp": true, "upper_sqrt_Dmax_wide_full_mdp": true, "upper_sqrt_S_full_mdp": true, "upper_sqrt_A_full_mdp": false, "upper_sqrt_K_full_mdp": true, "upper_linear_H_full_mdp": true, "floor_sqrt_Dmax_empirical": true, "floor_sqrt_Dmax_wide_empirical": true, "floor_sqrt_S_empirical": true, "floor_sqrt_A_empirical": false, "floor_sqrt_K_empirical": true, "floor_linear_H_empirical": true, "all_regime_ok": true, "chen_2023_exponents_excluded": true, "dirichlet_ucbvi_beats_random": true, "learnability": true}
+runtime 498.3s
+WROTE results.json, sweeps.csv

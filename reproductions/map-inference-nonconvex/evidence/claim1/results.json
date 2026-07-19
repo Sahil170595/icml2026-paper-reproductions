@@ -1,0 +1,47 @@
+{
+  "claim": "Theorem 4.5: MpMap solves treewidth-one MAP(LRA) exactly (== independent global optimum)",
+  "named": [
+    {
+      "name": "I1_chain2",
+      "n_vars": 2,
+      "mpmap": 38.847287414203045,
+      "scipy_ref": 38.847287461288644,
+      "rel_vs_ref": 1.2120691701692845e-09,
+      "mpmap_minus_evaljoint": 6.394884621840902e-14,
+      "dominance_vs_grid": 0.0002095402628725651,
+      "feasible": true
+    },
+    {
+      "name": "I2_chain3",
+      "n_vars": 3,
+      "mpmap": 2101.5173936058527,
+      "scipy_ref": 2101.5173958545834,
+      "rel_vs_ref": 1.0700509351940119e-09,
+      "mpmap_minus_evaljoint": 9.094947017729282e-13,
+      "dominance_vs_grid": 0.23619796348930322,
+      "feasible": true
+    },
+    {
+      "name": "I3_star4",
+      "n_vars": 4,
+      "mpmap": 86736.68150724328,
+      "scipy_ref": 86736.68154170558,
+      "rel_vs_ref": 3.973209045392468e-10,
+      "mpmap_minus_evaljoint": 4.3655745685100555e-11,
+      "dominance_vs_grid": 433.6566255243815,
+      "feasible": true
+    }
+  ],
+  "named_max_rel_vs_ref": 1.2120691701692845e-09,
+  "random_positive": 30,
+  "random_max_rel_vs_ref": 1.9686829097403817e-09,
+  "max_selfconsistency_err": 4.3655745685100555e-11,
+  "min_dominance_vs_grid": 0.0002095402628725651,
+  "all_feasible": true,
+  "verified": true,
+  "runtime_s": 22.271162509918213,
+  "env": {
+    "numpy": "2.2.6",
+    "threads": "1"
+  }
+}

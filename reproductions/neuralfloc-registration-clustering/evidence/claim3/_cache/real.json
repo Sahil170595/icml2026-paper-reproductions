@@ -1,0 +1,13 @@
+{
+  "loaded": true,
+  "name": "digits_3v8",
+  "note": "sklearn load_digits (real handwritten digits, offline); classes 3 vs 8, each 8x8 scan read row-major as a length-64 signal (raster, not phase-warped FDA)",
+  "n_curves": 357,
+  "T": 64,
+  "raw_ari": 0.8079491356102484,
+  "raw_acc": 0.9495798319327731,
+  "reg_ari": 0.8180835051782475,
+  "reg_acc": 0.9523809523809523,
+  "warp_monotone_frac": 1.0,
+  "warp_boundary_err": 0.0
+}

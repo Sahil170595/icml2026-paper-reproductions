@@ -1,0 +1,186 @@
+{
+  "source": "paper Table 1 (arXiv 2509.24531)",
+  "cpu_reproducible": false,
+  "reason": "latent DiT training on CelebA-HQ, 16-66 GPU-hours/run (Table 3)",
+  "ntask": 6,
+  "db_wins": {
+    "PSNR": 4,
+    "SSIM": 0,
+    "LPIPS": 6,
+    "FID": 6
+  },
+  "mean_gap_DBadv": {
+    "PSNR": 0.0033333333333332624,
+    "SSIM": -0.022333333333333354,
+    "LPIPS": 0.017333333333333336,
+    "FID": 6.668333333333332
+  },
+  "mean_rel_improvement_FID": 0.3119528329042108,
+  "mean_rel_improvement_LPIPS": 0.12450640961548481,
+  "per_task": [
+    {
+      "task": "Inpaint-Box64",
+      "PSNR": {
+        "FM": 28.03,
+        "DB": 27.9,
+        "DB_better": false,
+        "gap_DBadv": -0.13000000000000256
+      },
+      "SSIM": {
+        "FM": 0.84,
+        "DB": 0.813,
+        "DB_better": false,
+        "gap_DBadv": -0.027000000000000024
+      },
+      "LPIPS": {
+        "FM": 0.039,
+        "DB": 0.038,
+        "DB_better": true,
+        "gap_DBadv": 0.0010000000000000009
+      },
+      "FID": {
+        "FM": 5.13,
+        "DB": 5.11,
+        "DB_better": true,
+        "gap_DBadv": 0.019999999999999574
+      }
+    },
+    {
+      "task": "Inpaint-Box128",
+      "PSNR": {
+        "FM": 23.54,
+        "DB": 23.57,
+        "DB_better": true,
+        "gap_DBadv": 0.030000000000001137
+      },
+      "SSIM": {
+        "FM": 0.76,
+        "DB": 0.741,
+        "DB_better": false,
+        "gap_DBadv": -0.019000000000000017
+      },
+      "LPIPS": {
+        "FM": 0.106,
+        "DB": 0.078,
+        "DB_better": true,
+        "gap_DBadv": 0.027999999999999997
+      },
+      "FID": {
+        "FM": 17.84,
+        "DB": 7.71,
+        "DB_better": true,
+        "gap_DBadv": 10.129999999999999
+      }
+    },
+    {
+      "task": "4x-SuperRes",
+      "PSNR": {
+        "FM": 27.11,
+        "DB": 27.47,
+        "DB_better": true,
+        "gap_DBadv": 0.35999999999999943
+      },
+      "SSIM": {
+        "FM": 0.789,
+        "DB": 0.762,
+        "DB_better": false,
+        "gap_DBadv": -0.027000000000000024
+      },
+      "LPIPS": {
+        "FM": 0.088,
+        "DB": 0.077,
+        "DB_better": true,
+        "gap_DBadv": 0.010999999999999996
+      },
+      "FID": {
+        "FM": 11.61,
+        "DB": 8.5,
+        "DB_better": true,
+        "gap_DBadv": 3.1099999999999994
+      }
+    },
+    {
+      "task": "Deblur-15x15",
+      "PSNR": {
+        "FM": 27.24,
+        "DB": 27.26,
+        "DB_better": true,
+        "gap_DBadv": 0.020000000000003126
+      },
+      "SSIM": {
+        "FM": 0.793,
+        "DB": 0.757,
+        "DB_better": false,
+        "gap_DBadv": -0.03600000000000003
+      },
+      "LPIPS": {
+        "FM": 0.088,
+        "DB": 0.087,
+        "DB_better": true,
+        "gap_DBadv": 0.0010000000000000009
+      },
+      "FID": {
+        "FM": 10.49,
+        "DB": 8.77,
+        "DB_better": true,
+        "gap_DBadv": 1.7200000000000006
+      }
+    },
+    {
+      "task": "Deblur-61x61",
+      "PSNR": {
+        "FM": 24.67,
+        "DB": 24.13,
+        "DB_better": false,
+        "gap_DBadv": -0.5400000000000027
+      },
+      "SSIM": {
+        "FM": 0.683,
+        "DB": 0.661,
+        "DB_better": false,
+        "gap_DBadv": -0.02200000000000002
+      },
+      "LPIPS": {
+        "FM": 0.228,
+        "DB": 0.172,
+        "DB_better": true,
+        "gap_DBadv": 0.05600000000000002
+      },
+      "FID": {
+        "FM": 38.18,
+        "DB": 19.03,
+        "DB_better": true,
+        "gap_DBadv": 19.15
+      }
+    },
+    {
+      "task": "Denoising",
+      "PSNR": {
+        "FM": 27.02,
+        "DB": 27.3,
+        "DB_better": true,
+        "gap_DBadv": 0.28000000000000114
+      },
+      "SSIM": {
+        "FM": 0.76,
+        "DB": 0.757,
+        "DB_better": false,
+        "gap_DBadv": -0.0030000000000000027
+      },
+      "LPIPS": {
+        "FM": 0.093,
+        "DB": 0.086,
+        "DB_better": true,
+        "gap_DBadv": 0.007000000000000006
+      },
+      "FID": {
+        "FM": 16.04,
+        "DB": 10.16,
+        "DB_better": true,
+        "gap_DBadv": 5.879999999999999
+      }
+    }
+  ],
+  "perceptual_claim_supported": true,
+  "fm_wins_pixel_ssim": true
+}

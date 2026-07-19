@@ -1,0 +1,27 @@
+{
+  "claim": "DAVE improves GridPG on all conventional ViTs (ViT-B 60.19, DeiT-B 63.52, DeiT-III-B 65.76, DINO-B 51.33) and is best/competitive on EnergyPG vs 6 baselines on ImageNet-1k (Table 1).",
+  "scale": "CPU MECHANISM CHECK on compact random-init ViT (NOT the ImageNet Table-1 claim)",
+  "gridpg_pct_mean": {
+    "DAVE": 21.633116850422095,
+    "IxG": 20.924014824278768
+  },
+  "energypg_pct_mean": {
+    "DAVE": 21.476959403130405,
+    "IxG": 20.9980007174814
+  },
+  "gridpg_chance_pct": 25.0,
+  "paper_table1_gridpg": {
+    "ViT-B": 60.19,
+    "DeiT-B": 63.52,
+    "DeiT-III-B": 65.76,
+    "DINO-B": 51.33
+  },
+  "paper_table1_energypg": {
+    "DeiT-B": 82.23,
+    "DeiT-III-B": 82.43,
+    "DINO-B": 83.38
+  },
+  "gpu_kit": "gpu_job/ (hf jobs run) runs the full Table-1 GridPG/EnergyPG benchmark on real models",
+  "verdict": "MECHANISM-CHECK (not verified at scale): GridPG & EnergyPG metrics implemented and run on the compact ViT. Paper Table-1 targets (DAVE GridPG 60-66%, EnergyPG 82-83%) need real pretrained ViT-B/DeiT/DINO weights + ImageNet bboxes and are emitted as a GPU kit.",
+  "runtime_s": 0.04
+}
