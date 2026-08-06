@@ -2,7 +2,7 @@
 
 Independent, from-scratch reproductions of **48 ICML-2026 submissions** for the [ICML 2026 Agent Reproducibility Challenge](https://huggingface.co/spaces/ICML-2026-agent-repro). Every claim is re-derived from the paper text — **no paper code reused** — with CPU-only, deterministic implementations and machine-checked evidence.
 
-> **218 points across 48 papers**, rank **#8** on the live leaderboard (snapshot, July 2026) · **100 claims verified**, **4 independently falsified**, 10 toy-scale · judged by an independent LLM referee against each paper's official scored claims.
+> **297 points across 48 papers**, rank **#26 of 372** on the live leaderboard — top 7% (peaked #8, July 2026) · of **249 claims**: **118 verified**, **3 independently falsified**, 55 toy-scale, 73 inconclusive · judged by an independent LLM referee against each paper's official scored claims.
 
 Each reproduction is a runnable evidence package: the claim is stated with the paper's own target, an acceptance rule and a falsification condition are fixed **in advance**, and a self-contained `numpy`/`scipy` script produces the measured numbers. Verdicts are honest — a reproduction that *fails* a published claim is reported as **falsified**, not buried.
 
@@ -15,6 +15,8 @@ Each reproduction is a runnable evidence package: the claim is stated with the p
 ## Methodology
 
 See **[METHODOLOGY.md](METHODOLOGY.md)**. In short: pin the paper + official scored claims → find/pin official code (or transcribe the equations) → build a deterministic CPU reproduction → fix acceptance/falsification rules before running → record every command, exit code and output hash → assemble an auditable logbook. Non-determinism, scope limits and proxy scales are stated openly on every claim.
+
+The pipeline is an autonomous multi-provider agent harness: provider-neutral producer agents (GPT + Claude) fan out under a per-paper evidence contract — manifest, claims with pre-fixed acceptance/falsification rules, command log with exit codes, evidence bundle. An independent reviewer agent gates each bundle, and a root coordinator validates before publication — no human-intervention loops.
 
 ## Results
 
