@@ -4,7 +4,7 @@ Independent, from-scratch reproductions of **48 ICML-2026 submissions** for the 
 
 > **297 points across 48 papers**, rank **#26 of 372** on the challenge leaderboard — top 7% (peaked #8 mid-challenge, July 2026) · of **249 official scored claims**: **118 verified**, **3 independently falsified**, 55 toy-scale, 73 inconclusive · judged by the challenge's independent LLM referee against each paper's official scored claims.
 >
-> Final figures. The challenge closed **2026-08-02** (23:59 AoE); these 48 logbooks were judged between 2026-07-23 and 2026-08-03. Counts and points above are re-derived from the challenge's published [verdicts dataset](https://huggingface.co/datasets/ICML-2026-agent-repro/verdicts), snapshot pulled **2026-08-07**.
+> Final figures. The challenge closed **2026-08-02** (23:59 AoE); these 48 logbooks were judged between 2026-07-23 and 2026-08-03. Counts and points above are re-derived from the challenge's published [verdicts dataset](https://huggingface.co/datasets/ICML-2026-agent-repro/verdicts), snapshot pulled **2026-08-08** (UTC).
 
 Each reproduction is a runnable evidence package: the claim is stated with the paper's own target, an acceptance rule and a falsification condition are fixed **in advance**, and a self-contained script produces the measured numbers. Verdicts are honest — a reproduction that *fails* a published claim is reported as **falsified**, not buried.
 
