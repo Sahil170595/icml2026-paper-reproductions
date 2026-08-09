@@ -1,6 +1,6 @@
 # Fixed Budget is No Harder Than Fixed Confidence in Best-Arm Identification up to Logarithmic Factors
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅⚪⚪⚪  **4 pts** — 2/5 full-credit  (verified, verified, inconclusive, inconclusive, inconclusive)
 
 [arXiv 2602.03972](https://arxiv.org/abs/2602.03972) · [OpenReview](https://openreview.net/forum?id=DUmWdZetqZ) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-bai-budget-confidence-repro)
 

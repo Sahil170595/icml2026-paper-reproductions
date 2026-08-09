@@ -1,6 +1,6 @@
 # Beyond Softmax: A Natural Parameterization for Categorical Random Variables
 
-✅🟡  **3 pts** — 1/2 full-credit  (verified, toy)
+✅✅⚪🟡⚪  **5 pts** — 2/5 full-credit  (verified, verified, inconclusive, toy, inconclusive)
 
 [arXiv 2509.24728](https://arxiv.org/abs/2509.24728) · [OpenReview](https://openreview.net/forum?id=ClBpWdkPZd) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-catnat-beyond-softmax-repro)
 

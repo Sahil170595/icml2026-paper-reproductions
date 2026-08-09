@@ -1,6 +1,6 @@
 # High-accuracy sampling for diffusion models and log-concave distributions
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+✅✅🟡🟡✅  **8 pts** — 3/5 full-credit  (verified, verified, toy, toy, verified)
 
 [arXiv 2602.01338](https://arxiv.org/abs/2602.01338) · [OpenReview](https://openreview.net/forum?id=71132) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-highaccuracy-sampling-logconcave-repro)
 

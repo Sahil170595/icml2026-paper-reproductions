@@ -1,6 +1,6 @@
 # Row-Stochastic Matrices Can Provably Outperform Doubly Stochastic Matrices in Decentralized Learning
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+✅✅✅🟡  **7 pts** — 3/4 full-credit  (verified, verified, verified, toy)
 
 [arXiv 2511.19513](https://arxiv.org/abs/2511.19513) · [OpenReview](https://openreview.net/forum?id=GAQE4Wr53f) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-row-stochastic-decentralized-repro)
 

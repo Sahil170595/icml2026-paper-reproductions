@@ -1,6 +1,6 @@
 # General Synthetic-Powered Inference
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+🟡🟡🟡🟡✅  **6 pts** — 1/5 full-credit  (toy, toy, toy, toy, verified)
 
 [arXiv 2509.20345](https://arxiv.org/abs/2509.20345) · [OpenReview](https://openreview.net/forum?id=sxLncu2Fhx) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-synthetic-powered-inference-repro)
 

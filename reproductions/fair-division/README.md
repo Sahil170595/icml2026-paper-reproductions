@@ -1,6 +1,6 @@
 # Keep Everyone Happy: Online Fair Division of Numerous Items with Few Copies
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅⚪⚪⚪  **4 pts** — 2/5 full-credit  (verified, verified, inconclusive, inconclusive, inconclusive)
 
 [arXiv 2408.12845](https://arxiv.org/abs/2408.12845) · [OpenReview](https://openreview.net/forum?id=2XMLJj67yY) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-fair-division-repro)
 

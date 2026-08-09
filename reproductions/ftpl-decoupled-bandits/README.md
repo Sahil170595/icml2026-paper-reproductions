@@ -1,6 +1,6 @@
 # Follow-the-Perturbed-Leader for Decoupled Bandits: Best-of-Both-Worlds and Practicality
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅✅✅⚪⚪  **8 pts** — 4/6 full-credit  (verified, verified, verified, verified, inconclusive, inconclusive)
 
 [arXiv 2510.12152](https://arxiv.org/abs/2510.12152) · [OpenReview](https://openreview.net/forum?id=q1KhliMwKP) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-ftpl-decoupled-bandits-repro)
 

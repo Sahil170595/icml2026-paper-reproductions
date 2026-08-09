@@ -1,6 +1,6 @@
 # Rex: A Family of Reversible Exponential (Stochastic) Runge-Kutta Solvers
 
-✅🟡  **3 pts** — 1/2 full-credit  (verified, toy)
+✅✅🟡🟡🟡  **7 pts** — 2/5 full-credit  (verified, verified, toy, toy, toy)
 
 [arXiv 2502.08834](https://arxiv.org/abs/2502.08834) · [OpenReview](https://openreview.net/forum?id=7pQIzVNctu) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-rex-reversible-rk-repro)
 

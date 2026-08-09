@@ -1,6 +1,6 @@
 # Nonparametric Distribution Regression Re-calibration
 
-⚪✅  **2 pts** — 1/2 full-credit  (inconclusive, verified)
+⚪⚪✅🟡🔴  **5 pts** — 2/5 full-credit  (inconclusive, inconclusive, verified, toy, falsified)
 
 [arXiv 2602.13362](https://arxiv.org/abs/2602.13362) · [OpenReview](https://openreview.net/forum?id=fTl7NXYtAB) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-nonparam-recalibration-repro)
 

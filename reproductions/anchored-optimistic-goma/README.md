@@ -1,6 +1,6 @@
 # Accelerated and Stable Convergence with Anchored Generalized Optimistic Method
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅⚪✅✅  **6 pts** — 3/4 full-credit  (verified, inconclusive, verified, verified)
 
 [arXiv 2606.21528](https://arxiv.org/abs/2606.21528) · [OpenReview](https://openreview.net/forum?id=G6WKIN1heG) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-anchored-optimistic-goma-repro)
 

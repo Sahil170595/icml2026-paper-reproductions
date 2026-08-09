@@ -1,6 +1,6 @@
 # Online Packet Scheduling with Deadlines and Learning
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+⚪✅✅⚪⚪⚪  **4 pts** — 2/6 full-credit  (inconclusive, verified, verified, inconclusive, inconclusive, inconclusive)
 
 [arXiv 2606.00835](https://arxiv.org/abs/2606.00835) · [OpenReview](https://openreview.net/forum?id=rZTiFcDihH) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-packet-scheduling-repro)
 

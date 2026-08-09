@@ -1,6 +1,6 @@
 # Demystifying LLM-as-a-Judge: Inference-Time Scaling
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+✅✅✅⚪⚪  **6 pts** — 3/5 full-credit  (verified, verified, verified, inconclusive, inconclusive)
 
 [arXiv 2512.19905](https://arxiv.org/abs/2512.19905) · [OpenReview](https://openreview.net/forum?id=ANVg7NnupP) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-llm-as-judge-scaling-repro)
 

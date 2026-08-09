@@ -1,6 +1,6 @@
 # Optimal Unconstrained Self-Distillation in Ridge Regression
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+✅✅⚪✅✅⚪  **8 pts** — 4/6 full-credit  (verified, verified, inconclusive, verified, verified, inconclusive)
 
 [arXiv 2602.17565](https://arxiv.org/abs/2602.17565) · [OpenReview](https://openreview.net/forum?id=MdHcU4C4Rm) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-ridge-self-distillation-repro)
 

@@ -1,6 +1,6 @@
 # DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting
 
-🔴✅  **4 pts** — 2/2 full-credit  (falsified, verified)
+🟡🟡🟡⚪⚪  **3 pts** — 0/5 full-credit  (toy, toy, toy, inconclusive, inconclusive)
 
 [arXiv 2601.21726](https://arxiv.org/abs/2601.21726) · [OpenReview](https://openreview.net/forum?id=7sksHLUvhH) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-dropoutts-repro)
 

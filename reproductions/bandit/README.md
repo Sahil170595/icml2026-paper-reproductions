@@ -1,6 +1,6 @@
 # Prior Diffusiveness and Regret in the Linear-Gaussian Bandit
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅⚪✅⚪  **6 pts** — 3/5 full-credit  (verified, verified, inconclusive, verified, inconclusive)
 
 [arXiv 2601.02022](https://arxiv.org/abs/2601.02022) · [OpenReview](https://openreview.net/forum?id=GeYKOC4BzB) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-bandit-repro)
 

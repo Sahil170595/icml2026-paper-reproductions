@@ -1,6 +1,6 @@
 # Design-Based Anytime-Valid Inference for Randomized Experiments with Delayed Outcomes and Staggered Entry
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅⚪⚪🟡  **5 pts** — 2/5 full-credit  (verified, verified, inconclusive, inconclusive, toy)
 
 [arXiv 2603.25971](https://arxiv.org/abs/2603.25971) · [OpenReview](https://openreview.net/forum?id=FXWnvznHMW) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-anytime-valid-delayed-repro)
 

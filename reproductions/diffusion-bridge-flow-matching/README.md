@@ -1,6 +1,6 @@
 # Diffusion Bridge or Flow Matching? A Unifying Framework
 
-✅🟡  **3 pts** — 1/2 full-credit  (verified, toy)
+✅✅⚪🟡🟡🟡  **7 pts** — 2/6 full-credit  (verified, verified, inconclusive, toy, toy, toy)
 
 [arXiv 2509.24531](https://arxiv.org/abs/2509.24531) · [OpenReview](https://openreview.net/forum?id=aIFgQusnPy) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-diffusion-bridge-flow-matching-repro)
 

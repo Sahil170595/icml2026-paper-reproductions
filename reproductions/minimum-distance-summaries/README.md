@@ -1,6 +1,6 @@
 # Minimum Distance Summaries for Robust Neural Posterior Estimation
 
-✅✅✅✅  **8 pts** — 4/4 full-credit  (verified, verified, verified, verified)
+✅✅🟡🟡⚪⚪  **6 pts** — 2/6 full-credit  (verified, verified, toy, toy, inconclusive, inconclusive)
 
 [arXiv 2602.09161](https://arxiv.org/abs/2602.09161) · [OpenReview](https://openreview.net/forum?id=lq8fNVME8v) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-minimum-distance-summaries-repro)
 

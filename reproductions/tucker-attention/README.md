@@ -1,6 +1,6 @@
 # Tucker Attention: A generalization of approximate attention mechanisms
 
-⚪✅✅  **4 pts** — 2/3 full-credit  (inconclusive, verified, verified)
+✅✅✅✅✅⚪  **10 pts** — 5/6 full-credit  (verified, verified, verified, verified, verified, inconclusive)
 
 [arXiv 2603.30033](https://arxiv.org/abs/2603.30033) · [OpenReview](https://openreview.net/forum?id=ErcPPRZaiq) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-tucker-attention-repro)
 

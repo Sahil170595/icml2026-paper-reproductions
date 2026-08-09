@@ -1,6 +1,6 @@
 # Repro — Model Fusion via Neuron Interpolation
 
-🟡🟡🟡  **3 pts** — 0/3 full-credit  (toy, toy, toy)
+✅🟡✅⚪⚪🟡  **6 pts** — 2/6 full-credit  (verified, toy, verified, inconclusive, inconclusive, toy)
 
 [arXiv 2507.00037](https://arxiv.org/abs/2507.00037) · [OpenReview](https://openreview.net/forum?id=SXOqLX0T6X) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-model-fusion-repro)
 

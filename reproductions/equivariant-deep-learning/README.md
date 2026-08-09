@@ -1,6 +1,6 @@
 # Foundations of Equivariant Deep Learning
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅✅✅  **8 pts** — 4/4 full-credit  (verified, verified, verified, verified)
 
 [OpenReview](https://openreview.net/forum?id=aIH1jyU37z) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-equivariant-deep-learning-repro)
 

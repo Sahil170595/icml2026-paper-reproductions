@@ -1,6 +1,6 @@
 # The Theory and Practice of MAP Inference over Non-Convex Constraints
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅🟡⚪⚪⚪  **5 pts** — 2/6 full-credit  (verified, verified, toy, inconclusive, inconclusive, inconclusive)
 
 [arXiv 2602.08681](https://arxiv.org/abs/2602.08681) · [OpenReview](https://openreview.net/forum?id=jIZqAemuqk) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-map-inference-nonconvex-repro)
 

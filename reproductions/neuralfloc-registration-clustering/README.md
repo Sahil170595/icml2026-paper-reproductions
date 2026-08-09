@@ -1,6 +1,6 @@
 # NeuralFLoC: Neural Flow-Based Joint Registration and Clustering of Functional Data
 
-🟡🟡✅  **4 pts** — 1/3 full-credit  (toy, toy, verified)
+✅✅🟡🟡✅  **8 pts** — 3/5 full-credit  (verified, verified, toy, toy, verified)
 
 [arXiv 2602.03169](https://arxiv.org/abs/2602.03169) · [OpenReview](https://openreview.net/forum?id=JIkyyfkeoE) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-neuralfloc-registration-clustering-repro)
 

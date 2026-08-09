@@ -1,6 +1,6 @@
 # Estimating Continuous Treatment Effects with Two-Stage Kernel Ridge Regression
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅⚪✅⚪⚪  **4 pts** — 2/5 full-credit  (verified, inconclusive, verified, inconclusive, inconclusive)
 
 [arXiv 2604.13410](https://arxiv.org/abs/2604.13410) · [OpenReview](https://openreview.net/forum?id=ziqS4yXFQX) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-treatment-effects-krr-repro)
 

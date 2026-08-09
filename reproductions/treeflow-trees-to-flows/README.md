@@ -1,6 +1,6 @@
 # Trees to Flows and Back: Unifying Decision Trees and Diffusion Models
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+🟡🟡🟡🟡⚪  **4 pts** — 0/5 full-credit  (toy, toy, toy, toy, inconclusive)
 
 [arXiv 2605.00414](https://arxiv.org/abs/2605.00414) · [OpenReview](https://openreview.net/forum?id=gW7NZN8zJu) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-treeflow-trees-to-flows-repro)
 

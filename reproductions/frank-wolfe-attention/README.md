@@ -1,6 +1,6 @@
 # Attention's forward pass and Frank-Wolfe
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+✅✅⚪✅⚪  **6 pts** — 3/5 full-credit  (verified, verified, inconclusive, verified, inconclusive)
 
 [arXiv 2508.09628](https://arxiv.org/abs/2508.09628) · [OpenReview](https://openreview.net/forum?id=zrn7rRuvhW) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-frank-wolfe-attention-repro)
 

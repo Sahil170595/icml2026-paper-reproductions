@@ -1,6 +1,6 @@
 # On Regret Bounds of Thompson Sampling for Bayesian Optimization
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+✅🟡🟡🟡  **5 pts** — 1/4 full-credit  (verified, toy, toy, toy)
 
 [arXiv 2603.09276](https://arxiv.org/abs/2603.09276) · [OpenReview](https://openreview.net/forum?id=yZoB5oNBco) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-ts-bayesopt-repro)
 

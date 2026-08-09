@@ -1,6 +1,6 @@
 # Improved Convergence Analysis of Topology Dependence in Decentralized SGD
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+🟡⚪⚪✅🟡⚪  **4 pts** — 1/6 full-credit  (toy, inconclusive, inconclusive, verified, toy, inconclusive)
 
 [arXiv 2606.09154](https://arxiv.org/abs/2606.09154) · [OpenReview](https://openreview.net/forum?id=pYI0WjV5iM) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-decentralized-sgd-topology-repro)
 

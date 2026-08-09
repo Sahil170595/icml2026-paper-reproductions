@@ -1,6 +1,6 @@
 # Improved Analysis of the Accelerated Noisy Power Method with Applications to Decentralized PCA
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+✅⚪✅⚪🟡  **5 pts** — 2/5 full-credit  (verified, inconclusive, verified, inconclusive, toy)
 
 [arXiv 2602.03682](https://arxiv.org/abs/2602.03682) · [OpenReview](https://openreview.net/forum?id=UTiEfkfNQ2) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-noisy-power-method-repro)
 

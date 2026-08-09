@@ -1,6 +1,6 @@
 # Full-Batch Gradient Descent Outperforms One-Pass SGD: Sample Complexity Separation in Single-Index Learning
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅🟡🟡⚪🟡  **5 pts** — 1/5 full-credit  (verified, toy, toy, inconclusive, toy)
 
 [arXiv 2602.02431](https://arxiv.org/abs/2602.02431) · [OpenReview](https://openreview.net/forum?id=QItZDBVCT0) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-fullbatch-single-index-repro)
 

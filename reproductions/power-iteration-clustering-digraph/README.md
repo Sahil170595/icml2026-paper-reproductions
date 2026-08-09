@@ -1,6 +1,6 @@
 # Parametrized Power-Iteration Clustering for Directed Graphs
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅🟡⚪⚪🟡  **6 pts** — 2/6 full-credit  (verified, verified, toy, inconclusive, inconclusive, toy)
 
 [arXiv 2210.00310](https://arxiv.org/abs/2210.00310) · [OpenReview](https://openreview.net/forum?id=5vI6ApLOg8) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-power-iteration-clustering-digraph-repro)
 

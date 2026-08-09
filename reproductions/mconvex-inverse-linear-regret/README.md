@@ -1,6 +1,6 @@
 # Finite and Corruption-Robust Regret Bounds in Online Inverse Linear Optimization under M-Convex Action Sets
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+✅✅✅✅✅  **10 pts** — 5/5 full-credit  (verified, verified, verified, verified, verified)
 
 [arXiv 2602.01682](https://arxiv.org/abs/2602.01682) · [OpenReview](https://openreview.net/forum?id=g7LE4mukGq) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-mconvex-inverse-linear-regret-repro)
 

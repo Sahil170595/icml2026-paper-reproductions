@@ -1,6 +1,6 @@
 # Causal Modeling of Selection in Evolution
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅✅✅✅🟡  **11 pts** — 5/6 full-credit  (verified, verified, verified, verified, verified, toy)
 
 [arXiv 2606.05689](https://arxiv.org/abs/2606.05689) · [OpenReview](https://openreview.net/forum?id=mOcTXKawFY) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-causal-selection-evolution-repro)
 

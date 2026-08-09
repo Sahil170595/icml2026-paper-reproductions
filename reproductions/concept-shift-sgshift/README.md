@@ -1,6 +1,6 @@
 # Explaining Concept Shift with Interpretable Feature Attribution
 
-✅✅⚪  **4 pts** — 2/3 full-credit  (verified, verified, inconclusive)
+✅⚪✅⚪✅  **6 pts** — 3/5 full-credit  (verified, inconclusive, verified, inconclusive, verified)
 
 [arXiv 2505.20634](https://arxiv.org/abs/2505.20634) · [OpenReview](https://openreview.net/forum?id=wpKA7G7Cqu) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-concept-shift-sgshift-repro)
 

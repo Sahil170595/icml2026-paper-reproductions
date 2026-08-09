@@ -1,6 +1,6 @@
 # To Grok Grokking: Provable Grokking in Ridge Regression
 
-✅✅✅  **6 pts** — 3/3 full-credit  (verified, verified, verified)
+🟡⚪⚪🟡✅  **4 pts** — 1/5 full-credit  (toy, inconclusive, inconclusive, toy, verified)
 
 [arXiv 2601.19791](https://arxiv.org/abs/2601.19791) · [OpenReview](https://openreview.net/forum?id=5nNNVY8NW4) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-grokking-repro)
 

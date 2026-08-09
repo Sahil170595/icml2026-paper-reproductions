@@ -1,6 +1,6 @@
 # Quantifying LLM Attention-Head Stability: Implications for Circuit Universality
 
-✅✅✅✅  **8 pts** — 4/4 full-credit  (verified, verified, verified, verified)
+✅⚪✅✅⚪✅  **8 pts** — 4/6 full-credit  (verified, inconclusive, verified, verified, inconclusive, verified)
 
 [arXiv 2602.16740](https://arxiv.org/abs/2602.16740) · [OpenReview](https://openreview.net/forum?id=UXzfLdXrBJ) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-attention-head-stability-repro)
 

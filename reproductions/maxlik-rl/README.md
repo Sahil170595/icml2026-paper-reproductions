@@ -1,6 +1,6 @@
 # Maximum Likelihood Reinforcement Learning
 
-🟡✅  **3 pts** — 1/2 full-credit  (toy, verified)
+✅✅✅🟡🟡  **8 pts** — 3/5 full-credit  (verified, verified, verified, toy, toy)
 
 [arXiv 2602.02710](https://arxiv.org/abs/2602.02710) · [OpenReview](https://openreview.net/forum?id=EeuLO2BjFN) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-maxlik-rl-repro)
 

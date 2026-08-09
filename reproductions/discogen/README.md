@@ -1,6 +1,6 @@
 # Procedural Generation Of Algorithm Discovery Tasks in Machine Learning
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅⚪✅✅⚪  **6 pts** — 3/5 full-credit  (verified, inconclusive, verified, verified, inconclusive)
 
 [arXiv 2603.17863](https://arxiv.org/abs/2603.17863) · [OpenReview](https://openreview.net/forum?id=0Mvm3lqLjF) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-discogen-repro)
 

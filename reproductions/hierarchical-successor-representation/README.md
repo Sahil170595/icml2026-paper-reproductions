@@ -1,6 +1,6 @@
 # Hierarchical Successor Representation for Robust Transfer
 
-🔴🔴🔴  **6 pts** — 3/3 full-credit  (falsified, falsified, falsified)
+✅🔴⚪🔴🟡  **7 pts** — 3/5 full-credit  (verified, falsified, inconclusive, falsified, toy)
 
 [arXiv 2602.12753](https://arxiv.org/abs/2602.12753) · [OpenReview](https://openreview.net/forum?id=txswvMHt4u) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-hierarchical-successor-representation-repro)
 

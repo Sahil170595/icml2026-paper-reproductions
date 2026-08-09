@@ -1,6 +1,6 @@
 # DAVE: Distribution-Aware Attribution via ViT Gradient Decomposition
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅⚪⚪🟡⚪  **5 pts** — 2/6 full-credit  (verified, verified, inconclusive, inconclusive, toy, inconclusive)
 
 [arXiv 2602.06613](https://arxiv.org/abs/2602.06613) · [OpenReview](https://openreview.net/forum?id=ykTMNA6Mbh) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-dave-vit-attribution-repro)
 

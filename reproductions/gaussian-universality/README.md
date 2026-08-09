@@ -1,6 +1,6 @@
 # Characterization of Gaussian Universality Breakdown in High-Dimensional Empirical Risk Minimization
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+🟡⚪🟡⚪⚪  **2 pts** — 0/5 full-credit  (toy, inconclusive, toy, inconclusive, inconclusive)
 
 [arXiv 2604.03146](https://arxiv.org/abs/2604.03146) · [OpenReview](https://openreview.net/forum?id=UHQDfvZBFi) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-gaussian-universality-repro)
 

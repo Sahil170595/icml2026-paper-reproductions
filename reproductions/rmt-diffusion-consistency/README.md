@@ -1,6 +1,6 @@
 # A Random Matrix Perspective on the Consistency of Diffusion Models
 
-✅✅🟡  **5 pts** — 2/3 full-credit  (verified, verified, toy)
+🟡✅✅✅🟡  **8 pts** — 3/5 full-credit  (toy, verified, verified, verified, toy)
 
 [arXiv 2602.02908](https://arxiv.org/abs/2602.02908) · [OpenReview](https://openreview.net/forum?id=iPjuUQbkfl) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-rmt-diffusion-consistency-repro)
 

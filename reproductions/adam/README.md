@@ -1,6 +1,6 @@
 # Towards Understanding Adam Convergence on Highly Degenerate Polynomials
 
-✅✅  **4 pts** — 2/2 full-credit  (verified, verified)
+✅✅✅✅⚪⚪  **8 pts** — 4/6 full-credit  (verified, verified, verified, verified, inconclusive, inconclusive)
 
 [arXiv 2603.09581](https://arxiv.org/abs/2603.09581) · [OpenReview](https://openreview.net/forum?id=uYWVGk1Qt0) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-adam-repro)
 
