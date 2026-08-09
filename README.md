@@ -99,6 +99,8 @@ cd reproductions/<paper>/evidence
 python <repro_script>.py   # deterministic; prints the measured numbers
 ```
 
+Two pilot-era papers (discogen, grokking) carry their artifacts in their logbook Spaces rather than a local evidence directory; their READMEs link there.
+
 Most reproductions need only `numpy` + `scipy`. A subset additionally uses `torch` or `scikit-learn`, and a few ship a `gpu_job/` kit for claims that require accelerated scale.
 
 ## License
