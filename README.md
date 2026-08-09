@@ -2,7 +2,7 @@
 
 Independent, from-scratch reproductions of **48 ICML-2026 submissions** for the [ICML 2026 Agent Reproducibility Challenge](https://huggingface.co/spaces/ICML-2026-agent-repro). Each claim is re-derived from the paper text, with deterministic implementations and machine-checked evidence; where official code exists it is pinned at an audited commit SHA rather than trusted.
 
-> **297 points across 48 papers**, rank **#26 of 372** on the challenge leaderboard — top 7% (peaked #8 mid-challenge, July 2026) · of **249 official scored claims**: **118 verified**, **3 independently falsified**, 55 toy-scale, 73 inconclusive · judged by the challenge's independent LLM referee against each paper's official scored claims.
+> **297 points across 48 papers**, final rank **#26 of 1,221 participants** — top 2% (challenge closed 2026-08-02, verdicts frozen; peaked #8 mid-challenge, July 2026) · of **249 official scored claims**: **118 verified**, **3 independently falsified**, 55 toy-scale, 73 inconclusive · judged by the challenge's independent LLM referee against each paper's official scored claims.
 >
 > Final figures. The challenge closed **2026-08-02** (23:59 AoE); these 48 logbooks were judged between 2026-07-23 and 2026-08-03. Counts and points above are re-derived from the challenge's published [verdicts dataset](https://huggingface.co/datasets/ICML-2026-agent-repro/verdicts), snapshot pulled **2026-08-08** (UTC).
 
