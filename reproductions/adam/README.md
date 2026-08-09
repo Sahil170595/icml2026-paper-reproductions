@@ -2,9 +2,9 @@
 
 ✅✅✅✅⚪⚪  **8 pts** — 4/6 full-credit  (verified, verified, verified, verified, inconclusive, inconclusive)
 
-[arXiv 2603.09581](https://arxiv.org/abs/2603.09581) · [OpenReview](https://openreview.net/forum?id=uYWVGk1Qt0) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-adam-repro)
+[arXiv 2603.09581](https://arxiv.org/abs/2603.09581) · [OpenReview](https://openreview.net/forum?id=uYWVGk1Qt0) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-adam-degenerate-repro)
 
-## Scoreboard — measured vs target (both claims executed)
+## Scoreboard — measured vs target (6 scored claims: 4 verified, 2 inconclusive)
 
 | # | Claim | Key measured quantity | Measured | Target | Verdict |
 |---|---|---|--:|--:|:--|

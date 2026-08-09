@@ -2,7 +2,7 @@
 
 ✅✅⚪✅⚪  **6 pts** — 3/5 full-credit  (verified, verified, inconclusive, verified, inconclusive)
 
-[arXiv 2601.02022](https://arxiv.org/abs/2601.02022) · [OpenReview](https://openreview.net/forum?id=GeYKOC4BzB) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-bandit-repro)
+[arXiv 2601.02022](https://arxiv.org/abs/2601.02022) · [OpenReview](https://openreview.net/forum?id=GeYKOC4BzB) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-bandit-prior-repro)
 
 ## Scoreboard (measured vs paper target — real scale: d = 2→100, T up to 1e5)
 
@@ -18,7 +18,7 @@
 | 2 | First-step floor r·𝔼‖θ*‖ ∝ √Tr(Σ₀) (= Thm-6 t=0 term, supporting) | floor/√Tr(Σ₀) = 0.886 → **0.9975** (d=2→100) | verified |
 | 2 | Elliptical potential lemma (paper's tool) holds; log-T potential | holds on **100%** of runs, d=2→100 (max LHS/RHS 0.51–0.54); potential ∝ log T | verified |
 
-**Both scored claims are reproduced at real scale.** Claim 1: Thompson Sampling's Bayesian regret follows the paper's **additive** Õ(σd√T + dr√Tr(Σ₀)) form at **every** d∈{2,5,10,20,50,100} up to T=1e5 — the √T rate is exact (R²=1.0000), the coefficient obeys the σd dimension law (a(d) ∝ d^1.06–1.16, tightening toward 1 as polylog effects fade), and the competing multiplicative form (Kalkanli–Özgür 2020) is rejected (RMSE 11–58× worse). Claim 2: the previously-missing **minimax lower bound** is reproduced by simulating the Rusmevichientong–Tsitsiklis worst-case product prior — L=C·σd√T with C=0.265 — and TS's achieved regret on that hard instance **meets it to a constant factor ≈ 3.0, flat across the 50× sweep d=2→100**, so upper==lower==minimax-optimal. The registered **Theorem 6 burn-in lower bound** is implemented as a construction (σ→0 sequential-revelation argument) and measured: registered formula ≤ simulated construction ≤ measured TS burn-in at every d, all scaling as d^{3/2} (the d·r·√Tr(Σ₀) law) versus d^{0.5} for the weak first-step floor it replaces. The elliptical potential lemma is verified from d=2 to d=100.
+**3 of the 5 scored claims are reproduced at real scale; the other 2 were ruled inconclusive.** Claim 1: Thompson Sampling's Bayesian regret follows the paper's **additive** Õ(σd√T + dr√Tr(Σ₀)) form at **every** d∈{2,5,10,20,50,100} up to T=1e5 — the √T rate is exact (R²=1.0000), the coefficient obeys the σd dimension law (a(d) ∝ d^1.06–1.16, tightening toward 1 as polylog effects fade), and the competing multiplicative form (Kalkanli–Özgür 2020) is rejected (RMSE 11–58× worse). Claim 2: the previously-missing **minimax lower bound** is reproduced by simulating the Rusmevichientong–Tsitsiklis worst-case product prior — L=C·σd√T with C=0.265 — and TS's achieved regret on that hard instance **meets it to a constant factor ≈ 3.0, flat across the 50× sweep d=2→100**, so upper==lower==minimax-optimal. The registered **Theorem 6 burn-in lower bound** is implemented as a construction (σ→0 sequential-revelation argument) and measured: registered formula ≤ simulated construction ≤ measured TS burn-in at every d, all scaling as d^{3/2} (the d·r·√Tr(Σ₀) law) versus d^{0.5} for the weak first-step floor it replaces. The elliptical potential lemma is verified from d=2 to d=100.
 
 ## Reproduce
 

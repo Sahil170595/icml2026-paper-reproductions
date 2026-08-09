@@ -2,7 +2,7 @@
 
 🟡🟡🟡⚪⚪  **3 pts** — 0/5 full-credit  (toy, toy, toy, inconclusive, inconclusive)
 
-[arXiv 2601.21726](https://arxiv.org/abs/2601.21726) · [OpenReview](https://openreview.net/forum?id=7sksHLUvhH) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-dropoutts-repro)
+[arXiv 2601.21726](https://arxiv.org/abs/2601.21726) · [OpenReview](https://openreview.net/forum?id=7sksHLUvhH) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-pilot-dropoutts)
 
 ## Reproduce
 

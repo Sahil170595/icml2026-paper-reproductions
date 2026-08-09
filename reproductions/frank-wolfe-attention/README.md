@@ -16,7 +16,7 @@
 | 3 | Thm 5.2: interior tokens reach near-vertex configs in O(1) steps (indep. of β above a threshold β\*) | T₁ stays in **19–31 steps** for β∈[16,128] (8× range); does not converge in the tight tolerance below the β≈16 threshold, matching the theorem's explicit β≥β\* requirement | reproduced |
 | 3 | Thm 5.4: residence/trapping time grows **exponentially** in β | log(median trapping time) vs β: slopes **1.498 / 0.994 / 0.686 / 0.490** for κ=3,4,5,6 match the theoretical score gap 1-cos(2π/κ) = **1.500 / 1.000 / 0.691 / 0.500** to ≤2.0% (R²>0.999); trapping time spans **2 → 4×10²⁵** steps (κ=3, β:1→40) | reproduced |
 
-**All three scored claims are reproduced.** Every number above is real stdout of the three scripts under `evidence-package/` (verbatim captures in `commands.jsonl`-logged runs), re-executed a second time to confirm bit-identical determinism (only wall-clock timing differs).
+**3 of the 5 scored claims are reproduced; the other 2 were ruled inconclusive.** Every number above is real stdout of the three scripts under `evidence-package/` (verbatim captures in `commands.jsonl`-logged runs), re-executed a second time to confirm bit-identical determinism (only wall-clock timing differs).
 
 ## Reproduce
 

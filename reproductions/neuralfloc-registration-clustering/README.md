@@ -15,7 +15,7 @@
 | 5 | **Ablation**: both registration and clustering modules are **essential** (Table 1 bottom rows) | full ARI ≫ (w/o Reg) ARI ≈ raw; full alignment ≤ (w/o Clu) alignment | full ARI **0.733** vs w/o-Reg **0.288** = raw **0.288** (drop **0.445**); full align err **0.007** ≤ w/o-Clu **0.007** | **reproduced** |
 | 6 | **Robustness + scalability** (§6): missing data, irregular sampling, scale to **70k** curves | graceful degradation vs raw collapse; 70k runs on CPU with near-linear wall + ~flat memory | **N=2,000, 5 seeds**: missing 0–50% joint ARI **0.74–0.81** vs raw **≈0.31**; irregular σ=0–0.3 joint ARI **0.72–0.78** vs raw **≈0.31**; **70,000** curves in **19.2 s**, ARI **1.0**, peak RSS **402→473 MB** | **reproduced** |
 
-**6 / 6 scored claims reproduced** with executed numbers on realistic simulated functional data (up to 70,000 curves), 5 real UCR archive datasets (up to N=4,921), and larger-N consistency/robustness sweeps, CPU-only. Universal-approximation (Thm 4.1) and consistency (Thm 4.2) are checked numerically at substantially larger scale than before; the joint-vs-baseline, ablation, robustness and 70k-scalability claims are the paper's central empirical results (§5–6).
+**3 / 5 scored claims verified, the other 2 ruled toy-scale** — all with executed numbers on realistic simulated functional data (up to 70,000 curves), 5 real UCR archive datasets (up to N=4,921), and larger-N consistency/robustness sweeps, CPU-only. Universal-approximation (Thm 4.1) and consistency (Thm 4.2) are checked numerically at substantially larger scale than before; the joint-vs-baseline, ablation, robustness and 70k-scalability claims are the paper's central empirical results (§5–6).
 
 ## Reproduce
 

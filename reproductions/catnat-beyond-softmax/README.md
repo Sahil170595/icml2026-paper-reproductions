@@ -4,7 +4,7 @@
 
 [arXiv 2509.24728](https://arxiv.org/abs/2509.24728) · [OpenReview](https://openreview.net/forum?id=ClBpWdkPZd) · [Live logbook (HF Space)](https://huggingface.co/spaces/Crusadersk/icml26-catnat-beyond-softmax-repro)
 
-## Scoreboard — both claims (measured vs paper)
+## Scoreboard — measured vs paper (5 scored claims: 2 verified, 1 toy, 2 inconclusive)
 
 | # | Claim (paper) | Decisive measured numbers (this repro) | Paper target | Evidence |
 |---|---|---|---|---|

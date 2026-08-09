@@ -13,9 +13,9 @@
 | 3 | Weight decay (AdamW) improves head stability | "clear increase... for deeper MLP models" (Section 4.5) | Adam mean **0.8153**, AdamW mean **0.8629**, Δ=**+0.0475**; biggest gain at layer 5 (+0.248) | **reproduced** |
 | 4 | Residual stream comparatively stable across refits | "residual stream is consistently more stable than... attention heads" (Section 4.7) | Adam residual **0.8666** vs head **0.8153** (+0.0514); AdamW residual **0.8772** vs head **0.8629** (+0.0144) — residual > head under both optimizers | **reproduced** |
 
-**All four scored claims are reproduced with real, executed numbers** on
+**4 of the 6 scored claims are reproduced with real, executed numbers** on
 the official released checkpoints (5 refits per condition, all 100 released
-prompts, CPU forward passes only). Claim 1: the layer-wise stability
+prompts, CPU forward passes only); the other 2 were ruled inconclusive. Claim 1: the layer-wise stability
 S_l shows the paper's own reported middle-layer dip (layer 5, S=0.621,
 essentially the paper's own quoted ≈0.70 for the same layer) and the same
 middle band is the most representationally distinct. Claim 2: the
